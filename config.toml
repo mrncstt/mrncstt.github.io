@@ -2,3 +2,11 @@ baseURL = "https://mrncstt.github.io"
 languageCode = "en-us"
 title = "Mariana Costa"
 theme = "hyde-hyde"
+[Menus]
+  main = [
+      {Name = "Home", URL = "https://mrncstt.github.io", pre = "<img src=\"img/profile.jpeg\" alt=\"Mariana Costa\">"},
+      {Name = "Github", URL = "https://github.com/mrncstt/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/mrncstt/"}
+  ]
+#disqusShortname = "mrncstt"
+#profileImage = "img/profile.jpeg"
