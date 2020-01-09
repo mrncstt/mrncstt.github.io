@@ -4,8 +4,10 @@ title = "Mariana Costa"
 theme = "hyde-hyde"
 [Menus]
   main = [
-      {Name = "Home", URL = "https://mrncstt.github.io", pre = "<img src=\"img/profile.jpeg\" alt=\"Mariana Costa\">"},
-      {Name = "Github", URL = "https://github.com/mrncstt/"},
+      {Name = "", URL = "https://mrncstt.github.io", Pre = "<img src=\"/img/profile.jpeg\" alt=\"Author Image\" class\"img--circle img--headshot element--center\">", Weight="1"},
+      {Name = "Posts", URL = "/posts", Weight = 2},
+      {Name = "About", URL = "/about", Weight = 3},
+      {Name = "GitHub", URL = "https://github.com/mrncstt/"},
       {Name = "LinkedIn", URL = "https://www.linkedin.com/in/mrncstt/"}
   ]
 #disqusShortname = "mrncstt"
