@@ -1,0 +1,31 @@
+baseURL = "https://mrncstt.github.io"
+languageCode = "en-us"
+title = "Mariana Costa"
+theme = "hyde-hyde"
+[Menus]
+  main = [
+      {Name = "Posts", URL = "/posts", Weight = 1},
+      {Name = "About", URL = "/about", Weight = 2}
+  ]
+[permalinks]
+  post = "/:slug/"
+
+
+[params]
+authorimage = "/img/profile.jpeg"
+gravatar = "/img/profile.jpeg"
+showBuiltWith = "true"
+
+[params.social]
+twitter = "mrncstt"
+linkedin = "mrncstt"
+github = "mrncstt"
+email = "mrncstt.github.io"
+
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
+
+#disqusShortname = "mrncstt"
+#profileImage = "img/profile.jpeg"
