@@ -29,14 +29,5 @@
       <description>Engenheira de produção em formação pela Universidade Federal do Rio Grande do Norte, no momento atuando como estagiária de Inteligência de Mercado no Grupo Vila. É entusiasta da cultura de dados e resolução de problemas e a carta preferida é “conquistar 24 territórios à sua escolha” no War.</description>
     </item>
     
-    <item>
-      <title>Hello Hugo!</title>
-      <link>https://mrncstt.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/posts/my-first-post/</guid>
-      <description>Hello!!! This is now automatically published! It really works!</description>
-    </item>
-    
   </channel>
 </rss>

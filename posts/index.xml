@@ -20,14 +20,5 @@
       <description>O Makeover Monday é um projeto em forma de dashboard que é publicado por algum dos participantes e deve ser refeito por quem desejar. Semanalmente o exemplo de dataset é publicado no site. O tema da semana 2 é: Os EUA ficam atrás de outras nações agrícolas na proibição de pesticidas nocivos. Quatro dos maiores produtores agrícolas do mundo são EUA, UE (União Européia), China e Brasil. Cada um possui sistemas reguladores de pesticidas separados e distintos, projetados para proteger, em graus variados, os seres humanos e o meio ambiente.</description>
     </item>
     
-    <item>
-      <title>Hello Hugo!</title>
-      <link>https://mrncstt.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/posts/my-first-post/</guid>
-      <description>Hello!!! This is now automatically published! It really works!</description>
-    </item>
-    
   </channel>
 </rss>

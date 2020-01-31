@@ -29,23 +29,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>example</title>
-      <link>https://mrncstt.github.io/categories/example/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/categories/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hello</title>
-      <link>https://mrncstt.github.io/categories/hello/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/categories/hello/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
