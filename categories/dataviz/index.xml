@@ -6,10 +6,19 @@
     <description>Recent content in dataviz on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/categories/dataviz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Makeover Monday 2020 W/3</title>
+      <link>https://mrncstt.github.io/posts/makeovermonday_w3/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/makeovermonday_w3/</guid>
+      <description>O Makeover Monday é um projeto em forma de dashboard que é publicado por algum dos participantes e deve ser refeito por quem desejar. Semanalmente o exemplo de dataset é publicado no site. O tema da semana 3 é: É hora de tratar o açúcar como fumar? O adolescente médio consome três vezes mais açúcar do que o recomendado, como uma parcela do total de calorias. Há esforços mundiais de governos usando métodos diferentes, como a introdução de novos impostos, anúncios, novas políticas públicas para combater o consumo.</description>
+    </item>
     
     <item>
       <title>Makeover Monday 2020 W/2</title>
