@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>O QUE É O CURADORIACAST?</title>
+      <link>https://mrncstt.github.io/posts/curadoriacast/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/curadoriacast/</guid>
+      <description>O que é o Curadoria Cast? O CuradoriaCast é uma iniciativa de 3 amigos que costumam dar muitas indicações e sempre tem alguma coisa para sugerir. Com a vontade de compartilhar nossas dicas, resolvemos nos reunir espalhar nossas recomendações para um público ainda maior!
+Por ser tocado por 3 pessoas que possuem diversos projetos paralelos o CuradoriaCast têm só 2 regras:
+- Só vamos fazer isso enquanto for legal para nós 3; - Vamos lançar quinzenalmente (aproximado);  Esperamos que você goste, compartilhe dê seu feedback para a gente.</description>
+    </item>
     
     <item>
       <title>Makeover Monday 2020 W/4</title>
@@ -38,17 +49,6 @@ O tema da semana 4 é: Pontes para a prosperidade. A Bridges to Prosperity (B2P)
       <guid>https://mrncstt.github.io/posts/makeovermonday_w2/</guid>
       <description>O Makeover Monday é um projeto em forma de dashboard que é publicado por algum dos participantes e deve ser refeito por quem desejar. Semanalmente o exemplo de dataset é publicado no site.
 O tema da semana 2 é: Uso de pesticidas Os EUA ficam atrás de outras nações agrícolas na proibição de pesticidas nocivos. Quatro dos maiores produtores agrícolas do mundo são EUA, UE (União Européia), China e Brasil. Cada um possui sistemas reguladores de pesticidas separados e distintos, projetados para proteger, em graus variados, os seres humanos e o meio ambiente.</description>
-    </item>
-    
-    <item>
-      <title>O QUE É O CURADORIACAST?</title>
-      <link>https://mrncstt.github.io/posts/curadoriacast/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/posts/curadoriacast/</guid>
-      <description>O que é o Curadoria Cast? O CuradoriaCast é uma iniciativa de 3 amigos que costumam dar muitas indicações e sempre tem alguma coisa para sugerir. Com a vontade de compartilhar nossas dicas, resolvemos nos reunir espalhar nossas recomendações para um público ainda maior!
-Por ser tocado por 3 pessoas que possuem diversos projetos paralelos o CuradoriaCast têm só 2 regras:
-- Só vamos fazer isso enquanto for legal para nós 3; - Vamos lançar quinzenalmente (aproximado);  Esperamos que você goste, compartilhe dê seu feedback para a gente.</description>
     </item>
     
   </channel>

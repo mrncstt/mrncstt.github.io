@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>curadoriacast</title>
+      <link>https://mrncstt.github.io/tags/curadoriacast/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/tags/curadoriacast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>podcast</title>
+      <link>https://mrncstt.github.io/tags/podcast/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/tags/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projetos</title>
+      <link>https://mrncstt.github.io/tags/projetos/</link>
+      <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/tags/projetos/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -35,33 +62,6 @@
       <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mrncstt.github.io/tags/makeovermonday/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>curadoriacast</title>
-      <link>https://mrncstt.github.io/tags/curadoriacast/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/tags/curadoriacast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>podcast</title>
-      <link>https://mrncstt.github.io/tags/podcast/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/tags/podcast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>projetos</title>
-      <link>https://mrncstt.github.io/tags/projetos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/tags/projetos/</guid>
       <description></description>
     </item>
     
