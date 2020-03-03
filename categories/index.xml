@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>psicologia</title>
+      <link>https://mrncstt.github.io/categories/psicologia/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/psicologia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>saude_mental</title>
+      <link>https://mrncstt.github.io/categories/saude_mental/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/saude_mental/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>curadoriacast</title>
