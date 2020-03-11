@@ -23,17 +23,12 @@
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/categories/psicologia/</loc>
-    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mrncstt.github.io/tags/psicologia/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/categories/saude_mental/</loc>
+    <loc>https://mrncstt.github.io/categories/psicologia/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,17 +38,22 @@
   </url>
   
   <url>
+    <loc>https://mrncstt.github.io/categories/saude_mental/</loc>
+    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mrncstt.github.io/tags/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/categories/curadoriacast/</loc>
+    <loc>https://mrncstt.github.io/tags/curadoriacast/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/tags/curadoriacast/</loc>
+    <loc>https://mrncstt.github.io/categories/curadoriacast/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/tags/podcast/</loc>
+    <loc>https://mrncstt.github.io/categories/podcast/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/categories/podcast/</loc>
+    <loc>https://mrncstt.github.io/tags/podcast/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,12 +83,12 @@
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/tags/dataviz/</loc>
+    <loc>https://mrncstt.github.io/categories/dataviz/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/categories/dataviz/</loc>
+    <loc>https://mrncstt.github.io/tags/dataviz/</loc>
     <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   
