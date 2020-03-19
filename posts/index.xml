@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>O que eu aprendi dando o meu primeiro curso</title>
+      <link>https://mrncstt.github.io/posts/primeirocurso/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/primeirocurso/</guid>
+      <description>O que eu aprendi dando o meu primeiro curso Eu tive a oportunidade de ministrar um curso sobre análise de dados usando o Excel e Power B.I. com mais dois colegas de curso (cursamos Engenharia de Produção na UFRN, o Erick Lima e o Pablo Santos. Antes de dar o curso eu pedi umas dicas as meninas do PyLadies Natal e a Gabi Cavalcante escreveu um texto resumindo algumas dicas que elas me deram.</description>
+    </item>
     
     <item>
       <title>Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valor social?</title>
