@@ -3,17 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mrncstt.github.io/tags/blog/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/categories/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/tags/dataviz/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/categories/dataviz/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/posts/worldcloud_qlik/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/posts/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/tags/qlik/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/categories/qlik/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mrncstt.github.io/tags/</loc>
+    <lastmod>2020-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mrncstt.github.io/tags/aprendizado/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://mrncstt.github.io/categories/aprendizado/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrncstt.github.io/categories/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,27 +73,12 @@
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mrncstt.github.io/posts/primeirocurso/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mrncstt.github.io/posts/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mrncstt.github.io/tags/powerbi/</loc>
-    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrncstt.github.io/tags/</loc>
     <lastmod>2020-03-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -105,21 +135,6 @@
   <url>
     <loc>https://mrncstt.github.io/tags/projetos/</loc>
     <lastmod>2020-02-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrncstt.github.io/tags/blog/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrncstt.github.io/tags/dataviz/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mrncstt.github.io/categories/dataviz/</loc>
-    <lastmod>2020-02-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>

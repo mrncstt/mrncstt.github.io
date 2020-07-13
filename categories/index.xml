@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mrncstt.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>dataviz</title>
+      <link>https://mrncstt.github.io/categories/dataviz/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qlik</title>
+      <link>https://mrncstt.github.io/categories/qlik/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/qlik/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Aprendizado</title>
@@ -62,15 +80,6 @@
       <pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://mrncstt.github.io/categories/podcast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dataviz</title>
-      <link>https://mrncstt.github.io/categories/dataviz/</link>
-      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mrncstt.github.io/categories/dataviz/</guid>
       <description></description>
     </item>
     
