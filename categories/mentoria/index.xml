@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mentoria on Mariana Costa</title>
+    <link>https://mrncstt.github.io/categories/mentoria/</link>
+    <description>Recent content in Mentoria on Mariana Costa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mrncstt.github.io/categories/mentoria/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O que eu aprendi sendo mentora</title>
+      <link>https://mrncstt.github.io/posts/mentoria_hackathon/</link>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/mentoria_hackathon/</guid>
+      <description>Contextualização Ao longo deste ano de 2020 já somo mais de 20 hackathons que participei entre atuar nos papeis de mentora e de participante. Estar em lados diferentes desse mesmo dado de quatro lados (mentor(a), participante, jurador(a) e facilitador(a)), tem me ajudado a desenvolver habilidade em diversas vertentes. Eventos que fui mentora:
+ Nasa - Space Apps Challenge 2020 ONU e Sebrae - Social Hack 2020 UFScar - Desafio Inovação e Empreendedorismo - 2020  1.</description>
+    </item>
+    
+  </channel>
+</rss>
