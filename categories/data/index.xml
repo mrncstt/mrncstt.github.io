@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Mariana Costa</title>
+    <link>https://mrncstt.github.io/categories/data/</link>
+    <description>Recent content in Data on Mariana Costa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mrncstt.github.io/categories/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Power_BI</title>
+      <link>https://mrncstt.github.io/posts/test/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/test/</guid>
+      <description>sdfsdfsdf </description>
+    </item>
+    
+  </channel>
+</rss>
