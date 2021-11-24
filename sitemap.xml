@@ -2,37 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mrncstt.github.io/tags/bi/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/categories/bi/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/categories/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/tags/data/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/categories/data/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/posts/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/posts/power_bi_example/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mrncstt.github.io/tags/</loc>
-    <lastmod>2021-11-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mrncstt.github.io/tags/aprender/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mrncstt.github.io/categories/</loc>
+    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mrncstt.github.io/tags/frances/</loc>
+    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrncstt.github.io/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrncstt.github.io/tags/podcast/</loc>
@@ -42,6 +21,12 @@
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrncstt.github.io/posts/podcasts_frances/</loc>
+    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrncstt.github.io/posts/</loc>
+    <lastmod>2021-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mrncstt.github.io/tags/</loc>
     <lastmod>2021-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mrncstt.github.io/tags/blog/</loc>
