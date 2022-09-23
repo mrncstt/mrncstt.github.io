@@ -117,5 +117,16 @@ Projetos que participo:
  O CuradoriaCast é uma iniciativa que iniciou com 3 amigos que costumam dar muitas indicações e sempre tem alguma coisa para sugerir.</description>
     </item>
     
+    <item>
+      <title>Makeover Monday 2022 Week 35 Power BI Tableau</title>
+      <link>https://mrncstt.github.io/posts/makeovermonday_week_35_year_2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/posts/makeovermonday_week_35_year_2022/</guid>
+      <description>Makeover Monday is a weekly project where participants can recreate a vizualization. The theme of week 35 is: Top 10 Countries in Military Spending. You can check the original version here. Good practices:
+ Green color which is very much attached to the military aspect Use of flags to represent countries  My version How did I developed? Result ![](link here)
+What I would like to show    Links  Make Over Monday 2022 Week 35 here.</description>
+    </item>
+    
   </channel>
 </rss>
