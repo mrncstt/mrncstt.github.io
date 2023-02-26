@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Mariana Costa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mrncstt.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mrncstt.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://mrncstt.github.io/categories/blog/</link>
+      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travel</title>
+      <link>https://mrncstt.github.io/categories/travel/</link>
+      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mrncstt.github.io/categories/travel/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data</title>
       <link>https://mrncstt.github.io/categories/data/</link>
