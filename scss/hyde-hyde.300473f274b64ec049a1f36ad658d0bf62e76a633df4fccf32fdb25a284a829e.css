@@ -63,6 +63,7 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 .container {
+  max-width: 38rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-left: auto;
@@ -257,7 +258,6 @@ a.read-more-symbol {
 .content {
   padding-bottom: 2rem;
   padding-top: 2rem;
-  padding: 2rem 2rem;
 }
 .sidebar {
   background-color: #67696b;
@@ -696,7 +696,7 @@ a.badge-tag:focus {
   .content {
     margin-left: 18rem;
     margin-right: 2rem;
-    padding: 2rem 4rem;
+    max-width: 38rem;
   }
   .layout-reverse .sidebar {
     left: auto;
@@ -731,9 +731,6 @@ a.badge-tag:focus {
   html,
   body {
     font-size: 19px;
-  }
-  .content {
-    padding: 2rem 5rem;
   }
   .layout-reverse .content {
     margin-left: 4rem;
@@ -843,5 +840,3 @@ a.badge-tag:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
-
-/*# sourceMappingURL=hyde-hyde.css.map */
