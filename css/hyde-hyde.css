@@ -318,6 +318,9 @@ a.read-more-symbol {
   display: block;
   margin-top: 4px;
 }
+.author-image {
+  display: none;
+}
 
 .sidebar-nav {
   text-align: center;
