@@ -284,7 +284,7 @@ a.read-more-symbol {
   margin-top: 4px;
 }
 .author-image {
-  display: none;
+  display: none !important;
 }
 .sidebar-nav {
   text-align: center;
@@ -339,6 +339,7 @@ a.read-more-symbol {
   padding-top: 1rem;
 }
 .builtwith {
+  display: none !important;
   padding-top: 0.2rem;
 }
 .section__title {
