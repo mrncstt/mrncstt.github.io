@@ -1,5 +1,5 @@
 ---
-title: Aprimore suas habilidades de Business Intelligence: Influenciadores para seguir que compartilham conteúdo sobre Tableau, Qlik e Power BI
+title: "Aprimore suas habilidades de Business Intelligence: Influenciadores para seguir que compartilham conteúdo sobre Tableau, Qlik e Power BI"
 description: BI tools
 date: 2023-04-20
 categories: [BusinessIntelligence, Suggestions]
