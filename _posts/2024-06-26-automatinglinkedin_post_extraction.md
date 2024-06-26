@@ -1,6 +1,6 @@
 ---
-title: Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
-description: Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
+title: Automating LinkedIn post extraction using Selenium and BeautifulSoup
+description: Automating LinkedIn post extraction ssing Selenium and BeautifulSoup
 date: 2024-06-26
 categories: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
 tags: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
@@ -9,16 +9,18 @@ tags: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
 
 ## Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
 
-In today's digital age, we often come across valuable content that we want to save and revisit later. LinkedIn, a popular professional networking platform, offers a "Saved Posts" feature for this purpose. However, managing these saved posts can become cumbersome. In this tutorial, we’ll walk through how to automate the extraction of saved LinkedIn posts using Selenium and BeautifulSoup, and store the data in a CSV file for easy access and analysis.
+We often come across valuable content that we want to save and revisit later. LinkedIn, a popular professional networking platform, offers a "Saved Posts" feature for this purpose. However, managing these saved posts can become cumbersome. In this tutorial, we’ll walk through how to automate the extraction of saved LinkedIn posts using Selenium and BeautifulSoup, and store the data in a CSV file for easy access and analysis.
 
 ## Why Do We Save So Much Stuff?
 
 We live in an era where information is abundant and constantly being shared across various platforms. Social media, news sites, blogs, and forums all contribute to this information overload. As a result, we often find ourselves saving articles, posts, and links with the intention of reading them later or referring back to them when needed. Here are a few reasons why we tend to save so much content:
 
-1. **Information Overload**: With the sheer volume of information available, it's impossible to consume everything in real-time. Saving content allows us to manage this overload and prioritize what we read and when.
-2. **Valuable Insights**: Platforms like LinkedIn are rich with professional insights, tips, and knowledge shared by industry experts. Saving these posts helps us to build a personal library of valuable resources.
-3. **Future Reference**: Whether it's a helpful tutorial, an insightful article, or a motivational quote, saving content ensures that we can easily reference it in the future.
+1. **Information Overload**: With the sheer volume of information available, it's impossible to consume everything in real-time. Saving content allows us to manage this overload and prioritize what we read and when (at least I try).
+3. **Future Reference**: Whether it's a helpful tutorial, an insightful article, saving content ensures that we can easily reference it in the future.
 4. **Content Curation**: For professionals who manage blogs, newsletters, or social media accounts, saving relevant content is crucial for curation and sharing with their audience.
+
+![](https://i.imgflip.com/5w6kg5.jpg)
+(same thing happens with 'save to read latter')
 
 However, without a proper system to manage these saved items, they can quickly become overwhelming. This is where automation tools can help.
 
@@ -30,6 +32,9 @@ Before we dive in, make sure you have the following tools installed:
 2. **Selenium**: Selenium is a powerful tool for controlling web browsers through programs and performing browser automation.
 3. **BeautifulSoup**: BeautifulSoup is a library used for parsing HTML and XML documents.
 4. **Pandas**: Pandas is a data manipulation and analysis library for Python.
+
+   ![](https://i.imgflip.com/5w6kg5.jpg)
+(same thing happens with 'save to read latter')
 
 You can install the necessary libraries using pip:
 
@@ -45,6 +50,8 @@ For this project, we'll use Visual Studio Code (VS Code), a popular and powerful
 
 ## Step-by-Step Guide
 First, we need to set up Selenium to control the browser. We’ll initialize the WebDriver, log into LinkedIn, navigate to the saved posts page, and scroll to ensure all posts are loaded.
+
+
 
 ```
 from selenium import webdriver
@@ -114,7 +121,10 @@ driver.quit()
 
 ## 2. Parsing HTML with BeautifulSoup
 
-Next, we’ll parse the saved HTML file and extract the necessary data using BeautifulSoup.
+Next, we’ll parse the saved HTML file and extract the necessary data using BeautifulSoup. To identify the correct HTML elements, we used [Greg Philps](https://www.linkedin.com/feed/update/urn:li:activity:7211666232737964032/)'  LinkedIn post for inspection. This helped us determine the fields we needed to extract.
+
+While inspecting the elements, we found that extracting the date didn't work perfectly, but the other fields were successfully retrieved.
+![](https://i.imgur.com/9evL7IF.png)
 
 ```
 # Read the saved HTML file and parse it
