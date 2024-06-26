@@ -1,16 +1,10 @@
 ---
-title: "Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup"
-description: "tech"
-date: "2024-06-26"
-categories:
-  - "tech"
-tags:
-  - "tech"
-  - "vs code"
-  - "selemiun"
-  - "BeautifulSoup"
-  - "linkedin"
-  - "python"
+title: Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
+description: Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
+date: 2024-06-26
+categories: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
+tags: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
+
 ---
 
 ## Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
