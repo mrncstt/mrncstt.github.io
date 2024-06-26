@@ -45,7 +45,7 @@ Good practices:
 
 
 
-![](link here)
+<!-- ![](link here) -->
 
 
 
