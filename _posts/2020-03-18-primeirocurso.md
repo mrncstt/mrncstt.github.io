@@ -11,7 +11,7 @@ tags: [PowerBI, Curso, Aprendizado]
 
 
 
-Eu tive a oportunidade de ministrar um curso sobre análise de dados usando o [Excel](https://products.office.com/pt-br/excel) e [Power B.I.](https://powerbi.microsoft.com/pt-br/) com mais dois colegas de curso (cursamos [Engenharia de Produção na UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029), o [Erick Lima]() e o [Pablo Santos](). Antes de dar o curso eu pedi umas dicas as meninas do [PyLadies Natal](https://pyladiesnatal.github.io/) e a [Gabi Cavalcante]() escreveu um texto resumindo algumas dicas que elas me deram.
+Eu tive a oportunidade de ministrar um curso sobre análise de dados usando o [Excel](https://products.office.com/pt-br/excel) e [Power B.I.](https://powerbi.microsoft.com/pt-br/) com mais dois colegas de curso (cursamos [Engenharia de Produção na UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029)), o [Erick Lima]() e o [Pablo Santos](). Antes de dar o curso eu pedi umas dicas as meninas do [PyLadies Natal](https://pyladiesnatal.github.io/) e a [Gabi Cavalcante]() escreveu um texto resumindo algumas dicas que elas me deram.
 
 Essa jornada de ensino me trouxe diversos desafios e aprendizados de novas práticas, pois ainda tenho muito o que aprender para que eu possa compartilhar o que sei.
 

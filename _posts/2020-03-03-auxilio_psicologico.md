@@ -71,7 +71,7 @@ Para contribuir, [clique aqui](https://github.com/mrncstt/Servico_Psicologico/bl
 
 2.  [oportaln10](https://oportaln10.com.br/faculdade-oferece-atendimento-psicologico-gratuito-em-natal-90859/);
 
-3.  [Tribuna do Norte](http://www.tribunadonorte.com.br/noticia/ufrn-oferece-acompanhamento-psicola-gico-gratuito/374945);
+3.  [Tribuna do Norte](https://www.tribunadonorte.com.br/noticia/ufrn-oferece-acompanhamento-psicola-gico-gratuito/374945);
 
 4.  [UnP](https://unp.br/noticias/servico-de-psicologia-abre-vagas-a-baixo-custo-em-natal/)
 
