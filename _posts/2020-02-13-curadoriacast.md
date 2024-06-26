@@ -1,14 +1,9 @@
 ---
 title: O que é o CuradoriaCast?
 description: O que é o CuradoriaCast?
-date: "2020-02-13"
-categories:]
-- "podcast"
-- "curadoriacast"
-tags:]
-- "curadoriacast"
-- "podcast"
-- "projetos"
+date: 2020-02-13
+categories: [podcast, curadoriacast]
+tags: [curadoriacast, podcast, projetos]
 ---
 
 

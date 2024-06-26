@@ -2,13 +2,8 @@
 title: Seeking insights from a recording using Google Cloud Speech-to-text, Google Colab and ChatGPT
 description: tech
 date: "2024-03-03"
-categories:]
-- "tech"
-tags:]
-- "tech"
-- "google cloud plataform"
-- "google colab"
-- "chatgpt"
+categories: [tech]
+tags: [tech, google cloud plataform, google colab, chatgpt]
 ---
 
 

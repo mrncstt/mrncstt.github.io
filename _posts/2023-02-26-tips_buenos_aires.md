@@ -2,15 +2,8 @@
 title: Como foi a minha viagem para Buenos Aires
 description: Viagem / Dicas
 date: "2023-02-26"
-categories:]
-- "Travel"
-- "Blog"
-tags:]
-- "Travel"
-- "Viagem"
-- "Tips"
-- "Dicas"
-- "BuenosAires"
+categories: [Travel, Blog]
+tags: [Travel, Viagem, Tips, Dicas, BuenosAires]
 ---
 
 

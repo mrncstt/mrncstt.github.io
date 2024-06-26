@@ -1,16 +1,9 @@
 ---
 title: Makeover Monday 2022 Week 35 Power BI Tableau
 description: Makeover Monday 2022 Week 35 Power BI Tableau
-date: "2022-29-08"
-categories:]
-- "makeovermonday"
-- "dataviz"
-- "tableau"
-- "power bi"
-tags:]
-- "makeovermonday"
-- "dataviz"
-- "blog"
+date: 2022-29-08
+categories: [makeovermonday, dataviz, tableau, powerbi]
+tags: [makeovermonday, dataviz, blog]
 ---
 Makeover Monday is a weekly project where participants can recreate a vizualization.
 

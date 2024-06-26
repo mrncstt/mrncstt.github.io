@@ -1,14 +1,9 @@
 ---
 title: O que eu aprendi dando o meu primeiro curso
 description: O que eu aprendi dando o meu primeiro curso
-date: "2020-03-18"
-categories:]
-- "Curso"
-- "Aprendizado"
-tags:]
-- "PowerBI"
-- "Curso"
-- "Aprendizado"
+date: 2020-03-18
+categories: [Curso, Aprendizado]
+tags: [PowerBI, Curso, Aprendizado]
 ---
 
 

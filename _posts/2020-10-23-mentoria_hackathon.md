@@ -1,14 +1,9 @@
 ---
 title: O que eu aprendi sendo mentora
 description: O que eu aprendi sendo mentora
-date: "2020-10-23"
-categories:]
-- "Mentoria"
-- "Hackathon"
-tags:]
-- "Mentoria"
-- "Hackathon"
-- "blog"
+date: 2020-10-23
+categories: [Mentoria, Hackathon]
+tags: [Mentoria, Hackathon, blog]
 ---
 #### Contextualização 
 

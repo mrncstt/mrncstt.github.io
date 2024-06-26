@@ -1,13 +1,9 @@
 ---
 title: Podcasts para aprender francês
 description: Aprender francês
-date: "2021-03-23"
-categories:]
-- "Podcast"
-tags:]
-- "Podcast"
-- "Frances"
-- "Aprender"
+date: 2021-03-23
+categories: [Podcast]
+tags: [Podcast, Frances, Aprender]
 ---
 
 

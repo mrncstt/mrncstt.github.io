@@ -1,14 +1,9 @@
 ---
 title: Nuvem de palavras com Qlik
 description: Como criar uma nuvem de palavras no Qlik
-date: "2020-07-13"
-categories:]
-- "Qlik"
-- "dataviz"
-tags:]
-- "Qlik"
-- "dataviz"
-- "blog"
+date: 2020-07-13
+categories: [Qlik, dataviz]
+tags: [Qlik, dataviz, blog]
 ---
 #### Contextualização 
 
