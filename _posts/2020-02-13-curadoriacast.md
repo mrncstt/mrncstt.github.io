@@ -31,7 +31,7 @@ Esperamos que você goste, compartilhe dê seu feedback para a gente.
 
 
 
-#### Baesse – Nas redes sociais [@pbaesse](https://pbaesse.net/).
+#### Baesse – Nas redes sociais [@pbaesse](#).
 
 
 
