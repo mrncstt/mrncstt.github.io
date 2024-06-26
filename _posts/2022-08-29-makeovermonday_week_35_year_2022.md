@@ -1,7 +1,7 @@
 ---
 title: Makeover Monday 2022 Week 35 Power BI Tableau
 description: Makeover Monday 2022 Week 35 Power BI Tableau
-date: 2022-29-08
+date: 2022-08-29
 categories: [makeovermonday, dataviz, tableau, powerbi]
 tags: [makeovermonday, dataviz, blog]
 ---
