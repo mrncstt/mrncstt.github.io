@@ -1,13 +1,9 @@
 ---
-title: "Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valor social?"
-description: "atendimento psicológico"
-date: "2020-03-03"
-categories:
-  - "psicologia"
-  - "atendimento psicológico"
-tags:
-  - "psicologia"
-  - "saude_mental"
+title: Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valor social?
+description: atendimento psicológico
+date: 2020-03-03
+categories: [psicologia, atendimento psicológico]
+tags: [psicologia, saude_mental]
 ---
 
 ## Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valor social?
