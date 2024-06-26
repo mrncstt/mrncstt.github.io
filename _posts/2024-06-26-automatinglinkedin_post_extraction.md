@@ -7,7 +7,7 @@ tags: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
 
 ---
 
-## Automating LinkedIn Post Extraction Using Selenium and BeautifulSoup
+## Automating LinkedIn post extraction using Selenium and BeautifulSoup
 
 We often come across valuable content that we want to save and revisit later. LinkedIn, a popular professional networking platform, offers a "Saved Posts" feature for this purpose. However, managing these saved posts can become cumbersome. In this tutorial, we’ll walk through how to automate the extraction of saved LinkedIn posts using Selenium and BeautifulSoup, and store the data in a CSV file for easy access and analysis.
 
