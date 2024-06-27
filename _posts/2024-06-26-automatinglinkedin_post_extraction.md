@@ -1,6 +1,6 @@
 ---
 title: Automating LinkedIn post extraction using Selenium and BeautifulSoup
-description: Automating LinkedIn post extraction ssing Selenium and BeautifulSoup
+description: Automating LinkedIn post extraction using Selenium and BeautifulSoup
 date: 2024-06-26
 categories: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
 tags: [tech, vs code, selemiun, Beautiful Soup, Linkedin]
@@ -44,6 +44,11 @@ Additionally, download the appropriate ChromeDriver for your Chrome version from
 
 
 For this project, we'll use Visual Studio Code (VS Code), a popular and powerful code editor. You can download VS Code from [here](https://code.visualstudio.com/docs/?dv=win64user).
+
+## Account Security
+
+For the purpose of developing and testing the automation script, I temporarily disabled the two-step verification on my LinkedIn account. After successfully setting up and verifying the script, I re-enabled the two-step verification to ensure the security of my account.
+
 
 ## Step-by-Step Guide
 First, we need to set up Selenium to control the browser. We’ll initialize the WebDriver, log into LinkedIn, navigate to the saved posts page, and scroll to ensure all posts are loaded.
