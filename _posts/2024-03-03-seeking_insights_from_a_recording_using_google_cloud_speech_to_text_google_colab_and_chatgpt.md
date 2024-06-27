@@ -68,7 +68,6 @@ def transcribe_audio(gcs_uri, output_path):
         sample_rate_hertz=16000,
         language_code="en-US",
     )
-
     response = client.recognize(config=config, audio=audio)
 
     with open(output_path, 'w') as file:
@@ -79,26 +78,26 @@ def transcribe_audio(gcs_uri, output_path):
 gcs_uri = 'gs://bucket-name/mentorship.mp3'
 transcription_output_path = 'audio.txt'
 transcribe_audio(gcs_uri, transcription_output_path)
-
 ```
 
 Audio Configuration:
 
- - Audio File: MP3
- - Sample Rate: 44100 Hz
- - Channel Count: 2
- - Billed Audio Time: 31:57
- - Transcription Time: 11:42.8
+   - Audio File: MP3
+   - Sample Rate: 44100 Hz
+   - Channel Count: 2
+   - Billed Audio Time: 31:57
+   - Transcription Time: 11:42.8
+
 Transcription Options:
 
- - Language Code: en-US
- - Transcription Model: Long
- - API Version: v1p1beta1
- - Region: Global
- - Word Confidence: Enabled
- - Automatic Punctuation: Enabled
- - Transcription Accuracy:
- - Transcript with a confidence level of 0.83
+   - Language Code: en-US
+   - Transcription Model: Long
+   - API Version: v1p1beta1
+   - Region: Global
+   - Word Confidence: Enabled
+   - Automatic Punctuation: Enabled
+   - Transcription Accuracy:
+   - Transcript with a confidence level of 0.83
 
 ```
    if you good afternoon, I don't know where exactly you are based on but
