@@ -121,7 +121,7 @@ driver.quit()
 
 ```
 
-## 2. Parsing HTML with BeautifulSoup
+## Parsing HTML with BeautifulSoup
 
 Next, we’ll parse the saved HTML file and extract the necessary data using BeautifulSoup. To identify the correct HTML elements, we used [Greg Philps](https://www.linkedin.com/feed/update/urn:li:activity:7211666232737964032/) LinkedIn post for inspection. This helped us determine the fields we needed to extract.
 
