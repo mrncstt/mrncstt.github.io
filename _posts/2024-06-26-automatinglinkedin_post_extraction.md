@@ -33,14 +33,11 @@ Before we dive in, make sure you have the following tools installed:
 3. **BeautifulSoup**: BeautifulSoup is a library used for parsing HTML and XML documents.
 4. **Pandas**: Pandas is a data manipulation and analysis library for Python.
 
-   ![](https://i.imgflip.com/5w6kg5.jpg)
-(same thing happens with 'save to read latter')
 
 You can install the necessary libraries using pip:
 
 ```sh
 pip install selenium beautifulsoup4 pandas
-
 ```
 Additionally, download the appropriate ChromeDriver for your Chrome version from [here](https://googlechromelabs.github.io/chrome-for-testing/#stable).
 ![](https://i.imgur.com/0JJKMSr.png)
@@ -53,7 +50,7 @@ First, we need to set up Selenium to control the browser. We’ll initialize the
 
 
 
-```
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -121,12 +118,13 @@ driver.quit()
 
 ## 2. Parsing HTML with BeautifulSoup
 
-Next, we’ll parse the saved HTML file and extract the necessary data using BeautifulSoup. To identify the correct HTML elements, we used [Greg Philps](https://www.linkedin.com/feed/update/urn:li:activity:7211666232737964032/)'  LinkedIn post for inspection. This helped us determine the fields we needed to extract.
+Next, we’ll parse the saved HTML file and extract the necessary data using BeautifulSoup. To identify the correct HTML elements, we used [Greg Philps](https://www.linkedin.com/feed/update/urn:li:activity:7211666232737964032/) LinkedIn post for inspection. This helped us determine the fields we needed to extract.
 
 While inspecting the elements, we found that extracting the date didn't work perfectly, but the other fields were successfully retrieved.
+
 ![](https://i.imgur.com/9evL7IF.png)
 
-```
+```python
 # Read the saved HTML file and parse it
 with open(saved_file, 'r', encoding='utf-8') as file:
     soup = BeautifulSoup(file, 'html.parser')
