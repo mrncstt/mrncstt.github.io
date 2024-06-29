@@ -1,6 +1,3 @@
-
-
-
 ---
 title: Word Cloud with Qlik
 description: How to create a word cloud in Qlik
