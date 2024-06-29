@@ -2,48 +2,48 @@
 title: Makeover Monday 2020 W/2
 description: Makeover Monday 2020 W/2
 date: 2020-01-14
-categories: [makeovermonday,dataviz]
-tags: [makeovermonday, dataviz, blog]
+categories: [makeovermonday, dataviz, data visualization]
+tags: [makeovermonday, dataviz, data visualization]
 ---
-O Makeover Monday é um projeto em forma de dashboard que é publicado por algum dos participantes e deve ser refeito por quem desejar. Semanalmente o exemplo de dataset é publicado no site.
+Makeover Monday is a project in the form of a dashboard that is published by one of the participants and must be redone by anyone who wishes. The dataset example is published weekly on the website.
 
 ![](https://miro.medium.com/max/641/1*5K4uFM-b4QO7-Ezw_lSHlw.png)
 
-#### O tema da semana 2 é: Uso de pesticidas 
-Os EUA ficam atrás de outras nações agrícolas na proibição de pesticidas nocivos. Quatro dos maiores produtores agrícolas do mundo são EUA, UE (União Européia), China e Brasil. Cada um possui sistemas reguladores de pesticidas separados e distintos, projetados para proteger, em graus variados, os seres humanos e o meio ambiente. Uma pesquisa realizada em 2016 concluiu que 27,3% dos pesticidas usados ​​pelos EUA, sendo 328 M de libras (aproximadamente 148.7 M de Kilos), são proibidos em pelo menos uma das outras nações. Existem 85 pesticidas aprovados pelos EUA, que são proibidos na UE, Brasil ou China.
+#### The theme for week 2 is: Pesticide Use
+The US lags behind other agricultural nations in banning harmful pesticides. Four of the world's largest agricultural producers are the USA, EU (European Union), China, and Brazil. Each has separate and distinct pesticide regulatory systems designed to protect, to varying degrees, humans and the environment. A 2016 survey found that 27.3% of pesticides used by the US, amounting to 328 million pounds (approximately 148.7 million kilograms), are banned in at least one of the other nations. There are 85 pesticid...
 
-## Versão original
+## Original Version
 
- Você pode conferir a versão original aqui.
+You can check out the original version here.
 
 ![](https://miro.medium.com/max/685/1*pE_EHv6m1C6WTcVd4vOnHQ.png)
 
- Boas práticas:
-- Comparativo centralizado
-- Simplificação da legenda
+Good practices:
+- Centralized comparison
+- Simplified legend
 
-## Minha versão
-#### Como desenvolvi?
+## My Version
+#### How did I develop it?
 
-Escolhi o Power BI por ser uma ferramenta a qual tenho mais familiaridade e pela facilidade de acesso externo. A medida original do uso de pesticida estava em libra, eu realizei a conversão adicionando uma coluna para dar o resultado em Kg.
+I chose Power BI because it is a tool I am more familiar with and for its ease of external access. The original measure of pesticide use was in pounds, so I performed the conversion by adding a column to give the result in kilograms.
 
 ![](https://miro.medium.com/max/356/1*RgC0bgDYO3A5m077y__nVQ.png)
 ![](https://miro.medium.com/max/808/1*WvV_G9DdwcxeEODP3xDTrQ.png)
 
-## Resultado
+## Result
 
 ![](https://miro.medium.com/max/863/1*Kd5B_XwmWRczrdroMLENag.png)
 
-Eu criei medidas usando DAX para dar o resultado individual usando elementos de cartão, a fórmula está no quadro a seguir:
+I created measures using DAX to give the individual result using card elements. The formula is as follows:
 
 ```
-brazil = CALCULATE(SUM(Countries[Kg. Pesticides Used in USA Agriculture]);Countries[Texto Após o Delimitador] = "BRA")
+brazil = CALCULATE(SUM(Countries[Kg. Pesticides Used in USA Agriculture]), Countries[Texto Após o Delimitador] = "BRA")
 ```
 
-## Ponto que queria mostrar:
-  - Resultado em Kg
-  - Comparativos separados
+## Points I wanted to show:
+- Result in kilograms
+- Separate comparisons
 
 ## Links
-- O link sobre o Make Over Monday desta semana está [aqui](https://data.world/makeovermonday/2020w2).
-- O link para a minha visualização feita no Power BI está [aqui](https://app.powerbi.com/view?r=eyJrIjoiMDAzNDk0YzctNTZjZS00ZTM2LTg4NGUtZTkwZTJmYTg3NjUwIiwidCI6ImRjYmYyYTFmLTk1MzItNGQ1Ni1hYzQxLTU2MTVlMzhlNTBiNyJ9).
+- The link to this week's Makeover Monday is [here](https://data.world/makeovermonday/2020w2).
+- The link to my visualization made in Power BI is [here](https://app.powerbi.com/view?r=eyJrIjoiMDAzNDk0YzctNTZjZS00ZTM2LTg4NGUtZTkwZTJmYTg3NjUwIiwidCI6ImRjYmYyYTFmLTk1MzItNGQ1Ni1hYzQxLTU2MTVlMzhlNTBiNyJ9).
