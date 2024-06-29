@@ -1,10 +1,9 @@
-
 ---
 title: Word Cloud with Qlik
 description: How to create a word cloud in Qlik
 date: 2020-07-13
-categories: [Qlik, dataviz]
-tags: [Qlik, dataviz, blog]
+categories: [Qlik, dataviz, data visualization]
+tags: [Qlik, dataviz, data visualization]
 ---
 #### Contextualization
 
