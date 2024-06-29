@@ -1,8 +1,8 @@
 ---
 title: Makeover Monday 2022 Week 35 
-description: Makeover Monday 2022 Week 35 Power BI Tableau
+description: Makeover Monday 2022 Week 35 Tableau
 date: 2022-08-29
-categories: [makeovermonday, dataviz, tableau, powerbi]
+categories: [makeovermonday, dataviz, tableau]
 tags: [makeovermonday, dataviz, blog]
 ---
 Makeover Monday is a weekly project where participants can recreate a visualization.
@@ -23,7 +23,7 @@ Good practices:
 ## My version
 
 #### How did I develop it?
-I used Power BI to create my version of the visualization. Power BI is a tool I am very comfortable with, and it provides a lot of flexibility for creating detailed and interactive visualizations. Here are the steps I followed:
+I used Tableau to create my version of the visualization. Tableau is a tool I am very comfortable with, and it provides a lot of flexibility for creating detailed and interactive visualizations. Here are the steps I followed:
 
 1. **Data Import**: I imported the dataset provided for this Makeover Monday challenge into Tableau.
 2. **Data Cleaning**: I checked for any inconsistencies or missing values in the dataset and cleaned the data as needed.
