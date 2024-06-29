@@ -1,6 +1,6 @@
 ---
-title: Makeover Monday 2022 Week 35 
-description: Makeover Monday 2022 Week 35 Tableau
+title: Make over Monday 2022 W/35 
+description:  Make over Monday 2022 W/35 
 date: 2022-08-29
 categories: [makeovermonday, dataviz, tableau]
 tags: [makeovermonday, dataviz, blog]
