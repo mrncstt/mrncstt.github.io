@@ -2,8 +2,8 @@
 title: How was my trip to Buenos Aires
 description: Travel / Tips
 date: "2023-02-26"
-categories: [Travel, Blog]
-tags: [Travel, Tips, BuenosAires]
+categories: [Travel,  Tips, Buenos Aires]
+tags: [Travel, Tips, Buenos Aires]
 ---
 
 Traveling to Buenos Aires for 33 days was a unique experience in my life, but it was also a bit challenging to plan. However, with proper planning and organization, I managed to make this trip a reality. If you're thinking of going to Buenos Aires, here's a step-by-step guide to help you (even if it's a shorter trip).
