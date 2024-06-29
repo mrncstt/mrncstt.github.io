@@ -1,88 +1,47 @@
+
 ---
-title: Nuvem de palavras com Qlik
-description: Como criar uma nuvem de palavras no Qlik
+title: Word Cloud with Qlik
+description: How to create a word cloud in Qlik
 date: 2020-07-13
 categories: [Qlik, dataviz]
 tags: [Qlik, dataviz, blog]
 ---
-#### Contextualização 
+#### Contextualization
 
+I worked as a data analyst at Grupo Vila, a company in the funeral sector that offers funeral services and products, cemetery services, and funeral assistance plans. Within the organization, there are various projects, and among them is "Morada da Memória," an online memorial that features stories from family and friends of loved ones who have passed away. Its goal is to preserve memories and perpetuate emotions.
 
+![Memorial](https://miro.medium.com/max/700/1*wEHOfAw9XC3ysz4lVacwag.png)
 
-Eu trabalhei como analista de dados no Grupo Vila, uma empresa do setor funerário que oferta serviços e produtos funerários, cemiteriais e planos de de assistência funerária. Na organização existem diversos projetos e dentro deles existe o Morada da Memória que é um memorial online que traz relatos de familiares e amigos(as) de pessoas queridas que já partiram e tem como objetivo preservar memórias e perpetuar emoções.
+#### How was it done?
 
+At Grupo Morada, Qlik is used as a Business Intelligence tool. We migrated from the View version to Cloud. This version offers full-text search across all fields. Working with analysis has always meant visually interacting with the data.
 
+But what if it were possible to directly ask questions and gain insights from the tool?
 
+![Qlik Interface](https://miro.medium.com/max/355/1*TvtbVl4wk7oXurjsE1rmYQ.png)
 
+Since the February 2020 version, there have been a series of improvements in NLP (natural language processing) mechanisms, developed to better detect patterns and generate more relevant suggestions. To achieve this, we thought of gaining insights from the comment fields on the Morada da Memória site to understand what people are saying most about their loved ones.
 
-![](https://miro.medium.com/max/700/1*wEHOfAw9XC3ysz4lVacwag.png)
+![NLP Qlik](https://miro.medium.com/max/700/1*eojhz0x-ZlJmypJx_1r-rw.png)
 
+After connecting to the MySQL database and converting the data into a QVD file, the data was loaded into the application.
 
+![Qlik Load](https://miro.medium.com/max/490/1*REkstcGUF6miOOrczergSw.png)
 
-#### Como foi feito? 
+To split the words, I used the SubField function with a space (' ') parameter to divide each word, and TRIM to remove any extra spaces.
 
-No Grupo Vila o Qlik é utilizado como ferramenta de Business Intelligence. Lá migramos da versão do View para Cloud. Nessa versão é oferecida a pesquisa de texto completo em todos os campos. Trabalhar com análises sempre significou interagir visualmente.
-
-
-
-Mas e se fosse possível tirar dúvidas e insights diretamente com a ferramenta?
-
-
-
-![](https://miro.medium.com/max/355/1*TvtbVl4wk7oXurjsE1rmYQ.png)
-
-
-
-
-
-
-
-Desde a versão de Fev/2020 ocorreram uma série de aprimoramentos nos mecanismos de NLP (processamento de linguagem natural) um mecanismo desenvolvido para melhor detecção de padrões, gerando sugestões mais relevantes. Para isso pensamos em insight a partir dos campos de comentários que são realizados no site do Morada da Memória para entender o que as pessoas mais dizem sobre seus entes.
-
-
-
-![](https://miro.medium.com/max/700/1*eojhz0x-ZlJmypJx_1r-rw.png)
-
-
-
-
-
-Após a conexão com o banco MySQL e carga de dados convertidos em um arquivo QVD, foi realizada a carga dos dados para o aplicativo.
-
-
-
-![](https://miro.medium.com/max/490/1*REkstcGUF6miOOrczergSw.png)
-
-
-
-Para poder dividir as palavras, eu usei a função SubField com parâmetro de espaço (‘ ’) para que dessa forma fosse dividida cada palavra e TRIM para remover qualquer outro espaço que pudesse ficar.
-
-
-
-Com as palavras separadas eu criei um script para contas palavras que não estivessem em uma lista de elementos de coesão (exemplo: e, a, o, ou, ainda que) que criamos, pois não seriam informações pertinentes no momento.
+With the words separated, I created a script to count words that were not in a list of cohesive elements (e.g., and, the, or) that we created, as these would not be pertinent information at the moment.
 
 ```sql
-
-    =Count({<WORDS-={‘E’,’DE’…}>}WORDS) | Fórmula para contagem dos distintos
-
+=Count({<WORDS-={‘AND’,’OF’…}>}WORDS) | Formula for counting distinct words
 ```
 
+We then inserted tags/keywords into the variable that performs the counting so it could also be used in the search field.
 
+![Qlik Script](https://miro.medium.com/max/579/1*atSPDH3zOGeMUPGiRU6uqw.png)
 
-E inserimos tags /palavras-chave a variável que realiza a contabilização e para que também possa ser usado no campo de pesquisa
+#### Result
 
+![Word Cloud Result](https://miro.medium.com/max/674/1*PMJZwpcV33OJSoZWeqvcpg.png)
 
-
-![](https://miro.medium.com/max/579/1*atSPDH3zOGeMUPGiRU6uqw.png)
-
-
-
-#### Resultado 
-
-![](https://miro.medium.com/max/674/1*PMJZwpcV33OJSoZWeqvcpg.png)
-
-
-
-A análise de sentimentos dessas palavras foi realizada como um tópico adicional dentro do painel em que ele está inserido, mas nos fornece algumas umas ideias muito interessantes de como essas recordações são trazidas à memória.
-
-
+Sentiment analysis of these words was performed as an additional topic within the dashboard where it is inserted, providing us with some very interesting ideas about how these memories are brought to mind.
