@@ -7,7 +7,7 @@ tags: [Qlik, dataviz, data visualization]
 ---
 #### Contextualization
 
-I worked as a data analyst at Grupo Vila, a company in the funeral sector that offers funeral services and products, cemetery services, and funeral assistance plans. Within the organization, there are various projects, and among them is "Morada da Memória," an online memorial that features stories from family and friends of loved ones who have passed away. Its goal is to preserve memories and perpetuate emotions.
+I worked as a data analyst at Grupo Morada, a company in the funeral sector that offers funeral services and products, cemetery services, and funeral assistance plans. Within the organization, there are various projects, and among them is "Morada da Memória," an online memorial that features stories from family and friends of loved ones who have passed away. Its goal is to preserve memories and perpetuate emotions.
 
 ![Memorial](https://miro.medium.com/max/700/1*wEHOfAw9XC3ysz4lVacwag.png)
 
