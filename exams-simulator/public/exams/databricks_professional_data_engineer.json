@@ -1,0 +1,479 @@
+[
+  {
+    "id": "pro-de-001",
+    "question": "What is a key advantage of using Security & Access Control in enterprise data pipelines?",
+    "options": [
+      "Security & Access Control reduces storage costs by compressing data.",
+      "Security & Access Control enables collaboration through real-time dashboards.",
+      "Security & Access Control improves query performance with optimized data formats.",
+      "Security & Access Control automates deployment of machine learning models."
+    ],
+    "answer": [
+      "Security & Access Control improves query performance with optimized data formats."
+    ],
+    "topic": "Security & Access Control"
+  },
+  {
+    "id": "pro-de-002",
+    "question": "What isasdfasdfng Security & Access Control in enterprise data pipelines?",
+    "options": [
+      "Security & Access Coasdfas storage costs by compressing data.",
+      "Security & Access asdary performance with optimized data formats.",
+      "Security & Access Conasdftrol automates deployment of machine learning models."
+    ],
+    "answer": [
+      "Security & Access asdary performance with optimized data formats."
+    ],
+    "topic": "Security & Access Control"
+  },
+  {
+    "id": "pro-de-100",
+    "question": "Which of the following could be used as sources in a stream processing pipeline?",
+    "options": [
+      "change data capture (CDC) feed",
+      "Kafka",
+      "Delta Lake",
+      "IoT devices"
+    ],
+    "answer": [
+      "change data capture (CDC) feed",
+      "Kafka"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-101",
+    "question": "Which of the following statements about propagating deletes with change data feed (CDF) are true?",
+    "options": [
+      "Deletes cannot be processed at the same time as appends and updates.",
+      "Commit messages can be specified as part of the write options using the userMetadata option.",
+      "Deleting data will create new data files rather than deleting existing data files.",
+      "In order to propagate deletes to a table, a MERGE statement is required in SQL."
+    ],
+    "answer": [
+      "Commit messages can be specified as part of the write options using the userMetadata option.",
+      "Deleting data will create new data files rather than deleting existing data files."
+    ],
+    "topic": "Change Data Feed"
+  },
+  {
+    "id": "pro-de-102",
+    "question": "Which of the following are considerations to keep in mind when choosing between micro-batch and continuous execution mode?",
+    "options": [
+      "Desired latency",
+      "Total cost of operation (TCO)",
+      "Maximum throughput",
+      "Cloud object storage"
+    ],
+    "answer": [
+      "Desired latency",
+      "Maximum throughput"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-103",
+    "question": "Which of the following is a valid method in PySpark?",
+    "options": [
+      ".load()",
+      ".print()",
+      ".return()",
+      ".merge()"
+    ],
+    "answer": [
+      ".load()"
+    ],
+    "topic": "PySpark"
+  },
+  {
+    "id": "pro-de-104",
+    "question": "Which type of stream processing execution mode supports both continuous and unbounded data?",
+    "options": [
+      "continuous and bounded",
+      "continuous and unbounded",
+      "micro-batch and unbounded",
+      "micro-batch and bounded"
+    ],
+    "answer": [
+      "continuous and unbounded"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-105",
+    "question": "What is a recommended pattern when building medallion architecture with streaming live tables and streaming tables?",
+    "options": [
+      "Use streaming live tables for raw data and streaming tables for bronze, silver, and gold quality data.",
+      "Use streaming tables for bronze quality data and streaming live tables for silver and gold quality data.",
+      "Use streaming live tables for bronze quality data and streaming tables for silver and gold quality data.",
+      "Use streaming tables for raw data and streaming live tables for bronze, silver, and gold quality data."
+    ],
+    "answer": [
+      "Use streaming live tables for bronze quality data and streaming tables for silver and gold quality data."
+    ],
+    "topic": "Medallion Architecture"
+  },
+  {
+    "id": "pro-de-151",
+    "question": "Which of the following could be used as sources in a stream processing pipeline?",
+    "options": [
+      "change data capture (CDC) feed",
+      "Kafka",
+      "Delta Lake",
+      "IoT devices"
+    ],
+    "answer": [
+      "change data capture (CDC) feed",
+      "Kafka"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-152",
+    "question": "Which of the following terms refers to irreversibly altering personal data so that a data subject can no longer be identified?",
+    "options": [
+      "Tokenization",
+      "Pseudonymization",
+      "Anonymization",
+      "Binning"
+    ],
+    "answer": [
+      "Anonymization"
+    ],
+    "topic": "Data Privacy"
+  },
+  {
+    "id": "pro-de-153",
+    "question": "Which of the following is a regulatory compliance program specifically for Europe?",
+    "options": [
+      "HIPAA",
+      "PCI-DSS",
+      "GDPR",
+      "CCPA"
+    ],
+    "answer": [
+      "GDPR"
+    ],
+    "topic": "Data Privacy"
+  },
+  {
+    "id": "pro-de-154",
+    "question": "Which of the following can be used to obscure personal information by outputting a string of randomized characters?",
+    "options": [
+      "Tokenization",
+      "Categorical generalization",
+      "Binning",
+      "Hashing"
+    ],
+    "answer": [
+      "Tokenization"
+    ],
+    "topic": "Data Privacy"
+  },
+  {
+    "id": "pro-de-155",
+    "question": "Which optimization technique in Delta Lake reduces the number of files read by skipping irrelevant files based on file-level statistics?",
+    "options": [
+      "Data partitioning",
+      "Data skipping with Z-Ordering",
+      "Spark caching",
+      "RDDs"
+    ],
+    "answer": [
+      "Data skipping with Z-Ordering"
+    ],
+    "topic": "Performance Optimization"
+  },
+  {
+    "id": "pro-de-156",
+    "question": "What does the Databricks REST API allow users to do programmatically?",
+    "options": [
+      "Upload notebooks to GitHub",
+      "Manage clusters and jobs",
+      "Analyze data using SQL syntax",
+      "Create dashboards"
+    ],
+    "answer": [
+      "Manage clusters and jobs"
+    ],
+    "topic": "Automation"
+  },
+  {
+    "id": "pro-de-157",
+    "question": "Which CLI is used for managing SQL warehouses in Databricks?",
+    "options": [
+      "Databricks CLI",
+      "Databricks SQL CLI",
+      "Spark CLI",
+      "DBFS CLI"
+    ],
+    "answer": [
+      "Databricks SQL CLI"
+    ],
+    "topic": "Automation"
+  },
+  {
+    "id": "pro-de-158",
+    "question": "Which of the following streaming ingestion patterns is NOT recommended?",
+    "options": [
+      "Using Delta for infinite retention",
+      "Using CDC to replicate tables",
+      "Using Kafka as a bronze table",
+      "Multiplexing streams from shared sources"
+    ],
+    "answer": [
+      "Using Kafka as a bronze table"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-159",
+    "question": "Which method provides irreversible protection of an entire dataset, preventing re-identification?",
+    "options": [
+      "Tokenization",
+      "Pseudonymization",
+      "Anonymization",
+      "Hashing"
+    ],
+    "answer": [
+      "Anonymization"
+    ],
+    "topic": "Data Privacy"
+  },
+  {
+    "id": "pro-de-160",
+    "question": "What is the purpose of checkpointing in Structured Streaming?",
+    "options": [
+      "Reducing data latency",
+      "Improving throughput",
+      "Tracking query progress for fault tolerance",
+      "Buffering streaming data"
+    ],
+    "answer": [
+      "Tracking query progress for fault tolerance"
+    ],
+    "topic": "Streaming"
+  },
+      {
+        "id": "pro-de-161",
+        "question": "What is one benefit of modularizing code in a DLT pipeline?",
+        "options": [
+            "Improves latency of queries",
+            "Reduces storage size",
+            "Enables code reuse and easier maintenance",
+            "Allows access to raw data directly"
+        ],
+        "answer": ["Enables code reuse and easier maintenance"],
+        "topic": "DLT & SWE Practices"
+    },
+    {
+        "id": "pro-de-162",
+        "question": "Which best describes how unit tests are used in DLT pipelines?",
+        "options": [
+            "They monitor cluster health",
+            "They check correctness of ingestion and transformations",
+            "They create dashboards",
+            "They optimize joins between tables"
+        ],
+        "answer": ["They check correctness of ingestion and transformations"],
+        "topic": "DLT & SWE Practices"
+    },
+    {
+        "id": "pro-de-163",
+        "question": "What is the main purpose of using dynamic views in Databricks?",
+        "options": [
+            "To increase read performance",
+            "To enforce access controls and redact data dynamically",
+            "To merge data streams",
+            "To create materialized views"
+        ],
+        "answer": ["To enforce access controls and redact data dynamically"],
+        "topic": "Data Privacy"
+    },
+    {
+        "id": "pro-de-164",
+        "question": "What is one of the main benefits of using Auto Loader in Databricks?",
+        "options": [
+            "Reduces cloud costs by removing old data",
+            "Ingests data incrementally without listing the directory repeatedly",
+            "Creates dashboards from SQL views",
+            "Automatically joins streaming datasets"
+        ],
+        "answer": ["Ingests data incrementally without listing the directory repeatedly"],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-165",
+        "question": "Which of the following is true about Delta Live Tables (DLT)?",
+        "options": [
+            "DLT cannot handle streaming data",
+            "DLT manages data pipeline dependencies and quality",
+            "DLT replaces the need for Unity Catalog",
+            "DLT does not support version control"
+        ],
+        "answer": ["DLT manages data pipeline dependencies and quality"],
+        "topic": "DLT"
+    },
+    {
+        "id": "pro-de-166",
+        "question": "Which streaming trigger processes all available data and then stops?",
+        "options": [
+            "processingTime",
+            "once",
+            "continuous",
+            "interval"
+        ],
+        "answer": ["once"],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-167",
+        "question": "In CI/CD workflows for DLT pipelines, what typically follows committing code?",
+        "options": [
+            "Production release",
+            "Unit testing",
+            "Cluster teardown",
+            "Schema inference"
+        ],
+        "answer": ["Unit testing"],
+        "topic": "DLT & SWE Practices"
+    },
+    {
+        "id": "pro-de-168",
+        "question": "Which is a method for generalizing personal data?",
+        "options": [
+            "Tokenization",
+            "Binning",
+            "Encryption",
+            "Salting"
+        ],
+        "answer": ["Binning"],
+        "topic": "Data Privacy"
+    },
+    {
+        "id": "pro-de-169",
+        "question": "What is a recommended way to monitor data quality in DLT pipelines?",
+        "options": [
+            "Use event logs and SQL views on expectations",
+            "Inspect notebook outputs manually",
+            "Rely on cloud logs only",
+            "Disable automatic expectations"
+        ],
+        "answer": ["Use event logs and SQL views on expectations"],
+        "topic": "DLT"
+    },
+    {
+        "id": "pro-de-170",
+        "question": "Which output mode in Structured Streaming writes the entire updated result table to the sink?",
+        "options": ["Append", "Update", "Complete", "Merge"],
+        "answer": ["Complete"],
+        "topic": "Streaming"
+    },
+        {
+        "id": "pro-de-171",
+        "question": "What is a best practice when using Delta Lake's OPTIMIZE command?",
+        "options": [
+            "Run OPTIMIZE immediately after every write",
+            "Use ZORDER to co-locate related information",
+            "Use OPTIMIZE only on partitioned tables",
+            "OPTIMIZE is only useful for streaming tables"
+        ],
+        "answer": ["Use ZORDER to co-locate related information"],
+        "topic": "Performance Optimization"
+    },
+    {
+        "id": "pro-de-172",
+        "question": "What does the VACUUM command in Delta Lake do?",
+        "options": [
+            "Compresses files for better storage usage",
+            "Deletes obsolete data files and frees storage",
+            "Performs schema enforcement",
+            "Removes all data older than one day"
+        ],
+        "answer": ["Deletes obsolete data files and frees storage"],
+        "topic": "Delta Lake"
+    },
+    {
+        "id": "pro-de-173",
+        "question": "Which of the following transformations are supported in Structured Streaming?",
+        "options": [
+            "select", "filter", "join", "groupBy"
+        ],
+        "answer": ["select", "filter", "join", "groupBy"],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-174",
+        "question": "Why might you use the 'foreachBatch' option in a Structured Streaming query?",
+        "options": [
+            "To visualize data in notebooks",
+            "To save a micro-batch to multiple sinks",
+            "To inspect schema drift",
+            "To avoid using Delta format"
+        ],
+        "answer": ["To save a micro-batch to multiple sinks"],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-175",
+        "question": "What is one key difference between 'Append' and 'Complete' output modes?",
+        "options": [
+            "'Append' mode outputs all rows after every trigger.",
+            "'Complete' mode overwrites the entire output table each trigger.",
+            "'Append' supports aggregations with watermarks.",
+            "'Complete' mode does not require a sink."
+        ],
+        "answer": ["'Complete' mode overwrites the entire output table each trigger."],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-176",
+        "question": "What tool is used in Databricks for fine-grained access control over data?",
+        "options": [
+            "Cluster Policies",
+            "Unity Catalog",
+            "Repos",
+            "Auto Loader"
+        ],
+        "answer": ["Unity Catalog"],
+        "topic": "Security & Access Control"
+    },
+    {
+        "id": "pro-de-177",
+        "question": "Which of the following is a benefit of using Unity Catalog?",
+        "options": [
+            "Lower data latency",
+            "Automatic notebook versioning",
+            "Centralized governance and data lineage",
+            "Automated schema inference"
+        ],
+        "answer": ["Centralized governance and data lineage"],
+        "topic": "Security & Access Control"
+    },
+    {
+        "id": "pro-de-178",
+        "question": "Which Delta Lake feature supports rollback to earlier data versions?",
+        "options": ["Schema Evolution", "Time Travel", "Auto Loader", "Z-Ordering"],
+        "answer": ["Time Travel"],
+        "topic": "Delta Lake"
+    },
+    {
+        "id": "pro-de-179",
+        "question": "Why is idempotency important in streaming pipelines?",
+        "options": [
+            "It reduces compute costs",
+            "It prevents duplicate processing during retries",
+            "It enables schema validation",
+            "It removes invalid records automatically"
+        ],
+        "answer": ["It prevents duplicate processing during retries"],
+        "topic": "Streaming"
+    },
+    {
+        "id": "pro-de-180",
+        "question": "What command in Spark SQL allows you to check the history of a Delta table?",
+        "options": ["DESCRIBE HISTORY", "SHOW TRANSACTIONS", "LIST SNAPSHOTS", "SELECT * FROM METADATA"],
+        "answer": ["DESCRIBE HISTORY"],
+        "topic": "Delta Lake"
+    }
+]
