@@ -1,0 +1,3362 @@
+[
+  {
+    "id": 1,
+    "topic": "Topic 1",
+    "text": "A data organization leader is upset about the data analysis team’s reports being different from the data engineering team’s reports. The leader believes the siloed nature of their organization’s data engineering and data analysis architectures is to blame. Which of the following describes how a data lakehouse could alleviate this issue?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Both teams would autoscale their work as data size evolves"
+      },
+      {
+        "label": "B",
+        "text": "Both teams would use the same source of truth for their work"
+      },
+      {
+        "label": "C",
+        "text": "Both teams would reorganize to report to the same department"
+      },
+      {
+        "label": "D",
+        "text": "Both teams would be able to collaborate on projects in real-time"
+      },
+      {
+        "label": "E",
+        "text": "Both teams would respond more quickly to ad-hoc requests"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 2,
+    "topic": "Topic 1",
+    "text": "Which of the following describes a scenario in which a data team will want to utilize cluster pools?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An automated report needs to be refreshed as quickly as possible."
+      },
+      {
+        "label": "B",
+        "text": "An automated report needs to be made reproducible."
+      },
+      {
+        "label": "C",
+        "text": "An automated report needs to be tested to identify errors."
+      },
+      {
+        "label": "D",
+        "text": "An automated report needs to be version-controlled across multiple collaborators."
+      },
+      {
+        "label": "E",
+        "text": "An automated report needs to be runnable by all stakeholders."
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "topic": "Topic 1",
+    "text": "Which of the following is hosted completely in the control plane of the classic Databricks architecture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Worker node"
+      },
+      {
+        "label": "B",
+        "text": "JDBC data source"
+      },
+      {
+        "label": "C",
+        "text": "Databricks web application"
+      },
+      {
+        "label": "D",
+        "text": "Databricks Filesystem"
+      },
+      {
+        "label": "E",
+        "text": "Driver node"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 4,
+    "topic": "Topic 1",
+    "text": "Which of the following bene\u0000ts of using the Databricks Lakehouse Platform is provided by Delta Lake?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The ability to manipulate the same data using a variety of languages"
+      },
+      {
+        "label": "B",
+        "text": "The ability to collaborate in real time on a single notebook"
+      },
+      {
+        "label": "C",
+        "text": "The ability to set up alerts for query failures"
+      },
+      {
+        "label": "D",
+        "text": "The ability to support batch and streaming workloads"
+      },
+      {
+        "label": "E",
+        "text": "The ability to distribute complex data operations"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 5,
+    "topic": "Topic 1",
+    "text": "Which of the following describes the storage organization of a Delta table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta tables are stored in a single \u0000le that contains data, history, metadata, and other attributes."
+      },
+      {
+        "label": "B",
+        "text": "Delta tables store their data in a single \u0000le and all metadata in a collection of \u0000les in a separate location."
+      },
+      {
+        "label": "C",
+        "text": "Delta tables are stored in a collection of \u0000les that contain data, history, metadata, and other attributes."
+      },
+      {
+        "label": "D",
+        "text": "Delta tables are stored in a collection of \u0000les that contain only the data stored within the table."
+      },
+      {
+        "label": "E",
+        "text": "Delta tables are stored in a single \u0000le that contains only the data stored within the table."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "topic": "Topic 1",
+    "text": "Which of the following code blocks will remove the rows where the value in column age is greater than 25 from the existing Delta table my_table and save the updated table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SELECT * FROM my_table WHERE age > 25;"
+      },
+      {
+        "label": "B",
+        "text": "UPDATE my_table WHERE age > 25;"
+      },
+      {
+        "label": "C",
+        "text": "DELETE FROM my_table WHERE age > 25;"
+      },
+      {
+        "label": "D",
+        "text": "UPDATE my_table WHERE age <= 25;"
+      },
+      {
+        "label": "E",
+        "text": "DELETE FROM my_table WHERE age <= 25;"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 7,
+    "topic": "Topic 1",
+    "text": "A data engineer has realized that they made a mistake when making a daily update to a table. They need to use Delta time travel to restore the table to a version that is 3 days old. However, when the data engineer attempts to time travel to the older version, they are unable to restore the data because the data \u0000les have been deleted. Which of the following explains why the data \u0000les are no longer present?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The VACUUM command was run on the table"
+      },
+      {
+        "label": "B",
+        "text": "The TIME TRAVEL command was run on the table"
+      },
+      {
+        "label": "C",
+        "text": "The DELETE HISTORY command was run on the table"
+      },
+      {
+        "label": "D",
+        "text": "The OPTIMIZE command was nun on the table"
+      },
+      {
+        "label": "E",
+        "text": "The HISTORY command was run on the table"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 8,
+    "topic": "Topic 1",
+    "text": "Which of the following Git operations must be performed outside of Databricks Repos?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Commit"
+      },
+      {
+        "label": "B",
+        "text": "Pull"
+      },
+      {
+        "label": "C",
+        "text": "Push"
+      },
+      {
+        "label": "D",
+        "text": "Clone"
+      },
+      {
+        "label": "E",
+        "text": "Merge"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 9,
+    "topic": "Topic 1",
+    "text": "Which of the following data lakehouse features results in improved data quality over a traditional data lake?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A data lakehouse provides storage solutions for structured and unstructured data."
+      },
+      {
+        "label": "B",
+        "text": "A data lakehouse supports ACID-compliant transactions."
+      },
+      {
+        "label": "C",
+        "text": "A data lakehouse allows the use of SQL queries to examine data."
+      },
+      {
+        "label": "D",
+        "text": "A data lakehouse stores data in open formats."
+      },
+      {
+        "label": "E",
+        "text": "A data lakehouse enables machine learning and arti\u0000cial Intelligence workloads."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to determine whether to use the built-in Databricks Notebooks versioning or version their project using Databricks Repos. Which of the following is an advantage of using Databricks Repos over the Databricks Notebooks versioning?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Databricks Repos automatically saves development progress"
+      },
+      {
+        "label": "B",
+        "text": "Databricks Repos supports the use of multiple branches"
+      },
+      {
+        "label": "C",
+        "text": "Databricks Repos allows users to revert to previous versions of a notebook"
+      },
+      {
+        "label": "D",
+        "text": "Databricks Repos provides the ability to comment on speci\u0000c changes"
+      },
+      {
+        "label": "E",
+        "text": "Databricks Repos is wholly housed within the Databricks Lakehouse Platform"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 11,
+    "topic": "Topic 1",
+    "text": "A data engineer has left the organization. The data team needs to transfer ownership of the data engineer’s Delta tables to a new data engineer. The new data engineer is the lead engineer on the data team. Assuming the original data engineer no longer has access, which of the following individuals must be the one to transfer ownership of the Delta tables in Data Explorer?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Databricks account representative"
+      },
+      {
+        "label": "B",
+        "text": "This transfer is not possible"
+      },
+      {
+        "label": "C",
+        "text": "Workspace administrator"
+      },
+      {
+        "label": "D",
+        "text": "New lead data engineer"
+      },
+      {
+        "label": "E",
+        "text": "Original data engineer"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 12,
+    "topic": "Topic 1",
+    "text": "A data analyst has created a Delta table sales that is used by the entire data analysis team. They want help from the data engineering team to implement a series of tests to ensure the data is clean. However, the data engineering team uses Python for its tests rather than SQL. Which of the following commands could the data engineering team use to access sales in PySpark?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SELECT * FROM sales"
+      },
+      {
+        "label": "B",
+        "text": "There is no way to share data between PySpark and SQL."
+      },
+      {
+        "label": "C",
+        "text": "spark.sql(\"sales\")D. spark.delta.table(\"sales\")"
+      },
+      {
+        "label": "E",
+        "text": "spark.table(\"sales\")"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 13,
+    "topic": "Topic 1",
+    "text": "Which of the following commands will return the location of database customer360?",
+    "options": [
+      {
+        "label": "A",
+        "text": "DESCRIBE LOCATION customer360;"
+      },
+      {
+        "label": "B",
+        "text": "DROP DATABASE customer360;"
+      },
+      {
+        "label": "C",
+        "text": "DESCRIBE DATABASE customer360;"
+      },
+      {
+        "label": "D",
+        "text": "ALTER DATABASE customer360 SET DBPROPERTIES ('location' = '/user'};"
+      },
+      {
+        "label": "E",
+        "text": "USE DATABASE customer360;"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 14,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to create a new table containing the names of customers that live in France. They have written the following command: A senior data engineer mentions that it is organization policy to include a table property indicating that the new table includes personally identi\u0000able information (PII). Which of the following lines of code \u0000lls in the above blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "There is no way to indicate whether a table contains PII."
+      },
+      {
+        "label": "B",
+        "text": "\"COMMENT PII\""
+      },
+      {
+        "label": "C",
+        "text": "TBLPROPERTIES PII"
+      },
+      {
+        "label": "D",
+        "text": "COMMENT \"Contains PII\""
+      },
+      {
+        "label": "E",
+        "text": "PII"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 15,
+    "topic": "Topic 1",
+    "text": "Which of the following bene\u0000ts is provided by the array functions from Spark SQL?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An ability to work with data in a variety of types at once"
+      },
+      {
+        "label": "B",
+        "text": "An ability to work with data within certain partitions and windows"
+      },
+      {
+        "label": "C",
+        "text": "An ability to work with time-related data in speci\u0000ed intervals"
+      },
+      {
+        "label": "D",
+        "text": "An ability to work with complex, nested data ingested from JSON \u0000les"
+      },
+      {
+        "label": "E",
+        "text": "An ability to work with an array of tables for procedural automation"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 16,
+    "topic": "Topic 1",
+    "text": "Which of the following commands can be used to write data into a Delta table while avoiding the writing of duplicate records?",
+    "options": [
+      {
+        "label": "A",
+        "text": "DROP"
+      },
+      {
+        "label": "B",
+        "text": "IGNORE"
+      },
+      {
+        "label": "C",
+        "text": "MERGE"
+      },
+      {
+        "label": "D",
+        "text": "APPEND"
+      },
+      {
+        "label": "E",
+        "text": "INSERT"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 18,
+    "topic": "Topic 1",
+    "text": "A data analyst has a series of queries in a SQL program. The data analyst wants this program to run every day. They only want the \u0000nal query in the program to run on Sundays. They ask for help from the data engineering team to complete this task. Which of the following approaches could be used by the data engineering team to complete this task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They could submit a feature request with Databricks to add this functionality."
+      },
+      {
+        "label": "B",
+        "text": "They could wrap the queries using PySpark and use Python’s control \u0000ow system to determine when to run the \u0000nal query."
+      },
+      {
+        "label": "C",
+        "text": "They could only run the entire program on Sundays."
+      },
+      {
+        "label": "D",
+        "text": "They could automatically restrict access to the source table in the \u0000nal query so that it is only accessible on Sundays."
+      },
+      {
+        "label": "E",
+        "text": "They could redesign the data model to separate the data used in the \u0000nal query into a new table."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "topic": "Topic 1",
+    "text": "A data engineer runs a statement every day to copy the previous day’s sales into the table transactions. Each day’s sales are in their own \u0000le in the location \"/transactions/raw\". Today, the data engineer runs the following command to complete this task: After running the command today, the data engineer notices that the number of records in table transactions has not changed. Which of the following describes why the statement might not have copied any new records into the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The format of the \u0000les to be copied were not included with the FORMAT_OPTIONS keyword."
+      },
+      {
+        "label": "B",
+        "text": "The names of the \u0000les to be copied were not included with the FILES keyword."
+      },
+      {
+        "label": "C",
+        "text": "The previous day’s \u0000le has already been copied into the table."
+      },
+      {
+        "label": "D",
+        "text": "The PARQUET \u0000le format does not support COPY INTO."
+      },
+      {
+        "label": "E",
+        "text": "The COPY INTO statement requires the table to be refreshed to view the copied rows."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 20,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to create a table in Databricks using data from their organization’s existing SQLite database. They run the following command: Which of the following lines of code \u0000lls in the above blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "org.apache.spark.sql.jdbc"
+      },
+      {
+        "label": "B",
+        "text": "autoloader"
+      },
+      {
+        "label": "C",
+        "text": "DELTA"
+      },
+      {
+        "label": "D",
+        "text": "sqlite"
+      },
+      {
+        "label": "E",
+        "text": "org.apache.spark.sql.sqlite"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 21,
+    "topic": "Topic 1",
+    "text": "A data engineering team has two tables. The \u0000rst table march_transactions is a collection of all retail transactions in the month of March. The second table april_transactions is a collection of all retail transactions in the month of April. There are no duplicate records between the tables. Which of the following commands should be run to create a new table all_transactions that contains all records from march_transactions and april_transactions without duplicate records?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CREATE TABLE all_transactions AS SELECT * FROM march_transactions INNER JOIN SELECT * FROM april_transactions;"
+      },
+      {
+        "label": "B",
+        "text": "CREATE TABLE all_transactions AS SELECT * FROM march_transactions UNION SELECT * FROM april_transactions;"
+      },
+      {
+        "label": "C",
+        "text": "CREATE TABLE all_transactions AS SELECT * FROM march_transactions OUTER JOIN SELECT * FROM april_transactions;"
+      },
+      {
+        "label": "D",
+        "text": "CREATE TABLE all_transactions AS SELECT * FROM march_transactions INTERSECT SELECT * from april_transactions;"
+      },
+      {
+        "label": "E",
+        "text": "CREATE TABLE all_transactions AS SELECT * FROM march_transactions MERGE SELECT * FROM april_transactions;"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "topic": "Topic 1",
+    "text": "A data engineer only wants to execute the \u0000nal block of a Python program if the Python variable day_of_week is equal to 1 and the Python variable review_period is True. Which of the following control \u0000ow statements should the data engineer use to begin this conditionally executed code block?",
+    "options": [
+      {
+        "label": "A",
+        "text": "if day_of_week = 1 and review_period:"
+      },
+      {
+        "label": "B",
+        "text": "if day_of_week = 1 and review_period = \"True\":"
+      },
+      {
+        "label": "C",
+        "text": "if day_of_week == 1 and review_period == \"True\":"
+      },
+      {
+        "label": "D",
+        "text": "if day_of_week == 1 and review_period:"
+      },
+      {
+        "label": "E",
+        "text": "if day_of_week = 1 & review_period: = \"True\":"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 23,
+    "topic": "Topic 1",
+    "text": "A data engineer is attempting to drop a Spark SQL table my_table. The data engineer wants to delete all table metadata and data. They run the following command: DROP TABLE IF EXISTS my_table - While the object no longer appears when they run SHOW TABLES, the data \u0000les still exist. Which of the following describes why the data \u0000les still exist and the metadata \u0000les were deleted?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The table’s data was larger than 10 GB"
+      },
+      {
+        "label": "B",
+        "text": "The table’s data was smaller than 10 GB"
+      },
+      {
+        "label": "C",
+        "text": "The table was external"
+      },
+      {
+        "label": "D",
+        "text": "The table did not have a location"
+      },
+      {
+        "label": "E",
+        "text": "The table was managed"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to create a data entity from a couple of tables. The data entity must be used by other data engineers in other sessions. It also must be saved to a physical location. Which of the following data entities should the data engineer create?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Database"
+      },
+      {
+        "label": "B",
+        "text": "Function"
+      },
+      {
+        "label": "C",
+        "text": "View"
+      },
+      {
+        "label": "D",
+        "text": "Temporary view"
+      },
+      {
+        "label": "E",
+        "text": "Table"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 25,
+    "topic": "Topic 1",
+    "text": "A data engineer is maintaining a data pipeline. Upon data ingestion, the data engineer notices that the source data is starting to have a lower level of quality. The data engineer would like to automate the process of monitoring the quality level. Which of the following tools can the data engineer use to solve this problem?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Unity Catalog"
+      },
+      {
+        "label": "B",
+        "text": "Data Explorer"
+      },
+      {
+        "label": "C",
+        "text": "Delta Lake"
+      },
+      {
+        "label": "D",
+        "text": "Delta Live Tables"
+      },
+      {
+        "label": "E",
+        "text": "Auto Loader"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 26,
+    "topic": "Topic 1",
+    "text": "A Delta Live Table pipeline includes two datasets de\u0000ned using STREAMING LIVE TABLE. Three datasets are de\u0000ned against Delta Lake table sources using LIVE TABLE. The table is con\u0000gured to run in Production mode using the Continuous Pipeline Mode. Assuming previously unprocessed data exists and all de\u0000nitions are valid, what is the expected outcome after clicking Start to update the pipeline?",
+    "options": [
+      {
+        "label": "A",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist to allow for additional testing."
+      },
+      {
+        "label": "B",
+        "text": "All datasets will be updated once and the pipeline will persist without any processing. The compute resources will persist but go unused."
+      },
+      {
+        "label": "C",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will be deployed for the update and terminated when the pipeline is stopped."
+      },
+      {
+        "label": "D",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will be terminated."
+      },
+      {
+        "label": "E",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will persist to allow for additional testing."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "topic": "Topic 1",
+    "text": "In order for Structured Streaming to reliably track the exact progress of the processing so that it can handle any kind of failure by restarting and/or reprocessing, which of the following two approaches is used by Spark to record the offset range of the data being processed in each trigger?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Checkpointing and Write-ahead Logs"
+      },
+      {
+        "label": "B",
+        "text": "Structured Streaming cannot record the offset range of the data being processed in each trigger."
+      },
+      {
+        "label": "C",
+        "text": "Replayable Sources and Idempotent Sinks"
+      },
+      {
+        "label": "D",
+        "text": "Write-ahead Logs and Idempotent Sinks"
+      },
+      {
+        "label": "E",
+        "text": "Checkpointing and Idempotent Sinks"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "topic": "Topic 1",
+    "text": "Which of the following describes the relationship between Gold tables and Silver tables?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gold tables are more likely to contain aggregations than Silver tables."
+      },
+      {
+        "label": "B",
+        "text": "Gold tables are more likely to contain valuable data than Silver tables."
+      },
+      {
+        "label": "C",
+        "text": "Gold tables are more likely to contain a less re\u0000ned view of data than Silver tables."
+      },
+      {
+        "label": "D",
+        "text": "Gold tables are more likely to contain more data than Silver tables."
+      },
+      {
+        "label": "E",
+        "text": "Gold tables are more likely to contain truthful data than Silver tables."
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 29,
+    "topic": "Topic 1",
+    "text": "Which of the following describes the relationship between Bronze tables and raw data?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Bronze tables contain less data than raw data \u0000les."
+      },
+      {
+        "label": "B",
+        "text": "Bronze tables contain more truthful data than raw data."
+      },
+      {
+        "label": "C",
+        "text": "Bronze tables contain aggregates while raw data is unaggregated."
+      },
+      {
+        "label": "D",
+        "text": "Bronze tables contain a less re\u0000ned view of data than raw data."
+      },
+      {
+        "label": "E",
+        "text": "Bronze tables contain raw data with a schema applied."
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 30,
+    "topic": "Topic 1",
+    "text": "Which of the following tools is used by Auto Loader process data incrementally?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Checkpointing"
+      },
+      {
+        "label": "B",
+        "text": "Spark Structured Streaming"
+      },
+      {
+        "label": "C",
+        "text": "Data Explorer"
+      },
+      {
+        "label": "D",
+        "text": "Unity Catalog"
+      },
+      {
+        "label": "E",
+        "text": "Databricks SQL"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 31,
+    "topic": "Topic 1",
+    "text": "A data engineer has con\u0000gured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table. The cade block used by the data engineer is below: If the data engineer only wants the query to execute a micro-batch to process data every 5 seconds, which of the following lines of code should the data engineer use to \u0000ll in the blank?",
+    "options": [
+      {
+        "label": "A",
+        "text": "trigger(\"5 seconds\")"
+      },
+      {
+        "label": "B",
+        "text": "trigger()"
+      },
+      {
+        "label": "C",
+        "text": "trigger(once=\"5 seconds\")"
+      },
+      {
+        "label": "D",
+        "text": "trigger(processingTime=\"5 seconds\")"
+      },
+      {
+        "label": "E",
+        "text": "trigger(continuous=\"5 seconds\")"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 32,
+    "topic": "Topic 1",
+    "text": "A dataset has been de\u0000ned using Delta Live Tables and includes an expectations clause: CONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROW What is the expected behavior when a batch of data containing data that violates these constraints is processed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Records that violate the expectation are dropped from the target dataset and loaded into a quarantine table."
+      },
+      {
+        "label": "B",
+        "text": "Records that violate the expectation are added to the target dataset and \u0000agged as invalid in a \u0000eld added to the target dataset."
+      },
+      {
+        "label": "C",
+        "text": "Records that violate the expectation are dropped from the target dataset and recorded as invalid in the event log."
+      },
+      {
+        "label": "D",
+        "text": "Records that violate the expectation are added to the target dataset and recorded as invalid in the event log."
+      },
+      {
+        "label": "E",
+        "text": "Records that violate the expectation cause the job to fail."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "topic": "Topic 1",
+    "text": "Which of the following describes when to use the CREATE STREAMING LIVE TABLE (formerly CREATE INCREMENTAL LIVE TABLE) syntax over the CREATE LIVE TABLE syntax when creating Delta Live Tables (DLT) tables using SQL?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CREATE STREAMING LIVE TABLE should be used when the subsequent step in the DLT pipeline is static."
+      },
+      {
+        "label": "B",
+        "text": "CREATE STREAMING LIVE TABLE should be used when data needs to be processed incrementally."
+      },
+      {
+        "label": "C",
+        "text": "CREATE STREAMING LIVE TABLE is redundant for DLT and it does not need to be used."
+      },
+      {
+        "label": "D",
+        "text": "CREATE STREAMING LIVE TABLE should be used when data needs to be processed through complicated aggregations."
+      },
+      {
+        "label": "E",
+        "text": "CREATE STREAMING LIVE TABLE should be used when the previous step in the DLT pipeline is static."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 34,
+    "topic": "Topic 1",
+    "text": "A data engineer is designing a data pipeline. The source system generates \u0000les in a shared directory that is also used by other processes. As a result, the \u0000les should be kept as is and will accumulate in the directory. The data engineer needs to identify which \u0000les are new since the previous run in the pipeline, and set up the pipeline to only ingest those new \u0000les with each run. Which of the following tools can the data engineer use to solve this problem?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Unity Catalog"
+      },
+      {
+        "label": "B",
+        "text": "Delta Lake"
+      },
+      {
+        "label": "C",
+        "text": "Databricks SQL"
+      },
+      {
+        "label": "D",
+        "text": "Data Explorer"
+      },
+      {
+        "label": "E",
+        "text": "Auto Loader"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 36,
+    "topic": "Topic 1",
+    "text": "A data engineer has three tables in a Delta Live Tables (DLT) pipeline. They have con\u0000gured the pipeline to drop invalid records at each table. They notice that some data is being dropped due to quality concerns at some point in the DLT pipeline. They would like to determine at which table in their pipeline the data is being dropped. Which of the following approaches can the data engineer take to identify the table that is dropping the records?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can set up separate expectations for each table when developing their DLT pipeline."
+      },
+      {
+        "label": "B",
+        "text": "They cannot determine which table is dropping the records."
+      },
+      {
+        "label": "C",
+        "text": "They can set up DLT to notify them via email when records are dropped."
+      },
+      {
+        "label": "D",
+        "text": "They can navigate to the DLT pipeline page, click on each table, and view the data quality statistics."
+      },
+      {
+        "label": "E",
+        "text": "They can navigate to the DLT pipeline page, click on the “Error” button, and review the present errors."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 37,
+    "topic": "Topic 1",
+    "text": "A data engineer has a single-task Job that runs each morning before they begin working. After identifying an upstream data issue, they need to set up another task to run a new notebook prior to the original task. Which of the following approaches can the data engineer use to set up the new task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can clone the existing task in the existing Job and update it to run the new notebook."
+      },
+      {
+        "label": "B",
+        "text": "They can create a new task in the existing Job and then add it as a dependency of the original task."
+      },
+      {
+        "label": "C",
+        "text": "They can create a new task in the existing Job and then add the original task as a dependency of the new task."
+      },
+      {
+        "label": "D",
+        "text": "They can create a new job from scratch and add both tasks to run concurrently."
+      },
+      {
+        "label": "E",
+        "text": "They can clone the existing task to a new Job and then edit it to run the new notebook."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 38,
+    "topic": "Topic 1",
+    "text": "An engineering manager wants to monitor the performance of a recent project using a Databricks SQL query. For the \u0000rst week following the project’s release, the manager wants the query results to be updated every minute. However, the manager is concerned that the compute resources used for the query will be left running and cost the organization a lot of money beyond the \u0000rst week of the project’s release. Which of the following approaches can the engineering team use to ensure the query does not cost the organization any money beyond the \u0000rst week of the project’s release?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can set a limit to the number of DBUs that are consumed by the SQL Endpoint."
+      },
+      {
+        "label": "B",
+        "text": "They can set the query’s refresh schedule to end after a certain number of refreshes."
+      },
+      {
+        "label": "C",
+        "text": "They cannot ensure the query does not cost the organization money beyond the \u0000rst week of the project’s release."
+      },
+      {
+        "label": "D",
+        "text": "They can set a limit to the number of individuals that are able to manage the query’s refresh schedule."
+      },
+      {
+        "label": "E",
+        "text": "They can set the query’s refresh schedule to end on a certain date in the query scheduler."
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 39,
+    "topic": "Topic 1",
+    "text": "A data analysis team has noticed that their Databricks SQL queries are running too slowly when connected to their always-on SQL endpoint. They claim that this issue is present when many members of the team are running small queries simultaneously. They ask the data engineering team for help. The data engineering team notices that each of the team’s queries uses the same SQL endpoint. Which of the following approaches can the data engineering team use to improve the latency of the team’s queries?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can increase the cluster size of the SQL endpoint."
+      },
+      {
+        "label": "B",
+        "text": "They can increase the maximum bound of the SQL endpoint’s scaling range."
+      },
+      {
+        "label": "C",
+        "text": "They can turn on the Auto Stop feature for the SQL endpoint."
+      },
+      {
+        "label": "D",
+        "text": "They can turn on the Serverless feature for the SQL endpoint."
+      },
+      {
+        "label": "E",
+        "text": "They can turn on the Serverless feature for the SQL endpoint and change the Spot Instance Policy to “Reliability Optimized.”"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 40,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to schedule their Databricks SQL dashboard to refresh once per day, but they only want the associated SQL endpoint to be running when it is necessary. Which of the following approaches can the data engineer use to minimize the total running time of the SQL endpoint used in the refresh schedule of their dashboard?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can ensure the dashboard’s SQL endpoint matches each of the queries’ SQL endpoints."
+      },
+      {
+        "label": "B",
+        "text": "They can set up the dashboard’s SQL endpoint to be serverless."
+      },
+      {
+        "label": "C",
+        "text": "They can turn on the Auto Stop feature for the SQL endpoint."
+      },
+      {
+        "label": "D",
+        "text": "They can reduce the cluster size of the SQL endpoint."
+      },
+      {
+        "label": "E",
+        "text": "They can ensure the dashboard’s SQL endpoint is not one of the included query’s SQL endpoint."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 41,
+    "topic": "Topic 1",
+    "text": "A data engineer has been using a Databricks SQL dashboard to monitor the cleanliness of the input data to an ELT job. The ELT job has its Databricks SQL query that returns the number of input records containing unexpected NULL values. The data engineer wants their entire team to be noti\u0000ed via a messaging webhook whenever this value reaches 100. Which of the following approaches can the data engineer use to notify their entire team via a messaging webhook whenever the number of NULL values reaches 100?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can set up an Alert with a custom template."
+      },
+      {
+        "label": "B",
+        "text": "They can set up an Alert with a new email alert destination."
+      },
+      {
+        "label": "C",
+        "text": "They can set up an Alert with a new webhook alert destination."
+      },
+      {
+        "label": "D",
+        "text": "They can set up an Alert with one-time noti\u0000cations."
+      },
+      {
+        "label": "E",
+        "text": "They can set up an Alert without noti\u0000cations."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 42,
+    "topic": "Topic 1",
+    "text": "A single Job runs two notebooks as two separate tasks. A data engineer has noticed that one of the notebooks is running slowly in the Job’s current run. The data engineer asks a tech lead for help in identifying why this might be the case. Which of the following approaches can the tech lead use to identify why the notebook is running slowly as part of the Job?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can navigate to the Runs tab in the Jobs UI to immediately review the processing notebook."
+      },
+      {
+        "label": "B",
+        "text": "They can navigate to the Tasks tab in the Jobs UI and click on the active run to review the processing notebook."
+      },
+      {
+        "label": "C",
+        "text": "They can navigate to the Runs tab in the Jobs UI and click on the active run to review the processing notebook."
+      },
+      {
+        "label": "D",
+        "text": "There is no way to determine why a Job task is running slowly."
+      },
+      {
+        "label": "E",
+        "text": "They can navigate to the Tasks tab in the Jobs UI to immediately review the processing notebook."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 43,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Job with multiple tasks that runs nightly. Each of the tasks runs slowly because the clusters take a long time to start. Which of the following actions can the data engineer perform to improve the start up time for the clusters used for the Job?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can use endpoints available in Databricks SQL"
+      },
+      {
+        "label": "B",
+        "text": "They can use jobs clusters instead of all-purpose clusters"
+      },
+      {
+        "label": "C",
+        "text": "They can con\u0000gure the clusters to be single-node"
+      },
+      {
+        "label": "D",
+        "text": "They can use clusters that are from a cluster pool"
+      },
+      {
+        "label": "E",
+        "text": "They can con\u0000gure the clusters to autoscale for larger data sizes"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 44,
+    "topic": "Topic 1",
+    "text": "A new data engineering team team. has been assigned to an ELT project. The new data engineering team will need full privileges on the database customers to fully manage the project. Which of the following commands can be used to grant full permissions on the database to the new data engineering team?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GRANT USAGE ON DATABASE customers TO team;"
+      },
+      {
+        "label": "B",
+        "text": "GRANT ALL PRIVILEGES ON DATABASE team TO customers;"
+      },
+      {
+        "label": "C",
+        "text": "GRANT SELECT PRIVILEGES ON DATABASE customers TO teams;"
+      },
+      {
+        "label": "D",
+        "text": "GRANT SELECT CREATE MODIFY USAGE PRIVILEGES ON DATABASE customers TO team;"
+      },
+      {
+        "label": "E",
+        "text": "GRANT ALL PRIVILEGES ON DATABASE customers TO team;"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 45,
+    "topic": "Topic 1",
+    "text": "A new data engineering team has been assigned to work on a project. The team will need access to database customers in order to see what tables already exist. The team has its own group team. Which of the following commands can be used to grant the necessary permission on the entire database to the new team?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GRANT VIEW ON CATALOG customers TO team;"
+      },
+      {
+        "label": "B",
+        "text": "GRANT CREATE ON DATABASE customers TO team;"
+      },
+      {
+        "label": "C",
+        "text": "GRANT USAGE ON CATALOG team TO customers;"
+      },
+      {
+        "label": "D",
+        "text": "GRANT CREATE ON DATABASE team TO customers;"
+      },
+      {
+        "label": "E",
+        "text": "GRANT USAGE ON DATABASE customers TO team;"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 46,
+    "topic": "Topic 1",
+    "text": "A data engineer is running code in a Databricks Repo that is cloned from a central Git repository. A colleague of the data engineer informs them that changes have been made and synced to the central Git repository. The data engineer now needs to sync their Databricks Repo to get the changes from the central Git repository. Which of the following Git operations does the data engineer need to run to accomplish this task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Merge"
+      },
+      {
+        "label": "B",
+        "text": "Push"
+      },
+      {
+        "label": "C",
+        "text": "Pull"
+      },
+      {
+        "label": "D",
+        "text": "Commit"
+      },
+      {
+        "label": "E",
+        "text": "Clone"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 47,
+    "topic": "Topic 1",
+    "text": "Which of the following is a bene\u0000t of the Databricks Lakehouse Platform embracing open source technologies?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Cloud-speci\u0000c integrations"
+      },
+      {
+        "label": "B",
+        "text": "Simpli\u0000ed governance"
+      },
+      {
+        "label": "C",
+        "text": "Ability to scale storage"
+      },
+      {
+        "label": "D",
+        "text": "Ability to scale workloads"
+      },
+      {
+        "label": "E",
+        "text": "Avoiding vendor lock-in"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 48,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to use a Delta table as part of a data pipeline, but they do not know if they have the appropriate permissions. In which of the following locations can the data engineer review their permissions on the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Databricks Filesystem"
+      },
+      {
+        "label": "B",
+        "text": "Jobs"
+      },
+      {
+        "label": "C",
+        "text": "Dashboards"
+      },
+      {
+        "label": "D",
+        "text": "Repos"
+      },
+      {
+        "label": "E",
+        "text": "Data Explorer"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 49,
+    "topic": "Topic 1",
+    "text": "Which of the following describes a scenario in which a data engineer will want to use a single-node cluster?",
+    "options": [
+      {
+        "label": "A",
+        "text": "When they are working interactively with a small amount of data"
+      },
+      {
+        "label": "B",
+        "text": "When they are running automated reports to be refreshed as quickly as possible"
+      },
+      {
+        "label": "C",
+        "text": "When they are working with SQL within Databricks SQL"
+      },
+      {
+        "label": "D",
+        "text": "When they are concerned about the ability to automatically scale with larger data"
+      },
+      {
+        "label": "E",
+        "text": "When they are manually running reports with a large amount of data"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 50,
+    "topic": "Topic 1",
+    "text": "A data engineer has been given a new record of data: id STRING = 'a1' rank INTEGER = 6 rating FLOAT = 9.4 Which of the following SQL commands can be used to append the new record to an existing Delta table my_table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "INSERT INTO my_table VALUES ('a1', 6, 9.4)"
+      },
+      {
+        "label": "B",
+        "text": "my_table UNION VALUES ('a1', 6, 9.4)"
+      },
+      {
+        "label": "C",
+        "text": "INSERT VALUES ( 'a1' , 6, 9.4) INTO my_table"
+      },
+      {
+        "label": "D",
+        "text": "UPDATE my_table VALUES ('a1', 6, 9.4)"
+      },
+      {
+        "label": "E",
+        "text": "UPDATE VALUES ('a1', 6, 9.4) my_table"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 51,
+    "topic": "Topic 1",
+    "text": "A data engineer has realized that the data \u0000les associated with a Delta table are incredibly small. They want to compact the small \u0000les to form larger \u0000les to improve performance. Which of the following keywords can be used to compact the small \u0000les?",
+    "options": [
+      {
+        "label": "A",
+        "text": "REDUCE"
+      },
+      {
+        "label": "B",
+        "text": "OPTIMIZE"
+      },
+      {
+        "label": "C",
+        "text": "COMPACTION"
+      },
+      {
+        "label": "D",
+        "text": "REPARTITION"
+      },
+      {
+        "label": "E",
+        "text": "VACUUM"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 52,
+    "topic": "Topic 1",
+    "text": "In which of the following \u0000le formats is data from Delta Lake tables primarily stored?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Delta"
+      },
+      {
+        "label": "B",
+        "text": "CSV"
+      },
+      {
+        "label": "C",
+        "text": "Parquet"
+      },
+      {
+        "label": "D",
+        "text": "JSON"
+      },
+      {
+        "label": "E",
+        "text": "A proprietary, optimized format speci\u0000c to Databricks"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 53,
+    "topic": "Topic 1",
+    "text": "Which of the following is stored in the Databricks customer's cloud account?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Databricks web application"
+      },
+      {
+        "label": "B",
+        "text": "Cluster management metadata"
+      },
+      {
+        "label": "C",
+        "text": "Repos"
+      },
+      {
+        "label": "D",
+        "text": "Data"
+      },
+      {
+        "label": "E",
+        "text": "Notebooks"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 54,
+    "topic": "Topic 1",
+    "text": "Which of the following can be used to simplify and unify siloed data architectures that are specialized for speci\u0000c use cases?",
+    "options": [
+      {
+        "label": "A",
+        "text": "None of these"
+      },
+      {
+        "label": "B",
+        "text": "Data lake"
+      },
+      {
+        "label": "C",
+        "text": "Data warehouse"
+      },
+      {
+        "label": "D",
+        "text": "All of these"
+      },
+      {
+        "label": "E",
+        "text": "Data lakehouse"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 56,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Python notebook in Databricks, but they need to use SQL to accomplish a speci\u0000c task within a cell. They still want all of the other cells to use Python without making any changes to those cells. Which of the following describes how the data engineer can use SQL within a cell of their Python notebook?",
+    "options": [
+      {
+        "label": "A",
+        "text": "It is not possible to use SQL in a Python notebook"
+      },
+      {
+        "label": "B",
+        "text": "They can attach the cell to a SQL endpoint rather than a Databricks cluster"
+      },
+      {
+        "label": "C",
+        "text": "They can simply write SQL syntax in the cell"
+      },
+      {
+        "label": "D",
+        "text": "They can add %sql to the \u0000rst line of the cell"
+      },
+      {
+        "label": "E",
+        "text": "They can change the default language of the notebook to SQL"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 57,
+    "topic": "Topic 1",
+    "text": "Which of the following SQL keywords can be used to convert a table from a long format to a wide format?",
+    "options": [
+      {
+        "label": "A",
+        "text": "TRANSFORM"
+      },
+      {
+        "label": "B",
+        "text": "PIVOT"
+      },
+      {
+        "label": "C",
+        "text": "SUM"
+      },
+      {
+        "label": "D",
+        "text": "CONVERT"
+      },
+      {
+        "label": "E",
+        "text": "WHERE"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 58,
+    "topic": "Topic 1",
+    "text": "Which of the following describes a bene\u0000t of creating an external table from Parquet rather than CSV when using a CREATE TABLE AS SELECT statement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Parquet \u0000les can be partitioned"
+      },
+      {
+        "label": "B",
+        "text": "CREATE TABLE AS SELECT statements cannot be used on \u0000les"
+      },
+      {
+        "label": "C",
+        "text": "Parquet \u0000les have a well-de\u0000ned schema"
+      },
+      {
+        "label": "D",
+        "text": "Parquet \u0000les have the ability to be optimized"
+      },
+      {
+        "label": "E",
+        "text": "Parquet \u0000les will become Delta tables"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 59,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to create a relational object by pulling data from two tables. The relational object does not need to be used by other data engineers in other sessions. In order to save on storage costs, the data engineer wants to avoid copying and storing physical data. Which of the following relational objects should the data engineer create?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Spark SQL Table"
+      },
+      {
+        "label": "B",
+        "text": "View"
+      },
+      {
+        "label": "C",
+        "text": "Database"
+      },
+      {
+        "label": "D",
+        "text": "Temporary view"
+      },
+      {
+        "label": "E",
+        "text": "Delta Table"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 60,
+    "topic": "Topic 1",
+    "text": "A data analyst has developed a query that runs against Delta table. They want help from the data engineering team to implement a series of tests to ensure the data returned by the query is clean. However, the data engineering team uses Python for its tests rather than SQL. Which of the following operations could the data engineering team use to run the query and operate with the results in PySpark?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SELECT * FROM sales"
+      },
+      {
+        "label": "B",
+        "text": "spark.delta.table"
+      },
+      {
+        "label": "C",
+        "text": "spark.sql"
+      },
+      {
+        "label": "D",
+        "text": "There is no way to share data between PySpark and SQL."
+      },
+      {
+        "label": "E",
+        "text": "spark.table"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 61,
+    "topic": "Topic 1",
+    "text": "Which of the following commands will return the number of null values in the member_id column?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SELECT count(member_id) FROM my_table;"
+      },
+      {
+        "label": "B",
+        "text": "SELECT count(member_id) - count_null(member_id) FROM my_table;"
+      },
+      {
+        "label": "C",
+        "text": "SELECT count_if(member_id IS NULL) FROM my_table;"
+      },
+      {
+        "label": "D",
+        "text": "SELECT null(member_id) FROM my_table;"
+      },
+      {
+        "label": "E",
+        "text": "SELECT count_null(member_id) FROM my_table;"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 63,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Python variable table_name that they would like to use in a SQL query. They want to construct a Python code block that will run the query using table_name. They have the following incomplete code block: ____(f\"SELECT customer_id, spend FROM {table_name}\") Which of the following can be used to \u0000ll in the blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "spark.delta.sql"
+      },
+      {
+        "label": "B",
+        "text": "spark.delta.table"
+      },
+      {
+        "label": "C",
+        "text": "spark.table"
+      },
+      {
+        "label": "D",
+        "text": "dbutils.sql"
+      },
+      {
+        "label": "E",
+        "text": "spark.sql"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 64,
+    "topic": "Topic 1",
+    "text": "A data engineer has created a new database using the following command: CREATE DATABASE IF NOT EXISTS customer360; In which of the following locations will the customer360 database be located?",
+    "options": [
+      {
+        "label": "A",
+        "text": "dbfs:/user/hive/database/customer360"
+      },
+      {
+        "label": "B",
+        "text": "dbfs:/user/hive/warehouse"
+      },
+      {
+        "label": "C",
+        "text": "dbfs:/user/hive/customer360"
+      },
+      {
+        "label": "D",
+        "text": "More information is needed to determine the correct response"
+      },
+      {
+        "label": "E",
+        "text": "dbfs:/user/hive/database"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 65,
+    "topic": "Topic 1",
+    "text": "A data engineer is attempting to drop a Spark SQL table my_table and runs the following command: DROP TABLE IF EXISTS my_table; After running this command, the engineer notices that the data \u0000les and metadata \u0000les have been deleted from the \u0000le system. Which of the following describes why all of these \u0000les were deleted?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The table was managed"
+      },
+      {
+        "label": "B",
+        "text": "The table's data was smaller than 10 GB"
+      },
+      {
+        "label": "C",
+        "text": "The table's data was larger than 10 GB"
+      },
+      {
+        "label": "D",
+        "text": "The table was external"
+      },
+      {
+        "label": "E",
+        "text": "The table did not have a location"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 67,
+    "topic": "Topic 1",
+    "text": "In which of the following scenarios should a data engineer use the MERGE INTO command instead of the INSERT INTO command?",
+    "options": [
+      {
+        "label": "A",
+        "text": "When the location of the data needs to be changed"
+      },
+      {
+        "label": "B",
+        "text": "When the target table is an external table"
+      },
+      {
+        "label": "C",
+        "text": "When the source table can be deleted"
+      },
+      {
+        "label": "D",
+        "text": "When the target table cannot contain duplicate records"
+      },
+      {
+        "label": "E",
+        "text": "When the source is not a Delta table"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 69,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to create a table in Databricks using data from a CSV \u0000le at location /path/to/csv. They run the following command: Which of the following lines of code \u0000lls in the above blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "None of these lines of code are needed to successfully complete the task"
+      },
+      {
+        "label": "B",
+        "text": "USING CSV"
+      },
+      {
+        "label": "C",
+        "text": "FROM CSV"
+      },
+      {
+        "label": "D",
+        "text": "USING DELTA"
+      },
+      {
+        "label": "E",
+        "text": "FROM \"path/to/csv\""
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 70,
+    "topic": "Topic 1",
+    "text": "A data engineer has con\u0000gured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table. The code block used by the data engineer is below: If the data engineer only wants the query to process all of the available data in as many batches as required, which of the following lines of code should the data engineer use to \u0000ll in the blank?",
+    "options": [
+      {
+        "label": "A",
+        "text": "processingTime(1)"
+      },
+      {
+        "label": "B",
+        "text": "trigger(availableNow=True)"
+      },
+      {
+        "label": "C",
+        "text": "trigger(parallelBatch=True)"
+      },
+      {
+        "label": "D",
+        "text": "trigger(processingTime=\"once\")"
+      },
+      {
+        "label": "E",
+        "text": "trigger(continuous=\"once\")"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 71,
+    "topic": "Topic 1",
+    "text": "A data engineer has developed a data pipeline to ingest data from a JSON source using Auto Loader, but the engineer has not provided any type inference or schema hints in their pipeline. Upon reviewing the data, the data engineer has noticed that all of the columns in the target table are of the string type despite some of the \u0000elds only including \u0000oat or boolean values. Which of the following describes why Auto Loader inferred all of the columns to be of the string type?",
+    "options": [
+      {
+        "label": "A",
+        "text": "There was a type mismatch between the speci\u0000c schema and the inferred schema"
+      },
+      {
+        "label": "B",
+        "text": "JSON data is a text-based format"
+      },
+      {
+        "label": "C",
+        "text": "Auto Loader only works with string data"
+      },
+      {
+        "label": "D",
+        "text": "All of the \u0000elds had at least one null value"
+      },
+      {
+        "label": "E",
+        "text": "Auto Loader cannot infer the schema of ingested data"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 72,
+    "topic": "Topic 1",
+    "text": "A Delta Live Table pipeline includes two datasets de\u0000ned using STREAMING LIVE TABLE. Three datasets are de\u0000ned against Delta Lake table sources using LIVE TABLE. The table is con\u0000gured to run in Development mode using the Continuous Pipeline Mode. Assuming previously unprocessed data exists and all de\u0000nitions are valid, what is the expected outcome after clicking Start to update the pipeline?",
+    "options": [
+      {
+        "label": "A",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will be terminated."
+      },
+      {
+        "label": "B",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist until the pipeline is shut down."
+      },
+      {
+        "label": "C",
+        "text": "All datasets will be updated once and the pipeline will persist without any processing. The compute resources will persist but go unused."
+      },
+      {
+        "label": "D",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will persist to allow for additional testing."
+      },
+      {
+        "label": "E",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist to allow for additional testing."
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 73,
+    "topic": "Topic 1",
+    "text": "Which of the following data workloads will utilize a Gold table as its source?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A job that enriches data by parsing its timestamps into a human-readable format"
+      },
+      {
+        "label": "B",
+        "text": "A job that aggregates uncleaned data to create standard summary statistics"
+      },
+      {
+        "label": "C",
+        "text": "A job that cleans data by removing malformatted records"
+      },
+      {
+        "label": "D",
+        "text": "A job that queries aggregated data designed to feed into a dashboard"
+      },
+      {
+        "label": "E",
+        "text": "A job that ingests raw data from a streaming source into the Lakehouse"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 74,
+    "topic": "Topic 1",
+    "text": "Which of the following must be speci\u0000ed when creating a new Delta Live Tables pipeline?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A key-value pair con\u0000guration"
+      },
+      {
+        "label": "B",
+        "text": "The preferred DBU/hour cost"
+      },
+      {
+        "label": "C",
+        "text": "A path to cloud storage location for the written data"
+      },
+      {
+        "label": "D",
+        "text": "A location of a target database for the written data"
+      },
+      {
+        "label": "E",
+        "text": "At least one notebook library to be executed"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 75,
+    "topic": "Topic 1",
+    "text": "A data engineer has joined an existing project and they see the following query in the project repository: CREATE STREAMING LIVE TABLE loyal_customers AS SELECT customer_id - FROM STREAM(LIVE.customers) WHERE loyalty_level = 'high'; Which of the following describes why the STREAM function is included in the query?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The STREAM function is not needed and will cause an error."
+      },
+      {
+        "label": "B",
+        "text": "The table being created is a live table."
+      },
+      {
+        "label": "C",
+        "text": "The customers table is a streaming live table."
+      },
+      {
+        "label": "D",
+        "text": "The customers table is a reference to a Structured Streaming query on a PySpark DataFrame."
+      },
+      {
+        "label": "E",
+        "text": "The data in the customers table has been updated since its last run."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 76,
+    "topic": "Topic 1",
+    "text": "Which of the following describes the type of workloads that are always compatible with Auto Loader?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Streaming workloads"
+      },
+      {
+        "label": "B",
+        "text": "Machine learning workloads"
+      },
+      {
+        "label": "C",
+        "text": "Serverless workloads"
+      },
+      {
+        "label": "D",
+        "text": "Batch workloads"
+      },
+      {
+        "label": "E",
+        "text": "Dashboard workloads"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 77,
+    "topic": "Topic 1",
+    "text": "A data engineer and data analyst are working together on a data pipeline. The data engineer is working on the raw, bronze, and silver layers of the pipeline using Python, and the data analyst is working on the gold layer of the pipeline using SQL. The raw source of the pipeline is a streaming input. They now want to migrate their pipeline to use Delta Live Tables. Which of the following changes will need to be made to the pipeline when migrating to Delta Live Tables?",
+    "options": [
+      {
+        "label": "A",
+        "text": "None of these changes will need to be made"
+      },
+      {
+        "label": "B",
+        "text": "The pipeline will need to stop using the medallion-based multi-hop architecture"
+      },
+      {
+        "label": "C",
+        "text": "The pipeline will need to be written entirely in SQL"
+      },
+      {
+        "label": "D",
+        "text": "The pipeline will need to use a batch source in place of a streaming source"
+      },
+      {
+        "label": "E",
+        "text": "The pipeline will need to be written entirely in Python"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 78,
+    "topic": "Topic 1",
+    "text": "A data engineer is using the following code block as part of a batch ingestion pipeline to read from a composable table: Which of the following changes needs to be made so this code block will work when the transactions table is a stream source?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Replace predict with a stream-friendly prediction function"
+      },
+      {
+        "label": "B",
+        "text": "Replace schema(schema) with option (\"maxFilesPerTrigger\", 1)"
+      },
+      {
+        "label": "C",
+        "text": "Replace \"transactions\" with the path to the location of the Delta table"
+      },
+      {
+        "label": "D",
+        "text": "Replace format(\"delta\") with format(\"stream\")"
+      },
+      {
+        "label": "E",
+        "text": "Replace spark.read with spark.readStream"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 80,
+    "topic": "Topic 1",
+    "text": "A dataset has been de\u0000ned using Delta Live Tables and includes an expectations clause: CONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION FAIL UPDATE What is the expected behavior when a batch of data containing data that violates these constraints is processed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Records that violate the expectation are dropped from the target dataset and recorded as invalid in the event log."
+      },
+      {
+        "label": "B",
+        "text": "Records that violate the expectation cause the job to fail."
+      },
+      {
+        "label": "C",
+        "text": "Records that violate the expectation are dropped from the target dataset and loaded into a quarantine table."
+      },
+      {
+        "label": "D",
+        "text": "Records that violate the expectation are added to the target dataset and recorded as invalid in the event log."
+      },
+      {
+        "label": "E",
+        "text": "Records that violate the expectation are added to the target dataset and \u0000agged as invalid in a \u0000eld added to the target dataset."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 81,
+    "topic": "Topic 1",
+    "text": "Which of the following statements regarding the relationship between Silver tables and Bronze tables is always true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Silver tables contain a less re\u0000ned, less clean view of data than Bronze data."
+      },
+      {
+        "label": "B",
+        "text": "Silver tables contain aggregates while Bronze data is unaggregated."
+      },
+      {
+        "label": "C",
+        "text": "Silver tables contain more data than Bronze tables."
+      },
+      {
+        "label": "D",
+        "text": "Silver tables contain a more re\u0000ned and cleaner view of data than Bronze tables."
+      },
+      {
+        "label": "E",
+        "text": "Silver tables contain less data than Bronze tables."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 82,
+    "topic": "Topic 1",
+    "text": "A data engineering team has noticed that their Databricks SQL queries are running too slowly when they are submitted to a non-running SQL endpoint. The data engineering team wants this issue to be resolved. Which of the following approaches can the team use to reduce the time it takes to return results in this scenario?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can turn on the Serverless feature for the SQL endpoint and change the Spot Instance Policy to \"Reliability Optimized.\""
+      },
+      {
+        "label": "B",
+        "text": "They can turn on the Auto Stop feature for the SQL endpoint."
+      },
+      {
+        "label": "C",
+        "text": "They can increase the cluster size of the SQL endpoint."
+      },
+      {
+        "label": "D",
+        "text": "They can turn on the Serverless feature for the SQL endpoint."
+      },
+      {
+        "label": "E",
+        "text": "They can increase the maximum bound of the SQL endpoint's scaling range."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 83,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Job that has a complex run schedule, and they want to transfer that schedule to other Jobs. Rather than manually selecting each value in the scheduling form in Databricks, which of the following tools can the data engineer use to represent and submit the schedule programmatically?",
+    "options": [
+      {
+        "label": "A",
+        "text": "pyspark.sql.types.DateType"
+      },
+      {
+        "label": "B",
+        "text": "datetime"
+      },
+      {
+        "label": "C",
+        "text": "pyspark.sql.types.TimestampType"
+      },
+      {
+        "label": "D",
+        "text": "Cron syntax"
+      },
+      {
+        "label": "E",
+        "text": "There is no way to represent and submit this information programmatically"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 84,
+    "topic": "Topic 1",
+    "text": "Which of the following approaches should be used to send the Databricks Job owner an email in the case that the Job fails?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Manually programming in an alert system in each cell of the Notebook"
+      },
+      {
+        "label": "B",
+        "text": "Setting up an Alert in the Job page"
+      },
+      {
+        "label": "C",
+        "text": "Setting up an Alert in the Notebook"
+      },
+      {
+        "label": "D",
+        "text": "There is no way to notify the Job owner in the case of Job failure"
+      },
+      {
+        "label": "E",
+        "text": "ML\u0000ow Model Registry Webhooks"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 85,
+    "topic": "Topic 1",
+    "text": "An engineering manager uses a Databricks SQL query to monitor ingestion latency for each data source. The manager checks the results of the query every day, but they are manually rerunning the query each day and waiting for the results. Which of the following approaches can the manager use to ensure the results of the query are updated each day?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can schedule the query to refresh every 1 day from the SQL endpoint's page in Databricks SQL."
+      },
+      {
+        "label": "B",
+        "text": "They can schedule the query to refresh every 12 hours from the SQL endpoint's page in Databricks SQL."
+      },
+      {
+        "label": "C",
+        "text": "They can schedule the query to refresh every 1 day from the query's page in Databricks SQL."
+      },
+      {
+        "label": "D",
+        "text": "They can schedule the query to run every 1 day from the Jobs UI."
+      },
+      {
+        "label": "E",
+        "text": "They can schedule the query to run every 12 hours from the Jobs UI."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 86,
+    "topic": "Topic 1",
+    "text": "In which of the following scenarios should a data engineer select a Task in the Depends On \u0000eld of a new Databricks Job Task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "When another task needs to be replaced by the new task"
+      },
+      {
+        "label": "B",
+        "text": "When another task needs to fail before the new task begins"
+      },
+      {
+        "label": "C",
+        "text": "When another task has the same dependency libraries as the new task"
+      },
+      {
+        "label": "D",
+        "text": "When another task needs to use as little compute resources as possible"
+      },
+      {
+        "label": "E",
+        "text": "When another task needs to successfully complete before the new task begins"
+      }
+    ],
+    "correct": "E"
+  },
+  {
+    "id": 87,
+    "topic": "Topic 1",
+    "text": "A data engineer has been using a Databricks SQL dashboard to monitor the cleanliness of the input data to a data analytics dashboard for a retail use case. The job has a Databricks SQL query that returns the number of store-level records where sales is equal to zero. The data engineer wants their entire team to be noti\u0000ed via a messaging webhook whenever this value is greater than 0. Which of the following approaches can the data engineer use to notify their entire team via a messaging webhook whenever the number of stores with $0 in sales is greater than zero?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can set up an Alert with a custom template."
+      },
+      {
+        "label": "B",
+        "text": "They can set up an Alert with a new email alert destination."
+      },
+      {
+        "label": "C",
+        "text": "They can set up an Alert with one-time noti\u0000cations."
+      },
+      {
+        "label": "D",
+        "text": "They can set up an Alert with a new webhook alert destination."
+      },
+      {
+        "label": "E",
+        "text": "They can set up an Alert without noti\u0000cations."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 88,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to schedule their Databricks SQL dashboard to refresh every hour, but they only want the associated SQL endpoint to be running when it is necessary. The dashboard has multiple queries on multiple datasets associated with it. The data that feeds the dashboard is automatically processed using a Databricks Job. Which of the following approaches can the data engineer use to minimize the total running time of the SQL endpoint used in the refresh schedule of their dashboard?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can turn on the Auto Stop feature for the SQL endpoint."
+      },
+      {
+        "label": "B",
+        "text": "They can ensure the dashboard's SQL endpoint is not one of the included query's SQL endpoint."
+      },
+      {
+        "label": "C",
+        "text": "They can reduce the cluster size of the SQL endpoint."
+      },
+      {
+        "label": "D",
+        "text": "They can ensure the dashboard's SQL endpoint matches each of the queries' SQL endpoints."
+      },
+      {
+        "label": "E",
+        "text": "They can set up the dashboard's SQL endpoint to be serverless."
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 89,
+    "topic": "Topic 1",
+    "text": "A data engineer needs access to a table new_table, but they do not have the correct permissions. They can ask the table owner for permission, but they do not know who the table owner is. Which of the following approaches can be used to identify the owner of new_table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Review the Permissions tab in the table's page in Data Explorer"
+      },
+      {
+        "label": "B",
+        "text": "All of these options can be used to identify the owner of the table"
+      },
+      {
+        "label": "C",
+        "text": "Review the Owner \u0000eld in the table's page in Data Explorer"
+      },
+      {
+        "label": "D",
+        "text": "Review the Owner \u0000eld in the table's page in the cloud storage solution"
+      },
+      {
+        "label": "E",
+        "text": "There is no way to identify the owner of the table"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 90,
+    "topic": "Topic 1",
+    "text": "A new data engineering team team has been assigned to an ELT project. The new data engineering team will need full privileges on the table sales to fully manage the project. Which of the following commands can be used to grant full permissions on the database to the new data engineering team?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GRANT ALL PRIVILEGES ON TABLE sales TO team;"
+      },
+      {
+        "label": "B",
+        "text": "GRANT SELECT CREATE MODIFY ON TABLE sales TO team;"
+      },
+      {
+        "label": "C",
+        "text": "GRANT SELECT ON TABLE sales TO team;"
+      },
+      {
+        "label": "D",
+        "text": "GRANT USAGE ON TABLE sales TO team;"
+      },
+      {
+        "label": "E",
+        "text": "GRANT ALL PRIVILEGES ON TABLE team TO sales;"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 91,
+    "topic": "Topic 1",
+    "text": "Which data lakehouse feature results in improved data quality over a traditional data lake?",
+    "options": [
+      {
+        "label": "A",
+        "text": "A data lakehouse stores data in open formats."
+      },
+      {
+        "label": "B",
+        "text": "A data lakehouse allows the use of SQL queries to examine data."
+      },
+      {
+        "label": "C",
+        "text": "A data lakehouse provides storage solutions for structured and unstructured data."
+      },
+      {
+        "label": "D",
+        "text": "A data lakehouse supports ACID-compliant transactions."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 92,
+    "topic": "Topic 1",
+    "text": "In which scenario will a data team want to utilize cluster pools?",
+    "options": [
+      {
+        "label": "A",
+        "text": "An automated report needs to be version-controlled across multiple collaborators."
+      },
+      {
+        "label": "B",
+        "text": "An automated report needs to be runnable by all stakeholders."
+      },
+      {
+        "label": "C",
+        "text": "An automated report needs to be refreshed as quickly as possible."
+      },
+      {
+        "label": "D",
+        "text": "An automated report needs to be made reproducible."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 93,
+    "topic": "Topic 1",
+    "text": "What is hosted completely in the control plane of the classic Databricks architecture?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Worker node"
+      },
+      {
+        "label": "B",
+        "text": "Databricks web application"
+      },
+      {
+        "label": "C",
+        "text": "Driver node"
+      },
+      {
+        "label": "D",
+        "text": "Databricks Filesystem"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 94,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to determine whether to use the built-in Databricks Notebooks versioning or version their project using Databricks Repos. What is an advantage of using Databricks Repos over the Databricks Notebooks versioning?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Databricks Repos allows users to revert to previous versions of a notebook"
+      },
+      {
+        "label": "B",
+        "text": "Databricks Repos is wholly housed within the Databricks Data Intelligence Platform"
+      },
+      {
+        "label": "C",
+        "text": "Databricks Repos provides the ability to comment on speci\u0000c changes"
+      },
+      {
+        "label": "D",
+        "text": "Databricks Repos supports the use of multiple branches"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 95,
+    "topic": "Topic 1",
+    "text": "What is a bene\u0000t of the Databricks Lakehouse Architecture embracing open source technologies?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Avoiding vendor lock-in"
+      },
+      {
+        "label": "B",
+        "text": "Simpli\u0000ed governance"
+      },
+      {
+        "label": "C",
+        "text": "Ability to scale workloads"
+      },
+      {
+        "label": "D",
+        "text": "Cloud-speci\u0000c integrations"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 96,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to use a Delta table as part of a data pipeline, but they do not know if they have the appropriate permissions. In which location can the data engineer review their permissions on the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Jobs"
+      },
+      {
+        "label": "B",
+        "text": "Dashboards"
+      },
+      {
+        "label": "C",
+        "text": "Catalog Explorer"
+      },
+      {
+        "label": "D",
+        "text": "Repos"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 97,
+    "topic": "Topic 1",
+    "text": "A data engineer is running code in a Databricks Repo that is cloned from a central Git repository. A colleague of the data engineer informs them that changes have been made and synced to the central Git repository. The data engineer now needs to sync their Databricks Repo to get the changes from the central Git repository. Which Git operation does the data engineer need to run to accomplish this task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Clone"
+      },
+      {
+        "label": "B",
+        "text": "Pull"
+      },
+      {
+        "label": "C",
+        "text": "Merge"
+      },
+      {
+        "label": "D",
+        "text": "Push"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 98,
+    "topic": "Topic 1",
+    "text": "Which \u0000le format is used for storing Delta Lake Table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CSV"
+      },
+      {
+        "label": "B",
+        "text": "Parquet"
+      },
+      {
+        "label": "C",
+        "text": "JSON"
+      },
+      {
+        "label": "D",
+        "text": "Delta"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 99,
+    "topic": "Topic 1",
+    "text": "A data architect has determined that a table of the following format is necessary: Which code block is used by SQL DDL command to create an empty Delta table in the above format regardless of whether a table already exists with this name?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CREATE OR REPLACE TABLE table_name ( employeeId STRING, startDate DATE, avgRating FLOAT )"
+      },
+      {
+        "label": "B",
+        "text": "CREATE OR REPLACE TABLE table_name WITH COLUMNS ( employeeId STRING, startDate DATE, avgRating FLOAT ) USING DELTA"
+      },
+      {
+        "label": "C",
+        "text": "CREATE TABLE IF NOT EXISTS table_name ( employeeId STRING, startDate DATE, avgRating FLOAT )"
+      },
+      {
+        "label": "D",
+        "text": "CREATE TABLE table_name AS SELECT employeeId STRING, startDate DATE, avgRating FLOAT"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 100,
+    "topic": "Topic 1",
+    "text": "A data engineer has been given a new record of data: id STRING = 'a1' rank INTEGER = 6 rating FLOAT = 9.4 Which SQL commands can be used to append the new record to an existing Delta table my_table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "INSERT INTO my_table VALUES ('a1', 6, 9.4)"
+      },
+      {
+        "label": "B",
+        "text": "INSERT VALUES ('a1', 6, 9.4) INTO my_table"
+      },
+      {
+        "label": "C",
+        "text": "UPDATE my_table VALUES ('a1', 6, 9.4)"
+      },
+      {
+        "label": "D",
+        "text": "UPDATE VALUES ('a1', 6, 9.4) my_table"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 101,
+    "topic": "Topic 1",
+    "text": "A data engineer has realized that the data \u0000les associated with a Delta table are incredibly small. They want to compact the small \u0000les to form larger \u0000les to improve performance. Which keyword can be used to compact the small \u0000les?",
+    "options": [
+      {
+        "label": "A",
+        "text": "OPTIMIZE"
+      },
+      {
+        "label": "B",
+        "text": "VACUUM"
+      },
+      {
+        "label": "C",
+        "text": "COMPACTION"
+      },
+      {
+        "label": "D",
+        "text": "REPARTITION"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 102,
+    "topic": "Topic 1",
+    "text": "A data engineer wants to create a data entity from a couple of tables. The data entity must be used by other data engineers in other sessions. It also must be saved to a physical location. Which of the following data entities should the data engineer create?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Table"
+      },
+      {
+        "label": "B",
+        "text": "Function"
+      },
+      {
+        "label": "C",
+        "text": "View"
+      },
+      {
+        "label": "D",
+        "text": "Temporary view"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 103,
+    "topic": "Topic 1",
+    "text": "A data engineer runs a statement every day to copy the previous day’s sales into the table transactions. Each day’s sales are in their own \u0000le in the location \"/transactions/raw\". Today, the data engineer runs the following command to complete this task: After running the command today, the data engineer notices that the number of records in table transactions has not changed. What explains why the statement might not have copied any new records into the table?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The format of the \u0000les to be copied were not included with the FORMAT_OPTIONS keyword."
+      },
+      {
+        "label": "B",
+        "text": "The COPY INTO statement requires the table to be refreshed to view the copied rows."
+      },
+      {
+        "label": "C",
+        "text": "The previous day’s \u0000le has already been copied into the table."
+      },
+      {
+        "label": "D",
+        "text": "The PARQUET \u0000le format does not support COPY INTO."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 104,
+    "topic": "Topic 1",
+    "text": "Which command can be used to write data into a Delta table while avoiding the writing of duplicate records?",
+    "options": [
+      {
+        "label": "A",
+        "text": "DROP"
+      },
+      {
+        "label": "B",
+        "text": "INSERT"
+      },
+      {
+        "label": "C",
+        "text": "MERGE"
+      },
+      {
+        "label": "D",
+        "text": "APPEND"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 105,
+    "topic": "Topic 1",
+    "text": "A data analyst has created a Delta table sales that is used by the entire data analysis team. They want help from the data engineering team to implement a series of tests to ensure the data is clean. However, the data engineering team uses Python for its tests rather than SQL. Which command could the data engineering team use to access sales in PySpark?",
+    "options": [
+      {
+        "label": "A",
+        "text": "SELECT * FROM sales"
+      },
+      {
+        "label": "B",
+        "text": "spark.table(\"sales\")"
+      },
+      {
+        "label": "C",
+        "text": "spark.sql(\"sales\")"
+      },
+      {
+        "label": "D",
+        "text": "spark.delta.table(\"sales\")"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 106,
+    "topic": "Topic 1",
+    "text": "A data engineer has created a new database using the following command: CREATE DATABASE IF NOT EXISTS customer360; In which location will the customer360 database be located?",
+    "options": [
+      {
+        "label": "A",
+        "text": "dbfs:/user/hive/database/customer360"
+      },
+      {
+        "label": "B",
+        "text": "dbfs:/user/hive/warehouse"
+      },
+      {
+        "label": "C",
+        "text": "dbfs:/user/hive/customer360"
+      },
+      {
+        "label": "D",
+        "text": "dbfs:/user/hive/database"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 107,
+    "topic": "Topic 1",
+    "text": "A data engineer is attempting to drop a Spark SQL table my_table and runs the following command: DROP TABLE IF EXISTS my_table; After running this command, the engineer notices that the data \u0000les and metadata \u0000les have been deleted from the \u0000le system. What is the reason behind the deletion of all these \u0000les?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The table was managed"
+      },
+      {
+        "label": "B",
+        "text": "The table's data was smaller than 10 GB"
+      },
+      {
+        "label": "C",
+        "text": "The table did not have a location"
+      },
+      {
+        "label": "D",
+        "text": "The table was external"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 108,
+    "topic": "Topic 1",
+    "text": "A data engineer needs to create a table in Databricks using data from a CSV \u0000le at location /path/to/csv. They run the following command: Which of the following lines of code \u0000lls in the above blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "FROM \"path/to/csv\""
+      },
+      {
+        "label": "B",
+        "text": "USING CSV"
+      },
+      {
+        "label": "C",
+        "text": "FROM CSV"
+      },
+      {
+        "label": "D",
+        "text": "USING DELTA"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 109,
+    "topic": "Topic 1",
+    "text": "What is a bene\u0000t of creating an external table from Parquet rather than CSV when using a CREATE TABLE AS SELECT statement?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Parquet \u0000les can be partitioned"
+      },
+      {
+        "label": "B",
+        "text": "Parquet \u0000les will become Delta tables"
+      },
+      {
+        "label": "C",
+        "text": "Parquet \u0000les have a well-de\u0000ned schema"
+      },
+      {
+        "label": "D",
+        "text": "Parquet \u0000les have the ability to be optimized"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 110,
+    "topic": "Topic 1",
+    "text": "Which SQL keyword can be used to convert a table from a long format to a wide format?",
+    "options": [
+      {
+        "label": "A",
+        "text": "TRANSFORM"
+      },
+      {
+        "label": "B",
+        "text": "PIVOT"
+      },
+      {
+        "label": "C",
+        "text": "SUM"
+      },
+      {
+        "label": "D",
+        "text": "CONVERT"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 111,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Python variable table_name that they would like to use in a SQL query. They want to construct a Python code block that will run the query using table_name. They have the following incomplete code block: ____(f\"SELECT customer_id, spend FROM {table_name}\") What can be used to \u0000ll in the blank to successfully complete the task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "spark.delta.sql"
+      },
+      {
+        "label": "B",
+        "text": "spark.sql"
+      },
+      {
+        "label": "C",
+        "text": "spark.table"
+      },
+      {
+        "label": "D",
+        "text": "dbutils.sql"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 115,
+    "topic": "Topic 1",
+    "text": "A data engineer has con\u0000gured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table. The code block used by the data engineer is below: Which line of code should the data engineer use to \u0000ll in the blank if the data engineer only wants the query to execute a micro-batch to process data every 5 seconds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "trigger(\"5 seconds\")"
+      },
+      {
+        "label": "B",
+        "text": "trigger(continuous=\"5 seconds\")"
+      },
+      {
+        "label": "C",
+        "text": "trigger(once=\"5 seconds\")"
+      },
+      {
+        "label": "D",
+        "text": "trigger(processingTime=\"5 seconds\")"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 117,
+    "topic": "Topic 1",
+    "text": "A data engineer has three tables in a Delta Live Tables (DLT) pipeline. They have con\u0000gured the pipeline to drop invalid records at each table. They notice that some data is being dropped due to quality concerns at some point in the DLT pipeline. They would like to determine at which table in their pipeline the data is being dropped. Which approach can the data engineer take to identify the table that is dropping the records?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can set up separate expectations for each table when developing their DLT pipeline."
+      },
+      {
+        "label": "B",
+        "text": "They can navigate to the DLT pipeline page, click on the “Error” button, and review the present errors."
+      },
+      {
+        "label": "C",
+        "text": "They can set up DLT to notify them via email when records are dropped."
+      },
+      {
+        "label": "D",
+        "text": "They can navigate to the DLT pipeline page, click on each table, and view the data quality statistics."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 118,
+    "topic": "Topic 1",
+    "text": "What is used by Spark to record the offset range of the data being processed in each trigger in order for Structured Streaming to reliably track the exact progress of the processing so that it can handle any kind of failure by restarting and/or reprocessing?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Checkpointing and Write-ahead Logs"
+      },
+      {
+        "label": "B",
+        "text": "Replayable Sources and Idempotent Sinks"
+      },
+      {
+        "label": "C",
+        "text": "Write-ahead Logs and Idempotent Sinks"
+      },
+      {
+        "label": "D",
+        "text": "Checkpointing and Idempotent Sinks"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 119,
+    "topic": "Topic 1",
+    "text": "What describes the relationship between Gold tables and Silver tables?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Gold tables are more likely to contain aggregations than Silver tables."
+      },
+      {
+        "label": "B",
+        "text": "Gold tables are more likely to contain valuable data than Silver tables."
+      },
+      {
+        "label": "C",
+        "text": "Gold tables are more likely to contain a less re\u0000ned view of data than Silver tables."
+      },
+      {
+        "label": "D",
+        "text": "Gold tables are more likely to contain truthful data than Silver tables."
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 120,
+    "topic": "Topic 1",
+    "text": "What describes when to use the CREATE STREAMING LIVE TABLE (formerly CREATE INCREMENTAL LIVE TABLE) syntax over the CREATE LIVE TABLE syntax when creating Delta Live Tables (DLT) tables using SQL?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CREATE STREAMING LIVE TABLE should be used when the subsequent step in the DLT pipeline is static."
+      },
+      {
+        "label": "B",
+        "text": "CREATE STREAMING LIVE TABLE should be used when data needs to be processed incrementally."
+      },
+      {
+        "label": "C",
+        "text": "CREATE STREAMING LIVE TABLE should be used when data needs to be processed through complicated aggregations."
+      },
+      {
+        "label": "D",
+        "text": "CREATE STREAMING LIVE TABLE should be used when the previous step in the DLT pipeline is static."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 121,
+    "topic": "Topic 1",
+    "text": "A Delta Live Table pipeline includes two datasets de\u0000ned using STREAMING LIVE TABLE. Three datasets are de\u0000ned against Delta Lake table sources using LIVE TABLE. The table is con\u0000gured to run in Production mode using the Continuous Pipeline Mode. What is the expected outcome after clicking Start to update the pipeline assuming previously unprocessed data exists and all de\u0000nitions are valid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist to allow for additional testing."
+      },
+      {
+        "label": "B",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will persist to allow for additional testing."
+      },
+      {
+        "label": "C",
+        "text": "All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will be deployed for the update and terminated when the pipeline is stopped."
+      },
+      {
+        "label": "D",
+        "text": "All datasets will be updated once and the pipeline will shut down. The compute resources will be terminated."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 122,
+    "topic": "Topic 1",
+    "text": "Which type of workloads are compatible with Auto Loader?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Streaming workloads"
+      },
+      {
+        "label": "B",
+        "text": "Machine learning workloads"
+      },
+      {
+        "label": "C",
+        "text": "Serverless workloads"
+      },
+      {
+        "label": "D",
+        "text": "Batch workloads"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 123,
+    "topic": "Topic 1",
+    "text": "A data engineer has developed a data pipeline to ingest data from a JSON source using Auto Loader, but the engineer has not provided any type inference or schema hints in their pipeline. Upon reviewing the data, the data engineer has noticed that all of the columns in the target table are of the string type despite some of the \u0000elds only including \u0000oat or boolean values. Why has Auto Loader inferred all of the columns to be of the string type?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Auto Loader cannot infer the schema of ingested data"
+      },
+      {
+        "label": "B",
+        "text": "JSON data is a text-based format"
+      },
+      {
+        "label": "C",
+        "text": "Auto Loader only works with string data"
+      },
+      {
+        "label": "D",
+        "text": "All of the \u0000elds had at least one null value"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 124,
+    "topic": "Topic 1",
+    "text": "Which statement regarding the relationship between Silver tables and Bronze tables is always true?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Silver tables contain a less re\u0000ned, less clean view of data than Bronze data."
+      },
+      {
+        "label": "B",
+        "text": "Silver tables contain aggregates while Bronze data is unaggregated."
+      },
+      {
+        "label": "C",
+        "text": "Silver tables contain more data than Bronze tables."
+      },
+      {
+        "label": "D",
+        "text": "Silver tables contain less data than Bronze tables."
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 126,
+    "topic": "Topic 1",
+    "text": "A dataset has been de\u0000ned using Delta Live Tables and includes an expectations clause: CONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROW What is the expected behavior when a batch of data containing data that violates these constraints is processed?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Records that violate the expectation cause the job to fail."
+      },
+      {
+        "label": "B",
+        "text": "Records that violate the expectation are added to the target dataset and \u0000agged as invalid in a \u0000eld added to the target dataset."
+      },
+      {
+        "label": "C",
+        "text": "Records that violate the expectation are dropped from the target dataset and recorded as invalid in the event log."
+      },
+      {
+        "label": "D",
+        "text": "Records that violate the expectation are added to the target dataset and recorded as invalid in the event log."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 127,
+    "topic": "Topic 1",
+    "text": "A data engineer has a Job with multiple tasks that runs nightly. Each of the tasks runs slowly because the clusters take a long time to start. Which action can the data engineer perform to improve the start up time for the clusters used for the Job?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can use endpoints available in Databricks SQL"
+      },
+      {
+        "label": "B",
+        "text": "They can use jobs clusters instead of all-purpose clusters"
+      },
+      {
+        "label": "C",
+        "text": "They can con\u0000gure the clusters to autoscale for larger data sizes"
+      },
+      {
+        "label": "D",
+        "text": "They can use clusters that are from a cluster pool"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "id": 128,
+    "topic": "Topic 1",
+    "text": "A data engineer has a single-task Job that runs each morning before they begin working. After identifying an upstream data issue, they need to set up another task to run a new notebook prior to the original task. Which approach can the data engineer use to set up the new task?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can clone the existing task in the existing Job and update it to run the new notebook."
+      },
+      {
+        "label": "B",
+        "text": "They can create a new task in the existing Job and then add it as a dependency of the original task."
+      },
+      {
+        "label": "C",
+        "text": "They can create a new task in the existing Job and then add the original task as a dependency of the new task."
+      },
+      {
+        "label": "D",
+        "text": "They can create a new job from scratch and add both tasks to run concurrently."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 129,
+    "topic": "Topic 1",
+    "text": "A single Job runs two notebooks as two separate tasks. A data engineer has noticed that one of the notebooks is running slowly in the Job’s current run. The data engineer asks a tech lead for help in identifying why this might be the case. Which approach can the tech lead use to identify why the notebook is running slowly as part of the Job?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can navigate to the Runs tab in the Jobs UI to immediately review the processing notebook."
+      },
+      {
+        "label": "B",
+        "text": "They can navigate to the Tasks tab in the Jobs UI and click on the active run to review the processing notebook."
+      },
+      {
+        "label": "C",
+        "text": "They can navigate to the Runs tab in the Jobs UI and click on the active run to review the processing notebook."
+      },
+      {
+        "label": "D",
+        "text": "They can navigate to the Tasks tab in the Jobs UI to immediately review the processing notebook."
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "id": 130,
+    "topic": "Topic 1",
+    "text": "A data analysis team has noticed that their Databricks SQL queries are running too slowly when connected to their always-on SQL endpoint. They claim that this issue is present when many members of the team are running small queries simultaneously. They ask the data engineering team for help. The data engineering team notices that each of the team’s queries uses the same SQL endpoint. Which approach can the data engineering team use to improve the latency of the team’s queries?",
+    "options": [
+      {
+        "label": "A",
+        "text": "They can increase the cluster size of the SQL endpoint."
+      },
+      {
+        "label": "B",
+        "text": "They can increase the maximum bound of the SQL endpoint’s scaling range."
+      },
+      {
+        "label": "C",
+        "text": "They can turn on the Auto Stop feature for the SQL endpoint."
+      },
+      {
+        "label": "D",
+        "text": "They can turn on the Serverless feature for the SQL endpoint."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 135,
+    "topic": "Topic 1",
+    "text": "A new data engineering team team has been assigned to an ELT project. The new data engineering team will need full privileges on the table sales to fully manage the project. Which command can be used to grant full permissions on the database to the new data engineering team?",
+    "options": [
+      {
+        "label": "A",
+        "text": "GRANT ALL PRIVILEGES ON TABLE sales TO team;"
+      },
+      {
+        "label": "B",
+        "text": "GRANT SELECT CREATE MODIFY ON TABLE sales TO team;"
+      },
+      {
+        "label": "C",
+        "text": "GRANT SELECT ON TABLE sales TO team;"
+      },
+      {
+        "label": "D",
+        "text": "GRANT ALL PRIVILEGES ON TABLE team TO sales;"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 137,
+    "topic": "Topic 1",
+    "text": "Identify how the count_if function and the count where x is null can be used Consider a table random_values with below data. What would be the output of below query? select count_if(col > 1) as count_a. count(*) as count_b.count(col1) as count_c from random_values col1 0 1 2 NULL - 2 3",
+    "options": [
+      {
+        "label": "A",
+        "text": "3 6 5"
+      },
+      {
+        "label": "B",
+        "text": "4 6 5"
+      },
+      {
+        "label": "C",
+        "text": "3 6 6"
+      },
+      {
+        "label": "D",
+        "text": "4 6 6"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 138,
+    "topic": "Topic 1",
+    "text": "Which two components function in the DB platform architecture’s control plane? (Choose two.)",
+    "options": [
+      {
+        "label": "A",
+        "text": "Virtual Machines"
+      },
+      {
+        "label": "B",
+        "text": "Compute Orchestration"
+      },
+      {
+        "label": "C",
+        "text": "Serverless Compute"
+      },
+      {
+        "label": "D",
+        "text": "Compute"
+      },
+      {
+        "label": "E",
+        "text": "Unity Catalog"
+      }
+    ],
+    "correct": "BE"
+  },
+  {
+    "id": 139,
+    "topic": "Topic 1",
+    "text": "In a healthcare provider organization using Delta Lake to store electronic health records (EHRs), a data analyst needs to analyze a snapshot of the patient_records table from two weeks ago before some recent data corrections were applied. What approach should the Data Engineer take to allow the analyst to query that speci\u0000c prior version?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Truncate the table to remove all data, then reload the data from two weeks ago into the truncated table for the analyst to query."
+      },
+      {
+        "label": "B",
+        "text": "Identify the version number corresponding to two weeks ago from the Delta transaction log, share that version number with the analyst to query using VERSION AS OF syntax, or export that version to a new Delta table for the analyst to query."
+      },
+      {
+        "label": "C",
+        "text": "Restore the table to the version from two weeks ago using the RESTORE command, and have the analyst query the restored table."
+      },
+      {
+        "label": "D",
+        "text": "Use the VACUUM command to remove all versions of the table older than two weeks, then the analyst can query the remaining version."
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 141,
+    "topic": "Topic 1",
+    "text": "A data engineer has con\u0000gured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table. The code block used by the data engineer is below: The data engineer only wants the query to process all of the available data in as many batches as required. Which line of code should the data engineer use to \u0000ll in the blank?",
+    "options": [
+      {
+        "label": "A",
+        "text": "trigger(availableNow=True)"
+      },
+      {
+        "label": "B",
+        "text": "trigger(processingTime= “once”)"
+      },
+      {
+        "label": "C",
+        "text": "trigger(continuous= “once”)"
+      },
+      {
+        "label": "D",
+        "text": "trigger(once=True)"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 142,
+    "topic": "Topic 1",
+    "text": "Data engineer and data analysts are working together on a data pipeline. The data engineer is working on the raw, bronze, and silver layers of the pipeline using Python, and the data analyst is working on the gold layer of the pipeline using SQL. The raw source of the pipeline is a streaming input. They now want to migrate their pipeline to use Delta Live Tables. Which of the following changes will need to be made to the pipeline when migrating to Delta Live Tables?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The pipeline can have different notebook sources in SQL & Python"
+      },
+      {
+        "label": "B",
+        "text": "The pipeline will need to be written entirely in SQL"
+      },
+      {
+        "label": "C",
+        "text": "The pipeline will need to use a batch source in place of a streaming source"
+      },
+      {
+        "label": "D",
+        "text": "The pipeline will need to be written entirely in Python"
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "id": 144,
+    "topic": "Topic 1",
+    "text": "Identify the impact of ON VIOLATION DROP ROW and ON VIOLATION FAIL UPDATE for a constraint violation. A data engineer has created an ETL pipeline using Delta Live table to manage their company travel reimbursement detail, they want to ensure that the if the location details has not been provided by the employee, the pipeline needs to be terminated. How can the scenario be implemented?",
+    "options": [
+      {
+        "label": "A",
+        "text": "CONSTRAINT valid_location EXPECT (location = NULL)"
+      },
+      {
+        "label": "B",
+        "text": "CONSTRAINT valid_location EXPECT (location != NULL) ON VIOLATION FAIL UPDATE"
+      },
+      {
+        "label": "C",
+        "text": "CONSTRAINT valid_location EXPECT (location != NULL) ON DROP ROW"
+      },
+      {
+        "label": "D",
+        "text": "CONSTRAINT valid_location EXPECT (location != NULL) ON VIOLATION FAIL"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "id": 145,
+    "topic": "Topic 1",
+    "text": "Which two conditions are applicable for governance in Databricks Unity Catalog? (Choose two.)",
+    "options": [
+      {
+        "label": "A",
+        "text": "You can have more than 1 metastore within a databricks account console but only 1 per region."
+      },
+      {
+        "label": "B",
+        "text": "Both catalog and schema must have a managed location in Unity Catalog provided metastore is not associated with a location"
+      },
+      {
+        "label": "C",
+        "text": "You can have multiple catalogs within metastore and 1 catalog can be associated with multiple metastore"
+      },
+      {
+        "label": "D",
+        "text": "If catalog is not associated with location, it’s mandatory to associate schema with managed locations"
+      },
+      {
+        "label": "E",
+        "text": "If metastore is not associated with location, it’s mandatory to associate catalog with managed locations"
+      }
+    ],
+    "correct": "AE"
+  }
+]
