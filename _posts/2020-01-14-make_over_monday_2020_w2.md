@@ -49,3 +49,24 @@ brazil = CALCULATE(SUM(Countries[Kg. Pesticides Used in USA Agriculture]), Count
 - The link to my visualization made in Power BI is [here](https://app.powerbi.com/view?r=eyJrIjoiMDAzNDk0YzctNTZjZS00ZTM2LTg4NGUtZTkwZTJmYTg3NjUwIiwidCI6ImRjYmYyYTFmLTk1MzItNGQ1Ni1hYzQxLTU2MTVlMzhlNTBiNyJ9).
 
 
+
+<!-- Buttondown subscribe start -->
+<div class="bd-subscribe my-5">
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/notasdaedicao"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/notasdaedicao', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.com/refer/notasdaedicao" target="_blank">
+      Powered by Buttondown.
+    </a>
+  </p>
+</form>
+</div>
+<!-- Buttondown subscribe end -->
