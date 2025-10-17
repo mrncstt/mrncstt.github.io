@@ -1,9 +1,9 @@
 ---
 title: Podcasts to Learn French
-description: Learn French
+description: A concise list of French-learning podcasts plus quick tips on how to use them well
 date: 2021-03-23
 categories: [Podcast]
-tags: [Podcast, French, Learn]
+tags: [Podcast, French, Learning]
 ---
 
 # Podcasts to Learn French
@@ -12,16 +12,34 @@ tags: [Podcast, French, Learn]
 
 ----[Freepik License](https://br.freepik.com/vetores-gratis/pequenos-homens-e-mulheres-ouvindo-radio-ou-transmitindo-ilustracao-plana-ilustracao-de-desenho-animado_12699866.htm#page=1&query=podcast&position=37). Some rights reserved.
 
-### In French
+# Podcasts to Learn French
 
-- [News in Slow French](https://www.newsinslowfrench.com/): News on topics such as world politics, economy, arts, and science with proficiency levels ranging from beginner to advanced.
-- [Français Authentique](https://www.francaisauthentique.com/podcasts/): The host of the podcast is Johan, a native French speaker. He is very realistic. For example, in an episode called "Comment parler comme un français," he begins by telling listeners that they will never speak like a French person because they are not native speakers - but that's okay. It's nothing that isn't very obvious but relevant because this happens in any language, and there's no point in falling for the myth that you only speak well if you can speak like a native speaker.
+This short guide highlights reliable podcasts for building French skills and offers a few ways to get more out of each episode.
 
-### From English to French
+## All‑French shows
 
-- [Coffee Break French](https://coffeebreaklanguages.com/coffeebreakfrench/): The podcast already has four seasons to learn French from English.
-- [Daily French Pod](https://dailyfrenchpod.com/): More than four thousand episodes teaching about everyday situations that can be encountered in France.
+**News in Slow French**  
+<https://www.newsinslowfrench.com/>  
+Topical news explained at a clear pace with graded levels from beginner to advanced. Good for vocabulary and real-world context. Typical length: 5–10 minutes.
 
+**Français Authentique**  
+<https://www.francaisauthentique.com/podcasts/>  
+Conversations in natural French focused on everyday communication. Host Johan emphasizes realistic goals and consistency. Typical length: 10–20 minutes.
 
+## English‑led programs
 
+**Coffee Break French**  
+<https://coffeebreaklanguages.com/coffeebreakfrench/>  
+Structured lessons presented in English with progressively more French. Ideal for building grammar and phrases step by step. Typical length: 15–20 minutes.
 
+**Daily French Pod**  
+<https://dailyfrenchpod.com/>  
+Thousands of short episodes covering daily situations and culture. Good for frequent, bite-size practice. Typical length: 3–8 minutes.
+
+## Make these shows work for you
+
+- Shadow key phrases: pause and repeat out loud to practice pronunciation and rhythm.  
+- Build a mini‑glossary: note 5–10 new words per episode with short example sentences.  
+- Re‑listen strategically: first for gist, then for details, then for pronunciation.  
+- Use transcripts when available: read once, then listen without text to reinforce memory.  
+- Keep sessions short and regular: 10 ~~ 20 minutes beats occasional long sessions.
