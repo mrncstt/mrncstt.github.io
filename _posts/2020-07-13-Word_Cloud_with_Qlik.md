@@ -47,3 +47,23 @@ Sentiment analysis of these words was performed as an additional topic within th
 
 
 
+<div class="bd-subscribe my-5">
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/notasdaedicao"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/notasdaedicao', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.com/refer/notasdaedicao" target="_blank">
+      Powered by Buttondown.
+    </a>
+  </p>
+</form>
+</div>
+
+
