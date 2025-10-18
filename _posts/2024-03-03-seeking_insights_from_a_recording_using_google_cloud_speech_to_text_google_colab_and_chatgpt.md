@@ -95,7 +95,7 @@ my run (for context):
 - automatic punctuation + word confidence on
 - model: `long` (api `v1p1beta1`)
 
-![gcp transcription result](https://i.imgur.com/cj6vspv.png)
+![gcp transcription result](https://i.imgur.com/CJ6vSpV.png)
 
 example raw line:
 
