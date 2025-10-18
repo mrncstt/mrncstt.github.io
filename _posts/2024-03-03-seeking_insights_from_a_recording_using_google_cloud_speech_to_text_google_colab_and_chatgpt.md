@@ -1,149 +1,153 @@
 ---
-title: "Seeking insights from a recording using Google Cloud Speech-to-text, Google Colab and ChatGPT"
+title: "seeking insights from a recording using google cloud speech-to-text, google colab, and chatgpt"
 description: "tech"
 date: "2024-03-03"
-categories: [topmate, google cloud plataform , gcp, google colab, chatgpt ]
-tags:  [topmate, google cloud plataform , gcp, google colab, chatgpt ]
+categories: [topmate, google cloud platform, gcp, google colab, chatgpt]
+tags: [topmate, google cloud platform, gcp, google colab, chatgpt]
 ---
 
-## Topmate and recording
+## why record mentorship calls?
 
-Recently, I participated in an online mentorship and I want to share my experience with you. The mentor used a platform called [Topmate](https://topmate.io/), which offers the video call recording.
-Topmate not only facilitates connecting with mentors but also allows you to record the entire mentorship session. After the video call, I received an email with a download link for the recording in MP4 format.  
+i recently joined an online mentorship on [topmate](https://topmate.io/). after the call, topmate emailed me a link to the mp4 recording. having the full session lets me revisit the advice, catch the bits i missed live, and turn a dense hour into working notes.
 
 ![](https://i.imgur.com/askRX9s.png)
 
-This is extremely useful as it allows you to review the session later and capture all the important details discussed.
+> quick note on etiquette: make sure everyone on the call knows it's being recorded.
 
-## Converting Audio from MP4 to MP3
-To extract the audio from the recording and make transcription easier, I used a Python script that downloads the video from the provided link and then converts the MP4 file to MP3. Here is the updated script:
+## from mp4 to mp3
+
+to simplify transcription, i pull down the video and extract the audio. this version streams the download (safer for large files) and uses moviepy to write an mp3.
 
 ```python
 import requests
 from moviepy.editor import VideoFileClip
 
-def download_video(url, output_path):
-    response = requests.get(url)
-    with open(output_path, 'wb') as file:
-        file.write(response.content)
+def download_video(url: str, output_path: str) -> None:
+    with requests.get(url, stream=True) as r:
+        r.raise_for_status()
+        with open(output_path, "wb") as f:
+            for chunk in r.iter_content(chunk_size=8192):
+                if chunk:
+                    f.write(chunk)
 
-def convert_mp4_to_mp3(mp4_file, mp3_file):
-    video_clip = VideoFileClip(mp4_file)
-    audio_clip = video_clip.audio
-    audio_clip.write_audiofile(mp3_file)
-    audio_clip.close()
-    video_clip.close()
+def convert_mp4_to_mp3(mp4_file: str, mp3_file: str) -> None:
+    with VideoFileClip(mp4_file) as clip:
+        clip.audio.write_audiofile(mp3_file)
 
-# Usage of the script
-video_url = 'https://topmate-call-recordings.s3.ap-south-1.amazonaws.com/recording_recording_123456-imagine-like-a-guid.mp4'
-mp4_file_path = 'mentorship.mp4'
-mp3_file_path = 'mentorship.mp3'
+# usage
+video_url = "https://topmate-call-recordings.s3.ap-south-1.amazonaws.com/recording_recording_123456-imagine-like-a-guid.mp4"
+mp4_file = "mentorship.mp4"
+mp3_file = "mentorship.mp3"
 
-download_video(video_url, mp4_file_path)
-convert_mp4_to_mp3(mp4_file_path, mp3_file_path)
+download_video(video_url, mp4_file)
+convert_mp4_to_mp3(mp4_file, mp3_file)
 ```
 
-## Transcribing the Audio with Google Cloud Speech-to-Text
-After converting the audio, I used Google Cloud Speech-to-Text to transcribe the content. This tool is extremely powerful and offers remarkable accuracy in transcribing audio to text. Here is a basic guide on how to use this tool:
+> for best accuracy with speech-to-text, flac or linear16 usually beats mp3. i kept mp3 here to match the original workflow.
 
- - Google Cloud Setup: Set up your account on Google Cloud and enable the Speech-to-Text API.
- - Upload the Audio: Upload the MP3 file to Google Cloud Storage.
- - Create a Transcription Request: Use the following Python code to transcribe the audio:
+## transcribing with google cloud speech-to-text
 
-## Google Cloud Speech-to-Text Transcription
-Using Google Cloud Speech-to-Text, I was able to transcribe the audio accurately. Here is a snapshot of the transcription configuration and a snippet of the transcribed text:
+setup (once):
 
-![](https://i.imgur.com/CJ6vSpV.png)
-(transcription result in GCP)
+- create a gcp project and enable the **speech-to-text api**
+- upload `mentorship.mp3` to **google cloud storage**
+- set `GOOGLE_APPLICATION_CREDENTIALS` to your service account json
+
+here’s a minimal long-audio transcription (31-minute files need the long-running api). i also enabled punctuation and confidence scores.
+
 ```python
 from google.cloud import speech_v1p1beta1 as speech
-import os
 
-def transcribe_audio(gcs_uri, output_path):
+def transcribe_gcs(gcs_uri: str, output_path: str) -> None:
     client = speech.SpeechClient()
-    
+
     audio = speech.RecognitionAudio(uri=gcs_uri)
     config = speech.RecognitionConfig(
         encoding=speech.RecognitionConfig.AudioEncoding.MP3,
-        sample_rate_hertz=16000,
+        sample_rate_hertz=44100,         # match your file
         language_code="en-US",
+        model="long",
+        audio_channel_count=2,
+        enable_automatic_punctuation=True,
+        enable_word_confidence=True,
+        # optional diarization (speakers):
+        # enable_speaker_diarization=True,
+        # diarization_speaker_count=2,
     )
-    response = client.recognize(config=config, audio=audio)
 
-    with open(output_path, 'w') as file:
+    operation = client.long_running_recognize(config=config, audio=audio)
+    response = operation.result(timeout=3600)
+
+    with open(output_path, "w", encoding="utf-8") as f:
         for result in response.results:
-            file.write(result.alternatives[0].transcript + '\n')
+            f.write(result.alternatives[0].transcript + "\n")
 
-# Using the script
-gcs_uri = 'gs://bucket-name/mentorship.mp3'
-transcription_output_path = 'audio.txt'
-transcribe_audio(gcs_uri, transcription_output_path)
+# run
+gcs_uri = "gs://bucket-name/mentorship.mp3"
+transcribe_gcs(gcs_uri, "audio.txt")
 ```
 
-Audio Configuration:
+my run (for context):
 
-   - Audio File: MP3
-   - Sample Rate: 44100 Hz
-   - Channel Count: 2
-   - Billed Audio Time: 31:57
-   - Transcription Time: 11:42.8
+- audio: mp3, 44,100 hz, 2 channels
+- billed audio time: 31:57
+- transcription time: ~11:43
+- automatic punctuation + word confidence on
+- model: `long` (api `v1p1beta1`)
 
-Transcription Options:
+![gcp transcription result](https://i.imgur.com/cj6vspv.png)
 
-   - Language Code: en-US
-   - Transcription Model: Long
-   - API Version: v1p1beta1
-   - Region: Global
-   - Word Confidence: Enabled
-   - Automatic Punctuation: Enabled
-   - Transcription Accuracy:
-   - Transcript with a confidence level of 0.83
+example raw line:
 
 ```
-   if you good afternoon, I don't know where exactly you are based on but
+if you—good afternoon, i don't know where exactly you are based on but …
 ```
-##  Extracting Insights with ChatGPT
-After obtaining the transcription, I used the ChatGPT-4 model to extract key insights from the mentorship session. ChatGPT-4 is a powerful tool for analyzing text and generating summaries, making it perfect for this task.
 
-##  Using ChatGPT-4 for Insights
-Here’s an example of how I used ChatGPT-4 to extract insights:
+## asking chatgpt for the good stuff
 
-Load the Transcription: Load the text file containing the transcription.
-Ask ChatGPT-4 for Insights: Use the following prompt with ChatGPT-4 to get a summary of the mentorship session:
+once i have `audio.txt`, i pass the transcript to a prompt that asks for a short summary, key decisions, and action items. for long transcripts, chunk first (tokens are a thing), then merge the summaries.
+
 ```python
+def get_chatgpt_insights(prompt: str) -> str:
+    """
+    placeholder for your chatgpt call.
+    recommend: split transcript into ~2–3k word chunks,
+    ask for structured bullets (summary / decisions / actions),
+    then ask for a final synthesis across chunks.
+    """
+    ...
 
-with open('audio.txt', 'r') as file:
-    transcription_text = file.read()
+with open("audio.txt", "r", encoding="utf-8") as f:
+    transcript = f.read()
 
-# Example prompt for ChatGPT-4
-prompt = f"Here is the transcription of a mentorship session:\n\n{transcription_text}\n\nPlease provide key insights and a summary of the main points discussed."
+prompt = (
+    "you are extracting practical insights from a mentorship transcript.\n\n"
+    "return three sections:\n"
+    "1) summary (5 bullets max)\n"
+    "2) decisions agreed (bulleted)\n"
+    "3) next actions (who/what/when)\n\n"
+    f"transcript:\n{transcript}\n"
+)
 
-# Assuming you have a function to interact with ChatGPT-4
 insights = get_chatgpt_insights(prompt)
 print(insights)
 ```
 
-##  Generating a Diagram with Mermaid JS
-Finally, to visualize the insights from the mentorship session, I used Mermaid JS to create a diagram. Mermaid JS is a JavaScript-based diagramming tool that allows you to create flowcharts, sequence diagrams, and more.
+## a tiny diagram with mermaid
 
-Example Mermaid JS Diagram
-Here’s an example of how you can use Mermaid JS to generate a diagram from the insights:
+visuals make sprawling conversations easier to digest. here’s a compact mermaid map you can tweak to your session:
 
 ```mermaid
 graph TD
-    A[Start of Mentorship Session] --> B[Discussion on Topic 1]
-    B --> C[Key Insight 1]
-    B --> D[Key Insight 2]
-    A --> E[Discussion on Topic 2]
-    E --> F[Key Insight 3]
-    E --> G[Key Insight 4]
-    A --> H[End of Mentorship Session]
+    A[session start] --> B[topic 1]
+    B --> C[key insight 1]
+    B --> D[key insight 2]
+    A --> E[topic 2]
+    E --> F[key insight 3]
+    E --> G[key insight 4]
+    A --> H[wrap-up]
 ```
 
-## Conclusions
-Using these tools elevated my mentorship experience. The ability to record, convert, and transcribe my sessions allows me to review and study the advice and insights obtained, ensuring no important detail is forgotten.
-In addition to taking notes, doing all this helped me practice coding and use other technologies, which is crucial for putting ***acquired knowledge into practice****.
+---
 
-I hope this article was helpful and inspires you to make the most of your mentorship sessions.
-
-Happy coding!
+this workflow turned a one-off call into reusable notes and clear next steps. if you’re experimenting, the two dials that matter most are **audio encoding** (flac/linear16 if you can) and **diarization** (when multiple voices overlap), tuning those pays off quickly.
