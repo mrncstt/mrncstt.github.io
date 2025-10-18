@@ -1,103 +1,108 @@
 ---
-title: How was my trip to Buenos Aires
-description: Travel / Tips
+title: "buenos aires for 33 days: a practical guide"
+description: travel / tips
 date: "2023-02-26"
-categories: [Travel,  Tips, Buenos Aires]
-tags: [Travel, Tips, Buenos Aires]
+categories: [travel, tips, buenos aires]
+tags: [travel, tips, buenos aires]
 ---
 
-Traveling to Buenos Aires for 33 days was a unique experience in my life, but it was also a bit challenging to plan. However, with proper planning and organization, I managed to make this trip a reality. If you're thinking of going to Buenos Aires, here's a step-by-step guide to help you (even if it's a shorter trip).
+spending 33 days in buenos aires was rewarding and sometimes messy to plan. with a bit of structure it all came together. if you are heading to ba, even for a shorter stay, here is what worked for me and what i wish i had known. the trip took place in november 2022 and these notes reflect what i experienced on the ground and what i still had on my mind by february 2023.
 
-Here are some tips including buying plane tickets, booking on Airbnb, sending money, things to do/visit, and other useful tips.
+this covers budget, flights, airbnb, moving money, arrival, getting around, things to do, and a set of photo notes that make the post less dry.
 
-### Step 1: Decide on your budget
+## budget
 
-Before booking anything, it's important to decide on your budget. It may seem obvious, but when I created a spreadsheet and started putting in expected expenses, I got a real sense of how much I would spend. Determine how much money you can spend on airfare, accommodation, food, transportation, activities, and souvenirs (this part can surprise you).
+make a simple spreadsheet with flights, accommodation, food, transport, activities, and a cushion for surprises. seeing the total in one place helps you decide where to save and where to spend before booking anything.
 
-### Step 2: Buy plane tickets
+## flights
 
+compare fares on sites like google flights (https://www.google.com/flights), expedia (https://www.expedia.com/), and skyscanner (https://www.skyscanner.net/). i flew gru to aep round trip with aerolíneas argentinas for around r$1400 paid in installments. buenos aires has two main airports: aeroparque jorge newbery (smaller and close to the center) and ezeiza (larger and farther). think congonhas versus guarulhos.
 
-After having an idea of your budget, it's time to start looking for plane tickets. You can search for flights on sites like [Google Flights](https://www.google.com/flights), [Expedia](https://www.expedia.com/), or [Skyscanner](https://www.skyscanner.net/). Compare prices, schedules, and airlines to find the best option for you. I bought round-trip tickets (Guarulhos GRU - Aeroparque AEP) with Aerolíneas Argentinas for approximately R$1400 in 8 installments.
+## accommodation
 
-The city has two airports, [Aeroparque Jorge Newbery](https://aeroparquebuenosaires.ar/) and [Buenos Aires Ezeiza Airport](https://aeropuertoezeiza.net/). My analogy is that they function like Congonhas and Guarulhos; Aeroparque is smaller and closer to the city, while Ezeiza is larger and farther from the city.
+after booking flights i chose an airbnb near abasto shopping on avenida corrientes. one block from pueyrredón station on line b made it easy to connect with the rest of the city. when you pick a place, read reviews carefully, check the host rating, and confirm nearby basics like subway, pharmacy, supermarket, and places to eat.
 
-### Step 3: Book your accommodation
+## money
 
+cards can be expensive because of exchange rates. cash helps more than you might expect. western union transfers worked well and i picked up cash in person.
 
-After buying your plane tickets, it's time to book your accommodation. Airbnb is a great option for budget-conscious travelers who want to experience the local culture. You can find affordable and comfortable accommodations in various neighborhoods of the city. Popular neighborhoods include Palermo, San Telmo, Recoleta, and Puerto Madero.
+what worked for me in november 2022:
+- bring some usd if you arrive on a weekend. many places accept dollars and use a parallel rate. i saw quotes around 1 usd ≈ 300 ars that beat my card rate.
+- send smaller transfers. systems can fail, some locations run out of cash, and mistakes happen. smaller amounts reduce the risk of headaches.
+- i sent r$250 at a time and received roughly 15,000 ars per transfer. i withdrew with my passport once the pickup cleared.
 
-When booking on Airbnb, I made sure to read the space reviews, check the host and guest ratings, and see if the area had nearby amenities (subway, pharmacy, supermarket, restaurants). This is very important for a long stay.
+## planning days
 
-I ended up choosing an apartment near [Abasto Shopping](https://www.abasto-shopping.com.ar/) on Avenida Corrientes. I chose this Airbnb because it met my needs well based on the factors mentioned above, and it was one block from the [Pueyrredón station](https://en.wikipedia.org/wiki/Pueyrred%C3%B3n_station_(Line_B)). It's a well-positioned station in relation to the rest of the city's metro points.
+sketch a loose outline with a few anchors like neighborhoods or museums and leave room to wander. buenos aires rewards unplanned walks, long coffees, and the surprise of live music around a corner.
 
-### Step 4: Send money
+## a little spanish
 
+basic phrases go a long way. even when people speak english, using spanish smooths interactions and makes the trip richer.
 
-If you're traveling to Buenos Aires, you'll have to get used to using that ancient thing called physical money. This is because credit card exchange rates are not very friendly. There are several ways to send money; the method I used was via Western Union, withdrawing from locations that allow it.
+## travel insurance
 
-My considerations for sending money:
+compare a few policies and choose one that fits your length of stay and activities. it is boring, yes, and valuable when you need it.
 
-- Will it be the weekend and you didn't buy pesos beforehand? Bring dollars.
-  The US dollar is widely accepted, and many establishments offer parallel exchange rates. Many places work with a conversion of 1 USD = 300 pesos, which is better than using a credit card.
+## arrival
 
-- Don't send too much money at once.
-  The Western Union system is subject to failures. There may be mistakes, or someone might withdraw your money, or the location where you plan to withdraw might run out of money. To minimize losses or wasted trips for withdrawals, it's better to send smaller amounts of money each time and make more withdrawals.
+thanks to the brazil mercosur agreement you can travel with your id. i brought my passport hoping for a first stamp and everything was digital, so no stamp. immigration was simple. they asked where i was staying, i showed the airbnb receipt, and i said tourism. i carried printed copies of vaccine records and reservations. no one asked, but it felt safer.
 
-I made transfers of R$250, which gave me approximately 15000 pesos each time, and I had no problems withdrawing the money. The process is simple: you make the transfer via Western Union, wait for the withdrawal to become available, go to the location, and withdraw with your passport. This video explains the step-by-step process in detail.
+at the airport i used wifi to book an uber to my airbnb because i did not have a local sim yet. nearby western union offices were closed until monday because i arrived saturday afternoon. the claro shop in abasto sold sims to foreigners in cash only. i spent the weekend exploring on foot and buying food at the mall using offline maps i had downloaded.
 
-### Step 5: Plan your itinerary (but not too much)
+## getting around
 
+the subway and buses connect well. i once took a late bus from palermo to avenida corrientes around 2 a.m. without issues.
 
-Once your airfare, accommodation, and finances are settled, it's time to plan your itinerary. Buenos Aires offers a variety of activities and attractions for all tastes. Popular activities include exploring the city's historic neighborhoods, enjoying live music and dance performances, trying traditional Argentine cuisine, and taking day trips to nearby cities and attractions. However, over-planning can make you miss out on the surprise and connection with the city, so be open to exploring without prior knowledge.
+- you need a transit card to ride buses and the subway. buy it at subway stations and load as you go.
+- during my stay, subways cost under r$1 per ride and buses were under r$0.50 for the distances i did. for buses, tell the driver your destination because the fare depends on distance.
+- taxis were usually easier and cheaper than ride apps. watch for longer routes and check change carefully.
 
-### Step 6: Learn some Spanish
+## things i liked and recommend
 
+- san telmo is great to wander, especially on sunday for the fair and antiques. i had one of the best barbecues of my life at the market.
+- plaza de mayo and the casa rosada tell a lot of the country’s story in one walk.
+- recoleta cemetery, the centro cultural recoleta, and floralis genérica are close enough to visit in one loop.
+- eat widely. empanadas, asado, miga sandwiches, and plenty of gelato. buenos aires also has good peruvian and mexican food.
+- tour la bombonera in boca juniors. i visited the stadium during the 2022 world cup period and could not catch a match.
+- caminito in la boca has colorful streets and many bars near the stadium.
+- puerto madero offers a modern waterfront walk.
+- tigre is an easy day trip into the delta.
+- the feria de mataderos has crafts and regional food.
+- monserrat has historic churches worth a look.
+- the botanical garden is a calm break from the city.
+- palermo has a dense food scene. i liked la fábrica de tacos and had a strong meal at las petunias.
+- el ateneo grand splendid is a bookstore in a historic theater and it is as beautiful as everyone says.
+- the evita museum is compact and focused.
+- on mondays la bomba del tiempo at konex is a must. buy tickets at the box office because it was cheaper.
 
-Although many people in Buenos Aires speak English, it's always helpful to learn some basic Spanish phrases. This will not only facilitate communication with locals but also enhance your cultural experience.
+## photos with commentary
 
-### Step 7: Get travel insurance
+little moments that match the places above. captions are mine.
 
+_centro cultural recoleta on a cloud afternoon. yellow walls, tiled patios, kids running between exhibits. the museum anchors the neighborhood and spills into the square._  
+![recoleta](https://i.imgur.com/VRjlEyv.jpeg)
 
-Finally, it's essential to get travel insurance to protect yourself in case of unforeseen events, such as flight cancellations or medical emergencies. Be sure to research different travel insurance providers and select a policy that meets your needs and budget.
+_poster by alejandro magallanes in the wild. bold color, type that refuses to behave, humor with a backbone._  
+![alejandro magallanes](https://i.imgur.com/wYw3Gmq.jpeg)
 
-### Step 8: Hola, Buenos Aires y ahora?
+_work session kit. mate, a notebook with too many to do items, and python on the screen pretending not to throw errors._  
+![mate notebook and python during work](https://i.imgur.com/DFdTab0.jpeg)
 
-Ok, the plane has landed, everyone disembarks, now what?
+_simple plate and perfectly fine rice after walking too much. not every meal needs a thesis. sometimes you just need fuel and a quiet seat by the window._  
+![lunch plate with rice](https://i.imgur.com/7YMoErT.jpeg)
 
-There's no mystery. Due to the Brazil-Mercosur agreement, you can travel to Argentina with your ID (I took my passport hoping to get its first stamp, but the process was all digital, so it didn't help much hahaha). The immigration process was quite simple. They asked where I would stay (I showed the Airbnb reservation receipt), what I was going to do (tourism and eat a lot), and that was it. I took EVERYTHING printed: vaccination receipts, reservation proof, return trip proof. They didn't ask for it, but it's better to be safe.
+_late walk near corrientes ends with a hamburger that tastes better than it has any right to. the kind you eat standing because you do not want to lose the heat._  
+![hamburger](https://i.imgur.com/LgHLrVl.jpeg)
 
-After picking up my checked luggage, I used the airport's Wi-Fi to call an Uber to my reserved Airbnb since I didn't have a local SIM card yet.
+_la fábrica de tacos in palermo. crisp tortillas, bright salsas, the right amount of lime. the best one for me. (update 2025 still the best. barcelona’s spots do not even compare.)_  
+![la fábrica de tacos in palermo](https://i.imgur.com/Wv9MH6C.jpeg)
 
-Upon arrival, I found out that the nearby Western Union offices wouldn't open until Monday (I arrived on Saturday afternoon) and that the Claro store in Abasto Shopping only accepted cash for SIM cards for foreigners.
+_another good meal that turned into a longer conversation than planned. buenos aires is good at that trick where lunch becomes afternoon._  
+![another good meal in ba](https://i.imgur.com/AnS56AW.jpeg)
 
-In summary, I spent the weekend buying food at the shopping mall and exploring the city on foot using the downloaded city map from Google Maps.
+_floralis genérica looked ready to open but stayed still the whole time. cloudy sky, petals at rest. it felt right to slow down too._  
+![floralis genérica](https://i.imgur.com/4JfMeq7.jpeg)
 
-### Step 9: Discovering and experiencing the city
+## final notes
 
-
-The city's subway and bus lines are well connected (compared to São Paulo, for example). I remember once taking a bus at 2 am from Palermo to Avenida Corrientes with no issues.
-
-To take buses and the subway, you need to buy a subte card, usually sold at subway stations. It costs less than 2 reais, and you can top it up as you use it. During my stay, the subway fare was less than 1 real, and the bus fare was less than 50 cents for the places I needed to go (bus fare is proportional to your distance, you tell the driver where you're going, and the fare is based on your current distance to the destination; I really liked this system).
-
-In general, it's easier to get a taxi than an Uber, and it's cheaper; just be cautious about fake bills and routes.
-
-Now that you’ve organized your trip and accommodation, it’s time to plan your itinerary. Here are some things I did in Buenos Aires during these 30 days:
-
-- Take a stroll through the charming neighborhood of San Telmo and explore its antique markets. On Sundays, you can visit the famous San Telmo fair. (In the market, I had one of the best barbecues of my life);
-- Visit Plaza de Mayo and see the famous Casa Rosada, the presidential palace;
-- Visit the famous Recoleta Cemetery, where Eva Perón is buried, the El Recoleta Cultural Center (there are always free programs, but some exhibitions are paid), and Floralis Genérica;
-- Try Argentine food, such as empanadas, asado (barbecue), miga sandwiches, sweets, and also take the opportunity to try Peruvian and Mexican cuisine, which are very popular in the city;
-- Watch a football match at La Bombonera, home of the famous Boca Juniors team. (I only visited the stadium, as I went during the 2022 World Cup, and there were no games happening);
-- Walk along the colorful and lively Caminito street in La Boca, with many bars nearby, and the Bombonera stadium is very close;
-- Explore the modern neighborhood of Puerto Madero and its modern architecture;
-- Take a day trip to Tigre, a charming town located in the Paraná River delta;
-- Visit the Feria de Mataderos, a traditional market where you can buy handicrafts and taste regional food;
-- Explore the historic neighborhood of Monserrat and its many churches;
-- Visit the Botanical Garden;
-- Explore the Palermo neighborhood and its many bars and restaurants. I really liked La Fábrica de Tacos; after eating there, eating tacos anywhere else became a sadness. I ate at Las Petunias and also had a great dining experience there;
-- Visit El Ateneo Grand Splendid, a famous bookstore located in a historic theater;
-- Visit the Evita Museum and learn about her life;
-- On Monday, go to the La Bomba del Tiempo show at the Konex Cultural Center. You can buy tickets at the box office, which will be cheaper. It's really unmissable;
-- Enjoy a lot of gelato; they are well-priced and delicious.
-
-In conclusion, planning a 30-day trip to Buenos Aires can be a daunting task, but with careful planning and organization, it can be an unforgettable adventure. Remember to budget wisely, book your airfare and accommodation in advance, send money if necessary, plan your itinerary, learn some Spanish, and get travel insurance. With these tips, you'll be well on your way to enjoying everything Buenos Aires has to offer.
+planning a month in buenos aires can look intimidating. with a budget early bookings a sane way to handle cash and a flexible plan it becomes a relaxed and memorable trip. as of february 2023 the tips above reflect what i did and saw. enjoy the city slowly.
