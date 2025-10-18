@@ -69,4 +69,65 @@ the advantage of being in a larger group was that while one was teaching, the ot
 
 everyone who uses electronic devices suffers from the pseudo “nervous finger syndrome.” they start clicking on everything they see on the computer or smartphone screen, and i'm not the one saying this; it's a topic of a university of texas article. keeping this in mind, we only made the course materials available as they were needed. to facilitate this, we created bit.ly links for the materials to be downloaded and shared them when necessary. this avoided the time-consuming and data integrity issues of passing around pen drives.
 
+### enjoyed this post? get new ones by email:
+.
+<div class="bd-subscribe my-5" role="region" aria-labelledby="bd-subscribe-title">
+  <style>
+    .bd-subscribe{margin:2rem 0;padding:1rem;border:1px solid;border-radius:12px;background:transparent;max-width:680px;color:inherit}
+    .bd-subscribe *{box-sizing:border-box;font:inherit;color:inherit}
+    .bd-subscribe h2{margin:0 0 .75rem;font-size:1.1rem;line-height:1.3}
+    .bd-subscribe form{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+    .bd-subscribe .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    .bd-subscribe input[type="email"]{flex:1 1 260px;padding:.6rem .75rem;border:1px solid;border-radius:8px;background:transparent}
+    .bd-subscribe input[type="email"]::placeholder{opacity:.65}
+    .bd-subscribe input[type="submit"]{padding:.6rem .9rem;border:1px solid;border-radius:8px;background:transparent;cursor:pointer}
+    .bd-subscribe p{margin:.5rem 0 0;font-size:.875rem;opacity:.85}
+    @media (prefers-color-scheme:light){
+      .bd-subscribe{border-color:rgba(0,0,0,.15)}
+      .bd-subscribe input[type="email"],.bd-subscribe input[type="submit"]{border-color:rgba(0,0,0,.2)}
+    }
+    @media (prefers-color-scheme:dark){
+      .bd-subscribe{border-color:rgba(255,255,255,.2)}
+      .bd-subscribe input[type="email"],.bd-subscribe input[type="submit"]{border-color:rgba(255,255,255,.25)}
+    }
+  </style>
+
+  <h2 id="bd-subscribe-title">get new posts by email</h2>
+
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/notasdaedicao"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/notasdaedicao', 'popupwindow')"
+    class="embeddable-buttondown-form"
+    autocomplete="on"
+  >
+    <label for="bd-email" class="visually-hidden">your email</label>
+    <input
+      type="email"
+      name="email"
+      id="bd-email"
+      placeholder="you@example.com"
+      inputmode="email"
+      autocomplete="email"
+      required
+      aria-describedby="bd-subscribe-help"
+    />
+    <input type="submit" value="subscribe" />
+    <p id="bd-subscribe-help">no spam. unsubscribe anytime.</p>
+  </form>
+
+  <noscript>
+    <p>javascript is disabled. <a href="https://buttondown.com/notasdaedicao" target="_blank" rel="noopener">subscribe on buttondown</a>.</p>
+  </noscript>
+
+  <p style="margin-top:.25rem">
+    <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">powered by buttondown</a>
+  </p>
+</div>
+
+
+
+
+
 
