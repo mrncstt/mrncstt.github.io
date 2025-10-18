@@ -55,7 +55,7 @@ you need recent **python 3** and these packages:
 pip install selenium beautifulsoup4 pandas
 ```
 - everything (script, requirements, notes) lives in this folder:  
-- [**`_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4`**](https://github.com/mrncstt/mrncstt.github.io/tree/main/_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4)
+- [**`_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4`**]([https://github.com/mrncstt/mrncstt.github.io/tree/main/_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4](https://github.com/mrncstt/mrncstt.github.io/tree/main/_resources/resources_2024-10-17-export_linkedin_saved_posts_selenium_bs4))
 - selenium manager usually auto-installs the correct browser driver.  
 - editor used: **vs code**.
 
@@ -137,6 +137,7 @@ with the csv/json you choose your next step, the foundation is already laid and 
     <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">powered by buttondown</a>
   </p>
 </div>
+
 
 
 
