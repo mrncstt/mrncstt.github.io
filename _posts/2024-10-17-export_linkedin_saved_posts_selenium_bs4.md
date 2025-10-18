@@ -22,7 +22,7 @@ we save things “to read later” and… rarely return. linkedin’s **saved it
 ## what it does
 
 ```mermaid
-flowchart td
+flowchart TD
     a["start"] --> b["go to saved items"]
     b --> c["extract: author/link/text/date_label"]
     c --> d["compute date_approx"]
@@ -137,6 +137,7 @@ with the csv/json you choose your next step, the foundation is already laid and 
     <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">powered by buttondown</a>
   </p>
 </div>
+
 
 
 
