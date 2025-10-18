@@ -1,43 +1,43 @@
-# Export LinkedIn Saved Posts (Selenium + BeautifulSoup)
+# export linkedin saved posts (selenium + beautifulsoup)
 
 
-### Start
+### start
 
 ```bash
 python -m venv .venv
-# Windows
-.\.venv\Scripts\activate
+# windows
+.\.venv\scripts\activate
 pip install -r requirements.txt
 python export_linkedin_saved_posts.py
 ```
 
-### The script will:
+### the script will:
 
-- Ask: How many months back? (0 = no limit)
-- Launches Chrome and takes you to the LinkedIn login page
-- Opens your **Saved Posts**, scrolls to load content, and parses each post card.
-- Stops when posts are older than the time window you choose.
-- Saves structured data to `CSV` and `JSON` with a timestamped filename.
+- ask: how many months back? (0 = no limit)
+- launches chrome and takes you to the linkedin login page
+- opens your **saved posts**, scrolls to load content, and parses each post card.
+- stops when posts are older than the time window you choose.
+- saves structured data to `csv` and `json` with a timestamped filename.
 
 
-### Output
+### output
 
-Files named like: 
+files named like: 
 ```
-linkedin_saved_posts_today_MM_DD_YYYY_HH_MM.csv
- - Columns: author, link, text, date_label, date_approx, extracted_on
+linkedin_saved_posts_today_mm_dd_yyyy_hh_mm.csv
+ - columns: author, link, text, date_label, date_approx, extracted_on
 
-linkedin_saved_posts_today_MM_DD_YYYY_HH_MM.json
+linkedin_saved_posts_today_mm_dd_yyyy_hh_mm.json
 ```
 
-### Assumptions
+### assumptions
 
- - LinkedIn UI in English. Relative labels supported: 1d, 3w, 2mo, 1yr …
+ - linkedin ui in english. relative labels supported: 1d, 3w, 2mo, 1yr …
  - 12 months is treated equal to 1 year (months = 30 days). (approximations: mo +- 30d, yr = 12 * 30d)
- - Early stop when we detect labels older than the chosen months.
- - Dedup by post link (or author + text prefix) to avoid repeated cards.
- - Tested with Chrome + ChromeDriver 
- - The script launches a local browser for **you** to sign in credentials arent handled or stored by the script.
+ - early stop when we detect labels older than the chosen months.
+ - dedup by post link (or author + text prefix) to avoid repeated cards.
+ - tested with chrome + chromedriver 
+ - the script launches a local browser for **you** to sign in credentials arent handled or stored by the script.
 
 
 
