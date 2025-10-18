@@ -2,8 +2,10 @@
 title: Export your LinkedIn saved posts with Selenium and Beautiful Soup
 description: Export your LinkedIn saved posts with Selenium and Beautiful Soup
 date: 2025-10-10
-categories: [tech, vs code, selenium, beautiful soup, linkedin]
-tags: [tech, vs code, selenium, beautiful soup, linkedin]
+categories: [tech, vs code, selenium, beautiful soup, linkedin, python]
+tags: [tech, vs code, selenium, beautiful soup, linkedin, python]
+mermaid: true
+
 ---
 
 ##  Export your LinkedIn saved posts with Selenium and Beautiful Soup
@@ -17,7 +19,7 @@ We save things “to read later” and… rarely return. LinkedIn’s **Saved it
 ```
 (same thing happens with ‘save to read latter’)
 ```
-## What it does (quick overview)
+## What it does
 
 ```mermaid
 flowchart TD
@@ -42,7 +44,7 @@ flowchart TD
 - CSV uses **UTF-8 with BOM** so Excel opens emojis and accents correctly.
 - The script tries several [DOM patterns](https://developer.mozilla.org/pt-BR/docs/conflicting/Web/API/Document_Object_Model_a0b90593de4c5cb214690e823be115a18d605d4bc7719ba296e212da2abe18ef) to extract text/author across different post layouts.
 - The platform forbids scraping and automated activity that abuses the service and this walkthrough is for personal archiving of your own Saved Items list with a human logging in (one of the reasons why im using an ""manual"" mode for login and consent flows).
-- I suggest you to keep **2FA enabled** on your LinkedIn account. Prefer manual login in the real browser instead of storing passwords in plain text. Review LinkedIn’s policies on [Automated Activity](https://www.linkedin.com/help/linkedin/answer/a1342669), the [User Agreement](https://www.linkedin.com/legal/user-agreement), and how to [download your data](https://www.linkedin.com/psettings/member-data).
+- I suggest you to keep **2FA enabled** on your LinkedIn account. 
 - Expect selectors to change over time.
 
 ## Installation and files
@@ -135,6 +137,7 @@ With the CSV/JSON you choose your next step, the foundation is already laid and 
     <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">Powered by Buttondown</a>
   </p>
 </div>
+
 
 
 
