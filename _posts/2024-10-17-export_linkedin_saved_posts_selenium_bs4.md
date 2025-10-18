@@ -1,6 +1,6 @@
 ---
-title: Export your LinkedIn saved posts with Selenium and Beautiful Soup
-description: Export your LinkedIn saved posts with Selenium and Beautiful Soup
+title: export your linkedin saved posts with selenium and beautiful soup
+description: export your linkedin saved posts with selenium and beautiful soup
 date: 2025-10-10
 categories: [tech, vs code, selenium, beautiful soup, linkedin, python]
 tags: [tech, vs code, selenium, beautiful soup, linkedin, python]
@@ -8,10 +8,10 @@ mermaid: true
 
 ---
 
-##  Export your LinkedIn saved posts with Selenium and Beautiful Soup
+##  export your linkedin saved posts with selenium and beautiful soup
 
 
-We save things “to read later” and… rarely return. LinkedIn’s **Saved items** helps, but curation inside the app can get messy. This walkthrough shows how to open your account, visit **Saved items**, scroll the page, extract **author, link, text, and date**, and export everything to **CSV** and **JSON** and your reading list becomes searchable and shareable data.
+we save things “to read later” and… rarely return. linkedin’s **saved items** helps, but curation inside the app can get messy. this walkthrough shows how to open your account, visit **saved items**, scroll the page, extract **author, link, text, and date**, and export everything to **csv** and **json** and your reading list becomes searchable and shareable data.
 
 
 
@@ -19,69 +19,69 @@ We save things “to read later” and… rarely return. LinkedIn’s **Saved it
 ```
 (same thing happens with ‘save to read latter’)
 ```
-## What it does
+## what it does
 
 ```mermaid
-flowchart TD
-    A["Start"] --> B["Go to Saved Items"]
-    B --> C["Extract: author/link/text/date_label"]
-    C --> D["Compute date_approx"]
-    D --> E["Ask: months back"]
-    E --> F{"Older?"}
-    F -- "No" --> G["Scroll more"]
-    G --> F
-    F -- "Yes" --> H["Stop"]
-    H --> I["Deduplicate"]
-    I --> J["Write CSV"]
-    J --> K["Write JSON"]
-    K --> L["Done"]
+flowchart td
+    a["start"] --> b["go to saved items"]
+    b --> c["extract: author/link/text/date_label"]
+    c --> d["compute date_approx"]
+    d --> e["ask: months back"]
+    e --> f{"older?"}
+    f -- "no" --> g["scroll more"]
+    g --> f
+    f -- "yes" --> h["stop"]
+    h --> i["deduplicate"]
+    i --> j["write csv"]
+    j --> k["write json"]
+    k --> l["done"]
 ```
 
 
-## Assumptions and guardrails
+## assumptions and guardrails
 
-- LinkedIn UI language is **English** (relative labels: `mo` for month, `yr` for year).
-- CSV uses **UTF-8 with BOM** so Excel opens emojis and accents correctly.
-- The script tries several [DOM patterns](https://developer.mozilla.org/pt-BR/docs/conflicting/Web/API/Document_Object_Model_a0b90593de4c5cb214690e823be115a18d605d4bc7719ba296e212da2abe18ef) to extract text/author across different post layouts.
-- The platform forbids scraping and automated activity that abuses the service and this walkthrough is for personal archiving of your own Saved Items list with a human logging in (one of the reasons why im using an ""manual"" mode for login and consent flows).
-- I suggest you to keep **2FA enabled** on your LinkedIn account. 
-- Expect selectors to change over time.
+- linkedin ui language is **english** (relative labels: `mo` for month, `yr` for year).
+- csv uses **utf-8 with bom** so excel opens emojis and accents correctly.
+- the script tries several [dom patterns](https://developer.mozilla.org/pt-br/docs/conflicting/web/api/document_object_model_a0b90593de4c5cb214690e823be115a18d605d4bc7719ba296e212da2abe18ef) to extract text/author across different post layouts.
+- the platform forbids scraping and automated activity that abuses the service and this walkthrough is for personal archiving of your own saved items list with a human logging in (one of the reasons why im using an ""manual"" mode for login and consent flows).
+- i suggest you to keep **2fa enabled** on your linkedin account. 
+- expect selectors to change over time.
 
-## Installation and files
+## installation and files
 
-You need recent **Python 3** and these packages:
+you need recent **python 3** and these packages:
 
 ```sh
 pip install selenium beautifulsoup4 pandas
 ```
-- Everything (script, requirements, notes) lives in this folder:  
+- everything (script, requirements, notes) lives in this folder:  
 - [**`_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4`**](https://github.com/mrncstt/mrncstt.github.io/tree/main/_resources/2024-10-17-export_linkedin_saved_posts_selenium_bs4)
-- Selenium Manager usually auto-installs the correct browser driver.  
-- Editor used: **VS Code**.
+- selenium manager usually auto-installs the correct browser driver.  
+- editor used: **vs code**.
 
   
-## Output schema
+## output schema
 
 | column         | meaning                                                                 |
 |----------------|-------------------------------------------------------------------------|
-| `author`       | Display name of the post author                                         |
-| `link`         | Canonical link to the post                                              |
-| `text`         | Main text that follows the post                    |
-| `date_label`   | Relative UI label (e.g., `2mo`, `1yr`, `3w`)                            |
-| `date_approx`  | Approximate absolute date computed from `date_label`                    |
-| `extracted_on` | Date you ran the export                                                 |
+| `author`       | display name of the post author                                         |
+| `link`         | canonical link to the post                                              |
+| `text`         | main text that follows the post                    |
+| `date_label`   | relative ui label (e.g., `2mo`, `1yr`, `3w`)                            |
+| `date_approx`  | approximate absolute date computed from `date_label`                    |
+| `extracted_on` | date you ran the export                                                 |
 
 
 
 
 
 
-## What now?
-With the CSV/JSON you choose your next step, the foundation is already laid and rest is curiosity!
+## what now?
+with the csv/json you choose your next step, the foundation is already laid and rest is curiosity!
 
 
 
-### Enjoyed this post? Get new ones by email:
+### enjoyed this post? get new ones by email:
 .
 <div class="bd-subscribe my-5" role="region" aria-labelledby="bd-subscribe-title">
   <style>
@@ -104,7 +104,7 @@ With the CSV/JSON you choose your next step, the foundation is already laid and 
     }
   </style>
 
-  <h2 id="bd-subscribe-title">Get new posts by email</h2>
+  <h2 id="bd-subscribe-title">get new posts by email</h2>
 
   <form
     action="https://buttondown.com/api/emails/embed-subscribe/notasdaedicao"
@@ -114,7 +114,7 @@ With the CSV/JSON you choose your next step, the foundation is already laid and 
     class="embeddable-buttondown-form"
     autocomplete="on"
   >
-    <label for="bd-email" class="visually-hidden">Your email</label>
+    <label for="bd-email" class="visually-hidden">your email</label>
     <input
       type="email"
       name="email"
@@ -125,18 +125,19 @@ With the CSV/JSON you choose your next step, the foundation is already laid and 
       required
       aria-describedby="bd-subscribe-help"
     />
-    <input type="submit" value="Subscribe" />
-    <p id="bd-subscribe-help">No spam. Unsubscribe anytime.</p>
+    <input type="submit" value="subscribe" />
+    <p id="bd-subscribe-help">no spam. unsubscribe anytime.</p>
   </form>
 
   <noscript>
-    <p>JavaScript is disabled. <a href="https://buttondown.com/notasdaedicao" target="_blank" rel="noopener">Subscribe on Buttondown</a>.</p>
+    <p>javascript is disabled. <a href="https://buttondown.com/notasdaedicao" target="_blank" rel="noopener">subscribe on buttondown</a>.</p>
   </noscript>
 
   <p style="margin-top:.25rem">
-    <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">Powered by Buttondown</a>
+    <a href="https://buttondown.com/refer/notasdaedicao" target="_blank" rel="noopener">powered by buttondown</a>
   </p>
 </div>
+
 
 
 
