@@ -8,7 +8,7 @@ tags: [podcast, french, learning]
 
 # podcasts to learn french
 
-![]((https://i.imgur.com/VMQYx53.jpg))
+![]((https://i.imgur.com/VMQYx53.jpg)
 
 ----[freepik license](https://br.freepik.com/vetores-gratis/pequenos-homens-e-mulheres-ouvindo-radio-ou-transmitindo-ilustracao-plana-ilustracao-de-desenho-animado_12699866.htm#page=1&query=podcast&position=37). some rights reserved.
 
