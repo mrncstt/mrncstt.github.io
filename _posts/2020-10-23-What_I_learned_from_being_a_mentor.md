@@ -1,13 +1,12 @@
 ---
-title: What I Learned as a Mentor
-description: What I Learned as a Mentor
+title: What I learned as a hackathon mentor
+description: What I learned as a hackathon mentor
 date: 2020-10-23
 categories: [Mentorship, Hackathon]
 tags: [Mentorship, Hackathon, blog]
 ---
-#### Context
 
-Throughout this year of 2020, I have participated in over 20 hackathons, both as a mentor and a participant. Being on different sides of this same four-sided coin (mentor, participant, judge, and facilitator) has helped me develop skills in various areas.
+2020 turned into a blur of weekend hackathons and wome weekends I built, others I mentored, and occasionally I helped facilitate. Showing up for other people’s projects sharpened my own: my questions got better, my triage got faster, and my feedback got calmer.
 
 Events where I was a mentor:
 
@@ -17,19 +16,20 @@ Events where I was a mentor:
 - [Polinize Hackathon 2020](https://hackathon.polinize.com/)
 - [Hacka das Manas 2021](https://www.hackathondasmanas.com/)
 
-### 1. Mentoring is a Two-Way Street
+### 1. mentoring is a two-way street
 
-Mentoring is not just about providing help to others. You will have the opportunity to develop leadership skills, learn to teach better, and reinforce the ability to ask good questions. The mentor is not there just to answer questions; it is also important to encourage teams to develop their own paths. This is an opportunity to support people while strengthening your network.
+Mentoring isn’t a broadcast. I arrive to help and leave with a notebook of things I learned—new tools to try, sharper prompts, and patterns you only spot when multiples teams attack the same brief. The trade is fair: I bring perspective and structure and teams give me angles I wouldn’t have found alone.
 
-### 2. Listening is Key
 
-Sometimes mentors confuse hearing with listening. Active listening promotes trust and respect, helps solve problems, and fosters a better understanding of the team's project development. Take notes during mentoring sessions, and ask questions if something is not clear, because if everything goes well, the team will go through a panel of evaluators. The more understandable the developed solution, the better.
+### 2. listening is key
 
-### 3. Avoid the Dungeon Master Syndrome
+Hearing isn’t the same as listening. My small checklist is: restate what I heard, ask one clarifying question, then offer a suggestion. That rhythm avoids “mentor karaoke,” where advice gets projected onto a problem that isn’t there. When a team feels understood, the next steps become obvious, docs get clearer, and the prototype makes sense to people who weren’t in the room.
+
+### 3. avoid the dungeon master syndrome
 
 ![](https://i.imgur.com/tcgdHjD.jpg)
 
-Using complex and often difficult language can be tempting because you want to show everything you know. However, this can make life even more difficult for those participating in a hackathon. There is a great quote by [James Clear](https://jamesclear.com/) about this:
+Jargon can feel like armor. I’ve reached for dense language or elaborate frameworks when a plain sentence would do. Real expertise should make things simpler for other people, not heavier. As [James Clear](https://jamesclear.com/) has argued elsewhere: 
 
 ```
 “Simplifying before understanding the details is ignorance.
@@ -38,8 +38,8 @@ Simplifying after understanding the details is genius.”
 
 Moreover, being present is important to follow the team's development.
 
-### 4. Sometimes the Team Just Needs a Hint
+### 4. sometimes the team just needs a hint
 
-When I was an ambassador for Shawee, I developed a repository with [Lorena](https://www.linkedin.com/in/lorenagmontes/) to gather tool tips for use in hackathons. We keep this material updated, and sending it to the teams helps them a lot in "finding what they want but don't know how to look for."
+Plenty of blockers are navigational, not deep. A pointer to a starter repo, the right API doc, or a better search query can unlock an hour of progress. As an ambassador for some hackathons I collected a small repo of recurring links and prompts/practical breadcrumbs people asked for when the clock was loud. It’s not about handing out answers, but it’s about lowering the cost of the next step so momentum doesn’t die.
 
 To access it, [click here](https://github.com/Lorenalgm/hackathon-dicas)
