@@ -1,0 +1,92 @@
+{%- assign homepage = '/' | relative_url -%}
+{%- assign author_name = site.author.name | default: site.title | default: site.social.name -%}
+{%- assign author_email = site.author.email | default: site.email | default: site.social.email -%}
+{%- assign avatar_src = site.avatar | default: '' -%}
+
+<div class="profile-wrapper">
+  {%- if avatar_src != '' -%}
+  <a class="profile-avatar" href="{{ homepage }}" rel="home">
+    <img src="{{ avatar_src | relative_url }}" alt="{{ author_name | escape }}" loading="lazy">
+  </a>
+  {%- endif -%}
+
+  <div class="profile-name">
+    <a href="{{ homepage }}">{{ author_name }}</a>
+  </div>
+
+  {%- if site.tagline -%}
+  <div class="profile-subtitle">{{ site.tagline }}</div>
+  {%- endif -%}
+
+  <div class="profile-links">
+    {%- assign github_username = site.github.username | to_s | strip -%}
+    {%- assign github_raw = site.github | to_s | strip -%}
+    {%- assign github_url = '' -%}
+    {%- if github_username != '' -%}
+      {%- assign github_url = 'https://github.com/' | append: github_username -%}
+    {%- elsif github_raw != '' and github_raw contains '://' -%}
+      {%- assign github_url = github_raw -%}
+    {%- endif -%}
+    {%- if github_url != '' -%}
+      <a href="{{ github_url }}" aria-label="GitHub" rel="me noopener" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    {%- endif -%}
+
+    {%- assign twitter_username = site.twitter.username | to_s | strip -%}
+    {%- assign twitter_raw = site.twitter | to_s | strip -%}
+    {%- assign twitter_url = '' -%}
+    {%- if twitter_username != '' and twitter_username != 'twitter_username' and twitter_username != 'username' -%}
+      {%- assign twitter_url = 'https://twitter.com/' | append: twitter_username -%}
+    {%- elsif twitter_raw != '' and twitter_raw contains '://' and twitter_raw != 'https://twitter.com/username' -%}
+      {%- assign twitter_url = twitter_raw -%}
+    {%- endif -%}
+    {%- if twitter_url != '' -%}
+      <a href="{{ twitter_url }}" aria-label="Twitter" rel="me noopener" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    {%- endif -%}
+
+    {%- if site.linkedin -%}
+      {%- assign linkedin_url = site.linkedin | strip -%}
+      {%- if linkedin_url != '' -%}
+        <a href="{{ linkedin_url }}" aria-label="LinkedIn" rel="me noopener" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if site.instagram -%}
+      {%- assign instagram_url = site.instagram | strip -%}
+      {%- if instagram_url != '' -%}
+        <a href="{{ instagram_url }}" aria-label="Instagram" rel="me noopener" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if author_email -%}
+      {%- assign author_email = author_email | strip -%}
+      {%- if author_email != '' and author_email != 'example@domain.com' -%}
+        <a href="mailto:{{ author_email }}" aria-label="Email" rel="me">
+          <i class="fas fa-envelope"></i>
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if site.url -%}
+      <a href="{{ site.url | append: site.baseurl }}/feed.xml" aria-label="RSS">
+        <i class="fas fa-rss"></i>
+      </a>
+    {%- endif -%}
+
+    {%- if site.buttondown -%}
+      {%- assign buttondown_url = site.buttondown | strip -%}
+      {%- if buttondown_url != '' -%}
+        <a href="{{ buttondown_url }}" aria-label="Newsletter" target="_blank" rel="noopener">
+          <i class="fas fa-envelope-open-text"></i>
+        </a>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+</div>
