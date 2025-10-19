@@ -4,6 +4,7 @@ description: "tech"
 date: "2024-03-03"
 categories: [topmate, google cloud platform, gcp, google colab, chatgpt]
 tags: [topmate, google cloud platform, gcp, google colab, chatgpt]
+mermaid: true
 ---
 
 ## why record mentorship calls?
