@@ -36,7 +36,7 @@ const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
         <span data-lang="es">Primer post</span>
       </span>
       <span class="stat-value">{first.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
-      <span class="stat-detail">{first.data.title}</span>
+      <a class="stat-detail stat-link" href={`/posts/${first.slug}/`}>{first.data.title}</a>
     </div>
   )}
   {last && (
@@ -47,7 +47,7 @@ const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
         <span data-lang="es">Último post</span>
       </span>
       <span class="stat-value">{last.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
-      <span class="stat-detail">{last.data.title}</span>
+      <a class="stat-detail stat-link" href={`/posts/${last.slug}/`}>{last.data.title}</a>
     </div>
   )}
   <div class="stat-card" role="listitem">

@@ -195,7 +195,7 @@ Com o CSV/JSON você escolhe o próximo passo -- a base já está pronta e o res
 </div>
 <div data-lang="es">
 
-## ¿Y ahora qué?
+## Y ahora qué?
 
 Con el CSV/JSON eliges tu próximo paso -- la base ya está puesta y lo demás es curiosidad!
 

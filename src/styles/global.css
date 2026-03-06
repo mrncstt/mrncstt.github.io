@@ -599,6 +599,10 @@ pre.astro-code .line::before {
   font-family: var(--font-mono); font-size: 11px; color: var(--text-faint);
   margin-top: 4px; display: block; line-height: 1.4;
 }
+.stat-link {
+  text-decoration: none; transition: color var(--transition);
+}
+.stat-link:hover { color: var(--text-muted); }
 
 /* Year chart */
 .year-chart { margin-bottom: 40px; }

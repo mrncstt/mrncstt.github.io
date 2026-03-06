@@ -23,7 +23,7 @@ Recentemente participei de uma mentoria online no [Topmate](https://topmate.io/)
 </div>
 <div data-lang="es">
 
-## ¿Por qué grabar las llamadas de mentoría?
+## Por qué grabar las llamadas de mentoría?
 
 Hace poco participé en una mentoría online en [Topmate](https://topmate.io/). Después de la llamada, Topmate me envió un enlace a la grabación en MP4. Tener la sesión completa me permite revisar los consejos, captar lo que se me escapó en directo y convertir una hora densa en apuntes de trabajo.
 
