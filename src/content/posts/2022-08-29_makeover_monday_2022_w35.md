@@ -103,7 +103,7 @@ Buenas prácticas:
 
 ## Mi versión
 
-#### ¿Cómo la desarrollé?
+#### Cómo la desarrollé?
 Usé Tableau para crear mi versión de la visualización. Tableau es una herramienta con la que me siento muy cómodo y ofrece mucha flexibilidad para crear visualizaciones detalladas e interactivas. Estos fueron los pasos que seguí:
 
 1. **Importación de datos**: Importé el dataset proporcionado para el reto Makeover Monday en Tableau.

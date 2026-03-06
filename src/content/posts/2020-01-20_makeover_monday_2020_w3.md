@@ -47,7 +47,7 @@ tags: [makeover monday, data visualization, power bi, data analysis, dashboard]
 </div>
 <div data-lang="es">
 
-#### El tema de la semana 3 es: ¿Es hora de tratar el azúcar como el tabaco?
+#### El tema de la semana 3 es: Es hora de tratar el azúcar como el tabaco?
 
 ##### El adolescente medio consume tres veces más azúcar de lo recomendado, como porcentaje del total de calorías. Existen esfuerzos a nivel mundial por parte de los gobiernos utilizando diferentes métodos, como la introducción de nuevos impuestos, campañas publicitarias y nuevas políticas públicas para combatir el consumo.
 

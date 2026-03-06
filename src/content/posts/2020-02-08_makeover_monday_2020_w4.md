@@ -125,7 +125,7 @@ O formato xls é designado para versões mais antigas do Excel, quando salvamos 
 <div data-lang="es">
 
 ## Mi Versión
-#### ¿Cómo la desarrollé?
+#### Cómo la desarrollé?
 
 Elegí Power BI porque es una herramienta con la que estoy más familiarizado y por su facilidad de acceso externo.
 

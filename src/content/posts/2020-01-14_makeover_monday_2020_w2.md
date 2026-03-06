@@ -115,7 +115,7 @@ Escolhi o Power BI por ser uma ferramenta com a qual tenho mais familiaridade e 
 <div data-lang="es">
 
 ## Mi Versión
-#### ¿Cómo la desarrollé?
+#### Cómo la desarrollé?
 
 Elegí Power BI porque es una herramienta con la que estoy más familiarizado y por su facilidad de acceso externo. La medida original de uso de pesticidas estaba en libras, así que realicé la conversión añadiendo una columna para obtener el resultado en kilogramos.
 

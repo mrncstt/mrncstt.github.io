@@ -46,7 +46,7 @@ Estos son algunos puntos que fueron relevantes en mi experiencia:
 </div>
 <div data-lang="es">
 
-## 1. ¿Cómo diseñar un curso?
+## 1. Cómo diseñar un curso?
 
 </div>
 
@@ -102,25 +102,25 @@ Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender,
 </div>
 <div data-lang="es">
 
-Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprender, pero conviene recordar que la experiencia de enseñanza y aprendizaje es tremendamente diversa. Entonces, ¿cómo equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
+Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprender, pero conviene recordar que la experiencia de enseñanza y aprendizaje es tremendamente diversa. Entonces, cómo equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
 
 ### Planificación
 
-- ¿Qué casos se van a presentar?
-- ¿Cómo se van a resolver?
-- ¿Qué resultados se deben alcanzar?
+- Qué casos se van a presentar?
+- Cómo se van a resolver?
+- Qué resultados se deben alcanzar?
 
 ### Calendario
 
-- ¿Cuánto tiempo hará falta para transmitir este conocimiento?
-- ¿Cuánto tiempo para asistir a los participantes?
+- Cuánto tiempo hará falta para transmitir este conocimiento?
+- Cuánto tiempo para asistir a los participantes?
 
 ### Validación
 
-- ¿Cómo voy a medir la satisfacción de los participantes?
-- ¿Qué nota le darías al curso del 0 al 10?
-- ¿Cuál es tu opinión sobre el curso?
-- ¿Qué podemos mejorar?
+- Cómo voy a medir la satisfacción de los participantes?
+- Qué nota le darías al curso del 0 al 10?
+- Cuál es tu opinión sobre el curso?
+- Qué podemos mejorar?
 
 </div>
 
@@ -136,7 +136,7 @@ Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprend
 </div>
 <div data-lang="es">
 
-## 2. "¿Alguien tiene alguna duda?"
+## 2. "Alguien tiene alguna duda?"
 
 </div>
 
@@ -182,11 +182,11 @@ A vantagem de estar em um grupo maior era que, enquanto um ensinava, os outros d
 
 #### Siempre habrá alguien con una duda que no se atreve a preguntar.
 
-Mantener a decenas de personas concentradas durante horas consecutivas un sábado de 8 de la mañana a 6 de la tarde no es tarea fácil. A lo largo del curso, nos preocupamos mucho por hacernos entender, al fin y al cabo era nuestra responsabilidad transmitir el conocimiento. Y aun cuando parábamos y preguntábamos "¿Alguien tiene alguna duda?", pocas personas levantaban la mano.
+Mantener a decenas de personas concentradas durante horas consecutivas un sábado de 8 de la mañana a 6 de la tarde no es tarea fácil. A lo largo del curso, nos preocupamos mucho por hacernos entender, al fin y al cabo era nuestra responsabilidad transmitir el conocimiento. Y aun cuando parábamos y preguntábamos "Alguien tiene alguna duda?", pocas personas levantaban la mano.
 
 La ventaja de estar en un grupo más grande era que, mientras uno enseñaba, los otros dos iban comprobando si todos seguían el hilo. Eso ayudó mucho en el seguimiento de los participantes, aunque es una práctica inviable para un curso con un solo instructor.
 
-#### ¿Qué se podría haber hecho?
+#### Qué se podría haber hecho?
 
 - A mitad del curso, intentamos usar Zoom para compartir pantalla y facilitar la visualización a los participantes, pero como había que esperar a que todos lo descargaran, llevaba tiempo. La lección aprendida: deberíamos haberlo hecho desde el principio.
 - Otra cosa que deberíamos haber pensado de antemano era emparejar a todos. Incluso usando ZoomIt, a veces era difícil seguir el ritmo. Nos dimos cuenta de que los participantes que estaban al fondo de la sala o solos tenían más dificultad para seguir el ritmo, porque era mucho contenido y, sin alguien cerca, no tenían apoyo inmediato.
