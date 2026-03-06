@@ -86,7 +86,7 @@ Clique no link do nome do cluster no painel da direita. Isso abre a página do c
 </div>
 <div data-lang="es">
 
-Haz clic en el enlace del nombre del cluster en el panel de la derecha. Eso abre la página del cluster, donde haces clic en la pestana **Spark UI**:
+Haz clic en el enlace del nombre del cluster en el panel de la derecha. Eso abre la página del cluster, donde haces clic en la pestaña **Spark UI**:
 
 </div>
 
