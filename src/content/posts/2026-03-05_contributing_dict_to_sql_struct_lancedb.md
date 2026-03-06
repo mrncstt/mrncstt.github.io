@@ -42,9 +42,9 @@ Say you have a training data pipeline that stores thousands of image annotations
 
 ## O issue
 
-[Este aqui](https://github.com/lancedb/lancedb/issues/1363). O `table.update()` nao conseguia lidar com colunas struct se voce passasse um dict Python.
+[Este aqui](https://github.com/lancedb/lancedb/issues/1363). O `table.update()` nao conseguia lidar com colunas struct se você passasse um dict Python.
 
-Digamos que voce tem um pipeline de dados de treinamento que armazena milhares de anotacoes de imagens assim:
+Digamos que você tem um pipeline de dados de treinamento que armazena milhares de anotações de imagens assim:
 
 </div>
 <div data-lang="es">
@@ -166,9 +166,9 @@ The [issue](https://github.com/lancedb/lancedb/issues/1363) pointed to `named_st
 </div>
 <div data-lang="pt">
 
-Funciona, mas voce esta escrevendo strings SQL na mao. Aspas, virgulas, structs aninhados. Fica feio rapido.
+Funciona, mas você esta escrevendo strings SQL na mao. Aspas, virgulas, structs aninhados. Fica feio rapido.
 
-O [issue](https://github.com/lancedb/lancedb/issues/1363) apontava para `named_struct` do DataFusion como a solucao.
+O [issue](https://github.com/lancedb/lancedb/issues/1363) apontava para `named_struct` do DataFusion como a solução.
 
 </div>
 <div data-lang="es">
@@ -198,11 +198,11 @@ The issue mentioned `named_struct` but I didn't know where that function came fr
 
 ### DataFusion e `named_struct`
 
-[Apache DataFusion](https://datafusion.apache.org/) e o motor SQL por tras do LanceDB. Quando voce chama `table.update()`, seus valores Python sao convertidos em strings SQL e o DataFusion os executa. Ninguem tinha escrito a parte que converte dicts.
+[Apache DataFusion](https://datafusion.apache.org/) e o motor SQL por tras do LanceDB. Quando você chama `table.update()`, seus valores Python sao convertidos em strings SQL e o DataFusion os executa. Ninguem tinha escrito a parte que converte dicts.
 
-O issue mencionava `named_struct` mas eu nao sabia de onde vinha essa funcao. Isso me levou a descobrir que o LanceDB [usa DataFusion para executar queries SQL](https://docs.lancedb.com/search/sql/). Tive que ler o codigo existente e a documentacao do DataFusion antes de entender.
+O issue mencionava `named_struct` mas eu nao sabia de onde vinha essa função. Isso me levou a descobrir que o LanceDB [usa DataFusion para executar queries SQL](https://docs.lancedb.com/search/sql/). Tive que ler o código existente e a documentação do DataFusion antes de entender.
 
-`named_struct` e uma funcao SQL que cria structs com campos nomeados. Voce passa pares alternados de nome-valor:
+`named_struct` e uma função SQL que cria structs com campos nomeados. Voce passa pares alternados de nome-valor:
 
 </div>
 <div data-lang="es">
@@ -213,7 +213,7 @@ O issue mencionava `named_struct` mas eu nao sabia de onde vinha essa funcao. Is
 
 [Apache DataFusion](https://datafusion.apache.org/) es el motor SQL detras de LanceDB. Cuando llamas a `table.update()`, tus valores Python se convierten en cadenas SQL y DataFusion las ejecuta. Nadie habia escrito la parte que convierte dicts.
 
-El issue mencionaba `named_struct` pero yo no sabia de donde venia esa funcion. Eso me llevo a descubrir que LanceDB [usa DataFusion para ejecutar queries SQL](https://docs.lancedb.com/search/sql/). Tuve que leer el codigo existente y la documentacion de DataFusion antes de entenderlo.
+El issue mencionaba `named_struct` pero yo no sabia de donde venia esa funcion. Eso me llevo a descubrir que LanceDB [usa DataFusion para ejecutar queries SQL](https://docs.lancedb.com/search/sql/). Tuve que leer el código existente y la documentacion de DataFusion antes de entenderlo.
 
 `named_struct` es una funcion SQL que crea structs con campos nombrados. Pasas pares alternados de nombre-valor:
 
@@ -249,7 +249,7 @@ Quando peguei o issue, `named_struct` ja estava disponivel na versao do DataFusi
 
 ### [`singledispatch`](https://docs.python.org/3/library/functools.html#functools.singledispatch)
 
-O issue ja dizia para usar [`singledispatch`](https://docs.python.org/3/library/functools.html#functools.singledispatch) do `functools`. Ele permite registrar uma funcao diferente para cada tipo. Entao, em vez de uma cadeia longa de `if isinstance(value, str) ... elif isinstance(value, float) ...`, cada tipo tem sua propria funcao que voce pode adicionar sem mexer no resto.
+O issue ja dizia para usar [`singledispatch`](https://docs.python.org/3/library/functools.html#functools.singledispatch) do `functools`. Ele permite registrar uma função diferente para cada tipo. Entao, em vez de uma cadeia longa de `if isinstance(value, str) ... elif isinstance(value, float) ...`, cada tipo tem sua propria função que você pode adicionar sem mexer no resto.
 
 Assim funciona o fluxo completo:
 
@@ -287,14 +287,14 @@ flowchart LR
 </div>
 <div data-lang="pt">
 
-### O codigo existente
+### O código existente
 
-`python/python/lancedb/util.py` ja tinha `value_to_sql` usando `singledispatch`. Um handler por tipo. Foi isso que fez com que adicionar `dict` fosse apenas uma nova funcao em vez de reescrever tudo.
+`python/python/lancedb/util.py` ja tinha `value_to_sql` usando `singledispatch`. Um handler por tipo. Foi isso que fez com que adicionar `dict` fosse apenas uma nova função em vez de reescrever tudo.
 
 </div>
 <div data-lang="es">
 
-### El codigo existente
+### El código existente
 
 `python/python/lancedb/util.py` ya tenia `value_to_sql` usando `singledispatch`. Un handler por tipo. Eso es lo que hizo que anadir `dict` fuese solo una nueva funcion en lugar de reescribir todo.
 
@@ -423,7 +423,7 @@ I wrote 6 test cases to cover what I could think of:
 </div>
 <div data-lang="pt">
 
-Como `value_to_sql` chama a si mesmo, dicts dentro de dicts se tornam `named_struct` dentro de `named_struct`. Listas e `None` tambem funcionam porque ja tinham seus proprios handlers. O SQL sai na mesma ordem das chaves do dict.
+Como `value_to_sql` chama a si mesmo, dicts dentro de dicts se tornam `named_struct` dentro de `named_struct`. Listas e `None` também funcionam porque ja tinham seus proprios handlers. O SQL sai na mesma ordem das chaves do dict.
 
 ### Os testes
 
@@ -555,9 +555,9 @@ LanceDB has good first issues and a contributing guide if you want to try someth
 
 [PR mergeado](https://github.com/lancedb/lancedb/pull/3089).
 
-A maior parte do trabalho ja tinha sido feita por quem configurou `singledispatch` em `util.py`. Por causa disso, suportar `dict` foi apenas registrar uma nova funcao sem mexer no resto.
+A maior parte do trabalho ja tinha sido feita por quem configurou `singledispatch` em `util.py`. Por causa disso, suportar `dict` foi apenas registrar uma nova função sem mexer no resto.
 
-O LanceDB tem good first issues e um guia de contribuicao se voce quiser tentar algo similar.
+O LanceDB tem good first issues e um guia de contribuicao se você quiser tentar algo similar.
 
 </div>
 <div data-lang="es">

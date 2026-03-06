@@ -20,7 +20,21 @@ listed: false
 .spark-panel .sp-title{font-weight:700;font-size:16px;margin-bottom:6px;color:#000 !important}
 </style>
 
+<div data-lang="en">
+
 ## Opening the Spark UI
+
+</div>
+<div data-lang="pt">
+
+## Abrindo a Spark UI
+
+</div>
+<div data-lang="es">
+
+## Abriendo la Spark UI
+
+</div>
 
 <div style="display:flex;max-width:780px;margin:0 0 .5rem;border-radius:6px;overflow:hidden;border:1px solid #23273a;background:#1b1e2e;font-family:-apple-system,'Helvetica Neue',Arial,sans-serif">
   <div style="flex:1;border-right:1px solid #23273a;min-width:0">
@@ -60,6 +74,20 @@ listed: false
   </div>
 </div>
 
+<div data-lang="en">
+
 Click the cluster name link in the right panel. That opens the cluster page, where you click the **Spark UI** tab:
+
+</div>
+<div data-lang="pt">
+
+Clique no link do nome do cluster no painel da direita. Isso abre a página do cluster, onde você clica na aba **Spark UI**:
+
+</div>
+<div data-lang="es">
+
+Haz clic en el enlace del nombre del cluster en el panel de la derecha. Eso abre la página del cluster, donde haces clic en la pestana **Spark UI**:
+
+</div>
 
 <div class="spark-panel"><div class="sp-tabs"><span class="sp-tab-active">Jobs</span><span class="sp-tab">Stages</span><span class="sp-tab">Storage</span><span class="sp-tab">Environment</span><span class="sp-tab">Executors</span><span class="sp-tab">SQL / DataFrame</span></div><div style="padding:14px 18px"><div class="sp-title">Spark Jobs</div><div class="sp-info"><div>User: root</div><div>Total Uptime: 38.4 min</div><div>Scheduling Mode: FAIR</div><div>Completed Jobs</div><div>Failed Jobs</div></div></div></div>

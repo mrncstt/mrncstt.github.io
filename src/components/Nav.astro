@@ -11,8 +11,8 @@ const isActive = (path: string) =>
     <div class="nav-links">
       <a href="/" aria-current={isActive('/') && !isActive('/tags') && !isActive('/about') ? 'page' : undefined}>Blog</a>
       <a href="/tags/" aria-current={isActive('/tags') ? 'page' : undefined}>Tags</a>
-      <a href="/recommendations/" aria-current={isActive('/recommendations') ? 'page' : undefined}>Recs</a>
-      <a href="/exams-simulator/" aria-current={isActive('/exams-simulator') ? 'page' : undefined}>Exams</a>
+      <a href="/recommendations/" aria-current={isActive('/recommendations') ? 'page' : undefined}>Recommendations</a>
+      <a href="/exams-simulator/" aria-current={isActive('/exams-simulator') ? 'page' : undefined}>Exam Simulator</a>
       <a href="/about/" aria-current={isActive('/about') ? 'page' : undefined}>About</a>
       <LanguageToggle />
       <ThemeToggle />
