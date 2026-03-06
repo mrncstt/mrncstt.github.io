@@ -107,7 +107,7 @@ Buenas prácticas:
 ## My Version
 #### How did I develop it?
 
-I chose Power BI because it is a tool I am more familiar with and for its ease of external access. The original measure of pesticide use was in pounds, so I performed the conversion by adding a column to give the result in kilograms.
+I chose Power BI because it is a tool I am more familiar with and for its ease of external access.
 
 The xls format is designated for older versions of Excel, when we save a file, in pt-br it appears as "Pasta de Trabalho do Excel 97- Excel 2003"
 
@@ -117,7 +117,7 @@ The xls format is designated for older versions of Excel, when we save a file, i
 ## Minha Versão
 #### Como eu desenvolvi?
 
-Escolhi o Power BI por ser uma ferramenta com a qual tenho mais familiaridade e pela facilidade de acesso externo. A medida original de uso de pesticidas estava em libras, então realizei a conversão adicionando uma coluna para dar o resultado em quilogramas.
+Escolhi o Power BI por ser uma ferramenta com a qual tenho mais familiaridade e pela facilidade de acesso externo.
 
 O formato xls é designado para versões mais antigas do Excel, quando salvamos um arquivo, em pt-br aparece como "Pasta de Trabalho do Excel 97- Excel 2003"
 
@@ -127,7 +127,7 @@ O formato xls é designado para versões mais antigas do Excel, quando salvamos 
 ## Mi Versión
 #### ¿Cómo la desarrollé?
 
-Elegí Power BI porque es una herramienta con la que estoy más familiarizado y por su facilidad de acceso externo. La medida original de uso de pesticidas estaba en libras, así que realicé la conversión añadiendo una columna para obtener el resultado en kilogramos.
+Elegí Power BI porque es una herramienta con la que estoy más familiarizado y por su facilidad de acceso externo.
 
 El formato xls está destinado a versiones antiguas de Excel; cuando guardamos un archivo, en pt-br aparece como "Pasta de Trabalho do Excel 97- Excel 2003"
 

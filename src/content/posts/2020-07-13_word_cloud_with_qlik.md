@@ -275,3 +275,7 @@ También incluimos una pequeña vista de sentimiento en el mismo dashboard. Eso 
 Eso fue todo: sencillo, rápido de cargar y útil en las conversaciones del día a día, ya que queríamos entender lo que la gente mencionaba para comprender mejor el proceso de evolución a medida que el memorial crecía.
 
 </div>
+
+## Links
+
+- [Qlik Sense](https://www.qlik.com/us/products/qlik-sense)

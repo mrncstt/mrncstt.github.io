@@ -55,7 +55,7 @@ Para simplificar a transcrição, baixo o vídeo e extraio o áudio. Esta versã
 </div>
 <div data-lang="es">
 
-> Nota rápida sobre protocolo: asegurate de que todos en la llamada saben que se está grabando.
+> Nota rápida sobre protocolo: asegúrate de que todos en la llamada saben que se está grabando.
 
 ## De MP4 a MP3
 
@@ -181,7 +181,7 @@ My run (for context):
 
 Minha execução (para contexto):
 
-- Audio: MP3, 44.100 Hz, 2 canais
+- Áudio: MP3, 44.100 Hz, 2 canais
 - Tempo de áudio cobrado: 31:57
 - Tempo de transcrição: ~11:43
 - Pontuação automática + confiança por palavra ativados
