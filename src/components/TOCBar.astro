@@ -34,8 +34,25 @@ const tocHeadings = headings.filter(h => h.depth === 2 || h.depth === 3);
 )}
 
 <script>
-  // Scroll spy - highlight active TOC item
+  // Tag TOC links with data-lang from their target headings
+  // so the CSS language rules automatically show/hide them
   const tocLinks = document.querySelectorAll<HTMLAnchorElement>('.toc-link[data-section]');
+
+  tocLinks.forEach(link => {
+    const id = link.getAttribute('data-section');
+    const heading = id ? document.getElementById(id) : null;
+    const langParent = heading?.closest('[data-lang]');
+    if (langParent) {
+      const lang = langParent.getAttribute('data-lang')!;
+      link.setAttribute('data-lang', lang);
+      const prev = link.previousElementSibling;
+      if (prev?.classList.contains('toc-sep')) {
+        prev.setAttribute('data-lang', lang);
+      }
+    }
+  });
+
+  // Scroll spy - highlight active TOC item
   const sections = new Map<string, HTMLElement>();
 
   tocLinks.forEach(link => {
