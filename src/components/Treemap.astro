@@ -1,0 +1,37 @@
+---
+// CSS grid treemap - QA fix #16: accessible with aria-labels
+// QA fix #21: grid-auto-flow: dense (in CSS)
+interface Props {
+  tags: Map<string, number>;
+}
+
+const { tags } = Astro.props;
+const sorted = [...tags.entries()].sort((a, b) => b[1] - a[1]);
+const max = sorted[0]?.[1] || 1;
+
+function sizeClass(count: number): string {
+  const ratio = count / max;
+  if (ratio >= 0.7) return 'size-lg';
+  if (ratio >= 0.4) return 'size-md';
+  if (ratio >= 0.2) return 'size-sm';
+  return 'size-xs';
+}
+---
+<div class="tags-section-label" id="treemap-label">Posts per tag</div>
+<div
+  class="treemap"
+  role="list"
+  aria-labelledby="treemap-label"
+>
+  {sorted.map(([tag, count]) => (
+    <a
+      class={`treemap-cell ${sizeClass(count)}`}
+      href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}/`}
+      role="listitem"
+      aria-label={`${tag}: ${count} ${count === 1 ? 'post' : 'posts'}`}
+    >
+      <span class="treemap-name">{tag}</span>
+      <span class="treemap-count">{count} {count === 1 ? 'post' : 'posts'}</span>
+    </a>
+  ))}
+</div>

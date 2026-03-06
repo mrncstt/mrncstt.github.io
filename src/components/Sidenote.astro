@@ -1,0 +1,36 @@
+---
+// Sidenote - margin on desktop, tooltip on mobile
+// QA fix #10: accessible via focus (button), dismiss on Escape
+interface Props {
+  id: number;
+  text: string;
+}
+const { id, text } = Astro.props;
+---
+<button
+  class="sn-ref"
+  type="button"
+  aria-describedby={`sn-tooltip-${id}`}
+  aria-label={`Sidenote ${id}`}
+>
+  {id}
+  <span
+    class="sn-tooltip"
+    id={`sn-tooltip-${id}`}
+    role="tooltip"
+  >
+    {text}
+  </span>
+</button>
+
+<script>
+  // Dismiss tooltips on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const active = document.activeElement;
+      if (active instanceof HTMLElement && active.classList.contains('sn-ref')) {
+        active.blur();
+      }
+    }
+  });
+</script>

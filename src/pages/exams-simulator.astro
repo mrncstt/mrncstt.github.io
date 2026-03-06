@@ -1,0 +1,661 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Exams Simulator" description="Practice for Databricks certification exams">
+  <div class="exam-page">
+    <div class="exam-lang-toggle">
+      <button class="exam-lang-btn active" data-lang="en">EN</button>
+      <button class="exam-lang-btn" data-lang="pt">PT-BR</button>
+    </div>
+    <h1 id="exam-title">Choose Your Exam</h1>
+
+    <div id="setup">
+      <label id="lbl-exam" for="exam-select">Select Exam</label>
+      <select id="exam-select"><option value="">--</option></select>
+      <label id="lbl-time" for="time-select">Time Limit (minutes)</label>
+      <select id="time-select"></select>
+      <label id="lbl-pass" for="pass-select">Pass Mark (%)</label>
+      <select id="pass-select"></select>
+      <button class="exam-btn-start" id="btn-start" disabled>Start Exam</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <div class="exam-header-bar">
+        <span id="q-counter"></span>
+        <span class="exam-timer" id="timer-display"></span>
+      </div>
+      <div class="exam-question-card">
+        <div class="exam-question-text" id="q-text"></div>
+        <div id="q-options"></div>
+      </div>
+      <div class="exam-nav-bar">
+        <button class="exam-nav-btn danger" id="btn-menu">Main Menu</button>
+        <div style="display:flex;gap:8px">
+          <button class="exam-nav-btn" id="btn-prev" disabled>Back</button>
+          <button class="exam-nav-btn primary" id="btn-next">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="results" class="hidden"></div>
+  </div>
+</Layout>
+
+<style>
+  .exam-page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+  .exam-page h1 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  .exam-lang-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+  .exam-lang-btn {
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    transition: all var(--transition);
+  }
+  .exam-lang-btn.active {
+    background: var(--text-strong);
+    color: var(--bg);
+    border-color: var(--text-strong);
+  }
+  .exam-page label {
+    display: block;
+    font-size: 13px;
+    font-family: var(--font-body);
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .exam-page select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text-strong);
+    font-family: var(--font-body);
+    font-size: 14px;
+    margin-bottom: 16px;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color var(--transition);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239ba3b5' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+  .exam-page select:focus {
+    border-color: var(--border-hover);
+  }
+  .exam-btn-start {
+    width: 100%;
+    padding: 12px;
+    background: var(--text-strong);
+    color: var(--bg);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: opacity var(--transition);
+  }
+  .exam-btn-start:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .exam-btn-start:hover:not(:disabled) {
+    opacity: 0.85;
+  }
+  .exam-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  .exam-timer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .exam-timer.warn {
+    color: #d9534f;
+  }
+  .exam-question-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .exam-question-text {
+    font-family: var(--font-prose);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-strong);
+    margin-bottom: 16px;
+  }
+  .exam-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-family: var(--font-prose);
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text);
+    transition: border-color var(--transition);
+  }
+  .exam-option:hover {
+    border-color: var(--text-muted);
+  }
+  .exam-option.selected {
+    border-color: var(--text-strong);
+    background: var(--bg-elevated);
+  }
+  .exam-option input {
+    margin-top: 3px;
+    accent-color: var(--text-strong);
+  }
+  .exam-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .exam-nav-btn {
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text-muted);
+    transition: all var(--transition);
+  }
+  .exam-nav-btn:hover {
+    border-color: var(--text-muted);
+    color: var(--text-strong);
+  }
+  .exam-nav-btn.primary {
+    background: var(--text-strong);
+    color: var(--bg);
+    border-color: var(--text-strong);
+  }
+  .exam-nav-btn.primary:hover {
+    opacity: 0.85;
+  }
+  .exam-nav-btn.success {
+    background: #2d6a2d;
+    color: #fff;
+    border-color: #2d6a2d;
+  }
+  .exam-nav-btn.danger {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--text-muted);
+  }
+  .exam-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  .hidden { display: none; }
+
+  /* Results */
+  :global(.exam-result-header) {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  :global(.exam-result-score) {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin: 8px 0;
+  }
+  :global(.exam-result-status) {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  [data-theme="dark"] :global(.exam-result-status.pass) {
+    background: #1a2e1a;
+    color: #5cb85c;
+    border: 1px solid #2a4a2a;
+  }
+  [data-theme="light"] :global(.exam-result-status.pass) {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+  }
+  [data-theme="dark"] :global(.exam-result-status.fail) {
+    background: #2e1a1a;
+    color: #d9534f;
+    border: 1px solid #4a2a2a;
+  }
+  [data-theme="light"] :global(.exam-result-status.fail) {
+    background: #fbe9e7;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+  }
+  :global(.exam-result-item) {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 10px;
+  }
+  [data-theme="dark"] :global(.exam-result-item.correct) {
+    border-left: 3px solid #5cb85c;
+  }
+  [data-theme="light"] :global(.exam-result-item.correct) {
+    border-left: 3px solid #2e7d32;
+  }
+  [data-theme="dark"] :global(.exam-result-item.wrong) {
+    border-left: 3px solid #d9534f;
+  }
+  [data-theme="light"] :global(.exam-result-item.wrong) {
+    border-left: 3px solid #c62828;
+  }
+  :global(.exam-result-q) {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin-bottom: 8px;
+  }
+  :global(.exam-result-detail) {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+</style>
+
+<script>
+  (function () {
+    "use strict";
+
+    var EXAMS: Record<string, { label: string; file: { en: string; pt: string } }> = {
+      "databricks-associate": {
+        label: "Databricks Associate Data Engineer",
+        file: { en: "/exams/databricks_associate_data_engineer.json", pt: "/exams/databricks_associate_data_engineer_pt.json" }
+      },
+      "databricks-professional": {
+        label: "Databricks Professional Data Engineer",
+        file: { en: "/exams/databricks_professional_data_engineer.json", pt: "/exams/databricks_professional_data_engineer_pt.json" }
+      }
+    };
+
+    var TIME_OPTIONS = [45, 60, 90, 120];
+    var PASS_OPTIONS = [50, 60, 70, 80, 90, 100];
+
+    var i18n: Record<string, any> = {
+      en: {
+        title: "Choose Your Exam",
+        lblExam: "Select Exam",
+        lblTime: "Time Limit (minutes)",
+        lblPass: "Pass Mark (%)",
+        start: "Start Exam",
+        qOf: function (c: number, t: number) { return "Question " + c + " of " + t; },
+        menu: "Main Menu",
+        back: "Back",
+        next: "Next",
+        finish: "Finish",
+        results: "Exam Results",
+        passed: "PASSED",
+        failed: "FAILED",
+        score: function (v: string) { return "Score: " + v + "%"; },
+        qN: function (n: number) { return "Question " + n; },
+        yourAns: "Your answer",
+        correctAns: "Correct answer",
+        none: "None",
+        backStart: "Back to Start",
+        minutes: "minutes",
+        loadErr: "Failed to load questions"
+      },
+      pt: {
+        title: "Escolha seu Exame",
+        lblExam: "Selecionar Exame",
+        lblTime: "Tempo Limite (minutos)",
+        lblPass: "Nota de Corte (%)",
+        start: "Iniciar Exame",
+        qOf: function (c: number, t: number) { return "Pergunta " + c + " de " + t; },
+        menu: "Menu Principal",
+        back: "Voltar",
+        next: "Proximo",
+        finish: "Finalizar",
+        results: "Resultado do Exame",
+        passed: "APROVADO",
+        failed: "REPROVADO",
+        score: function (v: string) { return "Nota: " + v + "%"; },
+        qN: function (n: number) { return "Pergunta " + n; },
+        yourAns: "Sua resposta",
+        correctAns: "Resposta correta",
+        none: "Nenhuma",
+        backStart: "Voltar ao Inicio",
+        minutes: "minutos",
+        loadErr: "Falha ao carregar questoes"
+      }
+    };
+
+    var lang = "en";
+    var t = i18n[lang];
+    var questions: any[] = [];
+    var answers: Record<string, string[]> = {};
+    var current = 0;
+    var timer = 0;
+    var timeLimitSec = 0;
+    var passMark = 70;
+    var interval: ReturnType<typeof setInterval> | null = null;
+
+    var $ = function (id: string) { return document.getElementById(id); };
+
+    function formatTime(sec: number) {
+      var m = String(Math.floor(sec / 60)).padStart(2, "0");
+      var s = String(sec % 60).padStart(2, "0");
+      return m + ":" + s;
+    }
+
+    function updateLabels() {
+      t = i18n[lang];
+      $("exam-title")!.textContent = t.title;
+      $("lbl-exam")!.textContent = t.lblExam;
+      $("lbl-time")!.textContent = t.lblTime;
+      $("lbl-pass")!.textContent = t.lblPass;
+      $("btn-start")!.textContent = t.start;
+      $("btn-menu")!.textContent = t.menu;
+      $("btn-prev")!.textContent = t.back;
+      updateNextBtn();
+    }
+
+    function updateNextBtn() {
+      var btn = $("btn-next")!;
+      if (questions.length > 0 && current === questions.length - 1) {
+        btn.textContent = t.finish;
+        btn.className = "exam-nav-btn success";
+      } else {
+        btn.textContent = t.next;
+        btn.className = "exam-nav-btn primary";
+      }
+    }
+
+    function populateSelects() {
+      var examSel = $("exam-select") as HTMLSelectElement;
+      examSel.textContent = "";
+      var def = document.createElement("option");
+      def.value = "";
+      def.textContent = "--";
+      examSel.appendChild(def);
+      Object.keys(EXAMS).forEach(function (key) {
+        var opt = document.createElement("option");
+        opt.value = key;
+        opt.textContent = EXAMS[key].label;
+        examSel.appendChild(opt);
+      });
+
+      var timeSel = $("time-select") as HTMLSelectElement;
+      timeSel.textContent = "";
+      TIME_OPTIONS.forEach(function (m) {
+        var opt = document.createElement("option");
+        opt.value = String(m);
+        opt.textContent = m + " " + t.minutes;
+        if (m === 60) opt.selected = true;
+        timeSel.appendChild(opt);
+      });
+
+      var passSel = $("pass-select") as HTMLSelectElement;
+      passSel.textContent = "";
+      PASS_OPTIONS.forEach(function (p) {
+        var opt = document.createElement("option");
+        opt.value = String(p);
+        opt.textContent = p + "%";
+        if (p === 70) opt.selected = true;
+        passSel.appendChild(opt);
+      });
+    }
+
+    function showSetup() {
+      $("setup")!.classList.remove("hidden");
+      $("quiz")!.classList.add("hidden");
+      $("results")!.classList.add("hidden");
+      $("exam-title")!.textContent = t.title;
+      questions = [];
+      answers = {};
+      current = 0;
+      timer = 0;
+      if (interval) { clearInterval(interval); interval = null; }
+    }
+
+    function renderQuestion() {
+      var q = questions[current];
+      $("q-counter")!.textContent = t.qOf(current + 1, questions.length);
+      $("q-text")!.textContent = q.question;
+
+      var container = $("q-options")!;
+      container.textContent = "";
+
+      q.options.forEach(function (optText: string) {
+        var div = document.createElement("div");
+        div.className = "exam-option";
+        var key = q.id;
+        if (answers[key] && answers[key].indexOf(optText) !== -1) {
+          div.classList.add("selected");
+        }
+
+        var input = document.createElement("input");
+        input.type = "checkbox";
+        if (answers[key] && answers[key].indexOf(optText) !== -1) {
+          input.checked = true;
+        }
+
+        var span = document.createElement("span");
+        span.textContent = optText;
+
+        div.appendChild(input);
+        div.appendChild(span);
+
+        div.addEventListener("click", function () {
+          var key = q.id;
+          if (!answers[key]) answers[key] = [];
+          var idx = answers[key].indexOf(optText);
+          if (idx === -1) {
+            answers[key].push(optText);
+          } else {
+            answers[key].splice(idx, 1);
+          }
+          renderQuestion();
+        });
+
+        container.appendChild(div);
+      });
+
+      ($("btn-prev") as HTMLButtonElement).disabled = current === 0;
+      updateNextBtn();
+      var hasAnswer = answers[q.id] && answers[q.id].length > 0;
+      ($("btn-next") as HTMLButtonElement).disabled = !hasAnswer;
+    }
+
+    function startTimer() {
+      timer = 0;
+      var display = $("timer-display")!;
+      interval = setInterval(function () {
+        timer++;
+        display.textContent = formatTime(timer) + " / " + formatTime(timeLimitSec);
+        if (timer >= timeLimitSec * 0.9) {
+          display.classList.add("warn");
+        }
+        if (timer >= timeLimitSec) {
+          finishExam();
+        }
+      }, 1000);
+    }
+
+    function finishExam() {
+      if (interval) { clearInterval(interval); interval = null; }
+      $("quiz")!.classList.add("hidden");
+      $("setup")!.classList.add("hidden");
+
+      var correct = 0;
+      var resultsData = questions.map(function (q) {
+        var userAns = answers[q.id] || [];
+        var correctAns = Array.isArray(q.answer) ? q.answer : [q.answer];
+        var isCorrect = userAns.length === correctAns.length &&
+          userAns.every(function (a: string) { return correctAns.indexOf(a) !== -1; });
+        if (isCorrect) correct++;
+        return { question: q.question, userAns: userAns, correctAns: correctAns, isCorrect: isCorrect };
+      });
+
+      var score = (correct / questions.length * 100).toFixed(2);
+      var passed = parseFloat(score) >= passMark;
+
+      var container = $("results")!;
+      container.textContent = "";
+      container.classList.remove("hidden");
+
+      var header = document.createElement("div");
+      header.className = "exam-result-header";
+
+      var h2 = document.createElement("h1");
+      h2.textContent = t.results;
+      header.appendChild(h2);
+
+      var status = document.createElement("div");
+      status.className = "exam-result-status " + (passed ? "pass" : "fail");
+      status.textContent = passed ? t.passed : t.failed;
+      header.appendChild(status);
+
+      var scoreEl = document.createElement("div");
+      scoreEl.className = "exam-result-score";
+      scoreEl.textContent = t.score(score);
+      header.appendChild(scoreEl);
+
+      container.appendChild(header);
+
+      resultsData.forEach(function (r, i) {
+        var item = document.createElement("div");
+        item.className = "exam-result-item " + (r.isCorrect ? "correct" : "wrong");
+
+        var qTitle = document.createElement("div");
+        qTitle.className = "exam-result-q";
+        qTitle.textContent = t.qN(i + 1) + ": " + r.question;
+        item.appendChild(qTitle);
+
+        var detail = document.createElement("div");
+        detail.className = "exam-result-detail";
+
+        var yourLine = document.createElement("div");
+        yourLine.textContent = t.yourAns + ": " + (r.userAns.length > 0 ? r.userAns.join(", ") : t.none);
+        detail.appendChild(yourLine);
+
+        var correctLine = document.createElement("div");
+        correctLine.textContent = t.correctAns + ": " + r.correctAns.join(", ");
+        detail.appendChild(correctLine);
+
+        item.appendChild(detail);
+        container.appendChild(item);
+      });
+
+      var backBtn = document.createElement("button");
+      backBtn.className = "exam-btn-start";
+      backBtn.style.marginTop = "1.5rem";
+      backBtn.textContent = t.backStart;
+      backBtn.addEventListener("click", showSetup);
+      container.appendChild(backBtn);
+    }
+
+    function loadExam() {
+      var examKey = ($("exam-select") as HTMLSelectElement).value;
+      if (!examKey) return;
+
+      timeLimitSec = parseInt(($("time-select") as HTMLSelectElement).value, 10) * 60;
+      passMark = parseInt(($("pass-select") as HTMLSelectElement).value, 10);
+
+      var file = EXAMS[examKey].file[lang as 'en' | 'pt'];
+      fetch(file)
+        .then(function (res) {
+          if (!res.ok) throw new Error(t.loadErr);
+          return res.json();
+        })
+        .then(function (data) {
+          if (!Array.isArray(data)) throw new Error(t.loadErr);
+          questions = data;
+          answers = {};
+          current = 0;
+          $("setup")!.classList.add("hidden");
+          $("quiz")!.classList.remove("hidden");
+          renderQuestion();
+          startTimer();
+        })
+        .catch(function () {
+          alert(t.loadErr);
+        });
+    }
+
+    // Event listeners
+    $("exam-select")!.addEventListener("change", function () {
+      ($("btn-start") as HTMLButtonElement).disabled = !(this as HTMLSelectElement).value;
+    });
+
+    $("btn-start")!.addEventListener("click", loadExam);
+    $("btn-menu")!.addEventListener("click", showSetup);
+
+    $("btn-prev")!.addEventListener("click", function () {
+      if (current > 0) { current--; renderQuestion(); }
+    });
+
+    $("btn-next")!.addEventListener("click", function () {
+      if (current < questions.length - 1) {
+        current++;
+        renderQuestion();
+      } else {
+        finishExam();
+      }
+    });
+
+    document.querySelectorAll(".exam-lang-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        lang = (this as HTMLElement).getAttribute("data-lang") || "en";
+        document.querySelectorAll(".exam-lang-btn").forEach(function (b) { b.classList.remove("active"); });
+        (this as HTMLElement).classList.add("active");
+        updateLabels();
+        populateSelects();
+      });
+    });
+
+    // Init
+    populateSelects();
+    updateLabels();
+  })();
+</script>

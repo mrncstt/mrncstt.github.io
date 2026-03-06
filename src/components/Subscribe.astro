@@ -1,0 +1,42 @@
+---
+const buttondownUser = 'notasdaedicao';
+---
+<section class="subscribe" aria-label="Newsletter">
+  <div class="subscribe-inner">
+    <div class="subscribe-title">Newsletter</div>
+    <p class="subscribe-desc">
+      <span data-lang="en">Get new posts by email</span>
+      <span data-lang="pt">Receba novos posts por email</span>
+      <span data-lang="es">Recibe nuevos posts por email</span>
+    </p>
+    <form
+      class="subscribe-form"
+      action={`https://buttondown.com/api/emails/embed-subscribe/${buttondownUser}`}
+      method="post"
+      target="popupwindow"
+    >
+      <label for="bd-email" class="subscribe-label">Email</label>
+      <input
+        class="subscribe-input"
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="your@email.com"
+        required
+        autocomplete="email"
+      />
+      <button class="subscribe-btn" type="submit">
+        <span data-lang="en">Subscribe</span>
+        <span data-lang="pt">Assinar</span>
+        <span data-lang="es">Suscribirse</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.querySelector('.subscribe-form') as HTMLFormElement | null;
+  form?.addEventListener('submit', () => {
+    window.open(`https://buttondown.com/notasdaedicao`, 'popupwindow');
+  });
+</script>

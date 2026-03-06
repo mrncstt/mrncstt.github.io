@@ -1,0 +1,28 @@
+# Build output
+dist/
+.astro/
+
+# NPM dependencies
+node_modules/
+package-lock.json
+
+# IDE configurations
+.idea/
+.vscode/
+.claude*/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Agent logs (not committed)
+agentes/
+
+# Legacy Jekyll
+.bundle/
+vendor/
+Gemfile.lock
+.jekyll-cache/
+.jekyll-metadata/
+_site/
+*.gem
+_sass/dist/
+assets/js/dist/

@@ -1,0 +1,540 @@
+[
+  {
+    "id": "pro-de-001",
+    "question": "Qual \u00e9 uma vantagem principal de usar Security & Access Control em pipelines de dados corporativos?",
+    "options": [
+      "Security & Access Control reduz custos de armazenamento ao comprimir dados.",
+      "Security & Access Control permite colabora\u00e7\u00e3o por meio de dashboards em tempo real.",
+      "Security & Access Control melhora o desempenho de consultas com formatos de dados otimizados.",
+      "Security & Access Control automatiza a implanta\u00e7\u00e3o de modelos de machine learning."
+    ],
+    "answer": [
+      "Security & Access Control melhora o desempenho de consultas com formatos de dados otimizados."
+    ],
+    "topic": "Seguran\u00e7a e Controle de Acesso"
+  },
+  {
+    "id": "pro-de-002",
+    "question": "O que \u00e9 usar Security & Access Control em pipelines de dados corporativos?",
+    "options": [
+      "Security & Access Control reduz custos de armazenamento ao comprimir dados.",
+      "Security & Access Control melhora o desempenho de consultas com formatos de dados otimizados.",
+      "Security & Access Control automatiza a implanta\u00e7\u00e3o de modelos de machine learning."
+    ],
+    "answer": [
+      "Security & Access Control melhora o desempenho de consultas com formatos de dados otimizados."
+    ],
+    "topic": "Seguran\u00e7a e Controle de Acesso"
+  },
+  {
+    "id": "pro-de-100",
+    "question": "Quais das seguintes op\u00e7\u00f5es podem ser usadas como fontes em um pipeline de processamento de stream?",
+    "options": [
+      "Feed de change data capture (CDC)",
+      "Kafka",
+      "Delta Lake",
+      "Dispositivos IoT"
+    ],
+    "answer": [
+      "Feed de change data capture (CDC)",
+      "Kafka"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-101",
+    "question": "Quais das seguintes afirma\u00e7\u00f5es sobre propagar exclus\u00f5es com change data feed (CDF) s\u00e3o verdadeiras?",
+    "options": [
+      "Exclus\u00f5es n\u00e3o podem ser processadas ao mesmo tempo que inser\u00e7\u00f5es e atualiza\u00e7\u00f5es.",
+      "Mensagens de commit podem ser especificadas como parte das op\u00e7\u00f5es de escrita usando a op\u00e7\u00e3o userMetadata.",
+      "Excluir dados criar\u00e1 novos arquivos de dados em vez de excluir arquivos de dados existentes.",
+      "Para propagar exclus\u00f5es para uma tabela, uma instru\u00e7\u00e3o MERGE \u00e9 necess\u00e1ria em SQL."
+    ],
+    "answer": [
+      "Mensagens de commit podem ser especificadas como parte das op\u00e7\u00f5es de escrita usando a op\u00e7\u00e3o userMetadata.",
+      "Excluir dados criar\u00e1 novos arquivos de dados em vez de excluir arquivos de dados existentes."
+    ],
+    "topic": "Change Data Feed"
+  },
+  {
+    "id": "pro-de-102",
+    "question": "Quais das seguintes s\u00e3o considera\u00e7\u00f5es a ter em mente ao escolher entre o modo de execu\u00e7\u00e3o micro-batch e cont\u00ednuo?",
+    "options": [
+      "Lat\u00eancia desejada",
+      "Custo total de opera\u00e7\u00e3o (TCO)",
+      "Throughput m\u00e1ximo",
+      "Armazenamento de objetos em nuvem"
+    ],
+    "answer": [
+      "Lat\u00eancia desejada",
+      "Throughput m\u00e1ximo"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-103",
+    "question": "Qual dos seguintes \u00e9 um m\u00e9todo v\u00e1lido em PySpark?",
+    "options": [
+      ".load()",
+      ".print()",
+      ".return()",
+      ".merge()"
+    ],
+    "answer": [
+      ".load()"
+    ],
+    "topic": "PySpark"
+  },
+  {
+    "id": "pro-de-104",
+    "question": "Qual tipo de modo de execu\u00e7\u00e3o de processamento de stream suporta dados cont\u00ednuos e ilimitados?",
+    "options": [
+      "Cont\u00ednuo e limitado",
+      "Cont\u00ednuo e ilimitado",
+      "Micro-batch e ilimitado",
+      "Micro-batch e limitado"
+    ],
+    "answer": [
+      "Cont\u00ednuo e ilimitado"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-105",
+    "question": "Qual \u00e9 um padr\u00e3o recomendado ao construir a arquitetura medallion com streaming live tables e streaming tables?",
+    "options": [
+      "Usar streaming live tables para dados brutos e streaming tables para dados de qualidade bronze, silver e gold.",
+      "Usar streaming tables para dados de qualidade bronze e streaming live tables para dados de qualidade silver e gold.",
+      "Usar streaming live tables para dados de qualidade bronze e streaming tables para dados de qualidade silver e gold.",
+      "Usar streaming tables para dados brutos e streaming live tables para dados de qualidade bronze, silver e gold."
+    ],
+    "answer": [
+      "Usar streaming live tables para dados de qualidade bronze e streaming tables para dados de qualidade silver e gold."
+    ],
+    "topic": "Arquitetura Medallion"
+  },
+  {
+    "id": "pro-de-151",
+    "question": "Quais das seguintes op\u00e7\u00f5es podem ser usadas como fontes em um pipeline de processamento de stream?",
+    "options": [
+      "Feed de change data capture (CDC)",
+      "Kafka",
+      "Delta Lake",
+      "Dispositivos IoT"
+    ],
+    "answer": [
+      "Feed de change data capture (CDC)",
+      "Kafka"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-152",
+    "question": "Qual dos seguintes termos se refere a alterar irreversivelmente dados pessoais de modo que um titular de dados n\u00e3o possa mais ser identificado?",
+    "options": [
+      "Tokeniza\u00e7\u00e3o",
+      "Pseudonimiza\u00e7\u00e3o",
+      "Anonimiza\u00e7\u00e3o",
+      "Binning"
+    ],
+    "answer": [
+      "Anonimiza\u00e7\u00e3o"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-153",
+    "question": "Qual dos seguintes \u00e9 um programa de conformidade regulat\u00f3ria espec\u00edfico para a Europa?",
+    "options": [
+      "HIPAA",
+      "PCI-DSS",
+      "GDPR",
+      "CCPA"
+    ],
+    "answer": [
+      "GDPR"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-154",
+    "question": "Qual das seguintes op\u00e7\u00f5es pode ser usada para ocultar informa\u00e7\u00f5es pessoais gerando uma cadeia de caracteres aleat\u00f3rios?",
+    "options": [
+      "Tokeniza\u00e7\u00e3o",
+      "Generaliza\u00e7\u00e3o categ\u00f3rica",
+      "Binning",
+      "Hashing"
+    ],
+    "answer": [
+      "Tokeniza\u00e7\u00e3o"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-155",
+    "question": "Qual t\u00e9cnica de otimiza\u00e7\u00e3o em Delta Lake reduz o n\u00famero de arquivos lidos ao ignorar arquivos irrelevantes com base em estat\u00edsticas em n\u00edvel de arquivo?",
+    "options": [
+      "Particionamento de dados",
+      "Data skipping com Z-Ordering",
+      "Cache do Spark",
+      "RDDs"
+    ],
+    "answer": [
+      "Data skipping com Z-Ordering"
+    ],
+    "topic": "Otimiza\u00e7\u00e3o de Desempenho"
+  },
+  {
+    "id": "pro-de-156",
+    "question": "O que a API REST do Databricks permite que os usu\u00e1rios fa\u00e7am programaticamente?",
+    "options": [
+      "Enviar notebooks para o GitHub",
+      "Gerenciar clusters e jobs",
+      "Analisar dados usando sintaxe SQL",
+      "Criar dashboards"
+    ],
+    "answer": [
+      "Gerenciar clusters e jobs"
+    ],
+    "topic": "Automa\u00e7\u00e3o"
+  },
+  {
+    "id": "pro-de-157",
+    "question": "Qual CLI \u00e9 usada para gerenciar SQL warehouses no Databricks?",
+    "options": [
+      "Databricks CLI",
+      "Databricks SQL CLI",
+      "Spark CLI",
+      "DBFS CLI"
+    ],
+    "answer": [
+      "Databricks SQL CLI"
+    ],
+    "topic": "Automa\u00e7\u00e3o"
+  },
+  {
+    "id": "pro-de-158",
+    "question": "Qual dos seguintes padr\u00f5es de ingest\u00e3o de streaming N\u00c3O \u00e9 recomendado?",
+    "options": [
+      "Usar Delta para reten\u00e7\u00e3o infinita",
+      "Usar CDC para replicar tabelas",
+      "Usar Kafka como tabela bronze",
+      "Multiplexar streams de fontes compartilhadas"
+    ],
+    "answer": [
+      "Usar Kafka como tabela bronze"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-159",
+    "question": "Qual m\u00e9todo fornece prote\u00e7\u00e3o irrevers\u00edvel de um conjunto de dados inteiro, impedindo a reidentifica\u00e7\u00e3o?",
+    "options": [
+      "Tokeniza\u00e7\u00e3o",
+      "Pseudonimiza\u00e7\u00e3o",
+      "Anonimiza\u00e7\u00e3o",
+      "Hashing"
+    ],
+    "answer": [
+      "Anonimiza\u00e7\u00e3o"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-160",
+    "question": "Qual \u00e9 o prop\u00f3sito do checkpointing em Structured Streaming?",
+    "options": [
+      "Reduzir a lat\u00eancia dos dados",
+      "Melhorar o throughput",
+      "Rastrear o progresso da consulta para toler\u00e2ncia a falhas",
+      "Armazenar dados de streaming em buffer"
+    ],
+    "answer": [
+      "Rastrear o progresso da consulta para toler\u00e2ncia a falhas"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-161",
+    "question": "Qual \u00e9 um benef\u00edcio de modularizar o c\u00f3digo em um pipeline DLT?",
+    "options": [
+      "Melhora a lat\u00eancia das consultas",
+      "Reduz o tamanho do armazenamento",
+      "Permite reutiliza\u00e7\u00e3o de c\u00f3digo e manuten\u00e7\u00e3o mais f\u00e1cil",
+      "Permite acesso direto aos dados brutos"
+    ],
+    "answer": [
+      "Permite reutiliza\u00e7\u00e3o de c\u00f3digo e manuten\u00e7\u00e3o mais f\u00e1cil"
+    ],
+    "topic": "DLT e Pr\u00e1ticas de Engenharia de Software"
+  },
+  {
+    "id": "pro-de-162",
+    "question": "Qual \u00e9 a melhor descri\u00e7\u00e3o de como testes unit\u00e1rios s\u00e3o usados em pipelines DLT?",
+    "options": [
+      "Eles monitoram a sa\u00fade do cluster",
+      "Eles verificam a corre\u00e7\u00e3o da ingest\u00e3o e das transforma\u00e7\u00f5es",
+      "Eles criam dashboards",
+      "Eles otimizam joins entre tabelas"
+    ],
+    "answer": [
+      "Eles verificam a corre\u00e7\u00e3o da ingest\u00e3o e das transforma\u00e7\u00f5es"
+    ],
+    "topic": "DLT e Pr\u00e1ticas de Engenharia de Software"
+  },
+  {
+    "id": "pro-de-163",
+    "question": "Qual \u00e9 o principal prop\u00f3sito de usar views din\u00e2micas no Databricks?",
+    "options": [
+      "Aumentar o desempenho de leitura",
+      "Aplicar controles de acesso e redigir dados dinamicamente",
+      "Mesclar streams de dados",
+      "Criar materialized views"
+    ],
+    "answer": [
+      "Aplicar controles de acesso e redigir dados dinamicamente"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-164",
+    "question": "Qual \u00e9 um dos principais benef\u00edcios de usar Auto Loader no Databricks?",
+    "options": [
+      "Reduz custos de nuvem ao remover dados antigos",
+      "Ingere dados incrementalmente sem listar o diret\u00f3rio repetidamente",
+      "Cria dashboards a partir de views SQL",
+      "Faz join automaticamente de datasets de streaming"
+    ],
+    "answer": [
+      "Ingere dados incrementalmente sem listar o diret\u00f3rio repetidamente"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-165",
+    "question": "Qual das seguintes afirma\u00e7\u00f5es sobre Delta Live Tables (DLT) \u00e9 verdadeira?",
+    "options": [
+      "DLT n\u00e3o pode lidar com dados de streaming",
+      "DLT gerencia depend\u00eancias e qualidade de pipelines de dados",
+      "DLT substitui a necessidade do Unity Catalog",
+      "DLT n\u00e3o suporta controle de vers\u00e3o"
+    ],
+    "answer": [
+      "DLT gerencia depend\u00eancias e qualidade de pipelines de dados"
+    ],
+    "topic": "DLT"
+  },
+  {
+    "id": "pro-de-166",
+    "question": "Qual trigger de streaming processa todos os dados dispon\u00edveis e depois para?",
+    "options": [
+      "processingTime",
+      "once",
+      "continuous",
+      "interval"
+    ],
+    "answer": [
+      "once"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-167",
+    "question": "Em workflows de CI/CD para pipelines DLT, o que normalmente acontece ap\u00f3s o commit do c\u00f3digo?",
+    "options": [
+      "Lan\u00e7amento em produ\u00e7\u00e3o",
+      "Testes unit\u00e1rios",
+      "Desligamento do cluster",
+      "Infer\u00eancia de schema"
+    ],
+    "answer": [
+      "Testes unit\u00e1rios"
+    ],
+    "topic": "DLT e Pr\u00e1ticas de Engenharia de Software"
+  },
+  {
+    "id": "pro-de-168",
+    "question": "Qual \u00e9 um m\u00e9todo para generalizar dados pessoais?",
+    "options": [
+      "Tokeniza\u00e7\u00e3o",
+      "Binning",
+      "Criptografia",
+      "Salting"
+    ],
+    "answer": [
+      "Binning"
+    ],
+    "topic": "Privacidade de Dados"
+  },
+  {
+    "id": "pro-de-169",
+    "question": "Qual \u00e9 uma forma recomendada de monitorar a qualidade dos dados em pipelines DLT?",
+    "options": [
+      "Usar logs de eventos e views SQL sobre expectations",
+      "Inspecionar manualmente as sa\u00eddas dos notebooks",
+      "Depender apenas dos logs da nuvem",
+      "Desabilitar expectations autom\u00e1ticas"
+    ],
+    "answer": [
+      "Usar logs de eventos e views SQL sobre expectations"
+    ],
+    "topic": "DLT"
+  },
+  {
+    "id": "pro-de-170",
+    "question": "Qual modo de sa\u00edda em Structured Streaming escreve a tabela de resultado atualizada inteira no sink?",
+    "options": [
+      "Append",
+      "Update",
+      "Complete",
+      "Merge"
+    ],
+    "answer": [
+      "Complete"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-171",
+    "question": "Qual \u00e9 uma boa pr\u00e1tica ao usar o comando OPTIMIZE do Delta Lake?",
+    "options": [
+      "Executar OPTIMIZE imediatamente ap\u00f3s cada escrita",
+      "Usar ZORDER para co-localizar informa\u00e7\u00f5es relacionadas",
+      "Usar OPTIMIZE apenas em tabelas particionadas",
+      "OPTIMIZE s\u00f3 \u00e9 \u00fatil para streaming tables"
+    ],
+    "answer": [
+      "Usar ZORDER para co-localizar informa\u00e7\u00f5es relacionadas"
+    ],
+    "topic": "Otimiza\u00e7\u00e3o de Desempenho"
+  },
+  {
+    "id": "pro-de-172",
+    "question": "O que o comando VACUUM faz no Delta Lake?",
+    "options": [
+      "Comprime arquivos para melhor uso do armazenamento",
+      "Exclui arquivos de dados obsoletos e libera armazenamento",
+      "Realiza aplica\u00e7\u00e3o de schema",
+      "Remove todos os dados com mais de um dia"
+    ],
+    "answer": [
+      "Exclui arquivos de dados obsoletos e libera armazenamento"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "pro-de-173",
+    "question": "Quais das seguintes transforma\u00e7\u00f5es s\u00e3o suportadas em Structured Streaming?",
+    "options": [
+      "select",
+      "filter",
+      "join",
+      "groupBy"
+    ],
+    "answer": [
+      "select",
+      "filter",
+      "join",
+      "groupBy"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-174",
+    "question": "Por que voc\u00ea usaria a op\u00e7\u00e3o 'foreachBatch' em uma consulta de Structured Streaming?",
+    "options": [
+      "Para visualizar dados em notebooks",
+      "Para salvar um micro-batch em m\u00faltiplos sinks",
+      "Para inspecionar deriva\u00e7\u00e3o de schema",
+      "Para evitar o uso do formato Delta"
+    ],
+    "answer": [
+      "Para salvar um micro-batch em m\u00faltiplos sinks"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-175",
+    "question": "Qual \u00e9 uma diferen\u00e7a principal entre os modos de sa\u00edda 'Append' e 'Complete'?",
+    "options": [
+      "O modo 'Append' gera todas as linhas ap\u00f3s cada trigger.",
+      "O modo 'Complete' sobrescreve toda a tabela de sa\u00edda a cada trigger.",
+      "O modo 'Append' suporta agrega\u00e7\u00f5es com watermarks.",
+      "O modo 'Complete' n\u00e3o requer um sink."
+    ],
+    "answer": [
+      "O modo 'Complete' sobrescreve toda a tabela de sa\u00edda a cada trigger."
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-176",
+    "question": "Qual ferramenta \u00e9 usada no Databricks para controle de acesso granular sobre dados?",
+    "options": [
+      "Cluster Policies",
+      "Unity Catalog",
+      "Repos",
+      "Auto Loader"
+    ],
+    "answer": [
+      "Unity Catalog"
+    ],
+    "topic": "Seguran\u00e7a e Controle de Acesso"
+  },
+  {
+    "id": "pro-de-177",
+    "question": "Qual dos seguintes \u00e9 um benef\u00edcio de usar o Unity Catalog?",
+    "options": [
+      "Menor lat\u00eancia de dados",
+      "Versionamento autom\u00e1tico de notebooks",
+      "Governan\u00e7a centralizada e linhagem de dados",
+      "Infer\u00eancia autom\u00e1tica de schema"
+    ],
+    "answer": [
+      "Governan\u00e7a centralizada e linhagem de dados"
+    ],
+    "topic": "Seguran\u00e7a e Controle de Acesso"
+  },
+  {
+    "id": "pro-de-178",
+    "question": "Qual recurso do Delta Lake suporta rollback para vers\u00f5es anteriores dos dados?",
+    "options": [
+      "Schema Evolution",
+      "Time Travel",
+      "Auto Loader",
+      "Z-Ordering"
+    ],
+    "answer": [
+      "Time Travel"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "pro-de-179",
+    "question": "Por que a idempot\u00eancia \u00e9 importante em pipelines de streaming?",
+    "options": [
+      "Ela reduz custos de computa\u00e7\u00e3o",
+      "Ela previne processamento duplicado durante tentativas de reprocessamento",
+      "Ela permite valida\u00e7\u00e3o de schema",
+      "Ela remove registros inv\u00e1lidos automaticamente"
+    ],
+    "answer": [
+      "Ela previne processamento duplicado durante tentativas de reprocessamento"
+    ],
+    "topic": "Streaming"
+  },
+  {
+    "id": "pro-de-180",
+    "question": "Qual comando no Spark SQL permite verificar o hist\u00f3rico de uma tabela Delta?",
+    "options": [
+      "DESCRIBE HISTORY",
+      "SHOW TRANSACTIONS",
+      "LIST SNAPSHOTS",
+      "SELECT * FROM METADATA"
+    ],
+    "answer": [
+      "DESCRIBE HISTORY"
+    ],
+    "topic": "Delta Lake"
+  }
+]

@@ -1,0 +1,18 @@
+---
+interface RelatedPost {
+  slug: string;
+  title: string;
+}
+interface Props {
+  posts: RelatedPost[];
+}
+const { posts } = Astro.props;
+---
+{posts.length > 0 && (
+  <nav class="related-posts" aria-label="Related posts">
+    <div class="related-posts-label">Related</div>
+    {posts.map(p => (
+      <a class="related-link" href={`/posts/${p.slug}/`}>{p.title}</a>
+    ))}
+  </nav>
+)}

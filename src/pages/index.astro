@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PostItem from '../components/PostItem.astro';
+import { getCollection } from 'astro:content';
+import { getReadingTime } from '../utils/reading-time';
+
+const posts = (await getCollection('posts'))
+  .filter(p => p.data.listed !== false)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Layout>
+  <div class="home">
+    <section class="post-list" aria-label="Blog posts">
+      <div class="section-label">Posts</div>
+      {posts.map(post => (
+        <PostItem
+          title={post.data.title}
+          date={post.data.date}
+          slug={post.slug}
+          readingTime={getReadingTime(post.body || '')}
+          til={post.data.til}
+        />
+      ))}
+    </section>
+  </div>
+</Layout>
