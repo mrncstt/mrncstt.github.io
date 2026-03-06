@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Projects" description="Side projects and tools by Mariana Costa.">
+  <div class="projects-page">
+    <h1>
+      <span data-lang="en">Projects</span>
+      <span data-lang="pt">Projetos</span>
+      <span data-lang="es">Proyectos</span>
+    </h1>
+    <p class="projects-intro">
+      <span data-lang="en">Tools and experiments I've built on the side.</span>
+      <span data-lang="pt">Ferramentas e experimentos que construi nas horas vagas.</span>
+      <span data-lang="es">Herramientas y experimentos que construi en mi tiempo libre.</span>
+    </p>
+
+    <div class="projects-grid">
+      <a href="/exams-simulator/" class="project-card">
+        <div class="project-icon">&#9881;</div>
+        <h2>Exam Simulator</h2>
+        <p data-lang="en">Practice environment for Databricks certification exams with timer, score tracking, and bilingual questions (EN/PT-BR).</p>
+        <p data-lang="pt">Ambiente de prática para certificações Databricks com cronômetro, acompanhamento de nota e questões bilíngues (EN/PT-BR).</p>
+        <p data-lang="es">Entorno de práctica para certificaciones Databricks con cronómetro, seguimiento de nota y preguntas bilingües (EN/PT-BR).</p>
+        <span class="project-tags">Databricks &middot; Certification &middot; Interactive</span>
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .projects-page {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 48px 24px 100px;
+  }
+  .projects-page h1 {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .projects-intro {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .project-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    text-decoration: none;
+    transition: border-color var(--transition);
+  }
+  .project-card:hover {
+    border-color: var(--text-muted);
+  }
+  .project-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .project-card h2 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-strong);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .project-card p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .project-tags {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+</style>
