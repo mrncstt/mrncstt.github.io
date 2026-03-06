@@ -3,7 +3,7 @@ title: Export your LinkedIn saved posts with Selenium and Beautiful Soup
 description: Export your LinkedIn saved posts with Selenium and Beautiful Soup
 date: 2024-10-17
 slug: export-linkedin-saved-posts-selenium-bs4
-tags: [selenium, beautiful soup, linkedin, python]
+tags: [python, selenium, web scraping, linkedin, automation]
 mermaid: true
 
 ---

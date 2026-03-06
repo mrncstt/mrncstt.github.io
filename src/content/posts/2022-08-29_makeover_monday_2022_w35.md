@@ -3,7 +3,7 @@ title: Makeover Monday 2022 W/35
 description: Makeover Monday 2022 W/35
 date: 2022-08-29
 slug: makeover-monday-2022-w35
-tags: [makeover monday, data visualization, tableau]
+tags: [makeover monday, data visualization, tableau, data analysis, dashboard]
 ---
 
 <div data-lang="en">

@@ -21,26 +21,46 @@ const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
 ---
 <div class="stats-grid" role="list" aria-label="Blog statistics">
   <div class="stat-card" role="listitem">
-    <span class="stat-label">Total posts</span>
+    <span class="stat-label">
+      <span data-lang="en">Total posts</span>
+      <span data-lang="pt">Total de posts</span>
+      <span data-lang="es">Total de posts</span>
+    </span>
     <span class="stat-value">{total}</span>
   </div>
   {first && (
     <div class="stat-card" role="listitem">
-      <span class="stat-label">First post</span>
+      <span class="stat-label">
+        <span data-lang="en">First post</span>
+        <span data-lang="pt">Primeiro post</span>
+        <span data-lang="es">Primer post</span>
+      </span>
       <span class="stat-value">{first.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
       <span class="stat-detail">{first.data.title}</span>
     </div>
   )}
   {last && (
     <div class="stat-card" role="listitem">
-      <span class="stat-label">Latest post</span>
+      <span class="stat-label">
+        <span data-lang="en">Latest post</span>
+        <span data-lang="pt">Último post</span>
+        <span data-lang="es">Último post</span>
+      </span>
       <span class="stat-value">{last.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
       <span class="stat-detail">{last.data.title}</span>
     </div>
   )}
   <div class="stat-card" role="listitem">
-    <span class="stat-label">Words written</span>
+    <span class="stat-label">
+      <span data-lang="en">Words written</span>
+      <span data-lang="pt">Palavras escritas</span>
+      <span data-lang="es">Palabras escritas</span>
+    </span>
     <span class="stat-value">{totalWords.toLocaleString()}</span>
-    <span class="stat-detail">~{avgWords.toLocaleString()} avg per post</span>
+    <span class="stat-detail">
+      <span data-lang="en">~{avgWords.toLocaleString()} avg per post</span>
+      <span data-lang="pt">~{avgWords.toLocaleString()} média por post</span>
+      <span data-lang="es">~{avgWords.toLocaleString()} media por post</span>
+    </span>
   </div>
 </div>

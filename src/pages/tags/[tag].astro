@@ -26,6 +26,7 @@ const posts = allPosts
 ---
 <Layout title={`${tagName}`} description={`Posts tagged "${tagName}"`}>
   <div class="tag-page">
+    <a href="/tags/" class="tag-page-back">&larr; <span data-lang="en">All tags</span><span data-lang="pt">Todas as tags</span><span data-lang="es">Todas las tags</span></a>
     <h1>{tagName}</h1>
     <p class="tag-page-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
 
@@ -36,6 +37,7 @@ const posts = allPosts
           date={post.data.date}
           slug={post.slug}
           readingTime={getReadingTime(post.body || '')}
+          tags={post.data.tags}
           til={post.data.til}
         />
       ))}

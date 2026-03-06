@@ -3,7 +3,7 @@ title: "Buenos Aires for 33 days: a practical guide"
 description: A practical guide to spending 33 days in Buenos Aires
 date: 2023-02-26
 slug: tips-buenos-aires
-tags: [travel, buenos aires]
+tags: [travel, buenos aires, tips, argentina, guide]
 ---
 
 <div data-lang="en">

@@ -2,7 +2,7 @@
 title: "How I (or try to) read the Spark UI"
 date: 2026-02-26
 slug: spark-ui-guide
-tags: [spark ui, databricks, debugging, data engineering]
+tags: [apache spark, databricks, debugging, data engineering, performance]
 description: "Part 1 of x. Coming soon"
 listed: false
 ---

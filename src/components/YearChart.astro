@@ -18,7 +18,11 @@ const years = [...byYear.entries()].sort((a, b) => b[0] - a[0]);
 const maxCount = Math.max(...years.map(([, c]) => c));
 ---
 <div class="year-chart">
-  <div class="year-chart-label">Posts per year</div>
+  <div class="year-chart-label">
+    <span data-lang="en">Posts per year</span>
+    <span data-lang="pt">Posts por ano</span>
+    <span data-lang="es">Posts por año</span>
+  </div>
   <div role="list" aria-label="Posts per year">
     {years.map(([year, count]) => {
       const pct = Math.round((count / maxCount) * 100);

@@ -3,7 +3,7 @@ title: Podcasts to learn French
 description: A concise list of French-learning podcasts plus quick tips on how to use them well
 date: 2021-03-23
 slug: podcasts-french
-tags: [podcast, french, learning]
+tags: [podcast, french, language learning, tips, self development]
 ---
 
 <div class="figure-block">

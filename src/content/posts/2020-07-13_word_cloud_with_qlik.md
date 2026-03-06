@@ -3,7 +3,7 @@ title: Turning memorial comments into a Qlik word cloud
 description: Build a word cloud from real memorial messages using MySQL and Qlik
 date: 2020-07-13
 slug: word-cloud-with-qlik
-tags: [qlik, mysql, data visualization]
+tags: [qlik, data visualization, nlp, sql, text analysis]
 ---
 
 <div data-lang="en">

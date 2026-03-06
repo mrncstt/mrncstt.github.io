@@ -3,7 +3,7 @@ title: "Contributing to LanceDB: from Python dict to SQL struct"
 description: "How I added dict-to-SQL struct conversion to LanceDB's table.update() and the concepts behind it"
 date: 2026-03-05
 slug: contributing-dict-to-sql-struct-lancedb
-tags: [python, open-source, lancedb, datafusion, singledispatch]
+tags: [python, open source, lancedb, apache datafusion, data engineering]
 mermaid: true
 ---
 

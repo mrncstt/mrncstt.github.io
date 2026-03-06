@@ -4,9 +4,10 @@ interface Props {
   date: Date;
   slug: string;
   readingTime: number;
+  tags?: string[];
   til?: boolean;
 }
-const { title, date, slug, readingTime, til } = Astro.props;
+const { title, date, slug, readingTime, tags, til } = Astro.props;
 const formatted = date.toLocaleDateString('en-US', {
   month: 'short', day: 'numeric', year: 'numeric'
 });
@@ -19,5 +20,12 @@ const formatted = date.toLocaleDateString('en-US', {
   <div class="post-item-right">
     {til && <span class="til-badge">TIL</span>}
     <span class="post-title-link">{title}</span>
+    {tags && tags.length > 0 && (
+      <div class="post-item-tags">
+        {tags.map(tag => (
+          <span class="post-item-tag">{tag}</span>
+        ))}
+      </div>
+    )}
   </div>
 </a>

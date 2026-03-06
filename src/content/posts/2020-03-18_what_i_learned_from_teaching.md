@@ -3,7 +3,7 @@ title: What I learned from teaching my first course
 description: What I learned from teaching my first course
 date: 2020-03-18
 slug: what-i-learned-from-teaching
-tags: [power bi, course, learning]
+tags: [power bi, teaching, learning, data visualization, career]
 ---
 
 <div data-lang="en">
