@@ -19,9 +19,15 @@ for (const p of posts) {
 ---
 <Layout title="Tags" description="Blog statistics and tags overview.">
   <div class="tags-page">
-    <h1>Tags</h1>
+    <h1>
+      <span data-lang="en">Tags &amp; Stats</span>
+      <span data-lang="pt">Tags &amp; Estatísticas</span>
+      <span data-lang="es">Tags &amp; Estadísticas</span>
+    </h1>
     <p class="tags-credit">
-      Inspired by <a href="https://www.raymondcamden.com/stats" target="_blank" rel="noopener noreferrer">Raymond Camden's stats page</a>
+      <span data-lang="en">Inspired by <a href="https://www.raymondcamden.com/stats" target="_blank" rel="noopener noreferrer">Raymond Camden's stats page</a></span>
+      <span data-lang="pt">Inspirado pela <a href="https://www.raymondcamden.com/stats" target="_blank" rel="noopener noreferrer">página de stats do Raymond Camden</a></span>
+      <span data-lang="es">Inspirado por la <a href="https://www.raymondcamden.com/stats" target="_blank" rel="noopener noreferrer">página de stats de Raymond Camden</a></span>
     </p>
 
     <StatsGrid posts={posts} />

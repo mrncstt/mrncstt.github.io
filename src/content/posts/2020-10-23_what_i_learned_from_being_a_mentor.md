@@ -3,7 +3,7 @@ title: What I learned as a hackathon mentor
 description: What I learned as a hackathon mentor
 date: 2020-10-23
 slug: what-i-learned-from-being-a-mentor
-tags: [mentorship, hackathon]
+tags: [mentorship, hackathon, community, career, learning]
 ---
 
 <div data-lang="en">

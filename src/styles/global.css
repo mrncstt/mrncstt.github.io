@@ -779,9 +779,22 @@ footer {
   font-family: var(--font-heading); font-size: 24px; font-weight: 600;
   color: var(--text-strong); margin-bottom: 8px;
 }
+.tag-page-back {
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-muted);
+  text-decoration: none; display: inline-block; margin-bottom: 16px;
+  transition: color var(--transition);
+}
+.tag-page-back:hover { color: var(--text-strong); }
 .tag-page-count {
   font-family: var(--font-mono); font-size: 13px; color: var(--text-muted);
   margin-bottom: 32px;
+}
+.post-item-tags {
+  display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px;
+}
+.post-item-tag {
+  font-family: var(--font-mono); font-size: 10px; color: var(--text-faint);
+  background: var(--bg-elevated); border-radius: 3px; padding: 1px 6px;
 }
 
 /* ---------- 404 ---------- */
