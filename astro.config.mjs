@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://mrncstt.github.io',
+  prefetch: {
+    defaultStrategy: 'hover',
+  },
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {

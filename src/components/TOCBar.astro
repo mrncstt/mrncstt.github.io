@@ -80,6 +80,15 @@ const tocHeadings = headings.filter(h => h.depth === 2 || h.depth === 3);
     }
   }
 
-  window.addEventListener('scroll', updateToc, { passive: true });
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        updateToc();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
   updateToc();
 </script>

@@ -31,7 +31,7 @@ Guardamos cosas "para leer luego" y... rara vez volvemos. Los **elementos guarda
 </div>
 
 ```
-(same thing happens with 'save to read latter')
+(same thing happens with 'save to read later')
 ```
 
 <div data-lang="en">
@@ -74,7 +74,7 @@ flowchart TD
 - CSV uses **UTF-8 with BOM** so Excel opens emojis and accents correctly.
 - The script tries several [DOM patterns](https://developer.mozilla.org/pt-br/docs/conflicting/web/api/document_object_model_a0b90593de4c5cb214690e823be115a18d605d4bc7719ba296e212da2abe18ef) to extract text/author across different post layouts.
 - The platform forbids scraping and automated activity that abuses the service and this walkthrough is for personal archiving of your own saved items list with a human logging in (one of the reasons why I'm using a "manual" mode for login and consent flows).
-- I suggest you to keep **2FA enabled** on your LinkedIn account.
+- I suggest keeping **2FA enabled** on your LinkedIn account.
 - Expect selectors to change over time.
 
 </div>
@@ -195,7 +195,7 @@ Com o CSV/JSON você escolhe o próximo passo -- a base já está pronta e o res
 </div>
 <div data-lang="es">
 
-## Y ahora qué?
+## ¿Y ahora qué?
 
 Con el CSV/JSON eliges tu próximo paso -- la base ya está puesta y lo demás es curiosidad!
 
