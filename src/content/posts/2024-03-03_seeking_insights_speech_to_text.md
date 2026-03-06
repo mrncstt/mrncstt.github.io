@@ -23,7 +23,7 @@ Recentemente participei de uma mentoria online no [Topmate](https://topmate.io/)
 </div>
 <div data-lang="es">
 
-## Por qué grabar las llamadas de mentoría?
+## ¿Por qué grabar las llamadas de mentoría?
 
 Hace poco participé en una mentoría online en [Topmate](https://topmate.io/). Después de la llamada, Topmate me envió un enlace a la grabación en MP4. Tener la sesión completa me permite revisar los consejos, captar lo que se me escapó en directo y convertir una hora densa en apuntes de trabajo.
 
@@ -41,7 +41,7 @@ Hace poco participé en una mentoría online en [Topmate](https://topmate.io/). 
 
 ## From MP4 to MP3
 
-To simplify transcription, I pull down the vídeo and extract the áudio. This version streams the download (safer for large files) and uses MoviePy to write an MP3.
+To simplify transcription, I pull down the video and extract the audio. This version streams the download (safer for large files) and uses MoviePy to write an MP3.
 
 </div>
 <div data-lang="pt">
@@ -59,7 +59,7 @@ Para simplificar a transcrição, baixo o vídeo e extraio o áudio. Esta versã
 
 ## De MP4 a MP3
 
-Para simplificar la transcripción, descargo el vídeo y extraigo el áudio. Esta versión hace la descarga en streaming (más seguro para archivos grandes) y usa MoviePy para generar el MP3.
+Para simplificar la transcripción, descargo el vídeo y extraigo el audio. Esta versión hace la descarga en streaming (más seguro para archivos grandes) y usa MoviePy para generar el MP3.
 
 </div>
 
@@ -67,7 +67,7 @@ Para simplificar la transcripción, descargo el vídeo y extraigo el áudio. Est
 import requests
 from moviepy.editor import VideoFileClip
 
-def download_vídeo(url: str, output_path: str) -> None:
+def download_video(url: str, output_path: str) -> None:
     with requests.get(url, stream=True) as r:
         r.raise_for_status()
         with open(output_path, "wb") as f:
@@ -77,14 +77,14 @@ def download_vídeo(url: str, output_path: str) -> None:
 
 def convert_mp4_to_mp3(mp4_file: str, mp3_file: str) -> None:
     with VideoFileClip(mp4_file) as clip:
-        clip.áudio.write_audiofile(mp3_file)
+        clip.audio.write_audiofile(mp3_file)
 
 # usage
 video_url = "https://topmate-call-recordings.s3.ap-south-1.amazonaws.com/recording_recording_123456-imagine-like-a-guid.mp4"
 mp4_file = "mentorship.mp4"
 mp3_file = "mentorship.mp3"
 
-download_vídeo(video_url, mp4_file)
+download_video(video_url, mp4_file)
 convert_mp4_to_mp3(mp4_file, mp3_file)
 ```
 
@@ -100,7 +100,7 @@ Setup (once):
 - Upload `mentorship.mp3` to **Google Cloud Storage**
 - Set `GOOGLE_APPLICATION_CREDENTIALS` to your service account JSON
 
-Here's a minimal long-áudio transcription (31-minute files need the long-running API). I also enabled punctuation and confidence scores.
+Here's a minimal long-audio transcription (31-minute files need the long-running API). I also enabled punctuation and confidence scores.
 
 </div>
 <div data-lang="pt">
@@ -130,7 +130,7 @@ Configuración (una sola vez):
 - Sube `mentorship.mp3` a **Google Cloud Storage**
 - Configura `GOOGLE_APPLICATION_CREDENTIALS` con el JSON de tu cuenta de servicio
 
-Aquí va una transcripción mínima de áudio largo (archivos de 31 minutos necesitan la API long-running). También activé la puntuación automática y los scores de confianza.
+Aquí va una transcripción mínima de audio largo (archivos de 31 minutos necesitan la API long-running). También activé la puntuación automática y los scores de confianza.
 
 </div>
 
@@ -140,7 +140,7 @@ from google.cloud import speech_v1p1beta1 as speech
 def transcribe_gcs(gcs_uri: str, output_path: str) -> None:
     client = speech.SpeechClient()
 
-    áudio = speech.RecognitionAudio(uri=gcs_uri)
+    audio = speech.RecognitionAudio(uri=gcs_uri)
     config = speech.RecognitionConfig(
         encoding=speech.RecognitionConfig.AudioEncoding.MP3,
         sample_rate_hertz=44100,         # match your file
@@ -154,7 +154,7 @@ def transcribe_gcs(gcs_uri: str, output_path: str) -> None:
         # diarization_speaker_count=2,
     )
 
-    operation = client.long_running_recognize(config=config, áudio=áudio)
+    operation = client.long_running_recognize(config=config, audio=audio)
     response = operation.result(timeout=3600)
 
     with open(output_path, "w", encoding="utf-8") as f:
@@ -163,7 +163,7 @@ def transcribe_gcs(gcs_uri: str, output_path: str) -> None:
 
 # run
 gcs_uri = "gs://bucket-name/mentorship.mp3"
-transcribe_gcs(gcs_uri, "áudio.txt")
+transcribe_gcs(gcs_uri, "audio.txt")
 ```
 
 <div data-lang="en">
@@ -171,7 +171,7 @@ transcribe_gcs(gcs_uri, "áudio.txt")
 My run (for context):
 
 - Audio: MP3, 44,100 Hz, 2 channels
-- Billed áudio time: 31:57
+- Billed audio time: 31:57
 - Transcription time: ~11:43
 - Automatic punctuation + word confidence on
 - Model: `long` (API `v1p1beta1`)
@@ -193,7 +193,7 @@ Minha execução (para contexto):
 Mi ejecución (para contexto):
 
 - Audio: MP3, 44.100 Hz, 2 canales
-- Tiempo de áudio facturado: 31:57
+- Tiempo de audio facturado: 31:57
 - Tiempo de transcripción: ~11:43
 - Puntuación automática + confianza por palabra activados
 - Modelo: `long` (API `v1p1beta1`)
@@ -230,7 +230,7 @@ if you... good afternoon, I don't know where exactly you are based on but ...
 
 ## Asking ChatGPT for the good stuff
 
-Once I have `áudio.txt`, I pass the transcript to a prompt that asks for a short summary, key decisions, and action items. For long transcripts, chunk first (tokens are a thing), then merge the summaries.
+Once I have `audio.txt`, I pass the transcript to a prompt that asks for a short summary, key decisions, and action items. For long transcripts, chunk first (tokens are a thing), then merge the summaries.
 
 </div>
 <div data-lang="pt">
@@ -244,7 +244,7 @@ Com o `áudio.txt` em mãos, passo a transcrição para um prompt que pede um re
 
 ## Pidiéndole a ChatGPT lo importante
 
-Con el `áudio.txt` en mano, paso la transcripción a un prompt que pide un resumen breve, decisiones clave y próximos pasos. Para transcripciones largas, divide primero (los tokens tienen límite) y luego combina los resúmenes.
+Con el `audio.txt` en mano, paso la transcripción a un prompt que pide un resumen breve, decisiones clave y próximos pasos. Para transcripciones largas, divide primero (los tokens tienen límite) y luego combina los resúmenes.
 
 </div>
 
@@ -258,7 +258,7 @@ def get_chatgpt_insights(prompt: str) -> str:
     """
     ...
 
-with open("áudio.txt", "r", encoding="utf-8") as f:
+with open("audio.txt", "r", encoding="utf-8") as f:
     transcript = f.read()
 
 prompt = (
@@ -311,7 +311,7 @@ graph TD
 
 <div data-lang="en">
 
-This workflow turned a one-off call into reusable notes and clear next steps. If you're experimenting, the two dials that matter most are **áudio encoding** (FLAC/LINEAR16 if you can) and **diarization** (when multiple voices overlap), tuning those pays off quickly.
+This workflow turned a one-off call into reusable notes and clear next steps. If you're experimenting, the two dials that matter most are **audio encoding** (FLAC/LINEAR16 if you can) and **diarization** (when multiple voices overlap), tuning those pays off quickly.
 
 </div>
 <div data-lang="pt">
@@ -321,7 +321,7 @@ Esse fluxo transformou uma chamada avulsa em anotações reutilizáveis e próxi
 </div>
 <div data-lang="es">
 
-Este flujo convirtió una llamada puntual en apuntes reutilizables y próximos pasos claros. Si estás experimentando, los dos ajustes que más importan son la **codificación del áudio** (FLAC/LINEAR16 si puedes) y la **diarización** (cuando varias voces se solapan) -- afinar esos dos da resultados rápido.
+Este flujo convirtió una llamada puntual en apuntes reutilizables y próximos pasos claros. Si estás experimentando, los dos ajustes que más importan son la **codificación del audio** (FLAC/LINEAR16 si puedes) y la **diarización** (cuando varias voces se solapan) -- afinar esos dos da resultados rápido.
 
 </div>
 

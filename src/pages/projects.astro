@@ -10,21 +10,21 @@ import Layout from '../layouts/Layout.astro';
     </h1>
     <p class="projects-intro">
       <span data-lang="en">Tools and experiments I've built on the side.</span>
-      <span data-lang="pt">Ferramentas e experimentos que construi nas horas vagas.</span>
-      <span data-lang="es">Herramientas y experimentos que construi en mi tiempo libre.</span>
+      <span data-lang="pt">Ferramentas e experimentos que construí nas horas vagas.</span>
+      <span data-lang="es">Herramientas y experimentos que construí en mi tiempo libre.</span>
     </p>
 
     <div class="projects-list">
-      <a href="/exams-simulator/" class="project-card">
-        <h2>Exam Simulator</h2>
+      <div class="project-card">
+        <h2><a href="/exams-simulator/">Exam Simulator</a></h2>
         <p data-lang="en">Practice environment for Databricks certification exams with timer, score tracking, and bilingual questions (EN/PT-BR).</p>
         <p data-lang="pt">Ambiente de prática para certificações Databricks com cronômetro, acompanhamento de nota e questões bilíngues (EN/PT-BR).</p>
         <p data-lang="es">Entorno de práctica para certificaciones Databricks con cronómetro, seguimiento de nota y preguntas bilingües (EN/PT-BR).</p>
         <div class="project-tags">
-          <span class="project-tag">Databricks</span>
-          <span class="project-tag">Certification</span>
+          <a href="/tags/databricks/" class="project-tag">Databricks</a>
+          <a href="/tags/certification/" class="project-tag">Certification</a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </Layout>
@@ -61,19 +61,21 @@ import Layout from '../layouts/Layout.astro';
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 24px;
-    text-decoration: none;
-    transition: border-color var(--transition);
-  }
-  .project-card:hover {
-    border-color: var(--text-muted);
   }
   .project-card h2 {
     font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 600;
-    color: var(--text-strong);
     margin-bottom: 8px;
     letter-spacing: -0.01em;
+  }
+  .project-card h2 a {
+    color: var(--text-strong);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+  .project-card h2 a:hover {
+    color: var(--text-muted);
   }
   .project-card p {
     font-family: var(--font-body);
@@ -95,5 +97,11 @@ import Layout from '../layouts/Layout.astro';
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 2px 8px;
+    text-decoration: none;
+    transition: border-color var(--transition), color var(--transition);
+  }
+  .project-tag:hover {
+    border-color: var(--text-muted);
+    color: var(--text-strong);
   }
 </style>
