@@ -3,7 +3,7 @@ title: Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valo
 description: Atendimento psicológico gratuito ou de valor social em Natal - RN
 date: 2020-03-03
 slug: auxilio-psicologico
-tags: [psicologia, saúde mental, natal, utilidade pública]
+tags: [psicologia, saude mental, natal, utilidade publica]
 updated: 2025-10-18
 ---
 
