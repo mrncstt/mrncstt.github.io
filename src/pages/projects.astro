@@ -14,14 +14,17 @@ import Layout from '../layouts/Layout.astro';
       <span data-lang="es">Herramientas y experimentos que construi en mi tiempo libre.</span>
     </p>
 
-    <div class="projects-grid">
+    <div class="projects-list">
       <a href="/exams-simulator/" class="project-card">
-        <div class="project-icon">&#9881;</div>
         <h2>Exam Simulator</h2>
         <p data-lang="en">Practice environment for Databricks certification exams with timer, score tracking, and bilingual questions (EN/PT-BR).</p>
         <p data-lang="pt">Ambiente de prática para certificações Databricks com cronômetro, acompanhamento de nota e questões bilíngues (EN/PT-BR).</p>
         <p data-lang="es">Entorno de práctica para certificaciones Databricks con cronómetro, seguimiento de nota y preguntas bilingües (EN/PT-BR).</p>
-        <span class="project-tags">Databricks &middot; Certification &middot; Interactive</span>
+        <div class="project-tags">
+          <span class="project-tag">Databricks</span>
+          <span class="project-tag">Certification</span>
+          <span class="project-tag">Interactive</span>
+        </div>
       </a>
     </div>
   </div>
@@ -47,13 +50,14 @@ import Layout from '../layouts/Layout.astro';
     color: var(--text-muted);
     margin-bottom: 32px;
   }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .project-card {
     display: block;
+    width: 100%;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -63,10 +67,6 @@ import Layout from '../layouts/Layout.astro';
   }
   .project-card:hover {
     border-color: var(--text-muted);
-  }
-  .project-icon {
-    font-size: 28px;
-    margin-bottom: 12px;
   }
   .project-card h2 {
     font-family: var(--font-heading);
@@ -84,8 +84,17 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 12px;
   }
   .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .project-tag {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 11px;
     color: var(--text-muted);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
   }
 </style>

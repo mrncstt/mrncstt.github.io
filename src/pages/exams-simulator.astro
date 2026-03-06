@@ -7,7 +7,28 @@ import Layout from '../layouts/Layout.astro';
       <button class="exam-lang-btn active" data-lang="en">EN</button>
       <button class="exam-lang-btn" data-lang="pt">PT-BR</button>
     </div>
-    <h1 id="exam-title">Choose Your Exam</h1>
+    <h1 id="exam-title">Exam Simulator</h1>
+
+    <div class="exam-intro" id="exam-intro">
+      <p data-lang="en">
+        Databricks proctored exams are taken at a testing center or online with a webcam.
+        You get a fixed number of multiple-choice questions, a countdown timer, and no external
+        resources. You can flag questions and revisit them before submitting. This simulator
+        follows the same format so you can practice under realistic conditions.
+      </p>
+      <p data-lang="pt">
+        Os exames Databricks são feitos em um centro de testes ou online com webcam.
+        Você recebe um número fixo de questões de múltipla escolha, um cronômetro regressivo
+        e nenhum material de consulta. É possível marcar questões e revisá-las antes de enviar.
+        Este simulador segue o mesmo formato para que você pratique em condições realistas.
+      </p>
+      <p data-lang="es">
+        Los exámenes Databricks se hacen en un centro de pruebas o en línea con webcam.
+        Recibes un número fijo de preguntas de opción múltiple, un cronómetro regresivo
+        y ningún material de consulta. Puedes marcar preguntas y revisarlas antes de enviar.
+        Este simulador sigue el mismo formato para que practiques en condiciones realistas.
+      </p>
+    </div>
 
     <div id="setup">
       <label id="lbl-exam" for="exam-select">Select Exam</label>
@@ -46,6 +67,13 @@ import Layout from '../layouts/Layout.astro';
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 48px 24px 100px;
+  }
+  .exam-intro {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 24px;
   }
   .exam-page h1 {
     font-family: var(--font-heading);
@@ -323,7 +351,7 @@ import Layout from '../layouts/Layout.astro';
 
     var i18n: Record<string, any> = {
       en: {
-        title: "Choose Your Exam",
+        title: "Exam Simulator",
         lblExam: "Select Exam",
         lblTime: "Time Limit (minutes)",
         lblPass: "Pass Mark (%)",
@@ -346,7 +374,7 @@ import Layout from '../layouts/Layout.astro';
         loadErr: "Failed to load questions"
       },
       pt: {
-        title: "Escolha seu Exame",
+        title: "Simulador de Exame",
         lblExam: "Selecionar Exame",
         lblTime: "Tempo Limite (minutos)",
         lblPass: "Nota de Corte (%)",
