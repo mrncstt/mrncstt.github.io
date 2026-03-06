@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+}
+
+const { posts } = Astro.props;
+
+// Group by year
+const byYear = new Map<number, number>();
+for (const p of posts) {
+  const y = p.data.date.getFullYear();
+  byYear.set(y, (byYear.get(y) || 0) + 1);
+}
+
+const years = [...byYear.entries()].sort((a, b) => b[0] - a[0]);
+const maxCount = Math.max(...years.map(([, c]) => c));
+---
+<div class="year-chart">
+  <div class="year-chart-label">Posts per year</div>
+  <div role="list" aria-label="Posts per year">
+    {years.map(([year, count]) => {
+      const pct = Math.round((count / maxCount) * 100);
+      return (
+        <div class="year-bar-row" role="listitem">
+          <span class="year-bar-year">{year}</span>
+          <div
+            class="year-bar-track"
+            role="meter"
+            aria-valuenow={count}
+            aria-valuemin={0}
+            aria-valuemax={maxCount}
+            aria-label={`${year}: ${count} posts`}
+          >
+            <div class="year-bar-fill" style={`width:${pct}%`}></div>
+          </div>
+          <span class="year-bar-count">{count}</span>
+        </div>
+      );
+    })}
+  </div>
+</div>

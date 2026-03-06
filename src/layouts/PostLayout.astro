@@ -1,0 +1,120 @@
+---
+import Layout from './Layout.astro';
+import TOCBar from '../components/TOCBar.astro';
+import RelatedPosts from '../components/RelatedPosts.astro';
+import CopyCode from '../components/CopyCode.astro';
+import MermaidInit from '../components/MermaidInit.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getReadingTime } from '../utils/reading-time';
+import { getRelatedPosts } from '../utils/related-posts';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+  headings: { depth: number; slug: string; text: string }[];
+}
+
+const { post, headings } = Astro.props;
+const { title, date, tags, description, image, mermaid, math } = post.data;
+const readingTime = getReadingTime(post.body || '');
+const formattedDate = date.toLocaleDateString('en-US', {
+  month: 'short', day: 'numeric', year: 'numeric'
+});
+
+const allPosts = await getCollection('posts');
+const related = getRelatedPosts(post, allPosts);
+---
+<Layout title={title} description={description} image={image} type="article">
+  <Fragment slot="head">
+    <meta property="article:published_time" content={date.toISOString()} />
+    {tags.map(tag => <meta property="article:tag" content={tag} />)}
+    {math && (
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css" />
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js" />
+      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"
+        data-auto-render />
+    )}
+  </Fragment>
+
+  <Fragment slot="toc">
+    <TOCBar headings={headings} />
+  </Fragment>
+
+  <div class="post-layout">
+    <article class="post-content">
+      <div class="post-meta-block">
+        <time class="post-meta-date" datetime={date.toISOString()}>{formattedDate}</time>
+        <span class="post-meta-readtime">{readingTime} min read</span>
+      </div>
+
+      <h1 class="post-main-title">{title}</h1>
+
+      {tags.length > 0 && (
+        <div class="post-tags">
+          {tags.map(tag => (
+            <a class="post-tag" href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}/`}>{tag}</a>
+          ))}
+        </div>
+      )}
+
+      <hr class="post-divider" />
+
+      <div class="prose">
+        <slot />
+      </div>
+
+      <RelatedPosts posts={related} />
+    </article>
+
+    <aside class="sidenotes-column" aria-label="Sidenotes" id="sidenotes-aside">
+    </aside>
+  </div>
+
+  <script>
+    // Position sidenotes in the margin column, aligned to their inline refs
+    function positionSidenotes() {
+      const aside = document.getElementById('sidenotes-aside');
+      const refs = document.querySelectorAll<HTMLElement>('.sn-ref');
+      if (!aside || refs.length === 0 || window.innerWidth <= 900) return;
+
+      aside.innerHTML = '';
+      refs.forEach(ref => {
+        const id = ref.getAttribute('aria-describedby')?.replace('sn-tooltip-', '');
+        const tooltip = ref.querySelector('.sn-tooltip');
+        if (!id || !tooltip) return;
+
+        const note = document.createElement('div');
+        note.className = 'sidenote-marginal';
+        note.innerHTML = `<span class="sidenote-marginal-num">${id}.</span> ${tooltip.textContent}`;
+
+        const refTop = ref.getBoundingClientRect().top + window.scrollY;
+        const asideTop = aside.getBoundingClientRect().top + window.scrollY;
+        note.style.marginTop = `${Math.max(0, refTop - asideTop - (aside.children.length > 0 ? 0 : 0))}px`;
+
+        aside.appendChild(note);
+      });
+    }
+
+    if (window.innerWidth > 900) {
+      window.addEventListener('DOMContentLoaded', positionSidenotes);
+      window.addEventListener('load', positionSidenotes);
+    }
+  </script>
+
+  <CopyCode />
+  {mermaid && <MermaidInit />}
+  {math && (
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof renderMathInElement === 'function') {
+          renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+            ]
+          });
+        }
+      });
+    </script>
+  )}
+</Layout>

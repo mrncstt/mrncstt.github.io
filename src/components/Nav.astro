@@ -1,0 +1,21 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import LanguageToggle from './LanguageToggle.astro';
+const { pathname } = Astro.url;
+const isActive = (path: string) =>
+  pathname === path || (path !== '/' && pathname.startsWith(path));
+---
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">Mariana Costa</a>
+    <div class="nav-links">
+      <a href="/" aria-current={isActive('/') && !isActive('/tags') && !isActive('/about') ? 'page' : undefined}>Blog</a>
+      <a href="/tags/" aria-current={isActive('/tags') ? 'page' : undefined}>Tags</a>
+      <a href="/recommendations/" aria-current={isActive('/recommendations') ? 'page' : undefined}>Recs</a>
+      <a href="/exams-simulator/" aria-current={isActive('/exams-simulator') ? 'page' : undefined}>Exams</a>
+      <a href="/about/" aria-current={isActive('/about') ? 'page' : undefined}>About</a>
+      <LanguageToggle />
+      <ThemeToggle />
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+---
+// Accessible theme toggle -QA fix #14: aria-label, aria-pressed
+---
+<button
+  class="theme-toggle"
+  id="theme-toggle"
+  type="button"
+  aria-label="Switch to light mode"
+  aria-pressed="false"
+>
+  <span class="theme-icon" aria-hidden="true">&#9728;</span>
+</button>
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = toggle?.querySelector('.theme-icon');
+
+  function applyTheme(theme: string) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    if (icon) icon.textContent = theme === 'dark' ? '\u2600' : '\u263E';
+    toggle?.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+    toggle?.setAttribute('aria-pressed', String(theme === 'light'));
+  }
+
+  applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+
+  toggle?.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+</script>

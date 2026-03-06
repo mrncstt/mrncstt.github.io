@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostItem from '../../components/PostItem.astro';
+import { getCollection } from 'astro:content';
+import { getReadingTime } from '../../utils/reading-time';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const tags = new Set<string>();
+  for (const p of posts) {
+    for (const tag of p.data.tags) {
+      tags.add(tag);
+    }
+  }
+  return [...tags].map(tag => ({
+    params: { tag: tag.toLowerCase().replace(/\s+/g, '-') },
+    props: { tagName: tag },
+  }));
+}
+
+const { tagName } = Astro.props;
+const allPosts = await getCollection('posts');
+const posts = allPosts
+  .filter(p => p.data.listed !== false && p.data.tags.includes(tagName))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Layout title={`${tagName}`} description={`Posts tagged "${tagName}"`}>
+  <div class="tag-page">
+    <h1>{tagName}</h1>
+    <p class="tag-page-count">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+
+    <section class="post-list" aria-label={`Posts tagged ${tagName}`}>
+      {posts.map(post => (
+        <PostItem
+          title={post.data.title}
+          date={post.data.date}
+          slug={post.slug}
+          readingTime={getReadingTime(post.body || '')}
+          til={post.data.til}
+        />
+      ))}
+    </section>
+  </div>
+</Layout>

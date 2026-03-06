@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+}
+
+const { posts } = Astro.props;
+const total = posts.length;
+const sorted = [...posts].sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const first = sorted[0];
+const last = sorted[sorted.length - 1];
+
+// Word count
+let totalWords = 0;
+for (const p of posts) {
+  const text = (p.body || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+  totalWords += text.split(' ').length;
+}
+const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
+---
+<div class="stats-grid" role="list" aria-label="Blog statistics">
+  <div class="stat-card" role="listitem">
+    <span class="stat-label">Total posts</span>
+    <span class="stat-value">{total}</span>
+  </div>
+  {first && (
+    <div class="stat-card" role="listitem">
+      <span class="stat-label">First post</span>
+      <span class="stat-value">{first.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+      <span class="stat-detail">{first.data.title}</span>
+    </div>
+  )}
+  {last && (
+    <div class="stat-card" role="listitem">
+      <span class="stat-label">Latest post</span>
+      <span class="stat-value">{last.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
+      <span class="stat-detail">{last.data.title}</span>
+    </div>
+  )}
+  <div class="stat-card" role="listitem">
+    <span class="stat-label">Words written</span>
+    <span class="stat-value">{totalWords.toLocaleString()}</span>
+    <span class="stat-detail">~{avgWords.toLocaleString()} avg per post</span>
+  </div>
+</div>

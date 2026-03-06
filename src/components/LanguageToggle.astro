@@ -1,0 +1,40 @@
+---
+/**
+ * Language toggle: cycles EN -> PT -> ES.
+ */
+---
+<button
+  class="lang-toggle"
+  id="lang-toggle"
+  type="button"
+  aria-label="Switch language"
+>
+  <span class="lang-label" aria-hidden="true">PT</span>
+</button>
+
+<script>
+  const langs = ['en', 'pt', 'es'] as const;
+  type Lang = (typeof langs)[number];
+
+  const langHtml: Record<Lang, string> = { en: 'en', pt: 'pt-BR', es: 'es' };
+  const nextLabel: Record<Lang, string> = { en: 'PT', pt: 'ES', es: 'EN' };
+  const nextLang: Record<Lang, Lang> = { en: 'pt', pt: 'es', es: 'en' };
+
+  const toggle = document.getElementById('lang-toggle');
+  const label = toggle?.querySelector('.lang-label');
+
+  function applyLang(lang: Lang) {
+    document.documentElement.setAttribute('lang', langHtml[lang]);
+    localStorage.setItem('lang', lang);
+    if (label) label.textContent = nextLabel[lang];
+  }
+
+  const stored = localStorage.getItem('lang') as Lang | null;
+  const initial = stored && langs.includes(stored) ? stored : 'en';
+  applyLang(initial);
+
+  toggle?.addEventListener('click', () => {
+    const current = (localStorage.getItem('lang') || 'en') as Lang;
+    applyLang(nextLang[current]);
+  });
+</script>

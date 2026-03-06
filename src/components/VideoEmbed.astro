@@ -1,0 +1,24 @@
+---
+interface Props {
+  platform: 'youtube' | 'twitch' | 'bilibili';
+  id: string;
+  title?: string;
+}
+const { platform, id, title = 'Embedded video' } = Astro.props;
+
+const urls: Record<string, string> = {
+  youtube: `https://www.youtube-nocookie.com/embed/${id}`,
+  twitch: `https://player.twitch.tv/?video=${id}&parent=${new URL(Astro.site || '').hostname}`,
+  bilibili: `https://player.bilibili.com/player.html?bvid=${id}`,
+};
+const src = urls[platform];
+---
+<div class="video-embed">
+  <iframe
+    src={src}
+    title={title}
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>

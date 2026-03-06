@@ -1,0 +1,68 @@
+---
+// Horizontal sticky TOC bar - generated from headings at build time
+// QA fix #13: keyboard navigable, #27: scroll fade indicators (via CSS)
+// QA fix #35: only render if there are headings
+// QA fix #37: truncate long headings
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  headings: Heading[];
+}
+const { headings } = Astro.props;
+const tocHeadings = headings.filter(h => h.depth === 2 || h.depth === 3);
+---
+{tocHeadings.length > 0 && (
+  <div class="toc-bar" role="navigation" aria-label="Table of contents">
+    <div class="toc-bar-inner">
+      {tocHeadings.map((h, i) => (
+        <>
+          {i > 0 && <span class="toc-sep" aria-hidden="true">&middot;</span>}
+          <a
+            class="toc-link"
+            href={`#${h.slug}`}
+            data-section={h.slug}
+          >
+            {h.text.length > 40 ? h.text.slice(0, 37) + '...' : h.text}
+          </a>
+        </>
+      ))}
+    </div>
+  </div>
+)}
+
+<script>
+  // Scroll spy - highlight active TOC item
+  const tocLinks = document.querySelectorAll<HTMLAnchorElement>('.toc-link[data-section]');
+  const sections = new Map<string, HTMLElement>();
+
+  tocLinks.forEach(link => {
+    const id = link.getAttribute('data-section');
+    if (id) {
+      const el = document.getElementById(id);
+      if (el) sections.set(id, el);
+    }
+  });
+
+  function updateToc() {
+    let currentId = '';
+    const offset = 120;
+    sections.forEach((el, id) => {
+      if (el.getBoundingClientRect().top <= offset) currentId = id;
+    });
+    tocLinks.forEach(link => {
+      const isActive = link.getAttribute('data-section') === currentId;
+      link.setAttribute('aria-current', String(isActive));
+    });
+    // Auto-scroll TOC bar to active item
+    const active = document.querySelector('.toc-link[aria-current="true"]');
+    if (active instanceof HTMLElement) {
+      active.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+    }
+  }
+
+  window.addEventListener('scroll', updateToc, { passive: true });
+  updateToc();
+</script>

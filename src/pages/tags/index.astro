@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatsGrid from '../../components/StatsGrid.astro';
+import YearChart from '../../components/YearChart.astro';
+import Treemap from '../../components/Treemap.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts'))
+  .filter(p => p.data.listed !== false)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+// Build tag counts
+const tagCounts = new Map<string, number>();
+for (const p of posts) {
+  for (const tag of p.data.tags) {
+    tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+  }
+}
+---
+<Layout title="Tags" description="Blog statistics and tags overview.">
+  <div class="tags-page">
+    <h1>Tags</h1>
+    <p class="tags-credit">
+      Inspired by <a href="https://www.raymondcamden.com/stats" target="_blank" rel="noopener noreferrer">Raymond Camden's stats page</a>
+    </p>
+
+    <StatsGrid posts={posts} />
+    <YearChart posts={posts} />
+    <Treemap tags={tagCounts} />
+  </div>
+</Layout>

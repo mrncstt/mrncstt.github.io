@@ -1,0 +1,2011 @@
+[
+  {
+    "id": "databricks-001",
+    "question": "Um lider de organizacao de dados esta insatisfeito com os relatorios da equipe de analise de dados sendo diferentes dos relatorios da equipe de engenharia de dados. O lider acredita que a natureza isolada das arquiteturas de engenharia de dados e analise de dados de sua organizacao e a causa.\nQual das seguintes opcoes descreve como um data lakehouse poderia aliviar esse problema?",
+    "options": [
+      "Ambas as equipes escalariam automaticamente seu trabalho conforme o tamanho dos dados evolui",
+      "Ambas as equipes usariam a mesma fonte de verdade para seu trabalho",
+      "Ambas as equipes se reorganizariam para reportar ao mesmo departamento",
+      "Ambas as equipes seriam capazes de colaborar em projetos em tempo real",
+      "Ambas as equipes responderiam mais rapidamente a solicitacoes ad-hoc"
+    ],
+    "answer": [
+      "Ambas as equipes escalariam automaticamente seu trabalho conforme o tamanho dos dados evolui"
+    ],
+    "topic": "Arquitetura Lakehouse"
+  },
+  {
+    "id": "databricks-002",
+    "question": "Qual das seguintes opcoes descreve um cenario em que uma equipe de dados desejara utilizar cluster pools?",
+    "options": [
+      "Um relatorio automatizado precisa ser atualizado o mais rapido possivel.",
+      "Um relatorio automatizado precisa ser reproduzivel.",
+      "Um relatorio automatizado precisa ser testado para identificar erros.",
+      "Um relatorio automatizado precisa ser versionado entre varios colaboradores.",
+      "Um relatorio automatizado precisa ser executavel por todas as partes interessadas."
+    ],
+    "answer": [
+      "Um relatorio automatizado precisa ser atualizado o mais rapido possivel."
+    ],
+    "topic": "Gerenciamento de Cluster"
+  },
+  {
+    "id": "databricks-003",
+    "question": "Qual dos seguintes e hospedado completamente no plano de controle da arquitetura classica do Databricks?",
+    "options": [
+      "No worker",
+      "Fonte de dados JDBC",
+      "Aplicacao web Databricks",
+      "Databricks Filesystem",
+      "No driver"
+    ],
+    "answer": [
+      "No worker"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-004",
+    "question": "Qual dos seguintes beneficios de usar a Plataforma Databricks Lakehouse e fornecido pelo Delta Lake?",
+    "options": [
+      "A capacidade de manipular os mesmos dados usando uma variedade de linguagens",
+      "A capacidade de colaborar em tempo real em um unico notebook",
+      "A capacidade de configurar alertas para falhas de consulta",
+      "A capacidade de suportar cargas de trabalho batch e streaming",
+      "A capacidade de distribuir operacoes complexas de dados"
+    ],
+    "answer": [
+      "A capacidade de manipular os mesmos dados usando uma variedade de linguagens"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-005",
+    "question": "Qual das seguintes opcoes descreve a organizacao de armazenamento de uma tabela Delta?",
+    "options": [
+      "Tabelas Delta sao armazenadas em um unico arquivo que contem dados, historico, metadados e outros atributos.",
+      "Tabelas Delta armazenam seus dados em um unico arquivo e todos os metadados em uma colecao de arquivos em um local separado.",
+      "Tabelas Delta sao armazenadas em uma colecao de arquivos que contem dados, historico, metadados e outros atributos.",
+      "Tabelas Delta sao armazenadas em uma colecao de arquivos que contem apenas os dados armazenados na tabela.",
+      "Tabelas Delta sao armazenadas em um unico arquivo que contem apenas os dados armazenados na tabela."
+    ],
+    "answer": [
+      "Tabelas Delta sao armazenadas em um unico arquivo que contem dados, historico, metadados e outros atributos."
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-006",
+    "question": "Qual dos seguintes blocos de codigo removera as linhas onde o valor na coluna age e maior que 25 da tabela Delta existente my_table e salvara a tabela atualizada?",
+    "options": [
+      "SELECT * FROM my_table WHERE age > 25;",
+      "UPDATE my_table WHERE age > 25;",
+      "DELETE FROM my_table WHERE age > 25;",
+      "UPDATE my_table WHERE age <= 25;",
+      "DELETE FROM my_table WHERE age <= 25;"
+    ],
+    "answer": [
+      "SELECT * FROM my_table WHERE age > 25;"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-007",
+    "question": "Um engenheiro de dados percebeu que cometeu um erro ao fazer uma atualizacao diaria em uma tabela. Ele precisa usar o Delta TIME TRAVEL para restaurar a tabela para uma versao de 3 dias atras. No entanto, quando o engenheiro de dados tenta viajar no tempo para a versao anterior, ele nao consegue restaurar os dados porque os arquivos de dados foram excluidos.\nQual das seguintes opcoes explica por que os arquivos de dados nao estao mais presentes?",
+    "options": [
+      "O comando VACUUM foi executado na tabela",
+      "O comando TIME TRAVEL foi executado na tabela",
+      "O comando DELETE HISTORY foi executado na tabela",
+      "O comando OPTIMIZE foi executado na tabela",
+      "O comando HISTORY foi executado na tabela"
+    ],
+    "answer": [
+      "O comando VACUUM foi executado na tabela"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-008",
+    "question": "Qual das seguintes operacoes Git deve ser realizada fora do Databricks Repos?",
+    "options": [
+      "Commit",
+      "Pull",
+      "Push",
+      "Clone",
+      "Merge"
+    ],
+    "answer": [
+      "Commit"
+    ],
+    "topic": "Controle de Versao"
+  },
+  {
+    "id": "databricks-009",
+    "question": "Qual dos seguintes recursos do data lakehouse resulta em melhoria na qualidade dos dados em comparacao com um data lake tradicional?",
+    "options": [
+      "Um data lakehouse fornece solucoes de armazenamento para dados estruturados e nao estruturados.",
+      "Um data lakehouse suporta transacoes compativeis com ACID.",
+      "Um data lakehouse permite o uso de consultas SQL para examinar dados.",
+      "Um data lakehouse armazena dados em formatos abertos.",
+      "Um data lakehouse permite cargas de trabalho de machine learning e inteligencia artificial."
+    ],
+    "answer": [
+      "Um data lakehouse fornece solucoes de armazenamento para dados estruturados e nao estruturados."
+    ],
+    "topic": "Arquitetura Lakehouse"
+  },
+  {
+    "id": "databricks-010",
+    "question": "Um engenheiro de dados precisa determinar se deve usar o versionamento integrado dos Databricks Notebooks ou versionar seu projeto usando Databricks Repos.\nQual das seguintes opcoes e uma vantagem de usar Databricks Repos em vez do versionamento dos Databricks Notebooks?",
+    "options": [
+      "Databricks Repos salva automaticamente o progresso do desenvolvimento",
+      "Databricks Repos suporta o uso de multiplas branches",
+      "Databricks Repos permite que os usuarios revertam para versoes anteriores de um notebook",
+      "Databricks Repos fornece a capacidade de comentar em alteracoes especificas",
+      "Databricks Repos e totalmente hospedado dentro da Plataforma Databricks Lakehouse"
+    ],
+    "answer": [
+      "Databricks Repos salva automaticamente o progresso do desenvolvimento"
+    ],
+    "topic": "Controle de Versao"
+  },
+  {
+    "id": "databricks-011",
+    "question": "Um engenheiro de dados saiu da organizacao. A equipe de dados precisa transferir a propriedade das tabelas Delta do engenheiro de dados para um novo engenheiro de dados. O novo engenheiro de dados e o lider da equipe de dados.\nAssumindo que o engenheiro de dados original nao tem mais acesso, qual dos seguintes individuos deve ser o responsavel por transferir a propriedade das tabelas Delta no Data Explorer?",
+    "options": [
+      "Representante da conta Databricks",
+      "Essa transferencia nao e possivel",
+      "Administrador do workspace",
+      "Novo engenheiro de dados lider",
+      "Engenheiro de dados original"
+    ],
+    "answer": [
+      "Representante da conta Databricks"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-012",
+    "question": "Um analista de dados criou uma tabela Delta sales que e usada por toda a equipe de analise de dados. Eles querem ajuda da equipe de engenharia de dados para implementar uma serie de testes para garantir que os dados estejam limpos. No entanto, a equipe de engenharia de dados usa Python para seus testes em vez de SQL.\nQual dos seguintes comandos a equipe de engenharia de dados poderia usar para acessar sales no PySpark?",
+    "options": [
+      "SELECT * FROM sales",
+      "Nao ha como compartilhar dados entre PySpark e SQL.",
+      "spark.sql(\"sales\")D. spark.delta.table(\"sales\")",
+      "spark.table(\"sales\")"
+    ],
+    "answer": [
+      "SELECT * FROM sales"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-013",
+    "question": "Qual dos seguintes comandos retornara a localizacao do banco de dados customer360?",
+    "options": [
+      "DESCRIBE LOCATION customer360;",
+      "DROP DATABASE customer360;",
+      "DESCRIBE DATABASE customer360;",
+      "ALTER DATABASE customer360 SET DBPROPERTIES ('location' = '/user'};",
+      "USE DATABASE customer360;"
+    ],
+    "answer": [
+      "DESCRIBE LOCATION customer360;"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-014",
+    "question": "Um engenheiro de dados deseja criar uma nova tabela contendo os nomes dos clientes que moram na Franca. Eles escreveram o seguinte comando:\nUm engenheiro de dados senior menciona que e politica da organizacao incluir uma propriedade de tabela indicando que a nova tabela inclui informacoes de identificacao pessoal (PII).\nQual das seguintes linhas de codigo preenche o espaco em branco acima para concluir a tarefa com sucesso?",
+    "options": [
+      "Nao ha como indicar se uma tabela contem PII.",
+      "\"COMMENT PII\"",
+      "TBLPROPERTIES PII",
+      "COMMENT \"Contains PII\"",
+      "PII"
+    ],
+    "answer": [
+      "Nao ha como indicar se uma tabela contem PII."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-015",
+    "question": "Qual dos seguintes beneficios e fornecido pelas funcoes de array do Spark SQL?",
+    "options": [
+      "A capacidade de trabalhar com dados em uma variedade de tipos ao mesmo tempo",
+      "A capacidade de trabalhar com dados dentro de certas particoes e janelas",
+      "A capacidade de trabalhar com dados relacionados ao tempo em intervalos especificados",
+      "A capacidade de trabalhar com dados complexos e aninhados ingeridos de arquivos JSON",
+      "A capacidade de trabalhar com um array de tabelas para automacao procedural"
+    ],
+    "answer": [
+      "A capacidade de trabalhar com dados em uma variedade de tipos ao mesmo tempo"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-016",
+    "question": "Qual dos seguintes comandos pode ser usado para gravar dados em uma tabela Delta evitando a gravacao de registros duplicados?",
+    "options": [
+      "DROP",
+      "IGNORE",
+      "MERGE",
+      "APPEND",
+      "INSERT"
+    ],
+    "answer": [
+      "DROP"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-017",
+    "question": "Um engenheiro de dados precisa aplicar logica personalizada a coluna de string city na tabela stores para um caso de uso especifico. Para aplicar essa logica personalizada em escala, o engenheiro de dados deseja criar uma funcao definida pelo usuario (UDF) em SQL.\nQual dos seguintes blocos de codigo cria essa UDF SQL?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-018",
+    "question": "Um analista de dados tem uma serie de consultas em um programa SQL. O analista de dados deseja que este programa seja executado todos os dias. Eles so querem que a consulta final do programa seja executada aos domingos. Eles pedem ajuda da equipe de engenharia de dados para concluir esta tarefa.\nQual das seguintes abordagens poderia ser usada pela equipe de engenharia de dados para concluir esta tarefa?",
+    "options": [
+      "Eles poderiam enviar uma solicitacao de recurso ao Databricks para adicionar essa funcionalidade.",
+      "Eles poderiam encapsular as consultas usando PySpark e usar o sistema de controle de fluxo do Python para determinar quando executar a consulta final.",
+      "Eles poderiam executar o programa inteiro apenas aos domingos.",
+      "Eles poderiam restringir automaticamente o acesso a tabela de origem na consulta final para que ela so seja acessivel aos domingos.",
+      "Eles poderiam redesenhar o modelo de dados para separar os dados usados na consulta final em uma nova tabela."
+    ],
+    "answer": [
+      "Eles poderiam enviar uma solicitacao de recurso ao Databricks para adicionar essa funcionalidade."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-019",
+    "question": "Um engenheiro de dados executa uma instrucao todos os dias para copiar as vendas do dia anterior para a tabela transactions. As vendas de cada dia estao em seu proprio arquivo na localizacao \"/transactions/raw\".\nHoje, o engenheiro de dados executa o seguinte comando para concluir esta tarefa:\nApos executar o comando hoje, o engenheiro de dados percebe que o numero de registros na tabela transactions nao mudou.\nQual das seguintes opcoes descreve por que a instrucao pode nao ter copiado nenhum novo registro para a tabela?",
+    "options": [
+      "O formato dos arquivos a serem copiados nao foi incluido com a palavra-chave FORMAT_OPTIONS.",
+      "Os nomes dos arquivos a serem copiados nao foram incluidos com a palavra-chave FILES.",
+      "O arquivo do dia anterior ja foi copiado para a tabela.",
+      "O formato de arquivo PARQUET nao suporta COPY INTO.",
+      "A instrucao COPY INTO requer que a tabela seja atualizada para visualizar as linhas copiadas."
+    ],
+    "answer": [
+      "O formato dos arquivos a serem copiados nao foi incluido com a palavra-chave FORMAT_OPTIONS."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-020",
+    "question": "Um engenheiro de dados precisa criar uma tabela no Databricks usando dados do banco de dados SQLite existente de sua organizacao.\nEles executam o seguinte comando:\nQual das seguintes linhas de codigo preenche o espaco em branco acima para concluir a tarefa com sucesso?",
+    "options": [
+      "org.apache.spark.sql.jdbc",
+      "autoloader",
+      "DELTA",
+      "sqlite",
+      "org.apache.spark.sql.sqlite"
+    ],
+    "answer": [
+      "org.apache.spark.sql.jdbc"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-021",
+    "question": "Uma equipe de engenharia de dados tem duas tabelas. A primeira tabela march_transactions e uma colecao de todas as transacoes de varejo no mes de marco. A segunda tabela april_transactions e uma colecao de todas as transacoes de varejo no mes de abril. Nao ha registros duplicados entre as tabelas.\nQual dos seguintes comandos deve ser executado para criar uma nova tabela all_transactions que contenha todos os registros de march_transactions e april_transactions sem registros duplicados?\n\nSELECT * FROM march_transactions\nINNER JOIN SELECT * FROM april_transactions;\n\nSELECT * FROM march_transactions\nUNION SELECT * FROM april_transactions;\n\nSELECT * FROM march_transactions\nOUTER JOIN SELECT * FROM april_transactions;\n\nSELECT * FROM march_transactions\nINTERSECT SELECT * from april_transactions;\n\nSELECT * FROM march_transactions\nMERGE SELECT * FROM april_transactions;",
+    "options": [
+      "CREATE TABLE all_transactions AS",
+      "CREATE TABLE all_transactions AS",
+      "CREATE TABLE all_transactions AS",
+      "CREATE TABLE all_transactions AS",
+      "CREATE TABLE all_transactions AS"
+    ],
+    "answer": [
+      "CREATE TABLE all_transactions AS"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-022",
+    "question": "Um engenheiro de dados so quer executar o bloco final de um programa Python se a variavel Python day_of_week for igual a 1 e a variavel Python review_period for True.\nQual das seguintes instrucoes de controle de fluxo o engenheiro de dados deve usar para iniciar este bloco de codigo executado condicionalmente?",
+    "options": [
+      "if day_of_week = 1 and review_period:",
+      "if day_of_week = 1 and review_period = \"True\":",
+      "if day_of_week == 1 and review_period == \"True\":",
+      "if day_of_week == 1 and review_period:",
+      "if day_of_week = 1 & review_period: = \"True\":"
+    ],
+    "answer": [
+      "if day_of_week = 1 and review_period:"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-023",
+    "question": "Um engenheiro de dados esta tentando excluir uma tabela Spark SQL my_table. O engenheiro de dados deseja excluir todos os metadados e dados da tabela.\nEles executam o seguinte comando:\nDROP TABLE IF EXISTS my_table -\nEmbora o objeto nao apareca mais quando executam SHOW TABLES, os arquivos de dados ainda existem.\nQual das seguintes opcoes descreve por que os arquivos de dados ainda existem e os arquivos de metadados foram excluidos?",
+    "options": [
+      "Os dados da tabela eram maiores que 10 GB",
+      "Os dados da tabela eram menores que 10 GB",
+      "A tabela era externa",
+      "A tabela nao tinha uma localizacao",
+      "A tabela era gerenciada"
+    ],
+    "answer": [
+      "Os dados da tabela eram maiores que 10 GB"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-024",
+    "question": "Um engenheiro de dados deseja criar uma entidade de dados a partir de algumas tabelas. A entidade de dados deve ser usada por outros engenheiros de dados em outras sessoes. Ela tambem deve ser salva em um local fisico.\nQual das seguintes entidades de dados o engenheiro de dados deve criar?",
+    "options": [
+      "Banco de dados",
+      "Funcao",
+      "View",
+      "Temporary view",
+      "Tabela"
+    ],
+    "answer": [
+      "Banco de dados"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-025",
+    "question": "Um engenheiro de dados esta mantendo um pipeline de dados. Ao ingerir os dados, o engenheiro de dados percebe que os dados de origem estao comecando a ter um nivel mais baixo de qualidade. O engenheiro de dados gostaria de automatizar o processo de monitoramento do nivel de qualidade.\nQual das seguintes ferramentas o engenheiro de dados pode usar para resolver este problema?",
+    "options": [
+      "Unity Catalog",
+      "Data Explorer",
+      "Delta Lake",
+      "Delta Live Tables",
+      "Auto Loader"
+    ],
+    "answer": [
+      "Unity Catalog"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-026",
+    "question": "Um pipeline Delta Live Table inclui dois datasets definidos usando STREAMING LIVE TABLE. Tres datasets sao definidos contra fontes de tabelas Delta Lake usando LIVE TABLE.\nA tabela esta configurada para executar no modo Producao usando o Modo de Pipeline Continuo.\nAssumindo que dados nao processados anteriormente existem e todas as definicoes sao validas, qual e o resultado esperado apos clicar em Iniciar para atualizar o pipeline?\ntestes.\nnao utilizados.\nterminados quando o pipeline for parado.",
+    "options": [
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao para permitir testes adicionais",
+      "Todos os datasets serao atualizados uma vez e o pipeline persistira sem nenhum processamento. Os recursos computacionais persistirao mas ficarao",
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais serao implantados para a atualizacao e",
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais serao encerrados.",
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais persistirao para permitir testes adicionais."
+    ],
+    "answer": [
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao para permitir testes adicionais"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-027",
+    "question": "Para que o Structured Streaming rastreie de forma confiavel o progresso exato do processamento para que possa lidar com qualquer tipo de falha reiniciando e/ou reprocessando, quais das seguintes duas abordagens sao usadas pelo Spark para registrar o intervalo de offset dos dados sendo processados em cada trigger?",
+    "options": [
+      "Checkpointing e Write-ahead Logs",
+      "O Structured Streaming nao pode registrar o intervalo de offset dos dados sendo processados em cada trigger.",
+      "Fontes Reexecutaveis e Sinks Idempotentes",
+      "Write-ahead Logs e Sinks Idempotentes",
+      "Checkpointing e Sinks Idempotentes"
+    ],
+    "answer": [
+      "Checkpointing e Write-ahead Logs"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-028",
+    "question": "Qual das seguintes opcoes descreve a relacao entre tabelas Gold e tabelas Silver?",
+    "options": [
+      "Tabelas Gold tem maior probabilidade de conter agregacoes do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter dados valiosos do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter uma visao menos refinada dos dados do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter mais dados do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter dados verdadeiros do que tabelas Silver."
+    ],
+    "answer": [
+      "Tabelas Gold tem maior probabilidade de conter agregacoes do que tabelas Silver."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-029",
+    "question": "Qual das seguintes opcoes descreve a relacao entre tabelas Bronze e dados brutos?",
+    "options": [
+      "Tabelas Bronze contem menos dados do que arquivos de dados brutos.",
+      "Tabelas Bronze contem dados mais verdadeiros do que dados brutos.",
+      "Tabelas Bronze contem agregacoes enquanto dados brutos nao sao agregados.",
+      "Tabelas Bronze contem uma visao menos refinada dos dados do que dados brutos.",
+      "Tabelas Bronze contem dados brutos com um schema aplicado."
+    ],
+    "answer": [
+      "Tabelas Bronze contem menos dados do que arquivos de dados brutos."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-030",
+    "question": "Qual das seguintes ferramentas e usada pelo Auto Loader para processar dados incrementalmente?",
+    "options": [
+      "Checkpointing",
+      "Spark Structured Streaming",
+      "Data Explorer",
+      "Unity Catalog",
+      "Databricks SQL"
+    ],
+    "answer": [
+      "Checkpointing"
+    ],
+    "topic": "Auto Loader"
+  },
+  {
+    "id": "databricks-031",
+    "question": "Um engenheiro de dados configurou um job de Structured Streaming para ler de uma tabela, manipular os dados e entao realizar uma gravacao streaming em uma nova tabela.\nO bloco de codigo usado pelo engenheiro de dados esta abaixo:\nSe o engenheiro de dados quiser que a consulta execute apenas um micro-batch para processar dados a cada 5 segundos, qual das seguintes linhas de codigo o engenheiro de dados deve usar para preencher o espaco em branco?",
+    "options": [
+      "trigger(\"5 seconds\")",
+      "trigger()",
+      "trigger(once=\"5 seconds\")",
+      "trigger(processingTime=\"5 seconds\")",
+      "trigger(continuous=\"5 seconds\")"
+    ],
+    "answer": [
+      "trigger(\"5 seconds\")"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-032",
+    "question": "Um dataset foi definido usando Delta Live Tables e inclui uma clausula de expectativas:\nCONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROW\nQual e o comportamento esperado quando um lote de dados contendo dados que violam essas restricoes e processado?",
+    "options": [
+      "Registros que violam a expectativa sao removidos do dataset de destino e carregados em uma tabela de quarentena.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e marcados como invalidos em um campo adicionado ao dataset de destino.",
+      "Registros que violam a expectativa sao removidos do dataset de destino e registrados como invalidos no log de eventos.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e registrados como invalidos no log de eventos.",
+      "Registros que violam a expectativa fazem o job falhar."
+    ],
+    "answer": [
+      "Registros que violam a expectativa sao removidos do dataset de destino e carregados em uma tabela de quarentena."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-033",
+    "question": "Qual das seguintes opcoes descreve quando usar a sintaxe CREATE STREAMING LIVE TABLE (anteriormente CREATE INCREMENTAL LIVE TABLE) em vez da sintaxe CREATE LIVE TABLE ao criar tabelas Delta Live Tables (DLT) usando SQL?",
+    "options": [
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa subsequente no pipeline DLT e estatica.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando os dados precisam ser processados incrementalmente.",
+      "CREATE STREAMING LIVE TABLE e redundante para DLT e nao precisa ser usado.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando os dados precisam ser processados por meio de agregacoes complicadas.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa anterior no pipeline DLT e estatica."
+    ],
+    "answer": [
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa subsequente no pipeline DLT e estatica."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-034",
+    "question": "Um engenheiro de dados esta projetando um pipeline de dados. O sistema de origem gera arquivos em um diretorio compartilhado que tambem e usado por outros processos. Como resultado, os arquivos devem ser mantidos como estao e se acumularao no diretorio. O engenheiro de dados precisa identificar quais arquivos sao novos desde a execucao anterior no pipeline e configurar o pipeline para ingerir apenas esses novos arquivos a cada execucao.\nQual das seguintes ferramentas o engenheiro de dados pode usar para resolver este problema?",
+    "options": [
+      "Unity Catalog",
+      "Delta Lake",
+      "Databricks SQL",
+      "Data Explorer",
+      "Auto Loader"
+    ],
+    "answer": [
+      "Unity Catalog"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-035",
+    "question": "Qual das seguintes consultas de Structured Streaming esta realizando um salto de uma tabela Silver para uma tabela Gold?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-036",
+    "question": "Um engenheiro de dados tem tres tabelas em um pipeline Delta Live Tables (DLT). Ele configurou o pipeline para descartar registros invalidos em cada tabela. Ele percebe que alguns dados estao sendo descartados devido a preocupacoes de qualidade em algum ponto do pipeline DLT. Ele gostaria de determinar em qual tabela do pipeline os dados estao sendo descartados.\nQual das seguintes abordagens o engenheiro de dados pode adotar para identificar a tabela que esta descartando os registros?",
+    "options": [
+      "Ele pode configurar expectativas separadas para cada tabela ao desenvolver seu pipeline DLT.",
+      "Ele nao pode determinar qual tabela esta descartando os registros.",
+      "Ele pode configurar o DLT para notifica-lo por e-mail quando registros forem descartados.",
+      "Ele pode navegar ate a pagina do pipeline DLT, clicar em cada tabela e visualizar as estatisticas de qualidade dos dados.",
+      "Ele pode navegar ate a pagina do pipeline DLT, clicar no botao \"Erro\" e revisar os erros presentes."
+    ],
+    "answer": [
+      "Ele pode configurar expectativas separadas para cada tabela ao desenvolver seu pipeline DLT."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-037",
+    "question": "Um engenheiro de dados tem um Job de tarefa unica que e executado todas as manhas antes de comecar a trabalhar. Apos identificar um problema de dados upstream, ele precisa configurar outra tarefa para executar um novo notebook antes da tarefa original.\nQual das seguintes abordagens o engenheiro de dados pode usar para configurar a nova tarefa?",
+    "options": [
+      "Ele pode clonar a tarefa existente no Job existente e atualiza-la para executar o novo notebook.",
+      "Ele pode criar uma nova tarefa no Job existente e adiciona-la como dependencia da tarefa original.",
+      "Ele pode criar uma nova tarefa no Job existente e adicionar a tarefa original como dependencia da nova tarefa.",
+      "Ele pode criar um novo job do zero e adicionar ambas as tarefas para executar simultaneamente.",
+      "Ele pode clonar a tarefa existente para um novo Job e edita-la para executar o novo notebook."
+    ],
+    "answer": [
+      "Ele pode clonar a tarefa existente no Job existente e atualiza-la para executar o novo notebook."
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-038",
+    "question": "Um gerente de engenharia deseja monitorar o desempenho de um projeto recente usando uma consulta Databricks SQL. Na primeira semana apos o lancamento do projeto, o gerente deseja que os resultados da consulta sejam atualizados a cada minuto. No entanto, o gerente esta preocupado que os recursos computacionais usados para a consulta fiquem em execucao e custem muito dinheiro a organizacao alem da primeira semana do lancamento do projeto.\nQual das seguintes abordagens a equipe de engenharia pode usar para garantir que a consulta nao custe dinheiro a organizacao alem da primeira semana do lancamento do projeto?",
+    "options": [
+      "Eles podem definir um limite para o numero de DBUs consumidos pelo SQL Endpoint.",
+      "Eles podem definir o agendamento de atualizacao da consulta para encerrar apos um certo numero de atualizacoes.",
+      "Eles nao podem garantir que a consulta nao custe dinheiro a organizacao alem da primeira semana do lancamento do projeto.",
+      "Eles podem definir um limite para o numero de individuos que podem gerenciar o agendamento de atualizacao da consulta.",
+      "Eles podem definir o agendamento de atualizacao da consulta para encerrar em uma determinada data no agendador de consultas."
+    ],
+    "answer": [
+      "Eles podem definir um limite para o numero de DBUs consumidos pelo SQL Endpoint."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-039",
+    "question": "Uma equipe de analise de dados percebeu que suas consultas Databricks SQL estao executando muito lentamente quando conectadas ao SQL endpoint sempre ativo. Eles afirmam que esse problema esta presente quando muitos membros da equipe estao executando pequenas consultas simultaneamente. Eles pedem ajuda a equipe de engenharia de dados. A equipe de engenharia de dados percebe que cada uma das consultas da equipe usa o mesmo SQL endpoint.\nQual das seguintes abordagens a equipe de engenharia de dados pode usar para melhorar a latencia das consultas da equipe?",
+    "options": [
+      "Eles podem aumentar o tamanho do cluster do SQL endpoint.",
+      "Eles podem aumentar o limite maximo do intervalo de escalabilidade do SQL endpoint.",
+      "Eles podem ativar o recurso Auto Stop para o SQL endpoint.",
+      "Eles podem ativar o recurso Serverless para o SQL endpoint.",
+      "Eles podem ativar o recurso Serverless para o SQL endpoint e alterar a Politica de Instancia Spot para \"Otimizado para Confiabilidade.\""
+    ],
+    "answer": [
+      "Eles podem aumentar o tamanho do cluster do SQL endpoint."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-040",
+    "question": "Um engenheiro de dados deseja agendar a atualizacao do dashboard Databricks SQL uma vez por dia, mas so quer que o SQL endpoint associado esteja em execucao quando necessario.\nQual das seguintes abordagens o engenheiro de dados pode usar para minimizar o tempo total de execucao do SQL endpoint usado no agendamento de atualizacao do dashboard?",
+    "options": [
+      "Ele pode garantir que o SQL endpoint do dashboard corresponda ao SQL endpoint de cada uma das consultas.",
+      "Ele pode configurar o SQL endpoint do dashboard para ser serverless.",
+      "Ele pode ativar o recurso Auto Stop para o SQL endpoint.",
+      "Ele pode reduzir o tamanho do cluster do SQL endpoint.",
+      "Ele pode garantir que o SQL endpoint do dashboard nao seja o SQL endpoint de uma das consultas incluidas."
+    ],
+    "answer": [
+      "Ele pode garantir que o SQL endpoint do dashboard corresponda ao SQL endpoint de cada uma das consultas."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-041",
+    "question": "Um engenheiro de dados tem usado um dashboard Databricks SQL para monitorar a limpeza dos dados de entrada de um job ELT. O job ELT tem sua consulta Databricks SQL que retorna o numero de registros de entrada contendo valores NULL inesperados. O engenheiro de dados quer que toda a sua equipe seja notificada via webhook de mensagens sempre que esse valor atingir 100.\nQual das seguintes abordagens o engenheiro de dados pode usar para notificar toda a sua equipe via webhook de mensagens sempre que o numero de valores NULL atingir 100?",
+    "options": [
+      "Ele pode configurar um Alerta com um template personalizado.",
+      "Ele pode configurar um Alerta com um novo destino de alerta por e-mail.",
+      "Ele pode configurar um Alerta com um novo destino de alerta por webhook.",
+      "Ele pode configurar um Alerta com notificacoes unicas.",
+      "Ele pode configurar um Alerta sem notificacoes."
+    ],
+    "answer": [
+      "Ele pode configurar um Alerta com um template personalizado."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-042",
+    "question": "Um unico Job executa dois notebooks como duas tarefas separadas. Um engenheiro de dados percebeu que um dos notebooks esta executando lentamente na execucao atual do Job. O engenheiro de dados pede ajuda a um lider tecnico para identificar por que isso pode estar acontecendo.\nQual das seguintes abordagens o lider tecnico pode usar para identificar por que o notebook esta executando lentamente como parte do Job?",
+    "options": [
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs para revisar imediatamente o notebook em processamento.",
+      "Ele pode navegar ate a aba Tarefas na interface do Jobs e clicar na execucao ativa para revisar o notebook em processamento.",
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs e clicar na execucao ativa para revisar o notebook em processamento.",
+      "Nao ha como determinar por que uma tarefa de Job esta executando lentamente.",
+      "Ele pode navegar ate a aba Tarefas na interface do Jobs para revisar imediatamente o notebook em processamento."
+    ],
+    "answer": [
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs para revisar imediatamente o notebook em processamento."
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-043",
+    "question": "Um engenheiro de dados tem um Job com multiplas tarefas que e executado todas as noites. Cada uma das tarefas executa lentamente porque os clusters demoram muito para iniciar.\nQual das seguintes acoes o engenheiro de dados pode realizar para melhorar o tempo de inicializacao dos clusters usados para o Job?",
+    "options": [
+      "Ele pode usar endpoints disponiveis no Databricks SQL",
+      "Ele pode usar clusters de jobs em vez de clusters de uso geral",
+      "Ele pode configurar os clusters para serem de no unico",
+      "Ele pode usar clusters que sao de um cluster pool",
+      "Ele pode configurar os clusters para escalar automaticamente para tamanhos maiores de dados"
+    ],
+    "answer": [
+      "Ele pode usar endpoints disponiveis no Databricks SQL"
+    ],
+    "topic": "Gerenciamento de Cluster"
+  },
+  {
+    "id": "databricks-044",
+    "question": "Uma nova equipe de engenharia de dados foi designada para um projeto de ELT. A nova equipe de engenharia de dados precisara de privilegios totais no banco de dados customers para gerenciar completamente o projeto.\nQual dos seguintes comandos pode ser usado para conceder permissoes completas no banco de dados para a nova equipe de engenharia de dados?",
+    "options": [
+      "GRANT USAGE ON DATABASE customers TO team;",
+      "GRANT ALL PRIVILEGES ON DATABASE team TO customers;",
+      "GRANT SELECT PRIVILEGES ON DATABASE customers TO teams;",
+      "GRANT SELECT CREATE MODIFY USAGE PRIVILEGES ON DATABASE customers TO team;",
+      "GRANT ALL PRIVILEGES ON DATABASE customers TO team;"
+    ],
+    "answer": [
+      "GRANT USAGE ON DATABASE customers TO team;"
+    ],
+    "topic": "Seguranca e Controle de Acesso"
+  },
+  {
+    "id": "databricks-045",
+    "question": "Uma nova equipe de engenharia de dados foi designada para trabalhar em um projeto. A equipe precisara de acesso ao banco de dados customers para ver quais tabelas ja existem. A equipe tem seu proprio grupo team.\nQual dos seguintes comandos pode ser usado para conceder a permissao necessaria em todo o banco de dados para a nova equipe?",
+    "options": [
+      "GRANT VIEW ON CATALOG customers TO team;",
+      "GRANT CREATE ON DATABASE customers TO team;",
+      "GRANT USAGE ON CATALOG team TO customers;",
+      "GRANT CREATE ON DATABASE team TO customers;",
+      "GRANT USAGE ON DATABASE customers TO team;"
+    ],
+    "answer": [
+      "GRANT VIEW ON CATALOG customers TO team;"
+    ],
+    "topic": "Seguranca e Controle de Acesso"
+  },
+  {
+    "id": "databricks-046",
+    "question": "Um engenheiro de dados esta executando codigo em um Databricks Repo que e clonado de um repositorio Git central. Um colega do engenheiro de dados o informa que alteracoes foram feitas e sincronizadas com o repositorio Git central. O engenheiro de dados agora precisa sincronizar seu Databricks Repo para obter as alteracoes do repositorio Git central.\nQual das seguintes operacoes Git o engenheiro de dados precisa executar para realizar esta tarefa?",
+    "options": [
+      "Merge",
+      "Push",
+      "Pull",
+      "Commit",
+      "Clone"
+    ],
+    "answer": [
+      "Merge"
+    ],
+    "topic": "Controle de Versao"
+  },
+  {
+    "id": "databricks-047",
+    "question": "Qual dos seguintes e um beneficio da Plataforma Databricks Lakehouse adotar tecnologias de codigo aberto?",
+    "options": [
+      "Integracoes especificas de nuvem",
+      "Governanca simplificada",
+      "Capacidade de escalar armazenamento",
+      "Capacidade de escalar cargas de trabalho",
+      "Evitar dependencia de fornecedor"
+    ],
+    "answer": [
+      "Integracoes especificas de nuvem"
+    ],
+    "topic": "Arquitetura Lakehouse"
+  },
+  {
+    "id": "databricks-048",
+    "question": "Um engenheiro de dados precisa usar uma tabela Delta como parte de um pipeline de dados, mas ele nao sabe se tem as permissoes adequadas.\nEm qual dos seguintes locais o engenheiro de dados pode revisar suas permissoes na tabela?",
+    "options": [
+      "Databricks Filesystem",
+      "Jobs",
+      "Dashboards",
+      "Repos",
+      "Data Explorer"
+    ],
+    "answer": [
+      "Databricks Filesystem"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-049",
+    "question": "Qual das seguintes opcoes descreve um cenario em que um engenheiro de dados desejara usar um cluster de no unico?",
+    "options": [
+      "Quando ele esta trabalhando interativamente com uma pequena quantidade de dados",
+      "Quando ele esta executando relatorios automatizados para serem atualizados o mais rapido possivel",
+      "Quando ele esta trabalhando com SQL dentro do Databricks SQL",
+      "Quando ele esta preocupado com a capacidade de escalar automaticamente com dados maiores",
+      "Quando ele esta executando relatorios manualmente com uma grande quantidade de dados"
+    ],
+    "answer": [
+      "Quando ele esta trabalhando interativamente com uma pequena quantidade de dados"
+    ],
+    "topic": "Gerenciamento de Cluster"
+  },
+  {
+    "id": "databricks-050",
+    "question": "Um engenheiro de dados recebeu um novo registro de dados:\nid STRING = 'a1'\nrank INTEGER = 6\nrating FLOAT = 9.4\nQual dos seguintes comandos SQL pode ser usado para adicionar o novo registro a uma tabela Delta existente my_table?",
+    "options": [
+      "INSERT INTO my_table VALUES ('a1', 6, 9.4)",
+      "my_table UNION VALUES ('a1', 6, 9.4)",
+      "INSERT VALUES ( 'a1' , 6, 9.4) INTO my_table",
+      "UPDATE my_table VALUES ('a1', 6, 9.4)",
+      "UPDATE VALUES ('a1', 6, 9.4) my_table"
+    ],
+    "answer": [
+      "INSERT INTO my_table VALUES ('a1', 6, 9.4)"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-051",
+    "question": "Um engenheiro de dados percebeu que os arquivos de dados associados a uma tabela Delta sao incrivelmente pequenos. Ele quer compactar os arquivos pequenos para formar arquivos maiores e melhorar o desempenho.\nQual das seguintes palavras-chave pode ser usada para compactar os arquivos pequenos?",
+    "options": [
+      "REDUCE",
+      "OPTIMIZE",
+      "COMPACTION",
+      "REPARTITION",
+      "VACUUM"
+    ],
+    "answer": [
+      "REDUCE"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-052",
+    "question": "Em qual dos seguintes formatos de arquivo os dados das tabelas Delta Lake sao armazenados principalmente?",
+    "options": [
+      "Delta",
+      "CSV",
+      "Parquet",
+      "JSON",
+      "Um formato proprietario e otimizado especifico do Databricks"
+    ],
+    "answer": [
+      "Delta"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-053",
+    "question": "Qual dos seguintes e armazenado na conta de nuvem do cliente Databricks?",
+    "options": [
+      "Aplicacao web Databricks",
+      "Metadados de gerenciamento de cluster",
+      "Repos",
+      "Dados",
+      "Notebooks"
+    ],
+    "answer": [
+      "Aplicacao web Databricks"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-054",
+    "question": "Qual dos seguintes pode ser usado para simplificar e unificar arquiteturas de dados isoladas que sao especializadas para casos de uso especificos?",
+    "options": [
+      "Nenhuma dessas",
+      "Data lake",
+      "Data warehouse",
+      "Todas essas",
+      "Data lakehouse"
+    ],
+    "answer": [
+      "Nenhuma dessas"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-055",
+    "question": "Um arquiteto de dados determinou que uma tabela no seguinte formato e necessaria:\nQual dos seguintes blocos de codigo usa comandos SQL DDL para criar uma tabela Delta vazia no formato acima, independentemente de uma tabela ja existir com este nome?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-056",
+    "question": "Um engenheiro de dados tem um notebook Python no Databricks, mas precisa usar SQL para realizar uma tarefa especifica dentro de uma celula. Ele ainda quer que todas as outras celulas usem Python sem fazer alteracoes nessas celulas.\nQual das seguintes opcoes descreve como o engenheiro de dados pode usar SQL dentro de uma celula de seu notebook Python?",
+    "options": [
+      "Nao e possivel usar SQL em um notebook Python",
+      "Ele pode anexar a celula a um SQL endpoint em vez de um cluster Databricks",
+      "Ele pode simplesmente escrever a sintaxe SQL na celula",
+      "Ele pode adicionar %sql na primeira linha da celula",
+      "Ele pode alterar o idioma padrao do notebook para SQL"
+    ],
+    "answer": [
+      "Nao e possivel usar SQL em um notebook Python"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-057",
+    "question": "Qual das seguintes palavras-chave SQL pode ser usada para converter uma tabela de formato longo para formato largo?",
+    "options": [
+      "TRANSFORM",
+      "PIVOT",
+      "SUM",
+      "CONVERT",
+      "WHERE"
+    ],
+    "answer": [
+      "TRANSFORM"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-058",
+    "question": "Qual das seguintes opcoes descreve um beneficio de criar uma tabela externa a partir de Parquet em vez de CSV ao usar uma instrucao CREATE TABLE AS SELECT?",
+    "options": [
+      "Arquivos Parquet podem ser particionados",
+      "Instrucoes CREATE TABLE AS SELECT nao podem ser usadas em arquivos",
+      "Arquivos Parquet tem um schema bem definido",
+      "Arquivos Parquet tem a capacidade de ser otimizados",
+      "Arquivos Parquet se tornarao tabelas Delta"
+    ],
+    "answer": [
+      "Arquivos Parquet podem ser particionados"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-059",
+    "question": "Um engenheiro de dados deseja criar um objeto relacional extraindo dados de duas tabelas. O objeto relacional nao precisa ser usado por outros engenheiros de dados em outras sessoes. Para economizar em custos de armazenamento, o engenheiro de dados deseja evitar copiar e armazenar dados fisicos.\nQual dos seguintes objetos relacionais o engenheiro de dados deve criar?",
+    "options": [
+      "Tabela Spark SQL",
+      "View",
+      "Banco de dados",
+      "Temporary view",
+      "Tabela Delta"
+    ],
+    "answer": [
+      "Tabela Spark SQL"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-060",
+    "question": "Um analista de dados desenvolveu uma consulta que e executada contra uma tabela Delta. Eles querem ajuda da equipe de engenharia de dados para implementar uma serie de testes para garantir que os dados retornados pela consulta estejam limpos. No entanto, a equipe de engenharia de dados usa Python para seus testes em vez de SQL.\nQual das seguintes operacoes a equipe de engenharia de dados poderia usar para executar a consulta e operar com os resultados no PySpark?",
+    "options": [
+      "SELECT * FROM sales",
+      "spark.delta.table",
+      "spark.sql",
+      "Nao ha como compartilhar dados entre PySpark e SQL.",
+      "spark.table"
+    ],
+    "answer": [
+      "SELECT * FROM sales"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-061",
+    "question": "Qual dos seguintes comandos retornara o numero de valores nulos na coluna member_id?",
+    "options": [
+      "SELECT count(member_id) FROM my_table;",
+      "SELECT count(member_id) - count_null(member_id) FROM my_table;",
+      "SELECT count_if(member_id IS NULL) FROM my_table;",
+      "SELECT null(member_id) FROM my_table;",
+      "SELECT count_null(member_id) FROM my_table;"
+    ],
+    "answer": [
+      "SELECT count(member_id) FROM my_table;"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-062",
+    "question": "Um engenheiro de dados precisa aplicar logica personalizada para identificar funcionarios com mais de 5 anos de experiencia na coluna de array employees na tabela stores. A logica personalizada deve criar uma nova coluna exp_employees que e um array de todos os funcionarios com mais de 5 anos de experiencia para cada linha. Para aplicar essa logica personalizada em escala, o engenheiro de dados deseja usar a funcao de ordem superior FILTER.\nQual dos seguintes blocos de codigo conclui essa tarefa com sucesso?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-063",
+    "question": "Um engenheiro de dados tem uma variavel Python table_name que gostaria de usar em uma consulta SQL. Ele deseja construir um bloco de codigo Python que executara a consulta usando table_name.\nEle tem o seguinte bloco de codigo incompleto:\n____(f\"SELECT customer_id, spend FROM {table_name}\")\nQual das seguintes opcoes pode ser usada para preencher o espaco em branco para concluir a tarefa com sucesso?",
+    "options": [
+      "spark.delta.sql",
+      "spark.delta.table",
+      "spark.table",
+      "dbutils.sql",
+      "spark.sql"
+    ],
+    "answer": [
+      "spark.delta.sql"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-064",
+    "question": "Um engenheiro de dados criou um novo banco de dados usando o seguinte comando:\nCREATE DATABASE IF NOT EXISTS customer360;\nEm qual das seguintes localizacoes o banco de dados customer360 estara localizado?",
+    "options": [
+      "dbfs:/user/hive/database/customer360",
+      "dbfs:/user/hive/warehouse",
+      "dbfs:/user/hive/customer360",
+      "Mais informacoes sao necessarias para determinar a resposta correta",
+      "dbfs:/user/hive/database"
+    ],
+    "answer": [
+      "dbfs:/user/hive/database/customer360"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-065",
+    "question": "Um engenheiro de dados esta tentando excluir uma tabela Spark SQL my_table e executa o seguinte comando:\nDROP TABLE IF EXISTS my_table;\nApos executar este comando, o engenheiro percebe que os arquivos de dados e os arquivos de metadados foram excluidos do sistema de arquivos.\nQual das seguintes opcoes descreve por que todos esses arquivos foram excluidos?",
+    "options": [
+      "A tabela era gerenciada",
+      "Os dados da tabela eram menores que 10 GB",
+      "Os dados da tabela eram maiores que 10 GB",
+      "A tabela era externa",
+      "A tabela nao tinha uma localizacao"
+    ],
+    "answer": [
+      "A tabela era gerenciada"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-066",
+    "question": "Um engenheiro de dados que e novo no uso de Python precisa criar uma funcao Python para somar dois inteiros e retornar a soma.\nQual dos seguintes blocos de codigo o engenheiro de dados pode usar para concluir esta tarefa?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-067",
+    "question": "Em qual dos seguintes cenarios um engenheiro de dados deve usar o comando MERGE INTO em vez do comando INSERT INTO?",
+    "options": [
+      "Quando a localizacao dos dados precisa ser alterada",
+      "Quando a tabela de destino e uma tabela externa",
+      "Quando a tabela de origem pode ser excluida",
+      "Quando a tabela de destino nao pode conter registros duplicados",
+      "Quando a origem nao e uma tabela Delta"
+    ],
+    "answer": [
+      "Quando a localizacao dos dados precisa ser alterada"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-068",
+    "question": "Um engenheiro de dados esta trabalhando com duas tabelas. Cada uma dessas tabelas e exibida abaixo em sua totalidade.\nO engenheiro de dados executa a seguinte consulta para unir essas tabelas:\nQual das seguintes opcoes sera retornada pela consulta acima?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-069",
+    "question": "Um engenheiro de dados precisa criar uma tabela no Databricks usando dados de um arquivo CSV na localizacao /path/to/csv.\nEle executa o seguinte comando:\nQual das seguintes linhas de codigo preenche o espaco em branco acima para concluir a tarefa com sucesso?",
+    "options": [
+      "Nenhuma dessas linhas de codigo e necessaria para concluir a tarefa com sucesso",
+      "USING CSV",
+      "FROM CSV",
+      "USING DELTA",
+      "FROM \"path/to/csv\""
+    ],
+    "answer": [
+      "Nenhuma dessas linhas de codigo e necessaria para concluir a tarefa com sucesso"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-070",
+    "question": "Um engenheiro de dados configurou um job de Structured Streaming para ler de uma tabela, manipular os dados e entao realizar uma gravacao streaming em uma nova tabela.\nO bloco de codigo usado pelo engenheiro de dados esta abaixo:\nSe o engenheiro de dados quiser que a consulta processe todos os dados disponiveis em quantos batches forem necessarios, qual das seguintes linhas de codigo o engenheiro de dados deve usar para preencher o espaco em branco?",
+    "options": [
+      "processingTime(1)",
+      "trigger(availableNow=True)",
+      "trigger(parallelBatch=True)",
+      "trigger(processingTime=\"once\")",
+      "trigger(continuous=\"once\")"
+    ],
+    "answer": [
+      "processingTime(1)"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-071",
+    "question": "Um engenheiro de dados desenvolveu um pipeline de dados para ingerir dados de uma fonte JSON usando Auto Loader, mas o engenheiro nao forneceu nenhuma inferencia de tipo ou dicas de schema em seu pipeline. Ao revisar os dados, o engenheiro de dados percebeu que todas as colunas na tabela de destino sao do tipo string, apesar de alguns campos conterem apenas valores float ou boolean.\nQual das seguintes opcoes descreve por que o Auto Loader inferiu todas as colunas como sendo do tipo string?",
+    "options": [
+      "Houve uma incompatibilidade de tipo entre o schema especifico e o schema inferido",
+      "Dados JSON sao um formato baseado em texto",
+      "Auto Loader so funciona com dados string",
+      "Todos os campos tinham pelo menos um valor nulo",
+      "Auto Loader nao pode inferir o schema dos dados ingeridos"
+    ],
+    "answer": [
+      "Houve uma incompatibilidade de tipo entre o schema especifico e o schema inferido"
+    ],
+    "topic": "Auto Loader"
+  },
+  {
+    "id": "databricks-072",
+    "question": "Um pipeline Delta Live Table inclui dois datasets definidos usando STREAMING LIVE TABLE. Tres datasets sao definidos contra fontes de tabelas Delta Lake usando LIVE TABLE.\nA tabela esta configurada para executar no modo Desenvolvimento usando o Modo de Pipeline Continuo.\nAssumindo que dados nao processados anteriormente existem e todas as definicoes sao validas, qual e o resultado esperado apos clicar em Iniciar para atualizar o pipeline?\ndesligado.\nnao utilizados.\ntestes.",
+    "options": [
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais serao encerrados.",
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao ate que o pipeline seja desligado",
+      "Todos os datasets serao atualizados uma vez e o pipeline persistira sem nenhum processamento. Os recursos computacionais persistirao mas ficarao",
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais persistirao para permitir testes adicionais.",
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao para permitir testes adicionais"
+    ],
+    "answer": [
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais serao encerrados."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-073",
+    "question": "Qual das seguintes cargas de trabalho de dados utilizara uma tabela Gold como sua fonte?",
+    "options": [
+      "Um job que enriquece dados analisando seus timestamps em um formato legivel por humanos",
+      "Um job que agrega dados nao limpos para criar estatisticas resumidas padrao",
+      "Um job que limpa dados removendo registros mal formatados",
+      "Um job que consulta dados agregados projetados para alimentar um dashboard",
+      "Um job que ingere dados brutos de uma fonte streaming no Lakehouse"
+    ],
+    "answer": [
+      "Um job que enriquece dados analisando seus timestamps em um formato legivel por humanos"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-074",
+    "question": "Qual dos seguintes deve ser especificado ao criar um novo pipeline Delta Live Tables?",
+    "options": [
+      "Uma configuracao de par chave-valor",
+      "O custo preferido de DBU/hora",
+      "Um caminho para localizacao de armazenamento em nuvem para os dados gravados",
+      "Uma localizacao de um banco de dados de destino para os dados gravados",
+      "Pelo menos uma biblioteca de notebook para ser executada"
+    ],
+    "answer": [
+      "Uma configuracao de par chave-valor"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-075",
+    "question": "Um engenheiro de dados entrou em um projeto existente e ve a seguinte consulta no repositorio do projeto:\nCREATE STREAMING LIVE TABLE loyal_customers AS\nSELECT customer_id -\nFROM STREAM(LIVE.customers)\nWHERE loyalty_level = 'high';\nQual das seguintes opcoes descreve por que a funcao STREAM esta incluida na consulta?",
+    "options": [
+      "A funcao STREAM nao e necessaria e causara um erro.",
+      "A tabela sendo criada e uma live table.",
+      "A tabela customers e uma streaming live table.",
+      "A tabela customers e uma referencia a uma consulta de Structured Streaming em um DataFrame PySpark.",
+      "Os dados na tabela customers foram atualizados desde sua ultima execucao."
+    ],
+    "answer": [
+      "A funcao STREAM nao e necessaria e causara um erro."
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-076",
+    "question": "Qual das seguintes opcoes descreve o tipo de cargas de trabalho que sao sempre compativeis com o Auto Loader?",
+    "options": [
+      "Cargas de trabalho streaming",
+      "Cargas de trabalho de machine learning",
+      "Cargas de trabalho serverless",
+      "Cargas de trabalho batch",
+      "Cargas de trabalho de dashboard"
+    ],
+    "answer": [
+      "Cargas de trabalho streaming"
+    ],
+    "topic": "Auto Loader"
+  },
+  {
+    "id": "databricks-077",
+    "question": "Um engenheiro de dados e um analista de dados estao trabalhando juntos em um pipeline de dados. O engenheiro de dados esta trabalhando nas camadas raw, bronze e silver do pipeline usando Python, e o analista de dados esta trabalhando na camada gold do pipeline usando SQL. A fonte raw do pipeline e uma entrada streaming. Eles agora querem migrar seu pipeline para usar Delta Live Tables.\nQual das seguintes alteracoes precisara ser feita no pipeline ao migrar para Delta Live Tables?",
+    "options": [
+      "Nenhuma dessas alteracoes precisara ser feita",
+      "O pipeline precisara parar de usar a arquitetura multi-hop baseada em medallion",
+      "O pipeline precisara ser escrito inteiramente em SQL",
+      "O pipeline precisara usar uma fonte batch no lugar de uma fonte streaming",
+      "O pipeline precisara ser escrito inteiramente em Python"
+    ],
+    "answer": [
+      "Nenhuma dessas alteracoes precisara ser feita"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-078",
+    "question": "Um engenheiro de dados esta usando o seguinte bloco de codigo como parte de um pipeline de ingestao batch para ler de uma tabela composivel:\nQual das seguintes alteracoes precisa ser feita para que este bloco de codigo funcione quando a tabela transactions for uma fonte de stream?",
+    "options": [
+      "Substituir predict por uma funcao de predicao compativel com stream",
+      "Substituir schema(schema) por option (\"maxFilesPerTrigger\", 1)",
+      "Substituir \"transactions\" pelo caminho para a localizacao da tabela Delta",
+      "Substituir format(\"delta\") por format(\"stream\")",
+      "Substituir spark.read por spark.readStream"
+    ],
+    "answer": [
+      "Substituir predict por uma funcao de predicao compativel com stream"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-079",
+    "question": "Qual das seguintes consultas esta realizando um salto de streaming de dados brutos para uma tabela Bronze?",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-080",
+    "question": "Um dataset foi definido usando Delta Live Tables e inclui uma clausula de expectativas:\nCONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION FAIL UPDATE\nQual e o comportamento esperado quando um lote de dados contendo dados que violam essas restricoes e processado?",
+    "options": [
+      "Registros que violam a expectativa sao removidos do dataset de destino e registrados como invalidos no log de eventos.",
+      "Registros que violam a expectativa fazem o job falhar.",
+      "Registros que violam a expectativa sao removidos do dataset de destino e carregados em uma tabela de quarentena.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e registrados como invalidos no log de eventos.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e marcados como invalidos em um campo adicionado ao dataset de destino."
+    ],
+    "answer": [
+      "Registros que violam a expectativa sao removidos do dataset de destino e registrados como invalidos no log de eventos."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-081",
+    "question": "Qual das seguintes afirmacoes sobre a relacao entre tabelas Silver e tabelas Bronze e sempre verdadeira?",
+    "options": [
+      "Tabelas Silver contem uma visao menos refinada e menos limpa dos dados do que dados Bronze.",
+      "Tabelas Silver contem agregacoes enquanto dados Bronze nao sao agregados.",
+      "Tabelas Silver contem mais dados do que tabelas Bronze.",
+      "Tabelas Silver contem uma visao mais refinada e limpa dos dados do que tabelas Bronze.",
+      "Tabelas Silver contem menos dados do que tabelas Bronze."
+    ],
+    "answer": [
+      "Tabelas Silver contem uma visao menos refinada e menos limpa dos dados do que dados Bronze."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-082",
+    "question": "Uma equipe de engenharia de dados percebeu que suas consultas Databricks SQL estao executando muito lentamente quando sao enviadas a um SQL endpoint que nao esta em execucao. A equipe de engenharia de dados deseja que esse problema seja resolvido.\nQual das seguintes abordagens a equipe pode usar para reduzir o tempo necessario para retornar resultados neste cenario?",
+    "options": [
+      "Eles podem ativar o recurso Serverless para o SQL endpoint e alterar a Politica de Instancia Spot para \"Otimizado para Confiabilidade.\"",
+      "Eles podem ativar o recurso Auto Stop para o SQL endpoint.",
+      "Eles podem aumentar o tamanho do cluster do SQL endpoint.",
+      "Eles podem ativar o recurso Serverless para o SQL endpoint.",
+      "Eles podem aumentar o limite maximo do intervalo de escalabilidade do SQL endpoint."
+    ],
+    "answer": [
+      "Eles podem ativar o recurso Serverless para o SQL endpoint e alterar a Politica de Instancia Spot para \"Otimizado para Confiabilidade.\""
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-083",
+    "question": "Um engenheiro de dados tem um Job com um agendamento de execucao complexo e deseja transferir esse agendamento para outros Jobs.\nEm vez de selecionar manualmente cada valor no formulario de agendamento no Databricks, qual das seguintes ferramentas o engenheiro de dados pode usar para representar e enviar o agendamento programaticamente?",
+    "options": [
+      "pyspark.sql.types.DateType",
+      "datetime",
+      "pyspark.sql.types.TimestampType",
+      "Sintaxe Cron",
+      "Nao ha como representar e enviar essas informacoes programaticamente"
+    ],
+    "answer": [
+      "pyspark.sql.types.DateType"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-084",
+    "question": "Qual das seguintes abordagens deve ser usada para enviar um e-mail ao proprietario do Job Databricks no caso de falha do Job?",
+    "options": [
+      "Programar manualmente um sistema de alerta em cada celula do Notebook",
+      "Configurar um Alerta na pagina do Job",
+      "Configurar um Alerta no Notebook",
+      "Nao ha como notificar o proprietario do Job no caso de falha do Job",
+      "Webhooks do MLflow Model Registry"
+    ],
+    "answer": [
+      "Programar manualmente um sistema de alerta em cada celula do Notebook"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-085",
+    "question": "Um gerente de engenharia usa uma consulta Databricks SQL para monitorar a latencia de ingestao para cada fonte de dados. O gerente verifica os resultados da consulta todos os dias, mas esta reexecutando manualmente a consulta a cada dia e esperando pelos resultados.\nQual das seguintes abordagens o gerente pode usar para garantir que os resultados da consulta sejam atualizados todos os dias?",
+    "options": [
+      "Ele pode agendar a atualizacao da consulta a cada 1 dia a partir da pagina do SQL endpoint no Databricks SQL.",
+      "Ele pode agendar a atualizacao da consulta a cada 12 horas a partir da pagina do SQL endpoint no Databricks SQL.",
+      "Ele pode agendar a atualizacao da consulta a cada 1 dia a partir da pagina da consulta no Databricks SQL.",
+      "Ele pode agendar a execucao da consulta a cada 1 dia a partir da interface do Jobs.",
+      "Ele pode agendar a execucao da consulta a cada 12 horas a partir da interface do Jobs."
+    ],
+    "answer": [
+      "Ele pode agendar a atualizacao da consulta a cada 1 dia a partir da pagina do SQL endpoint no Databricks SQL."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-086",
+    "question": "Em qual dos seguintes cenarios um engenheiro de dados deve selecionar uma Tarefa no campo Depends On de uma nova Tarefa de Job Databricks?",
+    "options": [
+      "Quando outra tarefa precisa ser substituida pela nova tarefa",
+      "Quando outra tarefa precisa falhar antes que a nova tarefa comece",
+      "Quando outra tarefa tem as mesmas bibliotecas de dependencia que a nova tarefa",
+      "Quando outra tarefa precisa usar o minimo de recursos computacionais possivel",
+      "Quando outra tarefa precisa ser concluida com sucesso antes que a nova tarefa comece"
+    ],
+    "answer": [
+      "Quando outra tarefa precisa ser substituida pela nova tarefa"
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-087",
+    "question": "Um engenheiro de dados tem usado um dashboard Databricks SQL para monitorar a limpeza dos dados de entrada de um dashboard de analise de dados para um caso de uso de varejo. O job tem uma consulta Databricks SQL que retorna o numero de registros em nivel de loja onde as vendas sao iguais a zero. O engenheiro de dados quer que toda a sua equipe seja notificada via webhook de mensagens sempre que esse valor for maior que 0.\nQual das seguintes abordagens o engenheiro de dados pode usar para notificar toda a sua equipe via webhook de mensagens sempre que o numero de lojas com $0 em vendas for maior que zero?",
+    "options": [
+      "Ele pode configurar um Alerta com um template personalizado.",
+      "Ele pode configurar um Alerta com um novo destino de alerta por e-mail.",
+      "Ele pode configurar um Alerta com notificacoes unicas.",
+      "Ele pode configurar um Alerta com um novo destino de alerta por webhook.",
+      "Ele pode configurar um Alerta sem notificacoes."
+    ],
+    "answer": [
+      "Ele pode configurar um Alerta com um template personalizado."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-088",
+    "question": "Um engenheiro de dados deseja agendar a atualizacao do dashboard Databricks SQL a cada hora, mas so quer que o SQL endpoint associado esteja em execucao quando necessario. O dashboard tem multiplas consultas em multiplos datasets associados a ele. Os dados que alimentam o dashboard sao processados automaticamente usando um Job Databricks.\nQual das seguintes abordagens o engenheiro de dados pode usar para minimizar o tempo total de execucao do SQL endpoint usado no agendamento de atualizacao do dashboard?",
+    "options": [
+      "Ele pode ativar o recurso Auto Stop para o SQL endpoint.",
+      "Ele pode garantir que o SQL endpoint do dashboard nao seja o SQL endpoint de uma das consultas incluidas.",
+      "Ele pode reduzir o tamanho do cluster do SQL endpoint.",
+      "Ele pode garantir que o SQL endpoint do dashboard corresponda ao SQL endpoint de cada uma das consultas.",
+      "Ele pode configurar o SQL endpoint do dashboard para ser serverless."
+    ],
+    "answer": [
+      "Ele pode ativar o recurso Auto Stop para o SQL endpoint."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-089",
+    "question": "Um engenheiro de dados precisa acessar a tabela new_table, mas nao tem as permissoes corretas. Ele pode pedir permissao ao proprietario da tabela, mas nao sabe quem e o proprietario da tabela.\nQual das seguintes abordagens pode ser usada para identificar o proprietario de new_table?",
+    "options": [
+      "Revisar a aba Permissoes na pagina da tabela no Data Explorer",
+      "Todas essas opcoes podem ser usadas para identificar o proprietario da tabela",
+      "Revisar o campo Proprietario na pagina da tabela no Data Explorer",
+      "Revisar o campo Proprietario na pagina da tabela na solucao de armazenamento em nuvem",
+      "Nao ha como identificar o proprietario da tabela"
+    ],
+    "answer": [
+      "Revisar a aba Permissoes na pagina da tabela no Data Explorer"
+    ],
+    "topic": "Seguranca e Controle de Acesso"
+  },
+  {
+    "id": "databricks-090",
+    "question": "Uma nova equipe de engenharia de dados foi designada para um projeto de ELT. A nova equipe de engenharia de dados precisara de privilegios totais na tabela sales para gerenciar completamente o projeto.\nQual dos seguintes comandos pode ser usado para conceder permissoes completas no banco de dados para a nova equipe de engenharia de dados?",
+    "options": [
+      "GRANT ALL PRIVILEGES ON TABLE sales TO team;",
+      "GRANT SELECT CREATE MODIFY ON TABLE sales TO team;",
+      "GRANT SELECT ON TABLE sales TO team;",
+      "GRANT USAGE ON TABLE sales TO team;",
+      "GRANT ALL PRIVILEGES ON TABLE team TO sales;"
+    ],
+    "answer": [
+      "GRANT ALL PRIVILEGES ON TABLE sales TO team;"
+    ],
+    "topic": "Seguranca e Controle de Acesso"
+  },
+  {
+    "id": "databricks-091",
+    "question": "Qual recurso do data lakehouse resulta em melhoria na qualidade dos dados em comparacao com um data lake tradicional?",
+    "options": [
+      "Um data lakehouse armazena dados em formatos abertos.",
+      "Um data lakehouse permite o uso de consultas SQL para examinar dados.",
+      "Um data lakehouse fornece solucoes de armazenamento para dados estruturados e nao estruturados.",
+      "Um data lakehouse suporta transacoes compativeis com ACID."
+    ],
+    "answer": [
+      "Um data lakehouse armazena dados em formatos abertos."
+    ],
+    "topic": "Arquitetura Lakehouse"
+  },
+  {
+    "id": "databricks-092",
+    "question": "Em qual cenario uma equipe de dados desejara utilizar cluster pools?",
+    "options": [
+      "Um relatorio automatizado precisa ser versionado entre varios colaboradores.",
+      "Um relatorio automatizado precisa ser executavel por todas as partes interessadas.",
+      "Um relatorio automatizado precisa ser atualizado o mais rapido possivel.",
+      "Um relatorio automatizado precisa ser reproduzivel."
+    ],
+    "answer": [
+      "Um relatorio automatizado precisa ser versionado entre varios colaboradores."
+    ],
+    "topic": "Gerenciamento de Cluster"
+  },
+  {
+    "id": "databricks-093",
+    "question": "O que e hospedado completamente no plano de controle da arquitetura classica do Databricks?",
+    "options": [
+      "No worker",
+      "Aplicacao web Databricks",
+      "No driver",
+      "Databricks Filesystem"
+    ],
+    "answer": [
+      "No worker"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-094",
+    "question": "Um engenheiro de dados precisa determinar se deve usar o versionamento integrado dos Databricks Notebooks ou versionar seu projeto usando Databricks Repos.\nQual e uma vantagem de usar Databricks Repos em vez do versionamento dos Databricks Notebooks?",
+    "options": [
+      "Databricks Repos permite que os usuarios revertam para versoes anteriores de um notebook",
+      "Databricks Repos e totalmente hospedado dentro da Plataforma de Inteligencia de Dados Databricks",
+      "Databricks Repos fornece a capacidade de comentar em alteracoes especificas",
+      "Databricks Repos suporta o uso de multiplas branches"
+    ],
+    "answer": [
+      "Databricks Repos permite que os usuarios revertam para versoes anteriores de um notebook"
+    ],
+    "topic": "Controle de Versao"
+  },
+  {
+    "id": "databricks-095",
+    "question": "Qual e um beneficio da Arquitetura Databricks Lakehouse adotar tecnologias de codigo aberto?",
+    "options": [
+      "Evitar dependencia de fornecedor",
+      "Governanca simplificada",
+      "Capacidade de escalar cargas de trabalho",
+      "Integracoes especificas de nuvem"
+    ],
+    "answer": [
+      "Evitar dependencia de fornecedor"
+    ],
+    "topic": "Arquitetura Lakehouse"
+  },
+  {
+    "id": "databricks-096",
+    "question": "Um engenheiro de dados precisa usar uma tabela Delta como parte de um pipeline de dados, mas nao sabe se tem as permissoes adequadas.\nEm qual local o engenheiro de dados pode revisar suas permissoes na tabela?",
+    "options": [
+      "Jobs",
+      "Dashboards",
+      "Catalog Explorer",
+      "Repos"
+    ],
+    "answer": [
+      "Jobs"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-097",
+    "question": "Um engenheiro de dados esta executando codigo em um Databricks Repo que e clonado de um repositorio Git central. Um colega do engenheiro de dados o informa que alteracoes foram feitas e sincronizadas com o repositorio Git central. O engenheiro de dados agora precisa sincronizar seu Databricks Repo para obter as alteracoes do repositorio Git central.\nQual operacao Git o engenheiro de dados precisa executar para realizar esta tarefa?",
+    "options": [
+      "Clone",
+      "Pull",
+      "Merge",
+      "Push"
+    ],
+    "answer": [
+      "Clone"
+    ],
+    "topic": "Controle de Versao"
+  },
+  {
+    "id": "databricks-098",
+    "question": "Qual formato de arquivo e usado para armazenar tabelas Delta Lake?",
+    "options": [
+      "CSV",
+      "Parquet",
+      "JSON",
+      "Delta"
+    ],
+    "answer": [
+      "CSV"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-099",
+    "question": "Um arquiteto de dados determinou que uma tabela no seguinte formato e necessaria:\nQual bloco de codigo e usado pelo comando SQL DDL para criar uma tabela Delta vazia no formato acima, independentemente de uma tabela ja existir com este nome?",
+    "options": [
+      "CREATE OR REPLACE TABLE table_name ( employeeId STRING, startDate DATE, avgRating FLOAT )",
+      "CREATE OR REPLACE TABLE table_name WITH COLUMNS ( employeeId STRING, startDate DATE, avgRating FLOAT ) USING DELTA",
+      "CREATE TABLE IF NOT EXISTS table_name ( employeeId STRING, startDate DATE, avgRating FLOAT )",
+      "CREATE TABLE table_name AS SELECT employeeId STRING, startDate DATE, avgRating FLOAT"
+    ],
+    "answer": [
+      "CREATE OR REPLACE TABLE table_name ( employeeId STRING, startDate DATE, avgRating FLOAT )"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-100",
+    "question": "Um engenheiro de dados recebeu um novo registro de dados:\nid STRING = 'a1'\nrank INTEGER = 6\nrating FLOAT = 9.4\nQuais comandos SQL podem ser usados para adicionar o novo registro a uma tabela Delta existente my_table?",
+    "options": [
+      "INSERT INTO my_table VALUES ('a1', 6, 9.4)",
+      "INSERT VALUES ('a1', 6, 9.4) INTO my_table",
+      "UPDATE my_table VALUES ('a1', 6, 9.4)",
+      "UPDATE VALUES ('a1', 6, 9.4) my_table"
+    ],
+    "answer": [
+      "INSERT INTO my_table VALUES ('a1', 6, 9.4)"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-101",
+    "question": "Um engenheiro de dados percebeu que os arquivos de dados associados a uma tabela Delta sao incrivelmente pequenos. Ele quer compactar os arquivos pequenos para formar arquivos maiores e melhorar o desempenho.\nQual palavra-chave pode ser usada para compactar os arquivos pequenos?",
+    "options": [
+      "OPTIMIZE",
+      "VACUUM",
+      "COMPACTION",
+      "REPARTITION"
+    ],
+    "answer": [
+      "OPTIMIZE"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-102",
+    "question": "Um engenheiro de dados deseja criar uma entidade de dados a partir de algumas tabelas. A entidade de dados deve ser usada por outros engenheiros de dados em outras sessoes. Ela tambem deve ser salva em um local fisico.\nQual das seguintes entidades de dados o engenheiro de dados deve criar?",
+    "options": [
+      "Tabela",
+      "Funcao",
+      "View",
+      "Temporary view"
+    ],
+    "answer": [
+      "Tabela"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-103",
+    "question": "Um engenheiro de dados executa uma instrucao todos os dias para copiar as vendas do dia anterior para a tabela transactions. As vendas de cada dia estao em seu proprio arquivo na localizacao \"/transactions/raw\".\nHoje, o engenheiro de dados executa o seguinte comando para concluir esta tarefa:\nApos executar o comando hoje, o engenheiro de dados percebe que o numero de registros na tabela transactions nao mudou.\nO que explica por que a instrucao pode nao ter copiado nenhum novo registro para a tabela?",
+    "options": [
+      "O formato dos arquivos a serem copiados nao foi incluido com a palavra-chave FORMAT_OPTIONS.",
+      "A instrucao COPY INTO requer que a tabela seja atualizada para visualizar as linhas copiadas.",
+      "O arquivo do dia anterior ja foi copiado para a tabela.",
+      "O formato de arquivo PARQUET nao suporta COPY INTO."
+    ],
+    "answer": [
+      "O formato dos arquivos a serem copiados nao foi incluido com a palavra-chave FORMAT_OPTIONS."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-104",
+    "question": "Qual comando pode ser usado para gravar dados em uma tabela Delta evitando a gravacao de registros duplicados?",
+    "options": [
+      "DROP",
+      "INSERT",
+      "MERGE",
+      "APPEND"
+    ],
+    "answer": [
+      "DROP"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-105",
+    "question": "Um analista de dados criou uma tabela Delta sales que e usada por toda a equipe de analise de dados. Eles querem ajuda da equipe de engenharia de dados para implementar uma serie de testes para garantir que os dados estejam limpos. No entanto, a equipe de engenharia de dados usa Python para seus testes em vez de SQL.\nQual comando a equipe de engenharia de dados poderia usar para acessar sales no PySpark?",
+    "options": [
+      "SELECT * FROM sales",
+      "spark.table(\"sales\")",
+      "spark.sql(\"sales\")",
+      "spark.delta.table(\"sales\")"
+    ],
+    "answer": [
+      "SELECT * FROM sales"
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-106",
+    "question": "Um engenheiro de dados criou um novo banco de dados usando o seguinte comando:\nCREATE DATABASE IF NOT EXISTS customer360;\nEm qual localizacao o banco de dados customer360 estara localizado?",
+    "options": [
+      "dbfs:/user/hive/database/customer360",
+      "dbfs:/user/hive/warehouse",
+      "dbfs:/user/hive/customer360",
+      "dbfs:/user/hive/database"
+    ],
+    "answer": [
+      "dbfs:/user/hive/database/customer360"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-107",
+    "question": "Um engenheiro de dados esta tentando excluir uma tabela Spark SQL my_table e executa o seguinte comando:\nDROP TABLE IF EXISTS my_table;\nApos executar este comando, o engenheiro percebe que os arquivos de dados e os arquivos de metadados foram excluidos do sistema de arquivos.\nQual e a razao por tras da exclusao de todos esses arquivos?",
+    "options": [
+      "A tabela era gerenciada",
+      "Os dados da tabela eram menores que 10 GB",
+      "A tabela nao tinha uma localizacao",
+      "A tabela era externa"
+    ],
+    "answer": [
+      "A tabela era gerenciada"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-108",
+    "question": "Um engenheiro de dados precisa criar uma tabela no Databricks usando dados de um arquivo CSV na localizacao /path/to/csv.\nEle executa o seguinte comando:\nQual das seguintes linhas de codigo preenche o espaco em branco acima para concluir a tarefa com sucesso?",
+    "options": [
+      "FROM \"path/to/csv\"",
+      "USING CSV",
+      "FROM CSV",
+      "USING DELTA"
+    ],
+    "answer": [
+      "FROM \"path/to/csv\""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-109",
+    "question": "Qual e um beneficio de criar uma tabela externa a partir de Parquet em vez de CSV ao usar uma instrucao CREATE TABLE AS SELECT?",
+    "options": [
+      "Arquivos Parquet podem ser particionados",
+      "Arquivos Parquet se tornarao tabelas Delta",
+      "Arquivos Parquet tem um schema bem definido",
+      "Arquivos Parquet tem a capacidade de ser otimizados"
+    ],
+    "answer": [
+      "Arquivos Parquet podem ser particionados"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-110",
+    "question": "Qual palavra-chave SQL pode ser usada para converter uma tabela de formato longo para formato largo?",
+    "options": [
+      "TRANSFORM",
+      "PIVOT",
+      "SUM",
+      "CONVERT"
+    ],
+    "answer": [
+      "TRANSFORM"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-111",
+    "question": "Um engenheiro de dados tem uma variavel Python table_name que gostaria de usar em uma consulta SQL. Ele deseja construir um bloco de codigo Python que executara a consulta usando table_name.\nEle tem o seguinte bloco de codigo incompleto:\n____(f\"SELECT customer_id, spend FROM {table_name}\")\nO que pode ser usado para preencher o espaco em branco para concluir a tarefa com sucesso?",
+    "options": [
+      "spark.delta.sql",
+      "spark.sql",
+      "spark.table",
+      "dbutils.sql"
+    ],
+    "answer": [
+      "spark.delta.sql"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-112",
+    "question": "Um engenheiro de dados esta trabalhando com duas tabelas. Cada uma dessas tabelas e exibida abaixo em sua totalidade.\nO engenheiro de dados executa a seguinte consulta para unir essas tabelas:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-113",
+    "question": "Um engenheiro de dados precisa aplicar logica personalizada para identificar funcionarios com mais de 5 anos de experiencia na coluna de array employees na tabela stores. A logica personalizada deve criar uma nova coluna exp_employees que e um array de todos os funcionarios com mais de 5 anos de experiencia para cada linha. Para aplicar essa logica personalizada em escala, o engenheiro de dados deseja usar a funcao de ordem superior FILTER.\nQual bloco de codigo conclui essa tarefa com sucesso?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-114",
+    "question": "Um engenheiro de dados que e novo no uso de Python precisa criar uma funcao Python para somar dois inteiros e retornar a soma.\nQual bloco de codigo o engenheiro de dados pode usar para concluir esta tarefa?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-115",
+    "question": "Um engenheiro de dados configurou um job de Structured Streaming para ler de uma tabela, manipular os dados e entao realizar uma gravacao streaming em uma nova tabela.\nO bloco de codigo usado pelo engenheiro de dados esta abaixo:\nQual linha de codigo o engenheiro de dados deve usar para preencher o espaco em branco se quiser que a consulta execute apenas um micro-batch para processar dados a cada 5 segundos?",
+    "options": [
+      "trigger(\"5 seconds\")",
+      "trigger(continuous=\"5 seconds\")",
+      "trigger(once=\"5 seconds\")",
+      "trigger(processingTime=\"5 seconds\")"
+    ],
+    "answer": [
+      "trigger(\"5 seconds\")"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-117",
+    "question": "Um engenheiro de dados tem tres tabelas em um pipeline Delta Live Tables (DLT). Ele configurou o pipeline para descartar registros invalidos em cada tabela. Ele percebe que alguns dados estao sendo descartados devido a preocupacoes de qualidade em algum ponto do pipeline DLT. Ele gostaria de determinar em qual tabela do pipeline os dados estao sendo descartados.\nQual abordagem o engenheiro de dados pode adotar para identificar a tabela que esta descartando os registros?",
+    "options": [
+      "Ele pode configurar expectativas separadas para cada tabela ao desenvolver seu pipeline DLT.",
+      "Ele pode navegar ate a pagina do pipeline DLT, clicar no botao \"Erro\" e revisar os erros presentes.",
+      "Ele pode configurar o DLT para notifica-lo por e-mail quando registros forem descartados.",
+      "Ele pode navegar ate a pagina do pipeline DLT, clicar em cada tabela e visualizar as estatisticas de qualidade dos dados."
+    ],
+    "answer": [
+      "Ele pode configurar expectativas separadas para cada tabela ao desenvolver seu pipeline DLT."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-118",
+    "question": "O que e usado pelo Spark para registrar o intervalo de offset dos dados sendo processados em cada trigger para que o Structured Streaming rastreie de forma confiavel o progresso exato do processamento e possa lidar com qualquer tipo de falha reiniciando e/ou reprocessando?",
+    "options": [
+      "Checkpointing e Write-ahead Logs",
+      "Fontes Reexecutaveis e Sinks Idempotentes",
+      "Write-ahead Logs e Sinks Idempotentes",
+      "Checkpointing e Sinks Idempotentes"
+    ],
+    "answer": [
+      "Checkpointing e Write-ahead Logs"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-119",
+    "question": "O que descreve a relacao entre tabelas Gold e tabelas Silver?",
+    "options": [
+      "Tabelas Gold tem maior probabilidade de conter agregacoes do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter dados valiosos do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter uma visao menos refinada dos dados do que tabelas Silver.",
+      "Tabelas Gold tem maior probabilidade de conter dados verdadeiros do que tabelas Silver."
+    ],
+    "answer": [
+      "Tabelas Gold tem maior probabilidade de conter agregacoes do que tabelas Silver."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-120",
+    "question": "O que descreve quando usar a sintaxe CREATE STREAMING LIVE TABLE (anteriormente CREATE INCREMENTAL LIVE TABLE) em vez da sintaxe CREATE LIVE TABLE ao criar tabelas Delta Live Tables (DLT) usando SQL?",
+    "options": [
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa subsequente no pipeline DLT e estatica.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando os dados precisam ser processados incrementalmente.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando os dados precisam ser processados por meio de agregacoes complicadas.",
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa anterior no pipeline DLT e estatica."
+    ],
+    "answer": [
+      "CREATE STREAMING LIVE TABLE deve ser usado quando a etapa subsequente no pipeline DLT e estatica."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-121",
+    "question": "Um pipeline Delta Live Table inclui dois datasets definidos usando STREAMING LIVE TABLE. Tres datasets sao definidos contra fontes de tabelas Delta Lake usando LIVE TABLE.\nA tabela esta configurada para executar no modo Producao usando o Modo de Pipeline Continuo.\nQual e o resultado esperado apos clicar em Iniciar para atualizar o pipeline, assumindo que dados nao processados anteriormente existem e todas as definicoes sao validas?\ntestes.\nterminados quando o pipeline for parado.",
+    "options": [
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao para permitir testes adicionais",
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais persistirao para permitir testes adicionais.",
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais serao implantados para a atualizacao e",
+      "Todos os datasets serao atualizados uma vez e o pipeline sera desligado. Os recursos computacionais serao encerrados."
+    ],
+    "answer": [
+      "Todos os datasets serao atualizados em intervalos definidos ate que o pipeline seja desligado. Os recursos computacionais persistirao para permitir testes adicionais"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-122",
+    "question": "Quais tipos de cargas de trabalho sao compativeis com o Auto Loader?",
+    "options": [
+      "Cargas de trabalho streaming",
+      "Cargas de trabalho de machine learning",
+      "Cargas de trabalho serverless",
+      "Cargas de trabalho batch"
+    ],
+    "answer": [
+      "Cargas de trabalho streaming"
+    ],
+    "topic": "Auto Loader"
+  },
+  {
+    "id": "databricks-123",
+    "question": "Um engenheiro de dados desenvolveu um pipeline de dados para ingerir dados de uma fonte JSON usando Auto Loader, mas o engenheiro nao forneceu nenhuma inferencia de tipo ou dicas de schema em seu pipeline. Ao revisar os dados, o engenheiro de dados percebeu que todas as colunas na tabela de destino sao do tipo string, apesar de alguns campos conterem apenas valores float ou boolean.\nPor que o Auto Loader inferiu todas as colunas como sendo do tipo string?",
+    "options": [
+      "Auto Loader nao pode inferir o schema dos dados ingeridos",
+      "Dados JSON sao um formato baseado em texto",
+      "Auto Loader so funciona com dados string",
+      "Todos os campos tinham pelo menos um valor nulo"
+    ],
+    "answer": [
+      "Auto Loader nao pode inferir o schema dos dados ingeridos"
+    ],
+    "topic": "Auto Loader"
+  },
+  {
+    "id": "databricks-124",
+    "question": "Qual afirmacao sobre a relacao entre tabelas Silver e tabelas Bronze e sempre verdadeira?",
+    "options": [
+      "Tabelas Silver contem uma visao menos refinada e menos limpa dos dados do que dados Bronze.",
+      "Tabelas Silver contem agregacoes enquanto dados Bronze nao sao agregados.",
+      "Tabelas Silver contem mais dados do que tabelas Bronze.",
+      "Tabelas Silver contem menos dados do que tabelas Bronze."
+    ],
+    "answer": [
+      "Tabelas Silver contem uma visao menos refinada e menos limpa dos dados do que dados Bronze."
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-125",
+    "question": "Qual consulta esta realizando um salto de streaming de dados brutos para uma tabela Bronze?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": [
+      ""
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-126",
+    "question": "Um dataset foi definido usando Delta Live Tables e inclui uma clausula de expectativas:\nCONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROW\nQual e o comportamento esperado quando um lote de dados contendo dados que violam essas restricoes e processado?",
+    "options": [
+      "Registros que violam a expectativa fazem o job falhar.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e marcados como invalidos em um campo adicionado ao dataset de destino.",
+      "Registros que violam a expectativa sao removidos do dataset de destino e registrados como invalidos no log de eventos.",
+      "Registros que violam a expectativa sao adicionados ao dataset de destino e registrados como invalidos no log de eventos."
+    ],
+    "answer": [
+      "Registros que violam a expectativa fazem o job falhar."
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-127",
+    "question": "Um engenheiro de dados tem um Job com multiplas tarefas que e executado todas as noites. Cada uma das tarefas executa lentamente porque os clusters demoram muito para iniciar.\nQual acao o engenheiro de dados pode realizar para melhorar o tempo de inicializacao dos clusters usados para o Job?",
+    "options": [
+      "Ele pode usar endpoints disponiveis no Databricks SQL",
+      "Ele pode usar clusters de jobs em vez de clusters de uso geral",
+      "Ele pode configurar os clusters para escalar automaticamente para tamanhos maiores de dados",
+      "Ele pode usar clusters que sao de um cluster pool"
+    ],
+    "answer": [
+      "Ele pode usar endpoints disponiveis no Databricks SQL"
+    ],
+    "topic": "Gerenciamento de Cluster"
+  },
+  {
+    "id": "databricks-128",
+    "question": "Um engenheiro de dados tem um Job de tarefa unica que e executado todas as manhas antes de comecar a trabalhar. Apos identificar um problema de dados upstream, ele precisa configurar outra tarefa para executar um novo notebook antes da tarefa original.\nQual abordagem o engenheiro de dados pode usar para configurar a nova tarefa?",
+    "options": [
+      "Ele pode clonar a tarefa existente no Job existente e atualiza-la para executar o novo notebook.",
+      "Ele pode criar uma nova tarefa no Job existente e adiciona-la como dependencia da tarefa original.",
+      "Ele pode criar uma nova tarefa no Job existente e adicionar a tarefa original como dependencia da nova tarefa.",
+      "Ele pode criar um novo job do zero e adicionar ambas as tarefas para executar simultaneamente."
+    ],
+    "answer": [
+      "Ele pode clonar a tarefa existente no Job existente e atualiza-la para executar o novo notebook."
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-129",
+    "question": "Um unico Job executa dois notebooks como duas tarefas separadas. Um engenheiro de dados percebeu que um dos notebooks esta executando lentamente na execucao atual do Job. O engenheiro de dados pede ajuda a um lider tecnico para identificar por que isso pode estar acontecendo.\nQual abordagem o lider tecnico pode usar para identificar por que o notebook esta executando lentamente como parte do Job?",
+    "options": [
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs para revisar imediatamente o notebook em processamento.",
+      "Ele pode navegar ate a aba Tarefas na interface do Jobs e clicar na execucao ativa para revisar o notebook em processamento.",
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs e clicar na execucao ativa para revisar o notebook em processamento.",
+      "Ele pode navegar ate a aba Tarefas na interface do Jobs para revisar imediatamente o notebook em processamento."
+    ],
+    "answer": [
+      "Ele pode navegar ate a aba Execucoes na interface do Jobs para revisar imediatamente o notebook em processamento."
+    ],
+    "topic": "Jobs e Pipelines"
+  },
+  {
+    "id": "databricks-130",
+    "question": "Uma equipe de analise de dados percebeu que suas consultas Databricks SQL estao executando muito lentamente quando conectadas ao SQL endpoint sempre ativo. Eles afirmam que esse problema esta presente quando muitos membros da equipe estao executando pequenas consultas simultaneamente. Eles pedem ajuda a equipe de engenharia de dados. A equipe de engenharia de dados percebe que cada uma das consultas da equipe usa o mesmo SQL endpoint.\nQual abordagem a equipe de engenharia de dados pode usar para melhorar a latencia das consultas da equipe?",
+    "options": [
+      "Eles podem aumentar o tamanho do cluster do SQL endpoint.",
+      "Eles podem aumentar o limite maximo do intervalo de escalabilidade do SQL endpoint.",
+      "Eles podem ativar o recurso Auto Stop para o SQL endpoint.",
+      "Eles podem ativar o recurso Serverless para o SQL endpoint."
+    ],
+    "answer": [
+      "Eles podem aumentar o tamanho do cluster do SQL endpoint."
+    ],
+    "topic": "Databricks SQL"
+  },
+  {
+    "id": "databricks-135",
+    "question": "Uma nova equipe de engenharia de dados foi designada para um projeto de ELT. A nova equipe de engenharia de dados precisara de privilegios totais na tabela sales para gerenciar completamente o projeto.\nQual comando pode ser usado para conceder permissoes completas no banco de dados para a nova equipe de engenharia de dados?",
+    "options": [
+      "GRANT ALL PRIVILEGES ON TABLE sales TO team;",
+      "GRANT SELECT CREATE MODIFY ON TABLE sales TO team;",
+      "GRANT SELECT ON TABLE sales TO team;",
+      "GRANT ALL PRIVILEGES ON TABLE team TO sales;"
+    ],
+    "answer": [
+      "GRANT ALL PRIVILEGES ON TABLE sales TO team;"
+    ],
+    "topic": "Seguranca e Controle de Acesso"
+  },
+  {
+    "id": "databricks-137",
+    "question": "Identifique como a funcao count_if e o count onde x e nulo podem ser usados\nConsidere uma tabela random_values com os dados abaixo.\nQual seria a saida da consulta abaixo?\nselect count_if(col > 1) as count_a. count(*) as count_b.count(col1) as count_c from random_values col1\n0\n1\n2\nNULL -\n2\n3",
+    "options": [
+      "3 6 5",
+      "4 6 5",
+      "3 6 6",
+      "4 6 6"
+    ],
+    "answer": [
+      "3 6 5"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-138",
+    "question": "Quais dois componentes funcionam no plano de controle da arquitetura da plataforma DB? (Escolha dois.)",
+    "options": [
+      "Maquinas Virtuais",
+      "Orquestracao de Computacao",
+      "Computacao Serverless",
+      "Computacao",
+      "Unity Catalog"
+    ],
+    "answer": [
+      "Maquinas Virtuais"
+    ],
+    "topic": "Databricks Geral"
+  },
+  {
+    "id": "databricks-139",
+    "question": "Em uma organizacao de provedor de saude que usa Delta Lake para armazenar registros eletronicos de saude (EHRs), um analista de dados precisa analisar um snapshot da tabela patient_records de duas semanas atras, antes de algumas correcoes recentes de dados serem aplicadas.\nQual abordagem o Engenheiro de Dados deve adotar para permitir que o analista consulte aquela versao anterior especifica?\npara consultar usando a sintaxe VERSION AS OF, ou exportar essa versao para uma nova tabela Delta para o analista consultar.",
+    "options": [
+      "Truncar a tabela para remover todos os dados, depois recarregar os dados de duas semanas atras na tabela truncada para o analista consultar.",
+      "Identificar o numero da versao correspondente a duas semanas atras no log de transacoes Delta, compartilhar esse numero de versao com o analista",
+      "Restaurar a tabela para a versao de duas semanas atras usando o comando RESTORE, e fazer o analista consultar a tabela restaurada.",
+      "Usar o comando VACUUM para remover todas as versoes da tabela mais antigas que duas semanas, entao o analista pode consultar a versao restante."
+    ],
+    "answer": [
+      "Truncar a tabela para remover todos os dados, depois recarregar os dados de duas semanas atras na tabela truncada para o analista consultar."
+    ],
+    "topic": "Delta Lake"
+  },
+  {
+    "id": "databricks-141",
+    "question": "Um engenheiro de dados configurou um job de Structured Streaming para ler de uma tabela, manipular os dados e entao realizar uma gravacao streaming em uma nova tabela.\nO bloco de codigo usado pelo engenheiro de dados esta abaixo:\nO engenheiro de dados so quer que a consulta processe todos os dados disponiveis em quantos batches forem necessarios.\nQual linha de codigo o engenheiro de dados deve usar para preencher o espaco em branco?",
+    "options": [
+      "trigger(availableNow=True)",
+      "trigger(processingTime= \"once\")",
+      "trigger(continuous= \"once\")",
+      "trigger(once=True)"
+    ],
+    "answer": [
+      "trigger(availableNow=True)"
+    ],
+    "topic": "Structured Streaming"
+  },
+  {
+    "id": "databricks-142",
+    "question": "Engenheiros de dados e analistas de dados estao trabalhando juntos em um pipeline de dados. O engenheiro de dados esta trabalhando nas camadas raw, bronze e silver do pipeline usando Python, e o analista de dados esta trabalhando na camada gold do pipeline usando SQL. A fonte raw do pipeline e uma entrada streaming. Eles agora querem migrar seu pipeline para usar Delta Live Tables.\nQual das seguintes alteracoes precisara ser feita no pipeline ao migrar para Delta Live Tables?",
+    "options": [
+      "O pipeline pode ter diferentes fontes de notebook em SQL e Python",
+      "O pipeline precisara ser escrito inteiramente em SQL",
+      "O pipeline precisara usar uma fonte batch no lugar de uma fonte streaming",
+      "O pipeline precisara ser escrito inteiramente em Python"
+    ],
+    "answer": [
+      "O pipeline pode ter diferentes fontes de notebook em SQL e Python"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-144",
+    "question": "Identifique o impacto de ON VIOLATION DROP ROW e ON VIOLATION FAIL UPDATE para uma violacao de restricao.\nUm engenheiro de dados criou um pipeline ETL usando Delta Live Table para gerenciar os detalhes de reembolso de viagem de sua empresa, ele quer garantir que se os detalhes de localizacao nao tiverem sido fornecidos pelo funcionario, o pipeline precisa ser encerrado.\nComo o cenario pode ser implementado?",
+    "options": [
+      "CONSTRAINT valid_location EXPECT (location = NULL)",
+      "CONSTRAINT valid_location EXPECT (location != NULL) ON VIOLATION FAIL UPDATE",
+      "CONSTRAINT valid_location EXPECT (location != NULL) ON DROP ROW",
+      "CONSTRAINT valid_location EXPECT (location != NULL) ON VIOLATION FAIL"
+    ],
+    "answer": [
+      "CONSTRAINT valid_location EXPECT (location = NULL)"
+    ],
+    "topic": "Delta Live Tables"
+  },
+  {
+    "id": "databricks-145",
+    "question": "Quais duas condicoes sao aplicaveis para governanca no Databricks Unity Catalog? (Escolha duas.)\nRespostas 1 B 21 B 41 C 61 C 81 D 101 A 121 C 2 A 22 D 42 C 62 A 82 D 102 A 122 A 3 C 23 C 43 D 63 E 83 D 103 C 123 B 4 D 24 E 44 E 64 B 84 B 104 C 124 D 5 C 25 D 45 E 65 A 85 C 105 B 125 D 6 C 26 C 46 C 66 D 86 E 106 B 126 C 7 A 27 A 47 E 67 D 87 D 107 A 127 D 8 E 28 A 48 E 68 C 88 A 108 B 128 B 9 B 29 E 49 A 69 B 89 C 109 C 129 C 10 B 30 B 50 A 70 B 90 A 110 B 130 B 11 C 31 D 51 B 71 B 91 D 111 B 135 A 12 E 32 C 52 C 72 E 92 C 112 C 137 A 13 C 33 B 53 D 73 D 93 B 113 A 138 BE 14 D 34 E 54 E 74 E 94 D 114 D 139 B 15 D 35 E 55 E 75 C 95 A 115 D 141 A 16 C 36 D 56 D 76 A 96 C 116 D 142 A 17 A 37 B 57 B 77 A 97 B 117 D 144 B 18 B 38 E 58 C 78 E 98 B 118 A 145 AE 19 C 39 B 59 D 79 E 99 A 119 A 20 A 40 C 60 C 80 B 100 A 120 B",
+    "options": [
+      "Voce pode ter mais de 1 metastore dentro de um console de conta Databricks, mas apenas 1 por regiao.",
+      "Tanto o catalog quanto o schema devem ter uma localizacao gerenciada no Unity Catalog, desde que o metastore nao esteja associado a uma localizacao",
+      "Voce pode ter multiplos catalogs dentro do metastore e 1 catalog pode ser associado a multiplos metastores",
+      "Se o catalog nao estiver associado a uma localizacao, e obrigatorio associar o schema a localizacoes gerenciadas",
+      "Se o metastore nao estiver associado a uma localizacao, e obrigatorio associar o catalog a localizacoes gerenciadas"
+    ],
+    "answer": [
+      "Voce pode ter mais de 1 metastore dentro de um console de conta Databricks, mas apenas 1 por regiao."
+    ],
+    "topic": "Databricks Geral"
+  }
+]

@@ -1,0 +1,23 @@
+---
+// QA fix #12: aria-label + focus management
+---
+<button
+  class="back-to-top"
+  id="back-to-top"
+  type="button"
+  aria-label="Back to top"
+>
+  <span aria-hidden="true">&uarr;</span>
+</button>
+
+<script>
+  const btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    btn?.classList.toggle('visible', window.scrollY > 400);
+  });
+  btn?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const h1 = document.querySelector('h1');
+    if (h1 instanceof HTMLElement) h1.focus({ preventScroll: true });
+  });
+</script>
