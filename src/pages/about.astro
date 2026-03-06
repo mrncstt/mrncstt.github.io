@@ -8,11 +8,7 @@ import Layout from '../layouts/Layout.astro';
         <img src="/img/profile.jpg" alt="Mariana Costa" width="88" height="88" />
       </div>
       <h1>Mariana Costa</h1>
-      <p class="about-bio">
-        I have a B.E. in Production Engineering from the Federal University of Rio Grande do Norte (Brazil)
-        and I'm currently working with data analysis. I'm enthusiastic about data culture and problem-solving,
-        and my favorite card is "conquering 24 territories of my choice" in War.
-      </p>
+      <p class="about-bio">💻</p>
       <div class="about-links">
         <a href="https://github.com/mrncstt" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/mrncstt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -20,34 +16,76 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="about-section">
-      <h2>What I do</h2>
-      <p>
-        I work with data pipelines to the finance world. Most of my day-to-day involves
-        PySpark/Git/Databricks jobs/Terraform, but I'm also drawn to the edges: contributing
-        to open-source projects, building visualizations, and writing about what I learn along the way.
+      <h2 data-lang="en">What I do</h2>
+      <h2 data-lang="pt">O que eu faço</h2>
+      <h2 data-lang="es">Lo que hago</h2>
+      <p data-lang="en">
+        I build and maintain data pipelines. On a daily basis that means PySpark, Databricks,
+        Terraform, and a lot of Git. Outside work I contribute to open-source projects, experiment
+        with data visualization, and write about what I learn along the way.
+      </p>
+      <p data-lang="pt">
+        Construo e mantenho pipelines de dados. No dia a dia isso significa PySpark, Databricks,
+        Terraform e muito Git. Fora do trabalho contribuo com projetos open-source, experimento
+        com visualização de dados e escrevo sobre o que aprendo pelo caminho.
+      </p>
+      <p data-lang="es">
+        Construyo y mantengo pipelines de datos. En el día a día eso significa PySpark, Databricks,
+        Terraform y mucho Git. Fuera del trabajo contribuyo a proyectos open-source, experimento
+        con visualización de datos y escribo sobre lo que aprendo en el camino.
       </p>
     </section>
 
     <section class="about-section">
-      <h2>This blog</h2>
-      <p>
+      <h2 data-lang="en">This blog</h2>
+      <h2 data-lang="pt">Este blog</h2>
+      <h2 data-lang="es">Este blog</h2>
+      <p data-lang="en">
         A mix of technical, short TIL notes, and the occasional post (misc of topics).
         I write in English, Spanish and Portuguese depending on the topic and audience.
         Everything here reflects things I've actually built, broken, or tried to figure out.
       </p>
+      <p data-lang="pt">
+        Uma mistura de posts técnicos, notas curtas de TIL e posts variados.
+        Escrevo em inglês, espanhol e português dependendo do tema e do público.
+        Tudo aqui reflete coisas que realmente construí, quebrei ou tentei entender.
+      </p>
+      <p data-lang="es">
+        Una mezcla de posts técnicos, notas cortas de TIL y posts variados.
+        Escribo en inglés, español y portugués según el tema y la audiencia.
+        Todo aquí refleja cosas que realmente construí, rompí o intenté entender.
+      </p>
     </section>
 
     <section class="about-section">
-      <h2>Elsewhere</h2>
-      <p>
+      <h2 data-lang="en">Elsewhere</h2>
+      <h2 data-lang="pt">Onde mais</h2>
+      <h2 data-lang="es">En otros sitios</h2>
+      <p data-lang="en">
         You can find my code on <a href="https://github.com/mrncstt" target="_blank" rel="noopener noreferrer">GitHub</a>
         and connect with me on <a href="https://www.linkedin.com/in/mrncstt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
         I'm also occasionally active in data engineering communities and open-source projects.
       </p>
+      <p data-lang="pt">
+        Você encontra meu código no <a href="https://github.com/mrncstt" target="_blank" rel="noopener noreferrer">GitHub</a>
+        e pode se conectar comigo no <a href="https://www.linkedin.com/in/mrncstt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        Também participo de comunidades de engenharia de dados e projetos open-source.
+      </p>
+      <p data-lang="es">
+        Puedes encontrar mi código en <a href="https://github.com/mrncstt" target="_blank" rel="noopener noreferrer">GitHub</a>
+        y conectar conmigo en <a href="https://www.linkedin.com/in/mrncstt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        También participo en comunidades de ingeniería de datos y proyectos open-source.
+      </p>
     </section>
 
-    <p class="about-disclaimer">
+    <p class="about-disclaimer" data-lang="en">
       All opinions are my own.
+    </p>
+    <p class="about-disclaimer" data-lang="pt">
+      Todas as opiniões são minhas.
+    </p>
+    <p class="about-disclaimer" data-lang="es">
+      Todas las opiniones son mías.
     </p>
   </div>
 </Layout>

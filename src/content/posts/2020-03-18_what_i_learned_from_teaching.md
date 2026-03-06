@@ -17,18 +17,18 @@ Here are some points that were relevant to my experience:
 </div>
 <div data-lang="pt">
 
-Tive a oportunidade de ministrar um curso sobre analise de dados usando [Excel](https://products.office.com/pt-br/excel) e [Power BI](https://powerbi.microsoft.com/pt-br/) com dois colegas do meu curso ([Engenharia de Producao na UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029)), [Erick Lima](#) e [Pablo Santos](#). Antes de ministrar o curso, pedi dicas para as meninas do [PyLadies Natal](https://pyladiesnatal.github.io/), e a [Gabi Cavalcante](#) escreveu um resumo de algumas dicas que elas me deram.
+Tive a oportunidade de ministrar um curso sobre análise de dados usando [Excel](https://products.office.com/pt-br/excel) e [Power BI](https://powerbi.microsoft.com/pt-br/) com dois colegas do meu curso ([Engenharia de Produção na UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029)), [Erick Lima](#) e [Pablo Santos](#). Antes de ministrar o curso, pedi dicas para as meninas do [PyLadies Natal](https://pyladiesnatal.github.io/), e a [Gabi Cavalcante](#) escreveu um resumo de algumas dicas que elas me deram.
 
 Essa jornada de ensino me trouxe diversos desafios e novas práticas de aprendizado, pois ainda tenho muito a aprender para compartilhar o que sei.
 
-Aqui estao alguns pontos que foram relevantes para a minha experiencia:
+Aqui estão alguns pontos que foram relevantes para a minha experiência:
 
 </div>
 <div data-lang="es">
 
-Tuve la oportunidad de impartir un curso sobre analisis de datos usando [Excel](https://products.office.com/pt-br/excel) y [Power BI](https://powerbi.microsoft.com/pt-br/) con dos companeros de mi carrera ([Ingenieria de Produccion en la UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029)), [Erick Lima](#) y [Pablo Santos](#). Antes de impartir el curso, pedi consejos a las chicas de [PyLadies Natal](https://pyladiesnatal.github.io/), y [Gabi Cavalcante](#) escribio un resumen de algunos consejos que me dieron.
+Tuve la oportunidad de impartir un curso sobre análisis de datos usando [Excel](https://products.office.com/pt-br/excel) y [Power BI](https://powerbi.microsoft.com/pt-br/) con dos compañeros de mi carrera ([Ingeniería de Producción en la UFRN](https://sigaa.ufrn.br/sigaa/public/curso/portal.jsf?lc=pt_BR&id=2000029)), [Erick Lima](#) y [Pablo Santos](#). Antes de impartir el curso, pedí consejos a las chicas de [PyLadies Natal](https://pyladiesnatal.github.io/), y [Gabi Cavalcante](#) escribió un resumen de algunos consejos que me dieron.
 
-Esta experiencia docente me trajo varios retos y nuevas formas de aprendizaje, ya que todavia tengo mucho que aprender para poder compartir lo que se.
+Esta experiencia docente me trajo varios retos y nuevas formas de aprendizaje, ya que todavía tengo mucho que aprender para poder compartir lo que sé.
 
 Estos son algunos puntos que fueron relevantes en mi experiencia:
 
@@ -46,7 +46,7 @@ Estos son algunos puntos que fueron relevantes en mi experiencia:
 </div>
 <div data-lang="es">
 
-## 1. Como disenar un curso?
+## 1. Cómo diseñar un curso?
 
 </div>
 
@@ -79,48 +79,48 @@ Being on the other side of the course made me reflect on how I would like to lea
 </div>
 <div data-lang="pt">
 
-Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender, mas vale lembrar que a experiencia de ensino e aprendizagem e extremamente diversa. Entao, como equilibrar minhas expectativas com as dos participantes? Alguns pontos foram colocados em foco para desenvolvimento:
+Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender, mas vale lembrar que a experiência de ensino e aprendizagem é extremamente diversa. Então, como equilibrar minhas expectativas com as dos participantes? Alguns pontos foram colocados em foco para desenvolvimento:
 
 ### Planejamento
 
-- Quais casos serao apresentados?
-- Como serao resolvidos?
-- Quais resultados devem ser alcancados?
+- Quais casos serão apresentados?
+- Como serão resolvidos?
+- Quais resultados devem ser alcançados?
 
 ### Cronograma
 
-- Quanto tempo sera necessario para transmitir esse conhecimento?
+- Quanto tempo será necessário para transmitir esse conhecimento?
 - Quanto tempo para auxiliar os participantes?
 
-### Validacao
+### Validação
 
-- Como vou medir a satisfacao dos participantes?
+- Como vou medir a satisfação dos participantes?
 - Que nota você daria ao curso de 0 a 10?
-- Qual a sua opiniao sobre o curso?
+- Qual a sua opinião sobre o curso?
 - O que podemos melhorar?
 
 </div>
 <div data-lang="es">
 
-Estar al otro lado del curso me hizo reflexionar sobre como me gustaria aprender, pero conviene recordar que la experiencia de ensenanza y aprendizaje es tremendamente diversa. Entonces, como equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
+Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprender, pero conviene recordar que la experiencia de enseñanza y aprendizaje es tremendamente diversa. Entonces, cómo equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
 
-### Planificacion
+### Planificación
 
-- Que casos se van a presentar?
-- Como se van a resolver?
-- Que resultados se deben alcanzar?
+- Qué casos se van a presentar?
+- Cómo se van a resolver?
+- Qué resultados se deben alcanzar?
 
 ### Calendario
 
-- Cuanto tiempo hara falta para transmitir este conocimiento?
-- Cuanto tiempo para asistir a los participantes?
+- Cuánto tiempo hará falta para transmitir este conocimiento?
+- Cuánto tiempo para asistir a los participantes?
 
-### Validacion
+### Validación
 
-- Como voy a medir la satisfaccion de los participantes?
-- Que nota le darias al curso del 0 al 10?
-- Cual es tu opinion sobre el curso?
-- Que podemos mejorar?
+- Cómo voy a medir la satisfacción de los participantes?
+- Qué nota le darías al curso del 0 al 10?
+- Cuál es tu opinión sobre el curso?
+- Qué podemos mejorar?
 
 </div>
 
@@ -131,7 +131,7 @@ Estar al otro lado del curso me hizo reflexionar sobre como me gustaria aprender
 </div>
 <div data-lang="pt">
 
-## 2. "Alguem tem alguma duvida?"
+## 2. "Alguém tem alguma dúvida?"
 
 </div>
 <div data-lang="es">
@@ -166,30 +166,30 @@ The advantage of being in a larger group was that while one was teaching, the ot
 </div>
 <div data-lang="pt">
 
-#### Sempre vai ter alguem com duvida que nao vai falar.
+#### Sempre vai ter alguém com dúvida que não vai falar.
 
-Manter dezenas de pessoas focadas por horas consecutivas em um sabado das 8h as 18h nao e tarefa facil. Ao longo do curso, ficamos muito preocupados em nos fazer entender, afinal, era nossa responsabilidade transmitir o conhecimento. E mesmo quando paravamos e perguntavamos "Alguem tem alguma duvida?", poucas pessoas levantavam a mao.
+Manter dezenas de pessoas focadas por horas consecutivas em um sábado das 8h às 18h não é tarefa fácil. Ao longo do curso, ficamos muito preocupados em nos fazer entender, afinal, era nossa responsabilidade transmitir o conhecimento. E mesmo quando parávamos e perguntávamos "Alguém tem alguma dúvida?", poucas pessoas levantavam a mão.
 
-A vantagem de estar em um grupo maior era que, enquanto um ensinava, os outros dois iam verificando se todos estavam acompanhando. Isso ajudou bastante no monitoramento dos participantes, embora seja uma pratica inviavel para um curso com um único instrutor.
+A vantagem de estar em um grupo maior era que, enquanto um ensinava, os outros dois iam verificando se todos estavam acompanhando. Isso ajudou bastante no monitoramento dos participantes, embora seja uma prática inviável para um curso com um único instrutor.
 
 #### O que poderia ter sido feito?
 
-- No meio do curso, tentamos usar o Zoom para compartilhar a tela e facilitar a visualização dos participantes, mas como teriamos que esperar todos baixarem, levaria tempo. A licao aprendida: deveriamos ter feito isso desde o início.
-- Outra coisa que deveriamos ter pensado antes era colocar todos em duplas. Mesmo usando o ZoomIt, as vezes era dificil acompanhar. Percebemos que participantes que estavam mais no fundo da sala ou sozinhos tinham mais dificuldade de acompanhar o ritmo, pois era muito conteudo e, sem alguem por perto, nao tinham suporte imediato.
+- No meio do curso, tentamos usar o Zoom para compartilhar a tela e facilitar a visualização dos participantes, mas como teríamos que esperar todos baixarem, levaria tempo. A lição aprendida: deveríamos ter feito isso desde o início.
+- Outra coisa que deveríamos ter pensado antes era colocar todos em duplas. Mesmo usando o ZoomIt, às vezes era difícil acompanhar. Percebemos que participantes que estavam mais no fundo da sala ou sozinhos tinham mais dificuldade de acompanhar o ritmo, pois era muito conteúdo e, sem alguém por perto, não tinham suporte imediato.
 
 </div>
 <div data-lang="es">
 
-#### Siempre habra alguien con una duda que no se atreve a preguntar.
+#### Siempre habrá alguien con una duda que no se atreve a preguntar.
 
-Mantener a decenas de personas concentradas durante horas consecutivas un sabado de 8 de la manana a 6 de la tarde no es tarea facil. A lo largo del curso, nos preocupamos mucho por hacernos entender, al fin y al cabo era nuestra responsabilidad transmitir el conocimiento. Y aun cuando parabamos y preguntabamos "Alguien tiene alguna duda?", pocas personas levantaban la mano.
+Mantener a decenas de personas concentradas durante horas consecutivas un sábado de 8 de la mañana a 6 de la tarde no es tarea fácil. A lo largo del curso, nos preocupamos mucho por hacernos entender, al fin y al cabo era nuestra responsabilidad transmitir el conocimiento. Y aun cuando parábamos y preguntábamos "Alguien tiene alguna duda?", pocas personas levantaban la mano.
 
-La ventaja de estar en un grupo mas grande era que, mientras uno ensenaba, los otros dos iban comprobando si todos seguian el hilo. Eso ayudo mucho en el seguimiento de los participantes, aunque es una practica inviable para un curso con un solo instructor.
+La ventaja de estar en un grupo más grande era que, mientras uno enseñaba, los otros dos iban comprobando si todos seguían el hilo. Eso ayudó mucho en el seguimiento de los participantes, aunque es una práctica inviable para un curso con un solo instructor.
 
-#### Que se podria haber hecho?
+#### Qué se podría haber hecho?
 
-- A mitad del curso, intentamos usar Zoom para compartir pantalla y facilitar la visualizacion a los participantes, pero como habia que esperar a que todos lo descargaran, llevaba tiempo. La leccion aprendida: deberiamos haberlo hecho desde el principio.
-- Otra cosa que deberiamos haber pensado de antemano era emparejar a todos. Incluso usando ZoomIt, a veces era dificil seguir el ritmo. Nos dimos cuenta de que los participantes que estaban al fondo de la sala o solos tenian mas dificultad para seguir el ritmo, porque era mucho contenido y, sin alguien cerca, no tenian apoyo inmediato.
+- A mitad del curso, intentamos usar Zoom para compartir pantalla y facilitar la visualización a los participantes, pero como había que esperar a que todos lo descargaran, llevaba tiempo. La lección aprendida: deberíamos haberlo hecho desde el principio.
+- Otra cosa que deberíamos haber pensado de antemano era emparejar a todos. Incluso usando ZoomIt, a veces era difícil seguir el ritmo. Nos dimos cuenta de que los participantes que estaban al fondo de la sala o solos tenían más dificultad para seguir el ritmo, porque era mucho contenido y, sin alguien cerca, no tenían apoyo inmediato.
 
 </div>
 
@@ -200,12 +200,12 @@ La ventaja de estar en un grupo mas grande era que, mientras uno ensenaba, los o
 </div>
 <div data-lang="pt">
 
-## 3. Todo mundo sofre da sindrome do dedo nervoso
+## 3. Todo mundo sofre da síndrome do dedo nervoso
 
 </div>
 <div data-lang="es">
 
-## 3. Todo el mundo sufre el sindrome del dedo nervioso
+## 3. Todo el mundo sufre el síndrome del dedo nervioso
 
 </div>
 
@@ -226,12 +226,12 @@ Everyone who uses electronic devices suffers from the pseudo "nervous finger syn
 </div>
 <div data-lang="pt">
 
-Todo mundo que usa dispositivos eletronicos sofre da pseudo "sindrome do dedo nervoso". Comecam a clicar em tudo o que veem na tela do computador ou smartphone, e nao sou eu quem esta dizendo isso; e tema de um artigo da Universidade do Texas. Com isso em mente, so disponibilizamos os materiais do curso conforme eram necessarios. Para facilitar, criamos links bit.ly para os materiais a serem baixados e os compartilhamos quando necessario. Isso evitou os problemas de tempo e integridade dos dados de ficar passando pen drives.
+Todo mundo que usa dispositivos eletrônicos sofre da pseudo "síndrome do dedo nervoso". Começam a clicar em tudo o que veem na tela do computador ou smartphone, e não sou eu quem está dizendo isso; é tema de um artigo da Universidade do Texas. Com isso em mente, só disponibilizamos os materiais do curso conforme eram necessários. Para facilitar, criamos links bit.ly para os materiais a serem baixados e os compartilhamos quando necessário. Isso evitou os problemas de tempo e integridade dos dados de ficar passando pen drives.
 
 </div>
 <div data-lang="es">
 
-Todo el que usa dispositivos electronicos sufre del pseudo "sindrome del dedo nervioso". Empiezan a hacer clic en todo lo que ven en la pantalla del ordenador o del movil, y no lo digo yo; es tema de un articulo de la Universidad de Texas. Teniendo esto en cuenta, solo pusimos los materiales del curso a disposicion conforme se iban necesitando. Para facilitarlo, creamos enlaces bit.ly para descargar los materiales y los compartiamos cuando era necesario. Asi evitamos los problemas de tiempo y de integridad de datos que supone andar pasando pendrives.
+Todo el que usa dispositivos electrónicos sufre del pseudo "síndrome del dedo nervioso". Empiezan a hacer clic en todo lo que ven en la pantalla del ordenador o del móvil, y no lo digo yo; es tema de un artículo de la Universidad de Texas. Teniendo esto en cuenta, solo pusimos los materiales del curso a disposición conforme se iban necesitando. Para facilitarlo, creamos enlaces bit.ly para descargar los materiales y los compartíamos cuando era necesario. Así evitamos los problemas de tiempo y de integridad de datos que supone andar pasando pendrives.
 
 </div>
 

@@ -17,14 +17,14 @@ I was a data analyst at Grupo Morada, a company in the funeral sector that offer
 
 #### Contexto
 
-Eu era analista de dados no Grupo Morada, uma empresa do setor funerario que oferece servicos e produtos funerarios, servicos de cemiterio e planos de assistencia. Um dos nossos projetos era o **Morada da Memoria**, um memorial online com mensagens de familiares e amigos. Queriamos uma forma rapida de ver quais palavras mais apareciam para que editores e gestores pudessem sentir o tom das historias.
+Eu era analista de dados no Grupo Morada, uma empresa do setor funerário que oferece serviços e produtos funerários, serviços de cemitério e planos de assistência. Um dos nossos projetos era o **Morada da Memória**, um memorial online com mensagens de familiares e amigos. Queríamos uma forma rápida de ver quais palavras mais apareciam para que editores e gestores pudessem sentir o tom das histórias.
 
 </div>
 <div data-lang="es">
 
 #### Contexto
 
-Yo era analista de datos en Grupo Morada, una empresa del sector funerario que ofrece servicios y productos funerarios, servicios de cementerio y planes de asistencia. Uno de nuestros proyectos era **Morada da Memoria**, un memorial online con mensajes de familiares y amigos. Queriamos una forma rapida de ver que palabras aparecian mas para que editores y responsables pudiesen captar el tono de las historias.
+Yo era analista de datos en Grupo Morada, una empresa del sector funerario que ofrece servicios y productos funerarios, servicios de cementerio y planes de asistencia. Uno de nuestros proyectos era **Morada da Memoria**, un memorial online con mensajes de familiares y amigos. Queríamos una forma rápida de ver qué palabras aparecían más para que editores y responsables pudiesen captar el tono de las historias.
 
 </div>
 
@@ -43,16 +43,16 @@ Inside the company we used Qlik as the main BI tool. We had recently moved from 
 </div>
 <div data-lang="pt">
 
-#### O que eu construi
+#### O que eu construí
 
-Dentro da empresa usavamos o Qlik como principal ferramenta de BI. Tinhamos migrado recentemente da infraestrutura on-prem antiga para a nuvem do Qlik. A busca full-text nos campos e recursos melhores de insights facilitavam explorar os dados sem uma parede de SQL.
+Dentro da empresa usávamos o Qlik como principal ferramenta de BI. Tínhamos migrado recentemente da infraestrutura on-prem antiga para a nuvem do Qlik. A busca full-text nos campos e recursos melhores de insights facilitavam explorar os dados sem uma parede de SQL.
 
 </div>
 <div data-lang="es">
 
-#### Lo que construi
+#### Lo que construí
 
-Dentro de la empresa usabamos Qlik como herramienta principal de BI. Habiamos migrado recientemente de la infraestructura on-prem antigua a la nube de Qlik. La busqueda de texto completo en los campos y las mejores funciones de insights facilitaban explorar los datos sin una muralla de SQL.
+Dentro de la empresa usábamos Qlik como herramienta principal de BI. Habíamos migrado recientemente de la infraestructura on-prem antigua a la nube de Qlik. La búsqueda de texto completo en los campos y las mejores funciones de insights facilitaban explorar los datos sin una muralla de SQL.
 
 </div>
 
@@ -75,8 +75,8 @@ Plan:
 <div data-lang="pt">
 
 Plano:
-- Extrair os comentarios do memorial do MySQL
-- Gravar um QVD para carregamentos mais rapidos
+- Extrair os comentários do memorial do MySQL
+- Gravar um QVD para carregamentos mais rápidos
 - Dividir o texto em palavras
 - Remover stopwords
 - Contar e visualizar
@@ -86,7 +86,7 @@ Plano:
 
 Plan:
 - Extraer los comentarios del memorial desde MySQL
-- Escribir un QVD para cargas mas rapidas
+- Escribir un QVD para cargas más rápidas
 - Dividir el texto en palabras
 - Eliminar stopwords
 - Contar y visualizar
@@ -102,16 +102,16 @@ After connecting to MySQL and exporting to a QVD, I loaded the data into the app
 </div>
 <div data-lang="pt">
 
-#### Preparacao dos dados
+#### Preparação dos dados
 
 Depois de conectar ao MySQL e exportar para um QVD, carreguei os dados no app.
 
 </div>
 <div data-lang="es">
 
-#### Preparacion de los datos
+#### Preparación de los datos
 
-Tras conectar a MySQL y exportar a un QVD, cargue los datos en la aplicacion.
+Tras conectar a MySQL y exportar a un QVD, cargué los datos en la aplicación.
 
 </div>
 
@@ -128,12 +128,12 @@ Tokenizing used `SubField` on spaces plus `Trim` to clean leftovers. Accents and
 </div>
 <div data-lang="pt">
 
-A tokenizacao usou `SubField` nos espacos mais `Trim` para limpar residuos. Acentos e pontuacao atrapalham, então normalizei a caixa e removi a pontuacao basica primeiro. Uma pequena lista personalizada de stopwords fez a maior parte do trabalho.
+A tokenização usou `SubField` nos espaços mais `Trim` para limpar resíduos. Acentos e pontuação atrapalham, então normalizei a caixa e removi a pontuação básica primeiro. Uma pequena lista personalizada de stopwords fez a maior parte do trabalho.
 
 </div>
 <div data-lang="es">
 
-La tokenizacion uso `SubField` sobre los espacios mas `Trim` para limpiar restos. Los acentos y la puntuacion estorban, asi que primero normalice las mayusculas y elimine la puntuacion basica. Una pequena lista personalizada de stopwords hizo la mayor parte del trabajo.
+La tokenización usó `SubField` sobre los espacios más `Trim` para limpiar restos. Los acentos y la puntuación estorban, así que primero normalicé las mayúsculas y eliminé la puntuación básica. Una pequeña lista personalizada de stopwords hizo la mayor parte del trabajo.
 
 </div>
 
@@ -184,12 +184,12 @@ To power the chart, the counting expression was a plain set analysis over the cl
 </div>
 <div data-lang="pt">
 
-Para alimentar o grafico, a expressao de contagem era uma simples set analysis sobre o campo limpo:
+Para alimentar o gráfico, a expressão de contagem era uma simples set analysis sobre o campo limpo:
 
 </div>
 <div data-lang="es">
 
-Para alimentar el grafico, la expresion de conteo era un simple set analysis sobre el campo limpio:
+Para alimentar el gráfico, la expresión de conteo era un simple set analysis sobre el campo limpio:
 
 </div>
 
@@ -209,14 +209,14 @@ Since early 2020, Qlik added stronger natural-language suggestions. That helped 
 
 #### Busca e sugestões
 
-Desde o início de 2020, o Qlik adicionou sugestões em linguagem natural mais robustas. Isso ajudou a validar os termos principais e ir direto para as historias quando algo estranho aparecia.
+Desde o início de 2020, o Qlik adicionou sugestões em linguagem natural mais robustas. Isso ajudou a validar os termos principais e ir direto para as histórias quando algo estranho aparecia.
 
 </div>
 <div data-lang="es">
 
-#### Busqueda y sugerencias
+#### Búsqueda y sugerencias
 
-Desde principios de 2020, Qlik anadio sugerencias en lenguaje natural mas potentes. Eso ayudo a validar los terminos principales y saltar a las historias cuando algo raro aparecia.
+Desde principios de 2020, Qlik añadió sugerencias en lenguaje natural más potentes. Eso ayudó a validar los términos principales y saltar a las historias cuando algo raro aparecía.
 
 </div>
 
@@ -237,14 +237,14 @@ I used a word cloud object to surface frequent words. It wasn't meant to replace
 
 #### Como ficou
 
-Usei um objeto de nuvem de palavras para destacar as palavras mais frequentes. Nao era para substituir uma analise mais profunda, apenas uma leitura rapida sobre os temas e a linguagem que as pessoas escolhiam em suas homenagens.
+Usei um objeto de nuvem de palavras para destacar as palavras mais frequentes. Não era para substituir uma análise mais profunda, apenas uma leitura rápida sobre os temas e a linguagem que as pessoas escolhiam em suas homenagens.
 
 </div>
 <div data-lang="es">
 
-#### Como quedo
+#### Cómo quedó
 
-Use un objeto de nube de palabras para destacar las palabras mas frecuentes. No pretendia sustituir un analisis mas profundo, solo una lectura rapida sobre los temas y el lenguaje que la gente elegia en sus homenajes.
+Usé un objeto de nube de palabras para destacar las palabras más frecuentes. No pretendía sustituir un análisis más profundo, solo una lectura rápida sobre los temas y el lenguaje que la gente elegía en sus homenajes.
 
 </div>
 
@@ -263,15 +263,15 @@ That was the build: simple, fast to load, and useful in daily conversations as w
 </div>
 <div data-lang="pt">
 
-Tambem incluimos uma pequena visualização de sentimento no mesmo dashboard. Isso ajudou a equipe a perceber mudancas de tom ao longo do tempo e investigar outliers quando necessario.
+Também incluímos uma pequena visualização de sentimento no mesmo dashboard. Isso ajudou a equipe a perceber mudanças de tom ao longo do tempo e investigar outliers quando necessário.
 
-Foi isso: simples, rapido de carregar e util nas conversas do dia a dia, ja que planejavamos entender o que as pessoas mencionavam para compreender melhor o processo de evolução conforme o memorial crescia.
+Foi isso: simples, rápido de carregar e útil nas conversas do dia a dia, já que planejávamos entender o que as pessoas mencionavam para compreender melhor o processo de evolução conforme o memorial crescia.
 
 </div>
 <div data-lang="es">
 
-Tambien incluimos una pequena vista de sentimiento en el mismo dashboard. Eso ayudo al equipo a detectar cambios de tono a lo largo del tiempo e investigar valores atipicos cuando era necesario.
+También incluimos una pequeña vista de sentimiento en el mismo dashboard. Eso ayudó al equipo a detectar cambios de tono a lo largo del tiempo e investigar valores atípicos cuando era necesario.
 
-Eso fue todo: sencillo, rapido de cargar y util en las conversaciones del dia a dia, ya que queriamos entender lo que la gente mencionaba para comprender mejor el proceso de evolucion a medida que el memorial crecia.
+Eso fue todo: sencillo, rápido de cargar y útil en las conversaciones del día a día, ya que queríamos entender lo que la gente mencionaba para comprender mejor el proceso de evolución a medida que el memorial crecía.
 
 </div>
