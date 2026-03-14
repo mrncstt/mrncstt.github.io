@@ -11,7 +11,6 @@ const sorted = [...posts].sort((a, b) => a.data.date.getTime() - b.data.date.get
 const first = sorted[0];
 const last = sorted[sorted.length - 1];
 
-// Word count
 let totalWords = 0;
 for (const p of posts) {
   const text = (p.body || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
@@ -20,37 +19,37 @@ for (const p of posts) {
 const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
 ---
 <div class="stats-grid" role="list" aria-label="Blog statistics">
-  <div class="stat-card" role="listitem">
+  <a class="stat-card" role="listitem" href="/">
     <span class="stat-label">
       <span data-lang="en">Total posts</span>
       <span data-lang="pt">Total de posts</span>
       <span data-lang="es">Total de posts</span>
     </span>
     <span class="stat-value">{total}</span>
-  </div>
+  </a>
   {first && (
-    <div class="stat-card" role="listitem">
+    <a class="stat-card" role="listitem" href={`/posts/${first.slug}/`}>
       <span class="stat-label">
         <span data-lang="en">First post</span>
         <span data-lang="pt">Primeiro post</span>
         <span data-lang="es">Primer post</span>
       </span>
       <span class="stat-value">{first.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
-      <a class="stat-detail stat-link" href={`/posts/${first.slug}/`}>{first.data.title}</a>
-    </div>
+      <span class="stat-detail">{first.data.title}</span>
+    </a>
   )}
   {last && (
-    <div class="stat-card" role="listitem">
+    <a class="stat-card" role="listitem" href={`/posts/${last.slug}/`}>
       <span class="stat-label">
         <span data-lang="en">Latest post</span>
         <span data-lang="pt">Último post</span>
         <span data-lang="es">Último post</span>
       </span>
       <span class="stat-value">{last.data.date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}</span>
-      <a class="stat-detail stat-link" href={`/posts/${last.slug}/`}>{last.data.title}</a>
-    </div>
+      <span class="stat-detail">{last.data.title}</span>
+    </a>
   )}
-  <div class="stat-card" role="listitem">
+  <a class="stat-card" role="listitem" href="/">
     <span class="stat-label">
       <span data-lang="en">Words written</span>
       <span data-lang="pt">Palavras escritas</span>
@@ -58,9 +57,9 @@ const avgWords = total > 0 ? Math.round(totalWords / total) : 0;
     </span>
     <span class="stat-value">{totalWords.toLocaleString()}</span>
     <span class="stat-detail">
-      <span data-lang="en">~{avgWords.toLocaleString()} avg per post</span>
-      <span data-lang="pt">~{avgWords.toLocaleString()} média por post</span>
-      <span data-lang="es">~{avgWords.toLocaleString()} media por post</span>
+      <span data-lang="en">{avgWords.toLocaleString()} avg per post</span>
+      <span data-lang="pt">{avgWords.toLocaleString()} média por post</span>
+      <span data-lang="es">{avgWords.toLocaleString()} media por post</span>
     </span>
-  </div>
+  </a>
 </div>

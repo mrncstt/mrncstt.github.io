@@ -3,6 +3,7 @@
 ---
 <script>
   document.querySelectorAll('pre.astro-code').forEach(block => {
+    if (block.getAttribute('data-language') === 'mermaid') return;
     const btn = document.createElement('button');
     btn.className = 'copy-btn';
     btn.textContent = 'copy';

@@ -4,6 +4,7 @@ description: Makeover Monday 2022 W/35
 date: 2022-08-29
 slug: makeover-monday-2022-w35
 tags: [makeover monday, data visualization, tableau, data analysis, dashboard]
+lang: [en, pt, es]
 ---
 
 <div data-lang="en">
@@ -65,14 +66,8 @@ Good practices:
 
 ## My version
 
-#### How did I develop it?
-I used Tableau to create my version of the visualization. Tableau is a tool I am very comfortable with, and it provides a lot of flexibility for creating detailed and interactive visualizations. Here are the steps I followed:
-
-1. **Data Import**: I imported the dataset provided for this Makeover Monday challenge into Tableau.
-2. **Data Cleaning**: I checked for any inconsistencies or missing values in the dataset and cleaned the data as needed.
-3. **Data Transformation**: I transformed the data to make it suitable for visualization. This included creating new calculated columns and measures to better represent the data.
-4. **Visualization Creation**: I created a bar chart to show the top 10 countries in military spending. I used green colors to align with the military theme and added country flags for better visual identification.
-5. **Final Touches**: I added titles, labels, and tooltips to make the visualization more informative and user-friendly.
+#### How I built it
+Built it in Tableau. The dataset was already clean enough that I only had to fix two country name typos. I added calculated fields for percent of GDP and per-capita spending so the bars could tell more than one story. Bar chart, green palette, flag icons next to each country name. Tooltips show the raw USD figure on hover.
 
 </div>
 <div data-lang="pt">
@@ -84,14 +79,8 @@ Boas práticas:
 
 ## Minha versão
 
-#### Como eu desenvolvi?
-Usei o Tableau para criar a minha versão da visualização. Tableau é uma ferramenta com a qual tenho bastante familiaridade e oferece muita flexibilidade para criar visualizações detalhadas e interativas. Estes foram os passos que segui:
-
-1. **Importação dos dados**: Importei o dataset disponibilizado para o desafio Makeover Monday no Tableau.
-2. **Limpeza dos dados**: Verifiquei inconsistências ou valores ausentes no dataset e fiz a limpeza necessária.
-3. **Transformação dos dados**: Transformei os dados para adequá-los à visualização. Isso incluiu a criação de novas colunas calculadas e medidas para melhor representar os dados.
-4. **Criação da visualização**: Criei um gráfico de barras mostrando os 10 países que mais gastam com defesa militar. Usei cores verdes para manter o tema militar e adicionei bandeiras dos países para melhor identificação visual.
-5. **Toques finais**: Adicionei títulos, rótulos e tooltips para tornar a visualização mais informativa e fácil de usar.
+#### Como eu construí
+Fiz no Tableau. O dataset já estava limpo, só tive que corrigir dois nomes de país com typo. Criei campos calculados pra percentual do PIB e gasto per capita pra que as barras pudessem contar mais de uma história. Gráfico de barras, paleta verde, ícone da bandeira ao lado de cada país. O tooltip mostra o valor em USD no hover.
 
 </div>
 <div data-lang="es">
@@ -103,14 +92,8 @@ Buenas prácticas:
 
 ## Mi versión
 
-#### Cómo la desarrollé?
-Usé Tableau para crear mi versión de la visualización. Tableau es una herramienta con la que me siento muy cómodo y ofrece mucha flexibilidad para crear visualizaciones detalladas e interactivas. Estos fueron los pasos que seguí:
-
-1. **Importación de datos**: Importé el dataset proporcionado para el reto Makeover Monday en Tableau.
-2. **Limpieza de datos**: Comprobé si había inconsistencias o valores ausentes en el dataset y limpié los datos según fue necesario.
-3. **Transformación de datos**: Transformé los datos para adecuarlos a la visualización. Esto incluyó crear nuevas columnas calculadas y medidas para representar mejor los datos.
-4. **Creación de la visualización**: Creé un gráfico de barras para mostrar los 10 países con mayor gasto militar. Usé tonos verdes para mantener la temática militar y añadí banderas de los países para facilitar la identificación visual.
-5. **Toques finales**: Añadí títulos, etiquetas y tooltips para hacer la visualización más informativa y fácil de usar.
+#### Cómo lo construí
+Lo hice en Tableau. El dataset ya venía limpio, solo tuve que corregir dos nombres de país con typo. Creé campos calculados para porcentaje del PIB y gasto per cápita para que las barras pudieran contar más de una historia. Gráfico de barras, paleta verde, icono de bandera al lado de cada país. El tooltip enseña el valor en USD al pasar el ratón.
 
 </div>
 
@@ -138,26 +121,20 @@ Usé Tableau para crear mi versión de la visualización. Tableau es una herrami
 
 <div data-lang="en">
 
-## What I would like to show
-- The comparison of military spending among the top 10 countries.
-- The use of country flags for better visual identification.
-- The clear and straightforward representation of data using a chart.
+## What this chart should make obvious
+The US line dwarfs everyone else, so the chart sorts the rest into a readable second tier. Flags help non-data people connect faster than country codes.
 
 </div>
 <div data-lang="pt">
 
-## O que eu queria mostrar
-- A comparação do gasto militar entre os 10 principais países.
-- O uso de bandeiras dos países para melhor identificação visual.
-- A representação clara e direta dos dados por meio de um gráfico.
+## O que esse gráfico precisa deixar óbvio
+O número dos EUA esmaga todo mundo, então o gráfico ordena o resto num segundo nível mais legível. As bandeiras ajudam quem não é da área de dados a se conectar mais rápido do que código de país.
 
 </div>
 <div data-lang="es">
 
-## Lo que quería mostrar
-- La comparación del gasto militar entre los 10 principales países.
-- El uso de banderas de los países para facilitar la identificación visual.
-- La representación clara y directa de los datos mediante un gráfico.
+## Lo que este gráfico tiene que dejar claro
+La cifra de EE.UU. aplasta al resto, así que el gráfico ordena al resto en un segundo nivel más legible. Las banderas ayudan a quien no es de datos a conectar más rápido que un código de país.
 
 </div>
 

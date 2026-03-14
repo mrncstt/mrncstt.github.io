@@ -5,10 +5,10 @@
   class="theme-toggle"
   id="theme-toggle"
   type="button"
-  aria-label="Switch to light mode"
-  aria-pressed="false"
+  aria-label="Switch to dark mode"
+  aria-pressed="true"
 >
-  <span class="theme-icon" aria-hidden="true">&#9728;</span>
+  <span class="theme-icon" aria-hidden="true">&#9790;</span>
 </button>
 
 <script>
@@ -23,7 +23,7 @@
     toggle?.setAttribute('aria-pressed', String(theme === 'light'));
   }
 
-  applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+  applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
 
   toggle?.addEventListener('click', () => {
     const current = document.documentElement.getAttribute('data-theme');

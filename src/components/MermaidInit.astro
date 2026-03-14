@@ -4,6 +4,23 @@
 ---
 <script>
   async function initMermaid() {
+    // Convert Shiki-highlighted mermaid code blocks into .mermaid divs.
+    // Pull source from <code> so the CopyCode button text never leaks in.
+    document.querySelectorAll<HTMLElement>('pre[data-language="mermaid"]').forEach(pre => {
+      const code = pre.querySelector('code');
+      const lines = code?.querySelectorAll('.line');
+      let source = '';
+      if (lines && lines.length > 0) {
+        source = Array.from(lines).map(l => (l as HTMLElement).innerText).join('\n');
+      } else if (code) {
+        source = code.innerText;
+      }
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = source;
+      pre.replaceWith(div);
+    });
+
     const { default: mermaid } = await import('https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs');
 
     const style = getComputedStyle(document.documentElement);

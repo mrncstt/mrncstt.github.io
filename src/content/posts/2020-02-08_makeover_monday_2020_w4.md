@@ -4,6 +4,7 @@ description: Makeover Monday 2020 W/4
 date: 2020-02-08
 slug: makeover-monday-2020-w4
 tags: [makeover monday, data visualization, power bi, data analysis, dashboard]
+lang: [en, pt, es]
 ---
 <div data-lang="en">
 

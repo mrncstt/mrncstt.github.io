@@ -4,6 +4,7 @@ description: Build a word cloud from real memorial messages using MySQL and Qlik
 date: 2020-07-13
 slug: word-cloud-with-qlik
 tags: [qlik, data visualization, nlp, sql, text analysis]
+lang: [en, pt, es]
 ---
 
 <div data-lang="en">
@@ -258,21 +259,21 @@ Usé un objeto de nube de palabras para destacar las palabras más frecuentes. N
 
 We also tucked a small sentiment view into the same dashboard. That helped the team notice shifts in tone over time and chase down outliers when needed.
 
-That was the build: simple, fast to load, and useful in daily conversations as we planned to understand what people were mentioning so we could better understand the evolution process as the memorial grew.
+That was it. Fast to load, simple to share. The team started asking sharper questions in our weekly review, like why "saudade" spiked in March or why a name kept coming up.
 
 </div>
 <div data-lang="pt">
 
 Também incluímos uma pequena visualização de sentimento no mesmo dashboard. Isso ajudou a equipe a perceber mudanças de tom ao longo do tempo e investigar outliers quando necessário.
 
-Foi isso: simples, rápido de carregar e útil nas conversas do dia a dia, já que planejávamos entender o que as pessoas mencionavam para compreender melhor o processo de evolução conforme o memorial crescia.
+Foi isso. Rápido de carregar, simples de compartilhar. O time começou a fazer perguntas mais afiadas na review semanal, tipo por que "saudade" disparou em março ou por que um nome continuava aparecendo.
 
 </div>
 <div data-lang="es">
 
 También incluimos una pequeña vista de sentimiento en el mismo dashboard. Eso ayudó al equipo a detectar cambios de tono a lo largo del tiempo e investigar valores atípicos cuando era necesario.
 
-Eso fue todo: sencillo, rápido de cargar y útil en las conversaciones del día a día, ya que queríamos entender lo que la gente mencionaba para comprender mejor el proceso de evolución a medida que el memorial crecía.
+Eso fue todo. Rápido de cargar, fácil de compartir. El equipo empezó a hacer preguntas más afiladas en la review semanal, tipo por qué "saudade" subió en marzo o por qué un nombre seguía apareciendo.
 
 </div>
 

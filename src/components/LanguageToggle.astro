@@ -1,40 +1,72 @@
 ---
 /**
- * Language toggle: cycles EN -> PT -> ES.
+ * Language selector: segmented EN | PT | ES.
+ * Hides segments for langs not present in <main>'s [data-lang] elements.
+ * If <main> has no [data-lang] (single-lang pages), all 3 stay visible.
  */
 ---
-<button
-  class="lang-toggle"
-  id="lang-toggle"
-  type="button"
-  aria-label="Switch language"
->
-  <span class="lang-label" aria-hidden="true">PT</span>
-</button>
+<div class="lang-switch" id="lang-switch" role="group" aria-label="Switch language">
+  <button type="button" class="lang-seg" data-set-lang="en">EN</button>
+  <button type="button" class="lang-seg" data-set-lang="pt">PT</button>
+  <button type="button" class="lang-seg" data-set-lang="es">ES</button>
+</div>
 
 <script>
   const langs = ['en', 'pt', 'es'] as const;
   type Lang = (typeof langs)[number];
 
   const langHtml: Record<Lang, string> = { en: 'en', pt: 'pt-BR', es: 'es' };
-  const nextLabel: Record<Lang, string> = { en: 'PT', pt: 'ES', es: 'EN' };
-  const nextLang: Record<Lang, Lang> = { en: 'pt', pt: 'es', es: 'en' };
 
-  const toggle = document.getElementById('lang-toggle');
-  const label = toggle?.querySelector('.lang-label');
+  const switchEl = document.getElementById('lang-switch');
+  const segs = switchEl?.querySelectorAll<HTMLButtonElement>('.lang-seg') ?? [];
+
+  // Pages that locked their lang server-side (e.g. single-lang posts): hide the switch
+  if (document.documentElement.dataset.lockedLang === 'true') {
+    if (switchEl) switchEl.style.display = 'none';
+  }
 
   function applyLang(lang: Lang) {
     document.documentElement.setAttribute('lang', langHtml[lang]);
     localStorage.setItem('lang', lang);
-    if (label) label.textContent = nextLabel[lang];
+    segs.forEach(s => {
+      const active = s.dataset.setLang === lang;
+      s.classList.toggle('is-active', active);
+      s.setAttribute('aria-pressed', String(active));
+    });
   }
 
+  function detectAvailable(): Set<Lang> {
+    const main = document.querySelector('main');
+    const found = new Set<Lang>();
+    if (main) {
+      main.querySelectorAll<HTMLElement>('[data-lang]').forEach(el => {
+        const l = el.getAttribute('data-lang') as Lang;
+        if (langs.includes(l)) found.add(l);
+      });
+    }
+    // If main has no data-lang markup, keep all 3 (chrome is multilang)
+    if (found.size === 0) langs.forEach(l => found.add(l));
+    return found;
+  }
+
+  const available = detectAvailable();
+  segs.forEach(s => {
+    const l = s.dataset.setLang as Lang;
+    if (!available.has(l)) s.style.display = 'none';
+  });
+
+  // Hide the whole switch if 0 or 1 langs available
+  if (switchEl && available.size <= 1) switchEl.style.display = 'none';
+
   const stored = localStorage.getItem('lang') as Lang | null;
-  const initial = stored && langs.includes(stored) ? stored : 'en';
+  let initial: Lang = stored && langs.includes(stored) ? stored : 'en';
+  if (!available.has(initial)) initial = (Array.from(available)[0] ?? 'en') as Lang;
   applyLang(initial);
 
-  toggle?.addEventListener('click', () => {
-    const current = (localStorage.getItem('lang') || 'en') as Lang;
-    applyLang(nextLang[current]);
+  segs.forEach(s => {
+    s.addEventListener('click', () => {
+      const l = s.dataset.setLang as Lang;
+      if (available.has(l)) applyLang(l);
+    });
   });
 </script>

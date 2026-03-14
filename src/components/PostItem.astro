@@ -3,11 +3,10 @@ interface Props {
   title: string;
   date: Date;
   slug: string;
-  readingTime: number;
   tags?: string[];
   til?: boolean;
 }
-const { title, date, slug, readingTime, tags, til } = Astro.props;
+const { title, date, slug, tags, til } = Astro.props;
 const formatted = date.toLocaleDateString('en-US', {
   month: 'short', day: 'numeric', year: 'numeric'
 });
@@ -15,7 +14,6 @@ const formatted = date.toLocaleDateString('en-US', {
 <a class="post-item" href={`/posts/${slug}/`}>
   <div class="post-item-left">
     <time class="post-date" datetime={date.toISOString()}>{formatted}</time>
-    <span class="post-read-time">{readingTime} min read</span>
   </div>
   <div class="post-item-right">
     {til && <span class="til-badge">TIL</span>}

@@ -8,11 +8,6 @@ import Layout from '../layouts/Layout.astro';
       <span data-lang="pt">Projetos</span>
       <span data-lang="es">Proyectos</span>
     </h1>
-    <p class="projects-intro">
-      <span data-lang="en">Tools and experiments I've built on the side.</span>
-      <span data-lang="pt">Ferramentas e experimentos que construí nas horas vagas.</span>
-      <span data-lang="es">Herramientas y experimentos que construí en mi tiempo libre.</span>
-    </p>
 
     <div class="projects-list">
       <div class="project-card">
@@ -32,8 +27,13 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .projects-page {
     max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 48px 24px 100px;
+    margin: 40px auto;
+    padding: 48px 48px 80px;
+    background: var(--bg-elevated);
+    border-radius: 4px;
+  }
+  @media (max-width: 700px) {
+    .projects-page { padding: 32px 24px 48px; margin: 24px auto; }
   }
   .projects-page h1 {
     font-family: var(--font-heading);
@@ -52,16 +52,14 @@ import Layout from '../layouts/Layout.astro';
   .projects-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
   }
   .project-card {
     display: block;
     width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
   }
+  .project-card:last-child { border-bottom: none; }
   .project-card h2 {
     font-family: var(--font-heading);
     font-size: 18px;
@@ -82,26 +80,24 @@ import Layout from '../layouts/Layout.astro';
     font-size: 14px;
     color: var(--text);
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 10px;
   }
   .project-tag {
     font-family: var(--font-mono);
     font-size: 11px;
     color: var(--text-muted);
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2px 8px;
-    text-decoration: none;
-    transition: border-color var(--transition), color var(--transition);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--border);
+    transition: color var(--transition), text-decoration-color var(--transition);
   }
   .project-tag:hover {
-    border-color: var(--text-muted);
     color: var(--text-strong);
+    text-decoration-color: var(--text-muted);
   }
 </style>

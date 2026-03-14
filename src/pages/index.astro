@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import PostItem from '../components/PostItem.astro';
 import { getCollection } from 'astro:content';
-import { getReadingTime } from '../utils/reading-time';
 
 const posts = (await getCollection('posts'))
   .filter(p => p.data.listed !== false)
@@ -10,6 +9,16 @@ const posts = (await getCollection('posts'))
 ---
 <Layout>
   <div class="home">
+    <div class="year-filter-banner" id="year-filter-banner" hidden>
+      <span data-lang="en">Showing posts from <strong id="year-filter-label"></strong>. </span>
+      <span data-lang="pt">Mostrando posts de <strong id="year-filter-label-pt"></strong>. </span>
+      <span data-lang="es">Mostrando posts de <strong id="year-filter-label-es"></strong>. </span>
+      <a href="/" class="year-filter-clear">
+        <span data-lang="en">Clear</span>
+        <span data-lang="pt">Limpar</span>
+        <span data-lang="es">Quitar</span>
+      </a>
+    </div>
     <section class="post-list" aria-label="Blog posts">
       <div class="section-label">Posts</div>
       {posts.map(post => (
@@ -17,10 +26,30 @@ const posts = (await getCollection('posts'))
           title={post.data.title}
           date={post.data.date}
           slug={post.slug}
-          readingTime={getReadingTime(post.body || '')}
           til={post.data.til}
         />
       ))}
     </section>
   </div>
+  <script is:inline>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var year = params.get('year');
+      if (!year) return;
+      var banner = document.getElementById('year-filter-banner');
+      ['year-filter-label', 'year-filter-label-pt', 'year-filter-label-es'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.textContent = year;
+      });
+      if (banner) banner.hidden = false;
+      document.querySelectorAll('.post-item').forEach(function (el) {
+        var t = el.querySelector('time[datetime]');
+        if (!t) return;
+        var d = t.getAttribute('datetime') || '';
+        if (d.slice(0, 4) !== year) {
+          el.style.display = 'none';
+        }
+      });
+    })();
+  </script>
 </Layout>

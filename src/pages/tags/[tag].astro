@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import PostItem from '../../components/PostItem.astro';
 import { getCollection } from 'astro:content';
-import { getReadingTime } from '../../utils/reading-time';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -36,7 +35,6 @@ const posts = allPosts
           title={post.data.title}
           date={post.data.date}
           slug={post.slug}
-          readingTime={getReadingTime(post.body || '')}
           tags={post.data.tags}
           til={post.data.til}
         />

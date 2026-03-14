@@ -5,6 +5,7 @@ slug: spark-ui-guide
 tags: [apache spark, databricks, debugging, data engineering, performance]
 description: "Part 1 of x. Coming soon"
 listed: false
+lang: [en, pt, es]
 ---
 
 <style>

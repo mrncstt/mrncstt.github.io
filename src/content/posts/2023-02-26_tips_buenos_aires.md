@@ -4,29 +4,28 @@ description: A practical guide to spending 33 days in Buenos Aires
 date: 2023-02-26
 slug: tips-buenos-aires
 tags: [travel, buenos aires, tips, argentina, guide]
+lang: [en, pt, es]
 ---
 
 <div data-lang="en">
 
-Spending 33 days in Buenos Aires was rewarding and sometimes messy to plan. With a bit of structure it all came together. If you are heading to BA, even for a shorter stay, here is what worked for me and what I wish I had known. The trip took place in November 2022 and these notes reflect what I experienced on the ground and what I still had on my mind by February 2023.
-
-This covers budget, flights, Airbnb, moving money, arrival, getting around, things to do, and a set of photo notes that make the post less dry.
+33 days in Buenos Aires, November 2022. I wrote these notes in February 2023 while the city was still loud in my head. Skip to whatever section you need.
 
 ## Budget
 
-Make a simple spreadsheet with flights, accommodation, food, transport, activities, and a cushion for surprises. Seeing the total in one place helps you decide where to save and where to spend before booking anything.
+My spreadsheet had six columns: flights, Airbnb, food, transport, activities, "things go wrong". Looking at the bottom-right cell stopped me from booking a fancier place I didn't need.
 
 ## Flights
 
-Compare fares on sites like Google Flights (https://www.google.com/flights), Expedia (https://www.expedia.com/), and Skyscanner (https://www.skyscanner.net/). I flew GRU to AEP round trip with Aerolíneas Argentinas for around R$1400 paid in installments. Buenos Aires has two main airports: Aeroparque Jorge Newbery (smaller and close to the center) and Ezeiza (larger and farther). Think Congonhas versus Guarulhos.
+GRU to AEP round trip with Aerolíneas Argentinas, R$1400 parcelado. I checked Google Flights (https://www.google.com/flights), Skyscanner (https://www.skyscanner.net/) and the Aerolíneas site directly; the direct site was cheapest that week. Try to land in Aeroparque (in the city) not Ezeiza (an hour out). Think Congonhas vs Guarulhos.
 
 ## Accommodation
 
-After booking flights I chose an Airbnb near Abasto Shopping on Avenida Corrientes. One block from Pueyrredón station on line B made it easy to connect with the rest of the city. When you pick a place, read reviews carefully, check the host rating, and confirm nearby basics like subway, pharmacy, supermarket, and places to eat.
+Airbnb on Corrientes near Abasto, one block from Pueyrredón on line B. Line B drops you in Microcentro in 15 minutes. The two filters I would not skip when picking a place: walking distance to a subte stop, and at least one supermarket within 5 minutes for the days you don't want to think about food.
 
 ## Money
 
-Cards can be expensive because of exchange rates. Cash helps more than you might expect. Western Union transfers worked well and I picked up cash in person.
+Cards can be expensive because of exchange rates. Cash helps more than you might expect. I used Western Union the whole trip. Send the money to yourself online, pick up the ARS at any of their branches with your passport.
 
 What worked for me in November 2022:
 - Bring some USD if you arrive on a weekend. Many places accept dollars and use a parallel rate. I saw quotes around 1 USD ≈ 300 ARS that beat my card rate.
@@ -35,19 +34,19 @@ What worked for me in November 2022:
 
 ## Planning days
 
-Sketch a loose outline with a few anchors like neighborhoods or museums and leave room to wander. Buenos Aires rewards unplanned walks, long coffees, and the surprise of live music around a corner.
+I picked one neighborhood per day and left the rest open. Half of my favorite moments came from walking the wrong way home and finding a bar with a guy playing tango on a 60s amp.
 
 ## A little Spanish
 
-Basic phrases go a long way. Even when people speak English, using Spanish smooths interactions and makes the trip richer.
+Even five words helps. "Un cortado, por favor" gets you a different look than pointing at the menu.
 
 ## Travel insurance
 
-Compare a few policies and choose one that fits your length of stay and activities. It is boring, yes, and valuable when you need it.
+Get one. I never used mine and I'm still glad I had it.
 
 ## Arrival
 
-Thanks to the Brazil Mercosur agreement you can travel with your ID. I brought my passport hoping for a first stamp and everything was digital, so no stamp. Immigration was simple. They asked where I was staying, I showed the Airbnb receipt, and I said tourism. I carried printed copies of vaccine records and reservations. No one asked, but it felt safer.
+Thanks to the Brazil Mercosur agreement you can travel with your ID. I brought my passport hoping for a first stamp and everything was digital, so no stamp. Immigration was simple. They asked where I was staying, I showed the Airbnb receipt, and I said tourism. I carried printed copies of vaccine records and reservations. Nobody asked for them. Worth the printer ink anyway.
 
 At the airport I used WiFi to book an Uber to my Airbnb because I did not have a local SIM yet. Nearby Western Union offices were closed until Monday because I arrived Saturday afternoon. The Claro shop in Abasto sold SIMs to foreigners in cash only. I spent the weekend exploring on foot and buying food at the mall using offline maps I had downloaded.
 
@@ -55,14 +54,14 @@ At the airport I used WiFi to book an Uber to my Airbnb because I did not have a
 
 The subway and buses connect well. I once took a late bus from Palermo to Avenida Corrientes around 2 a.m. without issues.
 
-- You need a transit card to ride buses and the subway. Buy it at subway stations and load as you go.
-- During my stay, subways cost under R$1 per ride and buses were under R$0.50 for the distances I did. For buses, tell the driver your destination because the fare depends on distance.
+- The card is called SUBE. Buy one at any subte ticket window, load it with whatever cash you have, top up when it runs out.
+- In Nov 2022 a subte ride cost me under R$1 and most bus rides under R$0.50. On the bus, tell the driver your destination because the fare depends on distance.
 - Taxis were usually easier and cheaper than ride apps. Watch for longer routes and check change carefully.
 
 ## Things I liked and recommend
 
 - San Telmo is great to wander, especially on Sunday for the fair and antiques. I had one of the best barbecues of my life at the market.
-- Plaza de Mayo and the Casa Rosada tell a lot of the country's story in one walk.
+- Plaza de Mayo, then walk into Casa Rosada if it's a free-tour day. You'll learn more about Argentine politics in two hours than in a book.
 - Recoleta Cemetery, the Centro Cultural Recoleta, and Floralis Genérica are close enough to visit in one loop.
 - Eat widely. Empanadas, asado, miga sandwiches, and plenty of gelato. Buenos Aires also has good Peruvian and Mexican food.
 - Tour La Bombonera in Boca Juniors. I visited the stadium during the 2022 World Cup period and could not catch a match.
@@ -73,32 +72,30 @@ The subway and buses connect well. I once took a late bus from Palermo to Avenid
 - Monserrat has historic churches worth a look.
 - The botanical garden is a calm break from the city.
 - Palermo has a dense food scene. I liked La Fábrica de Tacos and had a strong meal at Las Petunias.
-- El Ateneo Grand Splendid is a bookstore in a historic theater and it is as beautiful as everyone says.
-- The Evita Museum is compact and focused.
+- El Ateneo Grand Splendid is the bookstore inside a theater. Yes it delivers on the Instagram promise.
+- Evita Museum is small and worth the hour. The dress on display still smells like the 1950s if you stand close enough (maybe I imagined it).
 - On Mondays La Bomba del Tiempo at Konex is a must. Buy tickets at the box office because it was cheaper.
 
 </div>
 <div data-lang="pt">
 
-Passar 33 dias em Buenos Aires foi gratificante e, às vezes, complicado de planejar. Com um pouco de organização tudo se encaixou. Se você está indo para BA, mesmo que por menos tempo, aqui está o que funcionou pra mim e o que eu gostaria de ter sabido antes. A viagem aconteceu em novembro de 2022 e essas anotações refletem o que eu vivi lá e o que ainda estava na minha cabeça em fevereiro de 2023.
-
-Isso cobre orçamento, passagens, Airbnb, câmbio, chegada, locomoção, o que fazer e algumas fotos com comentários para deixar o post menos seco.
+33 dias em Buenos Aires, novembro de 2022. Escrevi essas notas em fevereiro de 2023 com a cidade ainda barulhenta na minha cabeça. Pula pra seção que te interessa.
 
 ## Orçamento
 
-Faça uma planilha simples com passagens, hospedagem, comida, transporte, atividades e uma reserva para imprevistos. Ver o total em um só lugar ajuda a decidir onde economizar e onde gastar antes de reservar qualquer coisa.
+Minha planilha tinha seis colunas: passagem, Airbnb, comida, transporte, atividades, "deu ruim". Olhar pro total no canto direito me impediu de reservar um lugar mais chique do que eu precisava.
 
 ## Passagens
 
-Compare preços em sites como Google Flights (https://www.google.com/flights), Expedia (https://www.expedia.com/) e Skyscanner (https://www.skyscanner.net/). Eu voei de GRU para AEP ida e volta com a Aerolíneas Argentinas por cerca de R$1400 parcelados. Buenos Aires tem dois aeroportos principais: Aeroparque Jorge Newbery (menor e perto do centro) e Ezeiza (maior e mais longe). Pense em Congonhas versus Guarulhos.
+GRU pra AEP ida e volta com a Aerolíneas Argentinas, R$1400 parcelado. Conferi no Google Flights (https://www.google.com/flights), no Skyscanner (https://www.skyscanner.net/) e direto no site da Aerolíneas; naquela semana o direto saiu mais barato. Tenta pousar no Aeroparque (na cidade) e não em Ezeiza (uma hora fora). Pensa em Congonhas vs Guarulhos.
 
 ## Hospedagem
 
-Depois de comprar as passagens, escolhi um Airbnb perto do Abasto Shopping na Avenida Corrientes. A uma quadra da estação Pueyrredón na linha B, o que facilitava a conexão com o resto da cidade. Na hora de escolher um lugar, leia as avaliações com atenção, confira a nota do anfitrião e confirme o básico por perto: metrô, farmácia, supermercado e lugares para comer.
+Airbnb na Corrientes perto do Abasto, uma quadra da Pueyrredón na linha B. A linha B te joga no Microcentro em 15 minutos. Os dois filtros que eu não pularia na hora de escolher: distância de caminhada até uma estação de subte, e pelo menos um mercado a 5 minutos pros dias em que você não quer pensar em comida.
 
 ## Dinheiro
 
-Cartões podem sair caros por causa do câmbio. Dinheiro vivo ajuda mais do que você imagina. Transferências pela Western Union funcionaram bem e eu retirava o dinheiro pessoalmente.
+Cartão pode sair caro por causa do câmbio. Dinheiro vivo ajuda mais do que você imagina. Usei Western Union a viagem inteira. Você envia o dinheiro pra si mesma online e retira os ARS em qualquer agência deles com o passaporte.
 
 O que funcionou pra mim em novembro de 2022:
 - Leve alguns dólares se você chegar no fim de semana. Muitos lugares aceitam dólares e usam a cotação paralela. Vi cotações em torno de 1 USD ≈ 300 ARS, melhor que a do cartão.
@@ -107,19 +104,19 @@ O que funcionou pra mim em novembro de 2022:
 
 ## Planejando os dias
 
-Faça um roteiro solto com alguns pontos de referência como bairros ou museus e deixe espaço para caminhar sem rumo. Buenos Aires recompensa caminhadas sem destino, cafés longos e a surpresa de música ao vivo na esquina.
+Escolhi um bairro por dia e deixei o resto aberto. Metade dos meus momentos favoritos saiu de voltar pra casa pelo caminho errado e achar um bar com um cara tocando tango num amplificador dos anos 60.
 
 ## Um pouco de espanhol
 
-Frases básicas fazem muita diferença. Mesmo quando as pessoas falam inglês, usar espanhol suaviza as interações e enriquece a viagem.
+Até cinco palavras já ajuda. "Un cortado, por favor" rende um olhar diferente do que apontar pro cardápio.
 
 ## Seguro viagem
 
-Compare algumas apólices e escolha uma que se encaixe na duração da viagem e nas suas atividades. É chato, sim, e valioso quando você precisa.
+Faz. Nunca usei o meu e ainda assim fico feliz de ter contratado.
 
 ## Chegada
 
-Graças ao acordo do Mercosul, brasileiros podem viajar com o RG. Levei o passaporte na esperança de um primeiro carimbo e tudo era digital, então sem carimbo. A imigração foi simples. Perguntaram onde eu ficaria, mostrei o comprovante do Airbnb e disse turismo. Levei cópias impressas de carteira de vacinação e reservas. Ninguém pediu, mas me deu mais segurança.
+Graças ao acordo do Mercosul, brasileiros podem viajar com o RG. Levei o passaporte na esperança de um primeiro carimbo e tudo era digital, então sem carimbo. A imigração foi simples. Perguntaram onde eu ficaria, mostrei o comprovante do Airbnb e disse turismo. Levei cópias impressas de carteira de vacinação e reservas. Ninguém pediu. Valeu a tinta da impressora mesmo assim.
 
 No aeroporto usei o WiFi para pedir um Uber até o Airbnb porque ainda não tinha um chip local. As agências da Western Union perto estavam fechadas até segunda porque cheguei no sábado à tarde. A loja da Claro no Abasto vendia chips para estrangeiros, só em dinheiro. Passei o fim de semana explorando a pé e comprando comida no shopping com mapas offline que tinha baixado.
 
@@ -127,14 +124,14 @@ No aeroporto usei o WiFi para pedir um Uber até o Airbnb porque ainda não tinh
 
 O metrô e os ônibus se conectam bem. Uma vez peguei um ônibus tarde da noite de Palermo até a Avenida Corrientes por volta das 2h sem problemas.
 
-- Você precisa de um cartão de transporte para andar de ônibus e metrô. Compre nas estações de metrô e carregue conforme necessário.
-- Durante minha estadia, o metrô custava menos de R$1 por viagem e os ônibus menos de R$0,50 para as distâncias que eu fazia. Nos ônibus, diga ao motorista seu destino porque a tarifa depende da distância.
+- O cartão se chama SUBE. Compra em qualquer bilheteria de subte, carrega com o dinheiro que tiver e completa quando acabar.
+- Em novembro de 2022 uma viagem de subte me custava menos de R$1 e a maioria dos ônibus saía por menos de R$0,50. No ônibus, diz ao motorista seu destino porque a tarifa depende da distância.
 - Táxis geralmente eram mais fáceis e mais baratos que aplicativos de transporte. Fique atento a rotas mais longas e confira o troco com cuidado.
 
 ## Coisas que curti e recomendo
 
 - San Telmo é ótimo para caminhar, especialmente no domingo por causa da feira e dos antiquários. Comi um dos melhores churrascos da minha vida no mercado.
-- A Plaza de Mayo e a Casa Rosada contam muito da história do país em uma caminhada só.
+- Plaza de Mayo e depois entra na Casa Rosada se for dia de tour gratuito. Você aprende mais sobre política argentina em duas horas do que em livro.
 - O Cemitério da Recoleta, o Centro Cultural Recoleta e a Floralis Genérica são perto o suficiente para visitar em um só passeio.
 - Coma de tudo. Empanadas, asado, sándwiches de miga e muito gelato. Buenos Aires também tem boa comida peruana e mexicana.
 - Faça o tour da La Bombonera no Boca Juniors. Visitei o estádio durante o período da Copa do Mundo de 2022 e não consegui pegar um jogo.
@@ -145,32 +142,30 @@ O metrô e os ônibus se conectam bem. Uma vez peguei um ônibus tarde da noite 
 - Monserrat tem igrejas históricas que valem a visita.
 - O jardim botânico é uma pausa tranquila do ritmo da cidade.
 - Palermo tem uma cena gastronômica intensa. Gostei da La Fábrica de Tacos e comi muito bem no Las Petunias.
-- O El Ateneo Grand Splendid é uma livraria em um teatro histórico e é tão bonito quanto todo mundo diz.
-- O Museu Evita é compacto e focado.
+- O El Ateneo Grand Splendid é aquela livraria dentro de um teatro. Sim, ela entrega o que promete no Instagram.
+- O Museu Evita é pequeno e vale a hora. O vestido em exposição ainda tem cheiro dos anos 50 se você chegar perto (talvez tenha sido impressão minha).
 - Nas segundas-feiras, La Bomba del Tiempo no Konex é imperdível. Compre ingressos na bilheteria porque era mais barato.
 
 </div>
 <div data-lang="es">
 
-Pasar 33 días en Buenos Aires fue muy gratificante y, a veces, un lío de planificar. Con un poco de organización todo encajó. Si vas a BA, aunque sea por menos tiempo, aquí va lo que me funcionó y lo que me habría gustado saber antes. El viaje fue en noviembre de 2022 y estas notas reflejan lo que viví allí y lo que aún tenía en la cabeza en febrero de 2023.
-
-Esto cubre presupuesto, vuelos, Airbnb, cambio de divisas, llegada, cómo moverse, cosas que hacer y unas cuantas fotos con comentarios para que el post no sea tan seco.
+33 días en Buenos Aires, noviembre de 2022. Escribí estas notas en febrero de 2023 con la ciudad aún sonando fuerte en mi cabeza. Salta a la sección que necesites.
 
 ## Presupuesto
 
-Haz una hoja de cálculo sencilla con vuelos, alojamiento, comida, transporte, actividades y un margen para imprevistos. Ver el total en un solo sitio te ayuda a decidir dónde ahorrar y dónde gastar antes de reservar nada.
+Mi hoja de cálculo tenía seis columnas: vuelo, Airbnb, comida, transporte, actividades, "cuando algo salga mal". Mirar el total de la esquina me frenó de reservar un sitio más pijo del que necesitaba.
 
 ## Vuelos
 
-Compara precios en sitios como Google Flights (https://www.google.com/flights), Expedia (https://www.expedia.com/) y Skyscanner (https://www.skyscanner.net/). Yo volé de GRU a AEP ida y vuelta con Aerolíneas Argentinas por unos R$1400 a plazos. Buenos Aires tiene dos aeropuertos principales: Aeroparque Jorge Newbery (más pequeño y cerca del centro) y Ezeiza (más grande y más lejos). Algo así como Congonhas frente a Guarulhos para quien conozca São Paulo.
+GRU a AEP ida y vuelta con Aerolíneas Argentinas, R$1400 a plazos. Miré en Google Flights (https://www.google.com/flights), Skyscanner (https://www.skyscanner.net/) y directo en la web de Aerolíneas; esa semana la web directa salió más barata. Intenta aterrizar en Aeroparque (en la ciudad), no en Ezeiza (a una hora). Como Congonhas frente a Guarulhos para quien conozca São Paulo.
 
 ## Alojamiento
 
-Después de comprar los vuelos, elegí un Airbnb cerca de Abasto Shopping en la Avenida Corrientes. A una manzana de la estación Pueyrredón de la línea B, lo que facilitaba conectar con el resto de la ciudad. Cuando elijas un sitio, lee las reseñas con atención, comprueba la valoración del anfitrión y confirma lo básico cerca: metro, farmacia, supermercado y sitios para comer.
+Airbnb en Corrientes cerca de Abasto, a una manzana de Pueyrredón en la línea B. La línea B te deja en Microcentro en 15 minutos. Los dos filtros que no me saltaría al elegir sitio: distancia caminando hasta una estación de subte y al menos un supermercado a 5 minutos para los días en que no quieres pensar en comida.
 
 ## Dinero
 
-Las tarjetas pueden salir caras por el tipo de cambio. El efectivo ayuda más de lo que te imaginas. Las transferencias por Western Union me funcionaron bien y recogía el dinero en persona.
+Las tarjetas pueden salir caras por el tipo de cambio. El efectivo ayuda más de lo que te imaginas. Usé Western Union todo el viaje. Te envías el dinero a ti misma online y recoges los ARS en cualquier sucursal con el pasaporte.
 
 Lo que me funcionó en noviembre de 2022:
 - Lleva algunos dólares si llegas un fin de semana. Muchos sitios aceptan dólares y usan la cotización paralela. Vi cambios en torno a 1 USD ≈ 300 ARS, mejor que lo que me daba la tarjeta.
@@ -179,19 +174,19 @@ Lo que me funcionó en noviembre de 2022:
 
 ## Planificar los días
 
-Haz un esquema flexible con algunos puntos de referencia como barrios o museos y deja margen para callejear. Buenos Aires premia los paseos sin rumbo, los cafés largos y la sorpresa de encontrar música en directo a la vuelta de la esquina.
+Elegí un barrio por día y dejé el resto abierto. La mitad de mis momentos favoritos salieron de volver a casa por el camino equivocado y encontrar un bar con un tipo tocando tango en un amplificador de los 60.
 
 ## Un poco de castellano
 
-Las frases básicas marcan la diferencia. Aunque la gente hable inglés, usar castellano suaviza las interacciones y enriquece el viaje.
+Hasta cinco palabras ayudan. "Un cortado, por favor" te gana una mirada distinta que señalar la carta.
 
 ## Seguro de viaje
 
-Compara varias pólizas y elige una que encaje con la duración de tu estancia y tus actividades. Es aburrido, sí, pero vale mucho cuando lo necesitas.
+Contrátalo. Nunca usé el mío y aun así me alegro de haberlo tenido.
 
 ## Llegada
 
-Gracias al acuerdo del Mercosur, los brasileños pueden viajar con el DNI. Yo llevé el pasaporte con la ilusión de un primer sello y todo era digital, así que sin sello. La inmigración fue sencilla. Me preguntaron dónde me alojaba, enseñé el justificante del Airbnb y dije turismo. Llevé copias impresas de la cartilla de vacunación y las reservas. Nadie las pidió, pero me quedé más tranquilo.
+Gracias al acuerdo del Mercosur, los brasileños pueden viajar con el DNI. Yo llevé el pasaporte con la ilusión de un primer sello y todo era digital, así que sin sello. La inmigración fue sencilla. Me preguntaron dónde me alojaba, enseñé el justificante del Airbnb y dije turismo. Llevé copias impresas de la cartilla de vacunación y las reservas. Nadie las pidió. Valió la tinta de la impresora igual.
 
 En el aeropuerto usé el WiFi para pedir un Uber hasta el Airbnb porque aún no tenía una SIM local. Las oficinas de Western Union cercanas estaban cerradas hasta el lunes porque llegué el sábado por la tarde. La tienda de Claro en Abasto vendía SIMs a extranjeros solo en efectivo. Pasé el fin de semana explorando a pie y comprando comida en el centro comercial con mapas sin conexión que había descargado.
 
@@ -199,14 +194,14 @@ En el aeropuerto usé el WiFi para pedir un Uber hasta el Airbnb porque aún no 
 
 El metro y los autobuses conectan bien. Una vez cogí un autobús nocturno de Palermo a la Avenida Corrientes sobre las 2 de la madrugada sin ningún problema.
 
-- Necesitas una tarjeta de transporte para coger autobuses y el metro. Se compra en las estaciones de metro y se recarga sobre la marcha.
-- Durante mi estancia, el metro costaba menos de R$1 por viaje y los autobuses menos de R$0,50 para las distancias que hacía. En los autobuses, dile al conductor tu destino porque la tarifa depende de la distancia.
+- La tarjeta se llama SUBE. La compras en cualquier taquilla del subte, la cargas con lo que tengas y la rellenas cuando se acaba.
+- En noviembre de 2022 un viaje en subte me costaba menos de R$1 y la mayoría de los buses menos de R$0,50. En el autobús, dile al conductor tu destino porque la tarifa depende de la distancia.
 - Los taxis solían ser más fáciles y más baratos que las aplicaciones de transporte. Ojo con las rutas más largas y comprueba bien el cambio.
 
 ## Cosas que me gustaron y recomiendo
 
 - San Telmo es genial para pasear, sobre todo los domingos por la feria y las antigüedades. Comí una de las mejores parrilladas de mi vida en el mercado.
-- La Plaza de Mayo y la Casa Rosada cuentan mucho de la historia del país en un solo paseo.
+- Plaza de Mayo y luego métete en la Casa Rosada si es día de tour gratis. Aprendes más sobre política argentina en dos horas que en un libro.
 - El Cementerio de la Recoleta, el Centro Cultural Recoleta y la Floralis Genérica están lo bastante cerca para visitarlos en un mismo recorrido.
 - Come de todo. Empanadas, asado, sándwiches de miga y mucho helado. Buenos Aires también tiene buena comida peruana y mexicana.
 - Haz el tour de La Bombonera en Boca Juniors. Visité el estadio durante el Mundial de 2022 y no pude pillar un partido.
@@ -217,8 +212,8 @@ El metro y los autobuses conectan bien. Una vez cogí un autobús nocturno de Pa
 - Monserrat tiene iglesias históricas que merecen una visita.
 - El jardín botánico es un descanso tranquilo del ritmo de la ciudad.
 - Palermo tiene una escena gastronómica muy densa. Me gustó La Fábrica de Tacos y comí de maravilla en Las Petunias.
-- El Ateneo Grand Splendid es una librería en un teatro histórico y es tan bonito como todo el mundo dice.
-- El Museo Evita es compacto y está bien enfocado.
+- El Ateneo Grand Splendid es esa librería dentro de un teatro. Sí, cumple con lo que promete en Instagram.
+- El Museo Evita es pequeño y vale la hora. El vestido expuesto todavía huele a los años 50 si te acercas lo suficiente (igual fue impresión mía).
 - Los lunes, La Bomba del Tiempo en Konex es imprescindible. Compra las entradas en taquilla porque salía más barato.
 
 </div>
@@ -347,17 +342,17 @@ _Paseo nocturno cerca de Corrientes que termina con una hamburguesa que sabe mej
 
 <div data-lang="en">
 
-_La Fábrica de Tacos in Palermo. Crisp tortillas, bright salsas, the right amount of lime. The best one for me. (Update 2025 still the best. Barcelona's spots do not even compare.)_
+_La Fábrica de Tacos in Palermo. Crisp tortillas, salsas, the right amount of lime. The best one for me. (Update 2025 still the best. Barcelona's spots do not even compare.)_
 
 </div>
 <div data-lang="pt">
 
-_La Fábrica de Tacos em Palermo. Tortillas crocantes, salsas vibrantes, a quantidade certa de limão. O melhor pra mim. (Atualização 2025: continua sendo o melhor. Os de Barcelona nem chegam perto.)_
+_La Fábrica de Tacos em Palermo. Tortillas crocantes, salsas, a quantidade certa de limão. O melhor pra mim. (Atualização 2025: continua sendo o melhor. Os de Barcelona nem chegam perto.)_
 
 </div>
 <div data-lang="es">
 
-_La Fábrica de Tacos en Palermo. Tortillas crujientes, salsas vibrantes, la cantidad justa de lima. El mejor para mí. (Actualización 2025: sigue siendo el mejor. Los de Barcelona ni se acercan.)_
+_La Fábrica de Tacos en Palermo. Tortillas crujientes, salsas, la cantidad justa de lima. El mejor para mí. (Actualización 2025: sigue siendo el mejor. Los de Barcelona ni se acercan.)_
 
 </div>
 
@@ -413,17 +408,17 @@ _La Floralis Genérica parecía a punto de abrirse, pero se quedó quieta todo e
 
 <div data-lang="en">
 
-Planning a month in Buenos Aires can look intimidating. With a budget, early bookings, a sane way to handle cash, and a flexible plan it becomes a relaxed and memorable trip. As of February 2023 the tips above reflect what I did and saw. Enjoy the city slowly.
+A month felt long on the calendar and short by the time I left. The city forgives planning mistakes. Go slow.
 
 </div>
 <div data-lang="pt">
 
-Planejar um mês em Buenos Aires pode parecer intimidante. Com um orçamento, reservas antecipadas, uma forma sensata de lidar com dinheiro e um plano flexível, a viagem se torna tranquila e memorável. Em fevereiro de 2023, as dicas acima refletem o que eu fiz e vi. Aproveite a cidade devagar.
+Um mês parecia longo no calendário e curto na hora de ir embora. A cidade perdoa erro de planejamento. Vai devagar.
 
 </div>
 <div data-lang="es">
 
-Planificar un mes en Buenos Aires puede parecer intimidante. Con un presupuesto, reservas anticipadas, una forma razonable de manejar el efectivo y un plan flexible, se convierte en un viaje tranquilo y memorable. En febrero de 2023, los consejos de arriba reflejan lo que hice y vi. Disfruta la ciudad despacio.
+Un mes parecía largo en el calendario y corto al irme. La ciudad perdona los errores de planificación. Ve despacio.
 
 </div>
 

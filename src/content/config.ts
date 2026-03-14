@@ -13,6 +13,10 @@ const posts = defineCollection({
     math: z.boolean().default(false),
     mermaid: z.boolean().default(false),
     updated: z.coerce.date().optional(),
+    lang: z.union([
+      z.enum(['en', 'pt', 'es']),
+      z.array(z.enum(['en', 'pt', 'es'])).min(1),
+    ]).default('en'),
   }),
 });
 

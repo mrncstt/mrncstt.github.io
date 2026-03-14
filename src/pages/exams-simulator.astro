@@ -65,8 +65,13 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .exam-page {
     max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 48px 24px 100px;
+    margin: 40px auto;
+    padding: 48px 48px 80px;
+    background: var(--bg-elevated);
+    border-radius: 4px;
+  }
+  @media (max-width: 700px) {
+    .exam-page { padding: 32px 24px 48px; margin: 24px auto; }
   }
   .exam-intro {
     font-family: var(--font-body);
@@ -254,6 +259,10 @@ import Layout from '../layouts/Layout.astro';
   .exam-nav-btn:disabled {
     opacity: 0.4;
     cursor: not-allowed;
+  }
+  @media (max-width: 480px) {
+    .exam-nav-bar { flex-wrap: wrap; gap: 6px; }
+    .exam-nav-btn { padding: 8px 12px; font-size: 12px; flex: 1; min-width: 0; }
   }
   .hidden { display: none; }
 

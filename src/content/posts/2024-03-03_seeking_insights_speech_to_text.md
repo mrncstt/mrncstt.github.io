@@ -5,27 +5,28 @@ date: 2024-03-03
 slug: seeking-insights-speech to text
 tags: [google cloud, python, chatgpt, speech to text, automation]
 mermaid: true
+lang: [en, pt, es]
 ---
 
 <div data-lang="en">
 
 ## Why record mentorship calls?
 
-I recently joined an online mentorship on [Topmate](https://topmate.io/). After the call, Topmate emailed me a link to the MP4 recording. Having the full session lets me revisit the advice, catch the bits I missed live, and turn a dense hour into working notes.
+A mentor I follow runs sessions on [Topmate](https://topmate.io/). After my call the platform emailed me the MP4. I wanted the transcript: there were three pieces of advice I half-heard and one URL I missed entirely.
 
 </div>
 <div data-lang="pt">
 
 ## Por que gravar chamadas de mentoria?
 
-Recentemente participei de uma mentoria online no [Topmate](https://topmate.io/). Depois da chamada, o Topmate me enviou um link para a gravação em MP4. Ter a sessão completa me permite revisitar os conselhos, captar os detalhes que perdi ao vivo e transformar uma hora densa em anotações úteis.
+Uma mentora que eu sigo dá sessões no [Topmate](https://topmate.io/). Depois da minha sessão a plataforma me mandou o MP4 por email. Eu queria a transcrição: tinham três conselhos que eu ouvi pela metade e uma URL que perdi inteira.
 
 </div>
 <div data-lang="es">
 
 ## Por qué grabar las llamadas de mentoría?
 
-Hace poco participé en una mentoría online en [Topmate](https://topmate.io/). Después de la llamada, Topmate me envió un enlace a la grabación en MP4. Tener la sesión completa me permite revisar los consejos, captar lo que se me escapó en directo y convertir una hora densa en apuntes de trabajo.
+Una mentora a la que sigo da sesiones en [Topmate](https://topmate.io/). Después de mi sesión la plataforma me mandó el MP4 por email. Quería la transcripción: había tres consejos que oí a medias y una URL que se me escapó entera.
 
 </div>
 
@@ -311,17 +312,17 @@ graph TD
 
 <div data-lang="en">
 
-This workflow turned a one-off call into reusable notes and clear next steps. If you're experimenting, the two dials that matter most are **audio encoding** (FLAC/LINEAR16 if you can) and **diarization** (when multiple voices overlap), tuning those pays off quickly.
+This workflow turned a one-off call into reusable notes and clear next steps. If you're experimenting, the two dials that matter most are **audio encoding** (FLAC/LINEAR16 if you can) and **diarization** (when multiple voices overlap). Tuning those pays off quickly.
 
 </div>
 <div data-lang="pt">
 
-Esse fluxo transformou uma chamada avulsa em anotações reutilizáveis e próximos passos claros. Se você está experimentando, os dois ajustes que mais importam são a **codificação do áudio** (FLAC/LINEAR16 se possível) e a **diarização** (quando várias vozes se sobrepõem) -- ajustar esses dois dá retorno rápido.
+Esse fluxo transformou uma chamada avulsa em anotações reutilizáveis e próximos passos claros. Se você está experimentando, os dois ajustes que mais importam são a **codificação do áudio** (FLAC/LINEAR16 se possível) e a **diarização** (quando várias vozes se sobrepõem). Ajustar esses dois dá retorno rápido.
 
 </div>
 <div data-lang="es">
 
-Este flujo convirtió una llamada puntual en apuntes reutilizables y próximos pasos claros. Si estás experimentando, los dos ajustes que más importan son la **codificación del audio** (FLAC/LINEAR16 si puedes) y la **diarización** (cuando varias voces se solapan) -- afinar esos dos da resultados rápido.
+Este flujo convirtió una llamada puntual en apuntes reutilizables y próximos pasos claros. Si estás experimentando, los dos ajustes que más importan son la **codificación del audio** (FLAC/LINEAR16 si puedes) y la **diarización** (cuando varias voces se solapan). Afinar esos dos da resultados rápido.
 
 </div>
 

@@ -4,6 +4,7 @@ description: What I learned from teaching my first course
 date: 2020-03-18
 slug: what-i-learned-from-teaching
 tags: [power bi, teaching, learning, data visualization, career]
+lang: [en, pt, es]
 ---
 
 <div data-lang="en">
@@ -56,7 +57,7 @@ Estos son algunos puntos que fueron relevantes en mi experiencia:
 
 <div data-lang="en">
 
-Being on the other side of the course made me reflect on how I would like to learn, but it's worth remembering that the teaching and learning experience is extremely diverse. So how to balance my expectations with those of the participants? Some points were taken into focus for development:
+Being on the other side of the course made me reflect on how I would like to learn, but the teaching and learning experience is very diverse. So how to balance my expectations with those of the participants? Some points were taken into focus for development:
 
 ### Planning
 
@@ -79,7 +80,7 @@ Being on the other side of the course made me reflect on how I would like to lea
 </div>
 <div data-lang="pt">
 
-Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender, mas vale lembrar que a experiência de ensino e aprendizagem é extremamente diversa. Então, como equilibrar minhas expectativas com as dos participantes? Alguns pontos foram colocados em foco para desenvolvimento:
+Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender, mas a experiência de ensino e aprendizagem é muito diversa. Então, como equilibrar minhas expectativas com as dos participantes? Alguns pontos foram colocados em foco para desenvolvimento:
 
 ### Planejamento
 
@@ -102,7 +103,7 @@ Estar do outro lado do curso me fez refletir sobre como eu gostaria de aprender,
 </div>
 <div data-lang="es">
 
-Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprender, pero conviene recordar que la experiencia de enseñanza y aprendizaje es tremendamente diversa. Entonces, cómo equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
+Estar al otro lado del curso me hizo reflexionar sobre cómo me gustaría aprender, pero la experiencia de enseñanza y aprendizaje es muy diversa. Entonces, cómo equilibrar mis expectativas con las de los participantes? Algunos puntos se pusieron en foco para el desarrollo:
 
 ### Planificación
 

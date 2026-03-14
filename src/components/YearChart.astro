@@ -27,7 +27,7 @@ const maxCount = Math.max(...years.map(([, c]) => c));
     {years.map(([year, count]) => {
       const pct = Math.round((count / maxCount) * 100);
       return (
-        <div class="year-bar-row" role="listitem">
+        <a class="year-bar-row" role="listitem" href={`/?year=${year}`} aria-label={`${year}: ${count} posts`}>
           <span class="year-bar-year">{year}</span>
           <div
             class="year-bar-track"
@@ -35,12 +35,11 @@ const maxCount = Math.max(...years.map(([, c]) => c));
             aria-valuenow={count}
             aria-valuemin={0}
             aria-valuemax={maxCount}
-            aria-label={`${year}: ${count} posts`}
           >
             <div class="year-bar-fill" style={`width:${pct}%`}></div>
           </div>
           <span class="year-bar-count">{count}</span>
-        </div>
+        </a>
       );
     })}
   </div>

@@ -5,11 +5,12 @@ date: 2020-03-03
 slug: auxilio-psicologico
 tags: [psicologia, saude mental, natal, utilidade publica]
 updated: 2025-10-18
+lang: pt
 ---
 
 ## Onde encontrar atendimento psicológico em Natal - RN gratuito ou de valor social?
 
-Mesmo sendo de grande importância o acompanhamento psicológico, o valor de uma consulta psicológica pode ser um impeditivo para que muitas pessoas iniciem ou deem continuidade aos seus tratamentos.
+Mesmo o acompanhamento psicológico sendo importante, o valor de uma consulta pode impedir muita gente de começar ou continuar o tratamento.
 
 Mas o que é desconhecido em geral é que existem locais que oferecem tratamento com psicólogo de graça ou com um valor social que é uma contribuição bem mais em conta quando comparado ao valor de uma consulta.
 
