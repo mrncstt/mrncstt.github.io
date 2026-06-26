@@ -10,7 +10,6 @@ const posts = defineCollection({
     image: z.string().optional(),
     listed: z.boolean().default(true),
     til: z.boolean().default(false),
-    math: z.boolean().default(false),
     mermaid: z.boolean().default(false),
     updated: z.coerce.date().optional(),
     lang: z.union([

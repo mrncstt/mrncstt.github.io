@@ -4,6 +4,7 @@ import TOCBar from '../components/TOCBar.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import CopyCode from '../components/CopyCode.astro';
 import MermaidInit from '../components/MermaidInit.astro';
+import 'katex/dist/katex.min.css';
 import type { CollectionEntry } from 'astro:content';
 import { getReadingTime } from '../utils/reading-time';
 import { getRelatedPosts } from '../utils/related-posts';
@@ -15,7 +16,7 @@ interface Props {
 }
 
 const { post, headings } = Astro.props;
-const { title, date, tags, description, image, mermaid, math, lang } = post.data;
+const { title, date, tags, description, image, mermaid, lang } = post.data;
 const isMultiLang = Array.isArray(lang);
 const postLang = isMultiLang ? (lang as string[])[0] : (lang as string);
 const readingTime = getReadingTime(post.body || '');
@@ -30,12 +31,6 @@ const related = getRelatedPosts(post, allPosts);
   <Fragment slot="head">
     <meta property="article:published_time" content={date.toISOString()} />
     {tags.map(tag => <meta property="article:tag" content={tag} />)}
-    {math && (
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.css" />
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/katex.min.js" />
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16/dist/contrib/auto-render.min.js"
-        data-auto-render />
-    )}
   </Fragment>
 
   <Fragment slot="toc">
@@ -105,18 +100,4 @@ const related = getRelatedPosts(post, allPosts);
 
   <CopyCode />
   {mermaid && <MermaidInit />}
-  {math && (
-    <script is:inline>
-      document.addEventListener('DOMContentLoaded', function() {
-        if (typeof renderMathInElement === 'function') {
-          renderMathInElement(document.body, {
-            delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-            ]
-          });
-        }
-      });
-    </script>
-  )}
 </Layout>

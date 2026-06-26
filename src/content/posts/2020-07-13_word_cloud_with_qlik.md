@@ -138,7 +138,7 @@ La tokenización usó `SubField` sobre los espacios más `Trim` para limpiar res
 
 </div>
 
-```qlik
+```text
 // toy example of the idea
 comments:
 load
@@ -194,7 +194,7 @@ Para alimentar el gráfico, la expresión de conteo era un simple set analysis s
 
 </div>
 
-```qlik
+```text
 // count words excluding a maintained list
 count({< word -= {'and','of','the','a','an','de','da','do','e'} >} word)
 ```

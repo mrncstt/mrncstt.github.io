@@ -2,7 +2,7 @@
 title: "Seeking insights from a recording using Google Cloud Speech-to-Text, Google Colab, and ChatGPT"
 description: Transcribe a mentorship recording with Google Cloud Speech-to-Text and extract insights with ChatGPT
 date: 2024-03-03
-slug: seeking-insights-speech to text
+slug: seeking-insights-speech-to-text
 tags: [google cloud, python, chatgpt, speech to text, automation]
 mermaid: true
 lang: [en, pt, es]
